@@ -1,0 +1,80 @@
+=== add: dostoevsky-karamazov-zosima
+1| Early in the morning, before daylight, Alyosha was [awakened]{пробужден}.
+2| The [elder]{старец} had woken and felt very weak, though he wished to [move]{пересесть} from his bed to the armchair.
+3| He was [fully conscious]{в полной памяти}; his face, though very [tired]{утомленное}, was [serene]{ясное}, almost joyful, and his gaze cheerful, [welcoming]{приветливый}, [beckoning]{зовущий}.
+4| "Perhaps I shall not [survive]{переживу} this day that has [dawned]{наступившего}," he said to Alyosha; then he [desired]{возжелал} to [make his confession]{исповедаться} and [take communion]{причаститься} immediately.
+5| His [confessor]{духовником} had always been Father Paisy.
+6| [After]{по совершении} both [sacraments]{таинств}, the [anointing of the sick]{соборование} began.
+7| The [hieromonks]{иеромонахи} gathered; the [cell]{келья} [little by little]{мало-по-малу} filled with [hermits]{скитниками} from the skete.
+8| [Meanwhile]{меж тем} the day came on.
+9| People began to come from the monastery as well.
+10| When the service was over, the elder wished to [say goodbye]{проститься} to everyone and kissed them all.
+11| Because of the [cramped]{тесноте} cell, those who had come first went out and made room for others.
+12| Alyosha stood [beside]{подле} the elder, who had moved back into the armchair.
+note: старец | elder (spiritual guide) | In Orthodox monasticism a «старец» is a revered spiritual father, not simply an old man.
+note: соборование | anointing of the sick (Unction) | An Orthodox sacrament of anointing with oil, performed by several priests together («собор»).
+note: скитниками | hermits of the skete | A «скит» is a small, stricter community of monks attached to a monastery.
+note: возжелал | desired | A solemn, Church Slavonic-flavored verb. Dostoevsky uses it to give the scene a liturgical tone.
+q: main | What does the passage describe? | Alyosha leaving the monastery | *The elder Zosima's last morning, with confession, communion and farewells | A church festival | A quarrel among monks
+q: detail | What does the elder say he might not survive? | The winter | *This day | The service | The journey
+q: detail | Why did visitors leave after a while? | The elder asked them to | *The cell was too small, so they made room for others | The service ended | It got dark
+q: tone | The atmosphere is | *solemn and serene, full of ritual | anxious and chaotic | comic | angry
+sum: Before dawn Alyosha is woken: the elder, weak but serene and joyful, says he may not live through the day and asks to confess and take communion. Unction follows as monks fill his cell; people come from the monastery, and after the service the elder says goodbye to everyone, with Alyosha at his side.
+
+=== add: gogol-revizor-1
+1| (Mayor:) "I have invited you, gentlemen, in order to give you some [most unpleasant]{пренеприятное} news: an [inspector]{ревизор} is coming to us."
+2| Ammos Fyodorovich.
+3| "What, an inspector?"
+4| Artemy Filippovich.
+5| "What, an inspector?"
+6| [Mayor]{городничий}.
+7| "An inspector from Petersburg, [incognito]{инкогнито}.
+8| And with secret [orders]{предписаньем}, too."
+9| Ammos Fyodorovich.
+10| "[Well, there you go]{вот те на}!"
+11| Artemy Filippovich.
+12| "As if we didn't have enough to worry about!"
+13| Luka Lukich.
+14| "Lord God! And with secret orders too!"
+15| Mayor.
+16| "It's as if I had a [premonition]{предчувствовал}: all last night I dreamed of two extraordinary [rats]{крысы}.
+17| Truly, I've never seen [such]{этаких} ones: black, of unnatural size! They came, [sniffed]{понюхали}, and went away."
+note: Вот те на! | well, there you go! | An exclamation of unpleasant surprise; «те» is a colloquial form of «тебе».
+note: Вот не было заботы, так подай! | as if we didn't have enough to worry about! | A proverb-like phrase: trouble arrives out of nowhere.
+note: городничий | mayor, town governor | The head of a provincial town in tsarist Russia, appointed rather than elected.
+q: main | What is the news that opens the play? | The mayor is retiring | *A government inspector is secretly coming from Petersburg | War has been declared | Two rats were caught
+q: detail | Why is the news especially alarming? | The inspector is a relative | *He is coming incognito and with secret orders | He is coming tomorrow | He is very old
+q: inference | Why do the officials panic? | They love surprises | *They have things to hide | They want promotion | They don't understand the word
+q: tone | The scene is | *comic, with officials' exaggerated panic | tragic | romantic | calm
+sum: The mayor announces to the town officials the "most unpleasant news": a government inspector from Petersburg is on his way incognito, with secret orders. The officials echo him in alarm, and the mayor recalls his ominous dream of two huge black rats.
+
+=== add: turgenev-gnezdo-1
+1| The bright spring day was [drawing toward]{клонился} evening; small pink clouds stood high in the clear sky and seemed not to drift by but to go away into the very [depths]{глубь} of the [azure]{лазури}.
+2| In front of the open window of a handsome house on one of the [outermost]{крайних} streets of the provincial town of O... (this was in 1842), two women were sitting: one about fifty, the other already an old woman of seventy.
+3| The first of them was called Marya Dmitrievna Kalitina.
+4| Her husband, a former provincial [prosecutor]{прокурор}, a well-known [operator]{делец} in his day, a [brisk]{бойкий} and decisive man, [bilious]{желчный} and stubborn, had died some ten years before.
+5| He had received a [decent]{изрядное} education and studied at university, but, born into a poor [class]{сословии}, he early understood the need [to make his way]{проложить себе дорогу} and [line his pockets]{набить деньгу}.
+6| Marya Dmitrievna had married him for love: he was [not bad-looking]{недурен собою}, clever and, when he wished, very [charming]{любезен}.
+note: набить деньгу | to line one's pockets | Colloquial and disapproving: to amass money.
+note: делец | operator, wheeler-dealer | A businesslike, often unscrupulous man of affairs.
+note: недурен собою | not bad-looking | An old phrase: «хорош собою» means handsome.
+q: main | What does the opening present? | *A spring evening and the background of Marya Dmitrievna and her late husband | A wedding | A trip to Moscow | A court case
+q: detail | What was Marya Dmitrievna's husband? | A doctor | *A provincial prosecutor | A landowner | A priest
+q: inference | What does "line his pockets" suggest about the husband? | He was generous | *He was ambitious and pursued money | He was poor all his life | He gave money to the church
+sum: On a bright spring evening in 1842, two women sit by an open window in a provincial town. The younger, Marya Dmitrievna Kalitina, is the widow of a prosecutor, a brisk, bilious, stubborn man of poor birth who set out early to make his way and his fortune; she married him for love.
+
+=== add: pushkin-dubrovsky-1
+1| Some years ago, on one of his [estates]{поместий}, there lived an old-style Russian [gentleman]{барин}, Kirila Petrovich Troekurov.
+2| His wealth, [noble]{знатный} [lineage]{род} and connections gave him great [weight]{вес} in the [provinces]{губерниях} where his property lay.
+3| His neighbors were glad to [indulge]{угождать} his slightest [whims]{прихотям}; provincial officials [trembled]{трепетали} at his name; Kirila Petrovich accepted signs of [servility]{подобострастия} as his [due]{надлежащую} [tribute]{дань}; his house was always full of guests ready to [amuse]{тешить} his [lordly]{барскую} [idleness]{праздность}, sharing his noisy and sometimes [riotous]{буйные} [entertainments]{увеселения}.
+4| No one [dared]{дерзал} refuse his invitation or fail to appear with due respect at the village of Pokrovskoye on certain days.
+5| In his domestic life Kirila Petrovich showed all the [vices]{пороки} of an uneducated man.
+6| [Spoiled]{избалованный} by everything around him, he was used to giving free rein to every [impulse]{порывам} of his [fiery]{пылкого} temper and every [whim]{затеям} of his rather [limited]{ограниченного} mind.
+7| Despite the extraordinary strength of his physical [faculties]{способностей}, twice a week he suffered from [gluttony]{обжорства} and every evening he was [tipsy]{навеселе}.
+note: навеселе | tipsy | Literally "in good spirits." A mild word for slightly drunk.
+note: надлежащую дань | (his) due tribute | «Надлежащий» means proper, appropriate; legal Russian uses «надлежащим образом», properly.
+note: давать полную волю | to give free rein | «Дать волю чувствам» means to let one's feelings run free.
+q: main | Who is described? | A poor neighbor | *Troekurov, a rich, spoiled and domineering landowner | A provincial official | A young officer
+q: detail | How do officials react to his name? | They laugh | *They tremble | They ignore it | They complain
+q: tone | The narrator's portrait of Troekurov is | admiring | *critical and ironic | neutral | affectionate
+sum: Kirila Troekurov, an old-style landowner, owes his power to wealth, noble birth and connections: neighbors cater to his whims, officials fear him, and his house is full of guests at his riotous parties. Spoiled and poorly educated, he indulges every impulse, overeats twice a week and is tipsy every evening.

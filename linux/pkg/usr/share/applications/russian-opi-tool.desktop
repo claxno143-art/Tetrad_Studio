@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=OPI Memory Tool
+Comment=Practice scripts, templates and mock interviews for the Russian OPI
+Exec=russian-opi-tool
+Icon=russian-opi-tool
+StartupWMClass=tetrad-studio
+Categories=Education;Languages;
+Terminal=false
+NoDisplay=true

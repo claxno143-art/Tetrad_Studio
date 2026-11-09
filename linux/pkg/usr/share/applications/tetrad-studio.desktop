@@ -1,0 +1,28 @@
+[Desktop Entry]
+Type=Application
+Name=Tetrad Studio
+GenericName=Russian Study Suite
+Comment=Open the Russian Reader, List Trainer or OPI Memory Tool
+Exec=tetrad-studio
+Icon=tetrad-studio
+StartupWMClass=tetrad-studio
+Categories=Education;Languages;
+Keywords=Tetrad;reader;reading;Russian;OPI;flashcards;vocabulary;list trainer;
+Terminal=false
+Actions=reader;list-trainer;opi-tool;opi-example;
+
+[Desktop Action reader]
+Name=Open Russian Reader
+Exec=russian-reader
+
+[Desktop Action list-trainer]
+Name=Open List Trainer
+Exec=russian-list-trainer
+
+[Desktop Action opi-tool]
+Name=Open OPI Memory Tool
+Exec=russian-opi-tool
+
+[Desktop Action opi-example]
+Name=Open OPI Worked Example
+Exec=russian-opi-example

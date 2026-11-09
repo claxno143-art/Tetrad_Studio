@@ -1,0 +1,20 @@
+Reader content and word data
+
+These are licensed under Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/:
+
+- app/reader-data.js
+- reader-build/content/, reader-build/adds/ and reader-build/data/
+
+They include material adapted from:
+- OpenRussian dictionary (https://en.openrussian.org), CC BY-SA 4.0
+- hermitdave/FrequencyWords, OpenSubtitles 2018 Russian list, CC BY-SA 4.0
+- OpenCorpora dictionaries via pymorphy3 (lemmatization), CC BY-SA
+
+The literary excerpts (Pushkin, Lermontov, Gogol, Turgenev, Tolstoy,
+Dostoevsky, Chekhov and others) are in the public domain. Their English
+translations and notes were written for this project and fall under the
+CC BY-SA 4.0 license above.
+
+If you share or adapt this content, credit "Tetrad Studio" and the sources
+above, and share your changes under the same license.

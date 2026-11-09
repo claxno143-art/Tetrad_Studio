@@ -1,0 +1,150 @@
+=== id: mech-head-gasket
+title: Пробило прокладку ГБЦ
+level: 3
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Прокладка головки блока цилиндров разделяет блок и головку и герметизирует камеры сгорания, масляные и охлаждающие каналы. || The [cylinder head gasket]{прокладка головки блока цилиндров} separates the block and the head and [seals]{герметизирует} the [combustion chambers]{камеры сгорания}, the oil passages and the [coolant]{охлаждающие} [channels]{каналы}.
+ru: Чаще всего её пробивает из-за перегрева двигателя, неправильной затяжки болтов или детонации. || Most often it [blows]{пробивает} because of engine [overheating]{перегрева}, incorrect [bolt]{болтов} [torquing]{затяжки}, or [detonation]{детонации}.
+ru: Признаки неисправности хорошо известны: белый дым из выхлопной трубы, падение уровня антифриза без видимых подтёков, эмульсия на крышке маслозаливной горловины и пузырьки в расширительном бачке. || The [symptoms]{признаки} of the fault are well known: white smoke from the [exhaust pipe]{выхлопной трубы}, a falling [antifreeze]{антифриза} level with no visible [leaks]{подтёков}, a [milky emulsion]{эмульсия} on the [oil filler cap]{крышке маслозаливной горловины}, and [bubbles]{пузырьки} in the [expansion tank]{расширительном бачке}.
+ru: Перед заменой прокладки головку обязательно проверяют на плоскость: если её повело, привалочную поверхность придётся фрезеровать. || Before the gasket is replaced, the head must be checked for [flatness]{плоскость}: if it has [warped]{повело}, the [mating surface]{привалочную поверхность} will have to be [milled]{фрезеровать}.
+ru: Болты головки затягивают динамометрическим ключом строго в указанной производителем последовательности, от центра к краям, в несколько приёмов. || The head bolts are tightened with a [torque wrench]{динамометрическим ключом} strictly in the [sequence]{последовательности} specified by the manufacturer, from the center outward, [in several stages]{в несколько приёмов}.
+ru: Экономить на этом этапе — значит рисковать повторным ремонтом. || [Cutting corners]{экономить} at this stage means risking a [repeat]{повторным} repair.
+note: её повело | it has warped | «Вести» used impersonally: «доску повело» means the board warped. Common shop slang for heat distortion.
+note: головки блока цилиндров | cylinder head | Mechanics shorten it to «ГБЦ» or just «головка».
+note: в несколько приёмов | in several passes | «Приём» here means a pass or stage: «выпил в три приёма» means he drank it in three goes.
+q: main | What is this text about? | Choosing engine oil | *Causes, symptoms and proper replacement of a blown head gasket | How to install a turbocharger | Changing brake pads
+q: detail | Which is NOT listed as a sign of a blown gasket? | White exhaust smoke | Emulsion on the oil filler cap | *A squealing belt | Bubbles in the expansion tank
+q: detail | What must be done if the head has warped? | Throw it away | *Mill the mating surface flat | Use two gaskets | Add sealant
+q: key | How should the head bolts be tightened? | As tight as possible by hand | *With a torque wrench, in sequence from the center out, in stages | From one end to the other in one pass | With an impact gun
+sum: The head gasket seals combustion chambers and oil and coolant passages; it usually fails from overheating, wrong bolt torque or detonation. Signs include white smoke, coolant loss, emulsion under the oil cap and bubbles in the tank. Check the head for flatness (mill it if warped) and torque the bolts in sequence, center out, in stages.
+
+=== id: mech-turbo
+title: Турбонаддув: что нужно знать
+level: 3+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Турбокомпрессор использует энергию выхлопных газов: они раскручивают турбинное колесо, а оно, в свою очередь, вращает крыльчатку компрессора, нагнетающую воздух во впускной коллектор. || A [turbocharger]{турбокомпрессор} uses the energy of the [exhaust gases]{выхлопных газов}: they spin up the [turbine wheel]{турбинное колесо}, which [in turn]{в свою очередь} drives the [compressor wheel]{крыльчатку компрессора}, which [forces]{нагнетающую} air into the [intake manifold]{впускной коллектор}.
+ru: Чем больше воздуха попадает в цилиндры, тем больше топлива можно сжечь и тем выше мощность. || The more air gets into the cylinders, the more fuel can be [burned]{сжечь}, and the higher the [power]{мощность}.
+ru: Однако при сжатии воздух нагревается, а горячий воздух менее плотный, поэтому после турбины ставят промежуточный охладитель — интеркулер. || However, air [heats up]{нагревается} when [compressed]{сжатии}, and hot air is less [dense]{плотный}, so an [intercooler]{промежуточный охладитель} is fitted after the turbo.
+ru: Давление наддува ограничивает перепускной клапан, который отводит часть газов в обход турбины. || [Boost pressure]{давление наддува} is limited by the [wastegate]{перепускной клапан}, which [diverts]{отводит} part of the gases [around]{в обход} the turbine.
+ru: Двигатель, изначально рассчитанный на атмосферный впуск, обычно требует доработки: кованых поршней, усиленных шатунов, понижения степени сжатия и, конечно, грамотной настройки блока управления. || An engine originally designed for [natural aspiration]{атмосферный впуск} usually needs [upgrades]{доработки}: [forged]{кованых} [pistons]{поршней}, [strengthened]{усиленных} [connecting rods]{шатунов}, a lower [compression ratio]{степени сжатия} and, of course, [competent]{грамотной} [tuning]{настройки} of the [ECU]{блока управления}.
+ru: Без этого лишние лошадиные силы быстро превращаются в прогоревший поршень. || Without that, the extra [horsepower]{лошадиные силы} quickly turns into a [burned-through]{прогоревший} piston.
+note: в свою очередь | in turn | A common linking phrase: «а он, в свою очередь…» means "and he, in turn…".
+note: грамотной настройки | competent tuning | «Грамотный» literally means literate. Colloquially it means competent, done right: «грамотный специалист», «грамотное решение».
+q: main | What is the main point of the text? | Turbos are dangerous and should be avoided | *How a turbo works and what an engine needs to handle boost | How to buy a used car | Why intercoolers are unnecessary
+q: detail | What drives the turbine wheel? | The crankshaft belt | *Exhaust gases | An electric motor | The fuel pump
+q: detail | Why is an intercooler used? | To heat the fuel | *Compressed air gets hot and less dense, so it needs cooling | To cool the oil | To reduce noise
+q: inference | What does "turns into a burned-through piston" warn about? | Pistons are cheap | *Adding boost without upgrades and tuning will damage the engine | Turbos make engines quieter | Fuel quality doesn't matter
+sum: A turbo uses exhaust gas to spin a compressor that forces more air into the engine, allowing more fuel and power. Compressed air gets hot, so an intercooler cools it, and a wastegate limits boost. A naturally aspirated engine needs forged pistons, stronger rods, lower compression and proper ECU tuning, or it will burn a piston.
+
+=== id: mech-gearbox
+title: Механическая коробка передач
+level: 3
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Механическая коробка передач изменяет крутящий момент и частоту вращения, передаваемые от двигателя к колёсам. || A [manual gearbox]{механическая коробка передач} changes the [torque]{крутящий момент} and the [rotational speed]{частоту вращения} passed from the engine to the wheels.
+ru: Между двигателем и коробкой стоит сцепление: когда водитель выжимает педаль, диск сцепления отходит от маховика и передача крутящего момента прерывается. || Between the engine and the gearbox sits the [clutch]{сцепление}: when the driver [presses]{выжимает} the pedal, the [clutch disc]{диск сцепления} moves away from the [flywheel]{маховика} and the transfer of torque is [interrupted]{прерывается}.
+ru: Синхронизаторы выравнивают скорость вращения шестерни и вала, чтобы передача включалась плавно, без хруста. || [Synchronizers]{синхронизаторы} [match]{выравнивают} the speed of the [gear]{шестерни} and the [shaft]{вала} so that the gear [engages]{включалась} smoothly, without [grinding]{хруста}.
+ru: Если вторая передача включается с трудом или со скрежетом, скорее всего, изношены синхронизаторы. || If second gear goes in [with difficulty]{с трудом} or with a [crunch]{скрежетом}, the synchronizers are most likely [worn]{изношены}.
+ru: Перед установкой более мощного двигателя стоит подумать об усиленной корзине сцепления и о дифференциале повышенного трения. || Before fitting a more powerful engine, it's worth thinking about a [heavy-duty]{усиленной} [pressure plate]{корзине сцепления} and a [limited-slip]{повышенного трения} [differential]{дифференциале}.
+note: выжимает педаль | presses the (clutch) pedal | «Выжать сцепление» means to press the clutch all the way down. The everyday meaning of «выжимать» is to wring out, squeeze.
+note: корзина сцепления | clutch pressure plate | Literally "clutch basket," named for its shape.
+q: main | What does the text explain? | How to drive in snow | *How a manual gearbox and clutch work, and common problems | How to change oil | The history of gearboxes
+q: detail | What do synchronizers do? | Cool the gearbox | *Match gear and shaft speeds so gears engage smoothly | Lock the wheels | Measure speed
+q: inference | Why consider a heavy-duty clutch before adding power? | It is cheaper | *A stock clutch may not handle the extra torque | It improves fuel economy | It reduces weight
+sum: A manual gearbox changes torque and speed between engine and wheels; the clutch interrupts drive when the pedal is pressed, and synchronizers let gears engage smoothly. Hard or crunching shifts point to worn synchros, and more power calls for a stronger clutch and a limited-slip differential.
+
+=== id: mech-welding
+title: Сварка: основы
+level: 3+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: При дуговой сварке металл плавится под действием электрической дуги, возникающей между электродом и свариваемыми деталями. || In [arc welding]{дуговой сварке} the metal [melts]{плавится} under the action of an electric [arc]{дуги} that forms between the [electrode]{электродом} and the parts being [welded]{свариваемыми}.
+ru: Полуавтоматическая сварка в среде защитного газа удобна для тонкого кузовного металла, поскольку даёт аккуратный шов и меньше коробит деталь. || [MIG welding]{полуавтоматическая сварка} in a [shielding gas]{защитного газа} [atmosphere]{среде} is convenient for thin body [panels]{кузовного металла}, since it gives a neat [weld]{шов} and [warps]{коробит} the part less.
+ru: Аргонодуговая сварка неплавящимся электродом сложнее в освоении, зато позволяет варить нержавеющую сталь и алюминий с высочайшим качеством. || [TIG welding]{аргонодуговая сварка} with a [non-consumable]{неплавящимся} electrode is harder to [master]{освоении}, but it lets you weld [stainless steel]{нержавеющую сталь} and [aluminum]{алюминий} at the very highest quality.
+ru: Перед сваркой кромки зачищают до блеска, удаляя ржавчину, краску и окалину, иначе в шве появятся поры и непровар. || Before welding, the [edges]{кромки} are [cleaned]{зачищают} to bare metal, removing [rust]{ржавчину}, paint and [mill scale]{окалину}; otherwise [porosity]{поры} and [lack of fusion]{непровар} will appear in the weld.
+ru: Сварщик обязан работать в маске со светофильтром, в несгораемой одежде и краге, а рабочее место должно хорошо проветриваться. || A [welder]{сварщик} must work in a [helmet]{маске} with a [filter lens]{светофильтром}, in [fireproof]{несгораемой} clothing and [gauntlets]{краге}, and the workplace must be well [ventilated]{проветриваться}.
+ru: Промышленные сварщики сдают аттестацию: образцы их швов разрезают и испытывают на изгиб и разрыв. || Industrial welders go through [certification]{аттестацию}: [samples]{образцы} of their welds are cut open and tested for [bending]{изгиб} and [tensile strength]{разрыв}.
+note: непровар | lack of fusion, incomplete penetration | A weld defect where the metal hasn't fused through. From «проварить», to weld through.
+note: коробит | warps, distorts | «Коробить» means to warp from heat or moisture. Figuratively, «меня коробит от его слов» means his words make me cringe.
+q: main | What is the text about? | The history of welding | *Main welding methods, preparation, safety and certification | How to paint a car | How to build a garage
+q: detail | Which method suits thin body panels? | Gas welding | *MIG welding in shielding gas | Stick welding only | Soldering
+q: detail | What happens if the edges aren't cleaned? | The weld gets stronger | *Porosity and lack of fusion appear | The arc won't start | Nothing changes
+q: key | How are industrial welders certified? | By a written exam only | *Their sample welds are cut and bend- and tensile-tested | By years of experience | By a doctor's note
+sum: Arc welding melts metal with an electric arc. MIG in shielding gas suits thin body metal, while TIG is harder to learn but excellent for stainless steel and aluminum. Edges must be cleaned to avoid porosity and lack of fusion; welders need a filtered helmet, fireproof clothing and ventilation, and industrial welders are certified by destructive tests of their welds.
+
+=== id: mech-brakes
+title: Тормозная система
+level: 2+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Когда водитель нажимает на педаль тормоза, главный тормозной цилиндр создаёт давление в тормозной жидкости. || When the driver presses the [brake]{тормоза} pedal, the [master cylinder]{главный тормозной цилиндр} creates pressure in the [brake fluid]{тормозной жидкости}.
+ru: Жидкость передаёт давление к суппортам, и колодки прижимаются к тормозному диску. || The fluid [transmits]{передаёт} the pressure to the [calipers]{суппортам}, and the [pads]{колодки} [press against]{прижимаются} the brake [disc]{диску}.
+ru: Тормозная жидкость со временем впитывает влагу, поэтому её меняют раз в два-три года. || Over time brake fluid [absorbs]{впитывает} [moisture]{влагу}, so it is changed every two or three years.
+ru: Если педаль стала мягкой и проваливается, в системе, скорее всего, есть воздух, и её нужно прокачать. || If the pedal has become soft and [sinks]{проваливается}, there is most likely air in the system and it needs to be [bled]{прокачать}.
+ru: Скрип при торможении обычно означает, что колодки износились. || [Squealing]{скрип} when braking usually means that the pads have [worn down]{износились}.
+note: прокачать | to bleed (the brakes) | «Прокачать» means to pump through. In gamer slang «прокачать персонажа» means to level up a character.
+q: main | What is this text about? | Engine cooling | *How brakes work and simple signs of trouble | Tire pressure | Headlights
+q: detail | How often should brake fluid be changed? | Every month | *Every two or three years | Never | Every ten years
+q: detail | What does a soft, sinking pedal usually mean? | Worn tires | *Air in the system | Too much fluid | A dead battery
+sum: Pressing the brake pedal builds fluid pressure that pushes the pads against the disc. Fluid absorbs moisture and should be changed every 2–3 years; a soft pedal means air that must be bled out, and squealing means worn pads.
+
+=== id: mech-bodywork
+title: Кузовной ремонт и покраска
+level: 3+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Покраска начинается задолго до того, как в руках окажется краскопульт. || Painting starts long before the [spray gun]{краскопульт} ends up in your hands.
+ru: Сначала вмятины вытягивают споттером или выправляют рихтовочным молотком, затем ржавчину вырезают и вваривают заплаты из нового металла. || First, [dents]{вмятины} are pulled out with a [stud welder]{споттером} or straightened with a [body hammer]{рихтовочным молотком}; then rust is cut out and [patches]{заплаты} of new metal are [welded in]{вваривают}.
+ru: На выровненную поверхность наносят шпатлёвку тонкими слоями, каждый из которых шлифуют, постепенно переходя на более мелкую абразивную бумагу. || [Body filler]{шпатлёвку} is applied in thin [layers]{слоями} to the [leveled]{выровненную} surface, each of which is [sanded]{шлифуют}, gradually moving to finer [abrasive paper]{абразивную бумагу}.
+ru: Потом кладут грунт: он защищает металл от коррозии и выравнивает мелкие риски. || Then [primer]{грунт} is laid on: it protects the metal from [corrosion]{коррозии} and fills in fine [scratches]{риски}.
+ru: Базовую эмаль наносят в два-три слоя, выдерживая межслойную сушку, а сверху — прозрачный лак, который придаёт глянец и глубину цвета. || The [base coat]{базовую эмаль} goes on in two or three coats, allowing [flash time]{межслойную сушку} between them, and on top comes a [clear coat]{прозрачный лак} that gives [gloss]{глянец} and [depth]{глубину} of color.
+ru: Пыль — главный враг маляра, поэтому красить лучше в камере с принудительной вентиляцией. || Dust is a [painter's]{маляра} main enemy, so it's best to paint in a booth with [forced]{принудительной} ventilation.
+note: риски | fine scratches, sanding marks | «Риска» here is a fine line or scratch, not «риск», risk. Note the stress: ри́ска.
+note: межслойная сушка | flash time between coats | The waiting time between paint layers so solvents can evaporate.
+q: main | What does the text describe? | Choosing car colors | *The sequence of body repair and painting | How to wash a car | Rust-proofing chemicals
+q: detail | What comes right after primer? | Body filler | *Base coat in two or three layers | Welding | Polishing
+q: inference | Why paint in a booth with forced ventilation? | It dries faster in the cold | *To keep dust off the fresh paint | It's required by law | To save paint
+sum: Painting starts with bodywork: pulling dents, cutting out rust and welding in patches, then thin layers of filler sanded progressively finer. Primer protects and smooths the metal, base coat goes on in 2–3 coats with drying between, and clear coat adds gloss. Dust is the enemy, so a ventilated booth is best.
+
+=== id: mech-diagnostics
+title: Диагностика по сканеру
+level: 3
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Современный автомобиль постоянно контролирует работу двигателя с помощью десятков датчиков: кислородного, детонации, положения коленчатого вала, массового расхода воздуха. || A modern car constantly [monitors]{контролирует} the engine through dozens of [sensors]{датчиков}: the [oxygen]{кислородного} sensor, the [knock]{детонации} sensor, the [crankshaft position]{положения коленчатого вала} sensor, the [mass airflow]{массового расхода воздуха} sensor.
+ru: Если показания выходят за допустимые пределы, блок управления записывает код неисправности и зажигает лампу «Проверь двигатель». || If [readings]{показания} go beyond [acceptable]{допустимые} [limits]{пределы}, the control unit stores a [fault code]{код неисправности} and lights the "Check Engine" lamp.
+ru: Сканер, подключённый к диагностическому разъёму, считывает коды и показывает текущие параметры в реальном времени. || A [scanner]{сканер} [connected]{подключённый} to the [diagnostic port]{диагностическому разъёму} [reads]{считывает} the codes and shows current [parameters]{параметры} [in real time]{в реальном времени}.
+ru: Однако код указывает лишь на симптом, а не на причину: ошибка по бедной смеси может быть вызвана и подсосом воздуха, и слабым бензонасосом, и забитыми форсунками. || However, a code only points to a [symptom]{симптом}, not the [cause]{причину}: a [lean mixture]{бедной смеси} code may be caused by a [vacuum leak]{подсосом воздуха}, a weak [fuel pump]{бензонасосом}, or [clogged]{забитыми} [injectors]{форсунками}.
+ru: Поэтому опытный диагност сначала проверяет простые и дешёвые версии, а уже потом меняет детали. || That's why an experienced [diagnostician]{диагност} first checks the simple and cheap [possibilities]{версии}, and only then replaces parts.
+note: подсос воздуха | vacuum leak | «Подсос» is unmetered air being sucked into the intake through a crack or loose hose.
+note: бедная смесь | lean mixture | Too much air for the fuel. The opposite is «богатая смесь», a rich mixture.
+q: main | What is the key lesson of the text? | Scanners are useless | *A fault code shows a symptom, so diagnosis must find the real cause | Always replace the sensor named in the code | Check Engine lights are usually false
+q: detail | Which is NOT listed as a possible cause of a lean code? | A vacuum leak | A weak fuel pump | Clogged injectors | *Worn brake pads
+q: inference | Why check cheap possibilities first? | Mechanics are lazy | *To avoid wasting money replacing parts that aren't faulty | The law requires it | Cheap parts break more often
+sum: Cars monitor engines with many sensors and store fault codes when readings go out of range; a scanner reads codes and live data. But a code is a symptom, not a cause; a lean code might come from a vacuum leak, weak pump or clogged injectors, so good diagnosticians check simple, cheap causes before replacing parts.
+
+=== id: mech-suspension
+title: Подвеска и развал-схождение
+level: 3+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Подвеска связывает колёса с кузовом и гасит колебания, возникающие при езде по неровной дороге. || The [suspension]{подвеска} connects the wheels to the body and [damps]{гасит} the [oscillations]{колебания} that arise when driving on an [uneven]{неровной} road.
+ru: Пружины принимают на себя удары, а амортизаторы не дают кузову раскачиваться. || The [springs]{пружины} [absorb]{принимают на себя} the [impacts]{удары}, while the [shock absorbers]{амортизаторы} keep the body from [rocking]{раскачиваться}.
+ru: Изношенные сайлентблоки, шаровые опоры и рулевые наконечники вызывают стук, люфт в руле и неравномерный износ шин. || Worn [bushings]{сайлентблоки}, [ball joints]{шаровые опоры} and [tie rod ends]{рулевые наконечники} cause [knocking]{стук}, [play]{люфт} in the steering wheel and [uneven]{неравномерный} tire [wear]{износ}.
+ru: После любого вмешательства в подвеску необходимо отрегулировать углы установки колёс — так называемый развал-схождение. || After any work on the suspension, the [wheel alignment angles]{углы установки колёс} must be [adjusted]{отрегулировать}: the so-called [camber and toe]{развал-схождение}.
+ru: Занижение автомобиля улучшает управляемость, но уменьшает ход подвески, и на наших дорогах это нередко заканчивается пробитым поддоном картера. || [Lowering]{занижение} a car improves [handling]{управляемость} but reduces suspension [travel]{ход}, and on our roads this often ends with a [punctured]{пробитым} [oil pan]{поддоном картера}.
+note: развал-схождение | wheel alignment | «Развал» is camber (the tilt of the wheel) and «схождение» is toe (whether the wheels point in or out). Together it's the everyday name for alignment.
+note: люфт | play, slack | From German «Luft». Free movement in a joint: «люфт в руле» is play in the steering.
+q: main | What is the text about? | Engine tuning | *What the suspension does, signs of wear, alignment and lowering | Tire brands | Road construction
+q: detail | What do shock absorbers do? | Hold the car up | *Stop the body from rocking | Steer the wheels | Cool the brakes
+q: inference | What is the warning about lowering a car? | It is illegal | *Reduced travel can mean scraping or holing the oil pan on bad roads | It ruins handling | It makes tires last longer
+sum: Suspension connects wheels to the body and damps bumps: springs take the hits and shocks stop the body bouncing. Worn bushings, ball joints and tie rod ends cause knocks, steering play and uneven tire wear. After suspension work, alignment must be set, and lowering a car improves handling but can cost you an oil pan on rough roads.

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Russian List Trainer
+Comment=Flashcards, quizzes and root drills for Russian vocabulary lists
+Exec=russian-list-trainer
+Icon=russian-list-trainer
+StartupWMClass=tetrad-studio
+Categories=Education;Languages;
+Terminal=false
+NoDisplay=true

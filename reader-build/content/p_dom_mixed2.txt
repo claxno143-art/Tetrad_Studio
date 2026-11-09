@@ -1,0 +1,257 @@
+=== id: biz-startup
+title: Бизнес-план за один вечер
+level: 3
+genre: society
+source_note: Written for this app.
+---
+ru: Прежде чем открывать собственное дело, стоит честно ответить на несколько вопросов: кто ваш клиент, сколько он готов платить и почему он придёт именно к вам, а не к конкурентам. || Before opening your own business, it's worth answering a few questions honestly: who is your [customer]{клиент}, how much is he [willing]{готов} to pay, and why will he come to you rather than to your [competitors]{конкурентам}?
+ru: Затем нужно оценить начальные вложения: аренду помещения, оборудование, лицензии, закупку материалов и зарплату на первые месяцы, пока выручка ещё мала. || Then you need to [estimate]{оценить} the [start-up investment]{начальные вложения}: renting [premises]{помещения}, [equipment]{оборудование}, [licenses]{лицензии}, buying [materials]{материалов} and [wages]{зарплату} for the first months, while [revenue]{выручка} is still small.
+ru: Точка безубыточности показывает, сколько заказов в месяц необходимо, чтобы доходы покрывали расходы. || The [break-even point]{точка безубыточности} shows how many [orders]{заказов} a month you need so that [income]{доходы} [covers]{покрывали} [expenses]{расходы}.
+ru: Опытные предприниматели советуют закладывать подушку безопасности хотя бы на полгода: непредвиденные траты случаются всегда. || Experienced [entrepreneurs]{предприниматели} advise [building in]{закладывать} a [safety cushion]{подушку безопасности} for at least six months: [unforeseen]{непредвиденные} [costs]{траты} always happen.
+ru: Наконец, важно выбрать форму регистрации: индивидуальный предприниматель платит меньше налогов и отчётов, но отвечает по долгам всем своим имуществом. || Finally, it's important to choose the [form of registration]{форму регистрации}: a [sole proprietor]{индивидуальный предприниматель} pays fewer taxes and files fewer [reports]{отчётов}, but is [liable]{отвечает} for debts with all his [property]{имуществом}.
+note: подушка безопасности | safety cushion, emergency fund | Also the word for a car's airbag. In finance it's a reserve of money.
+note: индивидуальный предприниматель | sole proprietor | Usually shortened to «ИП». The common alternative is an «ООО», a limited liability company.
+q: main | What does the text offer? | A success story | *Basic steps for planning a small business | Tax law details | Advice on hiring
+q: detail | What does the break-even point show? | The best price | *How many orders are needed for income to cover costs | The number of competitors | The tax rate
+q: inference | Why might a sole proprietor choose an LLC instead? | To pay more taxes | *To avoid risking all personal property for business debts | To file fewer reports | It's required by law
+sum: Before starting a business, define your customer, price and advantage over competitors, estimate start-up costs, and calculate the break-even point. Keep at least six months of reserves for surprises, and choose a legal form carefully: a sole proprietor has less paperwork but is personally liable for debts.
+
+=== id: tech-software
+title: Как устроена разработка ПО
+level: 3+
+genre: technical
+source_note: Written for this app.
+---
+ru: Современная разработка программного обеспечения редко обходится без системы контроля версий: каждый программист вносит изменения в свою ветку, а затем они сливаются с основной после проверки коллегами. || Modern [software]{программного обеспечения} development rarely [does without]{обходится без} a [version control]{контроля версий} system: each programmer makes changes in his own [branch]{ветку}, and they are then [merged]{сливаются} into the main one after [review]{проверки} by colleagues.
+ru: Автоматические тесты запускаются при каждом изменении и сразу сигнализируют, если что-то сломалось. || [Automated tests]{автоматические тесты} [run]{запускаются} on every change and immediately [signal]{сигнализируют} if something has broken.
+ru: Такой подход называют непрерывной интеграцией. || This approach is called [continuous integration]{непрерывной интеграцией}.
+ru: Код, который сложно читать, обходится дороже, чем кажется: через полгода даже автор не вспомнит, зачем написал ту или иную строчку. || Code that is hard to read [ends up costing]{обходится} more than it seems: in six months even the [author]{автор} won't remember why he wrote this or that [line]{строчку}.
+ru: Поэтому опытные разработчики уделяют много внимания именованию переменных, комментариям и документации. || That's why experienced [developers]{разработчики} [pay]{уделяют} a lot of attention to the [naming]{именованию} of [variables]{переменных}, [comments]{комментариям} and [documentation]{документации}.
+ru: Технический долг — это накопленные упрощения и костыли, которые рано или поздно придётся исправлять. || [Technical debt]{технический долг} is the [accumulated]{накопленные} [shortcuts]{упрощения} and [hacks]{костыли} that sooner or later will have to be fixed.
+note: костыли | hacks, quick fixes | Literally "crutches." Programmers' slang for an ugly workaround.
+note: обходится | costs; does without | «Обходиться» has two senses here: «обходиться без» means to do without, and «обходиться дороже» means to cost more.
+q: main | What is the text about? | Choosing a programming language | *Good practices in software development | Computer hardware | Hiring programmers
+q: detail | What is continuous integration? | Writing code without tests | *Running automated tests on every change | Merging all branches once a year | Working in pairs
+q: inference | Why is technical debt called "debt"? | It costs money to hire | *Shortcuts taken now must be "paid back" with work later | It's borrowed code | It belongs to the bank
+sum: Developers work in separate branches under version control and merge after peer review, while automated tests run on every change (continuous integration). Unreadable code is costly later, so naming, comments and documentation matter, and accumulated shortcuts and hacks form technical debt that must eventually be repaid.
+
+=== id: avia-takeoff
+title: Взлёт: что происходит в кабине
+level: 3+
+genre: technical
+source_note: Written for this app.
+---
+ru: Перед взлётом экипаж выполняет предполётную подготовку по контрольной карте, проверяя закрылки, триммеры, топливо и показания приборов. || Before [takeoff]{взлётом} the [crew]{экипаж} carries out [pre-flight]{предполётную} [preparation]{подготовку} from a [checklist]{контрольной карте}, checking the [flaps]{закрылки}, [trim]{триммеры}, fuel and [instrument]{приборов} readings.
+ru: Получив разрешение диспетчера, командир выводит двигатели на взлётный режим, и самолёт начинает разбег. || Having received [clearance]{разрешение} from the [controller]{диспетчера}, the [captain]{командир} brings the engines to [takeoff power]{взлётный режим}, and the plane begins its [takeoff roll]{разбег}.
+ru: Второй пилот громко называет скорости: по достижении скорости принятия решения прервать взлёт уже нельзя, даже если откажет двигатель. || The [first officer]{второй пилот} calls out the [speeds]{скорости}: once [decision speed]{скорости принятия решения} is [reached]{достижении}, the takeoff can no longer be [aborted]{прервать}, even if an engine [fails]{откажет}.
+ru: На скорости подъёма передней стойки пилот берёт штурвал на себя, нос задирается, и машина отрывается от полосы. || At [rotation]{подъёма передней стойки} speed the pilot [pulls back]{берёт} on the [control column]{штурвал}, the nose [pitches up]{задирается}, and the machine [lifts off]{отрывается} from the [runway]{полосы}.
+ru: После уборки шасси экипаж следит за набором высоты и переходит на связь с другим сектором управления воздушным движением. || After the [landing gear]{шасси} is [retracted]{уборки}, the crew monitors the [climb]{набором высоты} and switches to another sector of [air traffic control]{управления воздушным движением}.
+note: брать штурвал на себя | to pull back on the yoke | Literally "to take the yoke toward oneself." Figuratively, «взять штурвал» means to take control.
+note: шасси | landing gear | An indeclinable noun from French «châssis». In cars it means the chassis.
+q: main | What does the text describe? | How to become a pilot | *The steps of an airliner takeoff from the cockpit | Airport security | Weather forecasting
+q: detail | What happens after decision speed? | The takeoff can still be stopped | *The takeoff can no longer be aborted, even with an engine failure | The landing gear is lowered | The passengers are told to sit
+q: detail | What does the pilot do at rotation speed? | Pushes the yoke forward | *Pulls the yoke back so the nose lifts | Reduces engine power | Lowers the flaps
+sum: Before takeoff the crew runs the checklist on flaps, trim, fuel and instruments. With clearance, the captain sets takeoff power and the roll begins; the first officer calls speeds, and past decision speed the takeoff can't be aborted. At rotation the pilot pulls back, the plane lifts off, the gear is retracted and the crew climbs and switches to the next ATC sector.
+
+=== id: agro-harvest
+title: Урожай и погода
+level: 3
+genre: society
+source_note: Written for this app.
+---
+ru: Урожайность зерновых во многом зависит от погоды: засуха в период налива зерна может сократить сбор на треть. || The [yield]{урожайность} of [grain crops]{зерновых} depends largely on the weather: a [drought]{засуха} while the grain is [filling]{налива} can cut the [harvest]{сбор} by a third.
+ru: Поэтому фермеры всё чаще используют капельное орошение, датчики влажности почвы и спутниковые снимки полей. || That's why [farmers]{фермеры} increasingly use [drip irrigation]{капельное орошение}, soil [moisture]{влажности} sensors and [satellite images]{спутниковые снимки} of their fields.
+ru: Севооборот помогает сохранить плодородие: после пшеницы сеют бобовые, которые накапливают в почве азот. || [Crop rotation]{севооборот} helps preserve [fertility]{плодородие}: after [wheat]{пшеницы} they [sow]{сеют} [legumes]{бобовые}, which [accumulate]{накапливают} [nitrogen]{азот} in the soil.
+ru: Удобрения и средства защиты растений повышают отдачу, но их избыток вредит почве и водоёмам. || [Fertilizers]{удобрения} and [crop protection products]{средства защиты растений} [increase]{повышают} [returns]{отдачу}, but an [excess]{избыток} of them harms the soil and [bodies of water]{водоёмам}.
+ru: Цены на зерно колеблются вслед за мировым рынком, и небольшие хозяйства с трудом выдерживают неурожайные годы. || Grain prices [fluctuate]{колеблются} [following]{вслед за} the world market, and small [farms]{хозяйства} [barely survive]{с трудом выдерживают} [poor-harvest]{неурожайные} years.
+note: налива | (grain) filling | The stage when the grain head fills with starch. «Наливаться» also describes ripening fruit: «яблоки наливаются».
+note: хозяйство | farm, household, economy | A word with many senses: «сельское хозяйство» is agriculture, «фермерское хозяйство» a farm, «домашнее хозяйство» housekeeping.
+q: main | What does the text discuss? | Cooking with grain | *Factors that affect grain harvests and farming practices | The history of farming | Farm machinery prices
+q: detail | Why plant legumes after wheat? | They grow faster | *They put nitrogen back into the soil | They need no water | They sell for more
+q: inference | Why do small farms struggle in bad years? | They grow the wrong crops | *They lack reserves to survive low yields and price swings | They don't use fertilizer | They are not allowed to sell
+sum: Grain yields depend heavily on weather; drought during grain filling can cut the harvest by a third, so farmers use drip irrigation, moisture sensors and satellite imagery. Crop rotation with nitrogen-fixing legumes keeps soil fertile, fertilizers raise yields but harm soil and water in excess, and small farms struggle when prices swing and harvests fail.
+
+=== id: energy-grid
+title: Энергосистема и возобновляемые источники
+level: 4
+genre: science
+source_note: Written for this app.
+---
+ru: Энергосистема должна в каждый момент времени поддерживать баланс между выработкой и потреблением, иначе частота в сети отклоняется от номинальной и срабатывает автоматика. || A [power grid]{энергосистема} must at every moment maintain a [balance]{баланс} between [generation]{выработкой} and [consumption]{потреблением}; otherwise the [frequency]{частота} in the [network]{сети} [deviates]{отклоняется} from the [nominal]{номинальной} value and the automatic [protection]{автоматика} trips.
+ru: Атомные и угольные станции обеспечивают стабильную базовую нагрузку, но плохо приспособлены к быстрому изменению мощности. || [Nuclear]{атомные} and coal [plants]{станции} provide a [stable]{стабильную} [base load]{базовую нагрузку}, but are poorly [suited]{приспособлены} to rapid changes in output.
+ru: Выработка солнечных и ветровых электростанций зависит от погоды, поэтому их доля в энергобалансе требует резервных мощностей или систем накопления энергии. || The output of solar and wind [power plants]{электростанций} depends on the weather, so their share in the [energy mix]{энергобалансе} requires [reserve capacity]{резервных мощностей} or energy [storage]{накопления} systems.
+ru: Гидроаккумулирующие станции ночью закачивают воду в верхний бассейн, а днём, в часы пикового спроса, сбрасывают её через турбины. || [Pumped-storage]{гидроаккумулирующие} plants [pump]{закачивают} water into an upper [reservoir]{бассейн} at night, and during the day, at hours of [peak]{пикового} demand, [release]{сбрасывают} it through the [turbines]{турбины}.
+ru: Сторонники ускоренного перехода на возобновляемые источники ссылаются на снижение выбросов, противники — на рост стоимости электроэнергии и угрозу надёжности. || Supporters of a faster [transition]{перехода} to [renewable]{возобновляемые} [sources]{источники} [cite]{ссылаются} lower [emissions]{выбросов}; opponents cite rising [electricity]{электроэнергии} costs and the threat to [reliability]{надёжности}.
+note: базовая нагрузка | base load | The minimum constant demand on a grid, usually covered by plants that run around the clock.
+note: автоматика | automatic protection (systems) | Engineers' collective noun for automatic control and protection devices: «сработала автоматика».
+q: main | What is the central challenge described? | Building more coal plants | *Balancing supply and demand as renewables, which vary with weather, grow | Lowering prices for consumers | Exporting electricity
+q: detail | How does a pumped-storage plant work? | It burns gas at night | *It pumps water uphill at night and runs it through turbines at peak hours | It stores sunlight | It uses wind to pump water
+q: tone | How does the text treat the renewables debate? | It argues only for renewables | *It gives both sides' main arguments | It dismisses renewables | It doesn't mention it
+sum: A grid must balance generation and consumption at every moment or its frequency drifts and protection trips. Nuclear and coal give steady base load but adjust slowly; solar and wind vary with weather and need reserves or storage, such as pumped-storage plants that pump water up at night and release it at peak times. Supporters cite lower emissions; opponents cite cost and reliability.
+
+=== id: sport-hockey
+title: Хоккей: игра в одно касание
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Вчера в финале турнира хозяева льда уступили гостям со счётом два-три в овертайме. || Yesterday in the tournament [final]{финале} the home team [lost]{уступили} to the visitors two to three in [overtime]{овертайме}.
+ru: Первый период прошёл без голов, хотя обе команды создали несколько опасных моментов. || The first [period]{период} passed without [goals]{голов}, though both teams created several dangerous [chances]{моментов}.
+ru: Во втором периоде хозяева дважды забили в большинстве, но гости сумели отыграться. || In the second period the home team scored twice [on the power play]{в большинстве}, but the visitors managed to [come back]{отыграться}.
+ru: Решающую шайбу на четвёртой минуте овертайма забросил молодой нападающий, обыгравший защитника и вратаря. || The [deciding]{решающую} [puck]{шайбу} was [scored]{забросил} in the fourth minute of overtime by a young [forward]{нападающий}, who [beat]{обыгравший} a [defenseman]{защитника} and the [goalie]{вратаря}.
+ru: Тренер проигравшей команды сказал, что гордится своими игроками, несмотря на поражение. || The [coach]{тренер} of the losing team said he was proud of his players despite the [defeat]{поражение}.
+note: в большинстве | on the power play | «Большинство» is a majority. In hockey it's playing a man up; the opposite is «в меньшинстве».
+note: хозяева льда | the home team | Literally "masters of the ice," a sports-journalism cliché. In football it's «хозяева поля».
+q: main | What is the article about? | A hockey training camp | *A tournament final won by the visitors in overtime | A new hockey arena | A player transfer
+q: detail | What was the final score? | 3–2 to the home team | *2–3 to the visitors | 0–0 | 4–3
+q: detail | Who scored the winning goal? | The goalie | A defenseman | *A young forward | The captain
+sum: In the tournament final the visitors beat the home team 3–2 in overtime. After a scoreless first period, the hosts scored twice on the power play, the visitors came back, and a young forward won it in the fourth minute of overtime; the losing coach said he was proud of his team.
+
+=== id: art-music
+title: Рахманинов и Второй концерт
+level: 3+
+genre: history
+source_note: Written for this app.
+---
+ru: После провала Первой симфонии в 1897 году молодой Рахманинов впал в глубокую депрессию и почти три года не мог сочинять. || After the [failure]{провала} of his First [Symphony]{симфонии} in 1897, the young Rachmaninoff [fell into]{впал} a deep [depression]{депрессию} and for almost three years could not [compose]{сочинять}.
+ru: Друзья уговорили его обратиться к врачу Николаю Далю, который лечил пациентов внушением. || Friends [persuaded]{уговорили} him to see the doctor Nikolai Dahl, who treated patients with [suggestion]{внушением}.
+ru: Изо дня в день доктор повторял композитору, что тот напишет концерт и что работа пойдёт легко. || [Day after day]{изо дня в день} the doctor told the [composer]{композитору} that he would write a [concerto]{концерт} and that the work would go easily.
+ru: Второй фортепианный концерт, посвящённый Далю, имел оглушительный успех и до сих пор остаётся одним из самых исполняемых произведений в мире. || The Second [Piano]{фортепианный} Concerto, [dedicated]{посвящённый} to Dahl, was a [resounding]{оглушительный} success and remains to this day one of the most [performed]{исполняемых} [works]{произведений} in the world.
+ru: Знаменитые первые аккорды, напоминающие колокольный звон, узнают даже те, кто никогда не был в консерватории. || Its famous opening [chords]{аккорды}, [reminiscent]{напоминающие} of [church bells]{колокольный звон}, are recognized even by people who have never been to a [conservatory]{консерватории}.
+note: впал | fell (into a state) | «Впасть в» is used for states: «впасть в отчаяние», «впасть в кому», «впасть в немилость».
+note: изо дня в день | day after day | A fixed phrase; «изо» is a form of «из» used before some consonant clusters.
+q: main | What story does the text tell? | Rachmaninoff's childhood | *How Rachmaninoff recovered from depression and wrote his Second Piano Concerto | The founding of the conservatory | Dahl's medical career
+q: detail | How did Dr. Dahl treat Rachmaninoff? | With medicine | *Through suggestion, repeating that he would write a concerto | With surgery | With travel
+q: detail | What do the opening chords resemble? | Thunder | *Church bells | A train | Birdsong
+sum: After his First Symphony flopped in 1897, Rachmaninoff fell into a depression and couldn't compose for nearly three years. Dr. Nikolai Dahl treated him with daily suggestion, and the resulting Second Piano Concerto, dedicated to Dahl, became a huge, lasting success famous for its bell-like opening chords.
+
+=== id: arch-khrushchevka
+title: Хрущёвки
+level: 3
+genre: history
+source_note: Written for this app.
+---
+ru: В конце пятидесятых годов миллионы советских семей жили в коммуналках и бараках, и власти поставили задачу обеспечить каждую семью отдельной квартирой. || At the end of the fifties millions of Soviet families lived in [communal apartments]{коммуналках} and [barracks]{бараках}, and the [authorities]{власти} set the goal of providing every family with a [separate]{отдельной} apartment.
+ru: Решением стали типовые пятиэтажки из сборных железобетонных панелей, которые возводились за считанные недели. || The solution was [standard]{типовые} five-story buildings of [prefabricated]{сборных} [reinforced concrete]{железобетонных} [panels]{панелей}, which were [put up]{возводились} in [a matter of]{считанные} weeks.
+ru: Квартиры получались тесными: крошечная кухня, совмещённый санузел, низкие потолки, а лифт и мусоропровод не предусматривались. || The apartments [turned out]{получались} [cramped]{тесными}: a tiny kitchen, a [combined]{совмещённый} [bathroom]{санузел}, low ceilings, and no [elevator]{лифт} or [garbage chute]{мусоропровод} was [planned]{предусматривались}.
+ru: Тем не менее для многих новосёлов это было настоящее счастье — собственная дверь и своя ванная. || Nevertheless, for many [new residents]{новосёлов} it was real happiness: their own door and their own bath.
+ru: Сегодня часть таких домов сносят по программе реновации, и жильцы спорят, что важнее — новое жильё или привычный зелёный двор. || Today some of these buildings are being [demolished]{сносят} under a [renovation]{реновации} program, and residents argue over which matters more: new [housing]{жильё} or the [familiar]{привычный} green courtyard.
+note: коммуналка | communal apartment | «Коммунальная квартира»: several families each in one room, sharing a kitchen and bathroom.
+note: за считанные недели | in a matter of weeks | «Считанный» means few enough to count: «считанные минуты», «считанные дни».
+note: совмещённый санузел | combined bathroom | Toilet and bath in one room. The alternative is «раздельный санузел», a separate WC and bathroom.
+q: main | What is the text about? | Soviet skyscrapers | *Khrushchev-era five-story apartment blocks and their legacy | Communal apartments today | Building materials
+q: detail | Which of these did the apartments lack? | A kitchen | A bathroom | *An elevator | A door
+q: inference | Why were cramped flats still a joy for many? | They were large | *Families moved from shared rooms to a home of their own | They were free | They were in the city center
+sum: In the late 1950s, to move millions out of communal flats and barracks, the USSR built standard five-story prefab panel blocks within weeks. The flats were cramped, with tiny kitchens, combined bathrooms and no elevators, yet a private home was a joy for many. Today some are being demolished, and residents debate new housing versus their familiar green courtyards.
+
+=== id: psych-habits
+title: Как формируются привычки
+level: 3
+genre: science
+source_note: Written for this app.
+---
+ru: Психологи описывают привычку как петлю из трёх звеньев: сигнал, действие и вознаграждение. || [Psychologists]{психологи} describe a [habit]{привычку} as a [loop]{петлю} of three [links]{звеньев}: [cue]{сигнал}, [action]{действие} and [reward]{вознаграждение}.
+ru: Чем чаще повторяется цепочка, тем меньше усилий требуется от сознания, и поведение становится автоматическим. || The more often the [chain]{цепочка} repeats, the less [effort]{усилий} is required from the [conscious mind]{сознания}, and the [behavior]{поведение} becomes automatic.
+ru: Избавиться от вредной привычки силой воли трудно; гораздо эффективнее заменить действие, сохранив сигнал и награду. || Getting rid of a [bad]{вредной} habit by [willpower]{силой воли} is hard; it's far more [effective]{эффективнее} to replace the action while keeping the cue and the [reward]{награду}.
+ru: Например, если человек закуривает, когда нервничает, ему можно предложить короткую прогулку или дыхательное упражнение. || For example, if a person [lights a cigarette]{закуривает} when he's [nervous]{нервничает}, he can be [offered]{предложить} a short walk or a breathing [exercise]{упражнение}.
+ru: На формирование новой привычки уходит в среднем около двух месяцев, а не двадцать один день, как принято считать. || Forming a new habit takes [on average]{в среднем} about two months, not twenty-one days, as is [commonly believed]{принято считать}.
+note: звено | link (of a chain) | Plural «звенья». Figuratively, a unit or element: «слабое звено», the weak link.
+note: принято считать | it is commonly believed | «Принято» plus an infinitive means "it is customary to": «у нас принято снимать обувь».
+q: main | What does the text explain? | How to quit smoking forever | *How habits form and how to change them | Why stress is harmful | How memory works
+q: detail | What three parts make up a habit loop? | Thought, word, deed | *Cue, action, reward | Morning, noon, night | Goal, plan, result
+q: detail | How long does a new habit usually take to form? | 21 days | One week | *About two months | A year
+sum: A habit is a loop of cue, action and reward; repetition makes it automatic. Willpower alone rarely breaks a bad habit, so it's better to swap the action while keeping cue and reward, for example a walk instead of a cigarette when stressed. New habits take about two months to form, not the popular 21 days.
+
+=== id: phil-free-will
+title: Свобода воли
+level: 4+
+genre: society
+source_note: Written for this app.
+---
+ru: Спор о свободе воли восходит к античности, но в последние десятилетия он вновь обострился под влиянием нейробиологии. || The [debate]{спор} over [free will]{свободе воли} [goes back]{восходит} to [antiquity]{античности}, but in recent decades it has [sharpened]{обострился} again under the influence of [neuroscience]{нейробиологии}.
+ru: Детерминисты утверждают, что каждое наше решение есть следствие предшествующих причин — генов, воспитания, нейронных процессов, — а значит, ощущение выбора иллюзорно. || [Determinists]{детерминисты} [maintain]{утверждают} that every decision we make is a [consequence]{следствие} of [prior]{предшествующих} causes (genes, [upbringing]{воспитания}, [neural]{нейронных} processes), and that therefore the sense of [choice]{выбора} is [illusory]{иллюзорно}.
+ru: Их оппоненты, так называемые компатибилисты, возражают, что свобода состоит не в независимости от причин, а в возможности действовать согласно собственным желаниям и убеждениям, без внешнего принуждения. || Their opponents, the so-called [compatibilists]{компатибилисты}, [object]{возражают} that freedom [consists]{состоит} not in [independence]{независимости} from causes but in the ability to act [according to]{согласно} one's own desires and [beliefs]{убеждениям}, without external [coercion]{принуждения}.
+ru: Вопрос далеко не умозрительный: от ответа на него зависит, на чём строится понятие ответственности, а с ним и вся система правосудия. || The question is [far from]{далеко не} [abstract]{умозрительный}: on the answer depends what the [concept]{понятие} of [responsibility]{ответственности} rests on, and with it the whole system of [justice]{правосудия}.
+ru: Если человек не мог поступить иначе, справедливо ли его наказывать? || If a person could not have [acted]{поступить} [otherwise]{иначе}, is it [just]{справедливо} to [punish]{наказывать} him?
+note: восходит к античности | goes back to antiquity | «Восходить к чему-то» means to originate in: «традиция восходит к XVII веку». Literally, to ascend.
+note: умозрительный | speculative, purely theoretical | From «умозрение», contemplation. The opposite is «практический» or «прикладной».
+note: далеко не | far from | «Далеко не простой вопрос» means a far from simple question.
+q: main | What is the central question of the text? | Whether neuroscience is a real science | *Whether humans have free will, and what that means for responsibility | How the justice system works | Who the first philosophers were
+q: detail | What do compatibilists say freedom is? | Independence from all causes | *Acting on one's own desires without external coercion | An illusion | A gift of nature
+q: inference | Why does the question matter for courts? | Judges study philosophy | *Punishment assumes a person could have acted otherwise | Laws are written by philosophers | It doesn't matter
+q: tone | The text is | *balanced and analytical | strongly determinist | religious | humorous
+sum: The ancient free-will debate has revived with neuroscience. Determinists say every choice is caused by genes, upbringing and brain processes, so choice is an illusion; compatibilists say freedom means acting on one's own desires without coercion. The question matters for responsibility and justice: is it fair to punish someone who couldn't have done otherwise?
+
+=== id: ling-aspect
+title: Вид глагола
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Категория вида — одна из самых трудных для иностранцев, изучающих русский язык. || The [category]{категория} of [aspect]{вида} is one of the hardest for foreigners [studying]{изучающих} Russian.
+ru: Глаголы несовершенного вида описывают процесс, повторяющееся действие или факт как таковой, тогда как совершенный вид обозначает целостное действие, достигшее результата. || [Imperfective]{несовершенного вида} verbs describe a [process]{процесс}, a [repeated]{повторяющееся} action, or a fact [as such]{как таковой}, whereas the [perfective]{совершенный} aspect [denotes]{обозначает} a [complete]{целостное} action that has reached a [result]{результата}.
+ru: Сравните: «Я читал эту книгу» сообщает лишь о факте знакомства с ней, а «Я прочитал эту книгу» подразумевает, что она дочитана до конца. || [Compare]{сравните}: "Я читал эту книгу" only [reports]{сообщает} the fact of being acquainted with it, while "Я прочитал эту книгу" [implies]{подразумевает} that it has been [read to the end]{дочитана до конца}.
+ru: В отрицательных предложениях несовершенный вид нередко звучит вежливее или категоричнее: «Не открывайте окно» — просьба, «Не откройте окно» звучит странно. || In [negative]{отрицательных} sentences the imperfective often sounds more polite or more [categorical]{категоричнее}: "Не открывайте окно" is a request, while "Не откройте окно" sounds odd.
+ru: Видовые пары образуются приставками, суффиксами, а иногда и вовсе разными корнями, как «брать» и «взять». || [Aspectual pairs]{видовые пары} are [formed]{образуются} with [prefixes]{приставками}, [suffixes]{суффиксами}, and sometimes with entirely different [roots]{корнями}, as in «брать» and «взять».
+note: как таковой | as such | «Факт как таковой» means the fact in itself. «Таковой» is bookish: «если таковые имеются», if there are any.
+note: вовсе | entirely, altogether | «Вовсе не» means not at all: «я вовсе не устал».
+q: main | What does the text explain? | Russian cases | *The difference between imperfective and perfective aspect | Russian pronunciation | The history of Russian
+q: detail | What does "Я прочитал эту книгу" imply? | I read it sometimes | *I finished reading it | I am reading it now | I will read it
+q: detail | How are «брать» and «взять» paired? | By a prefix | By a suffix | *By different roots | They aren't a pair
+sum: Aspect is notoriously hard for learners. Imperfective verbs express process, repetition or the bare fact; perfective verbs express a completed action with a result: «читал» states acquaintance, «прочитал» means finished. Negative commands normally use the imperfective, and pairs differ by prefix, suffix or even root, like «брать» and «взять».
+
+=== id: food-pelmeni
+title: Пельмени по-сибирски
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Для теста смешайте муку, яйцо, щепотку соли и холодную воду и замесите крутое тесто. || For the [dough]{теста} mix [flour]{муку}, an egg, a [pinch]{щепотку} of salt and cold water, and [knead]{замесите} a [stiff]{крутое} dough.
+ru: Накройте его полотенцем и дайте полежать полчаса. || Cover it with a [towel]{полотенцем} and let it [rest]{полежать} for half an hour.
+ru: Для начинки пропустите через мясорубку говядину, свинину и лук, посолите, поперчите и добавьте немного ледяной воды, чтобы фарш получился сочным. || For the [filling]{начинки}, put [beef]{говядину}, [pork]{свинину} and onion through a [meat grinder]{мясорубку}, salt and [pepper]{поперчите} it, and add a little [ice-cold]{ледяной} water so the [ground meat]{фарш} turns out [juicy]{сочным}.
+ru: Раскатайте тесто тонко, вырежьте кружки стаканом, положите на каждый ложку фарша и защипните края. || Roll the dough out thin, cut out [circles]{кружки} with a glass, put a spoonful of filling on each and [pinch]{защипните} the [edges]{края} together.
+ru: Варите пельмени в подсоленной воде пять-семь минут после того, как они всплывут. || Boil the pelmeni in [salted]{подсоленной} water for five to seven minutes after they [float up]{всплывут}.
+ru: Подавайте со сметаной, уксусом или сливочным маслом. || Serve with [sour cream]{сметаной}, [vinegar]{уксусом} or [butter]{сливочным маслом}.
+note: крутое тесто | stiff dough | «Крутой» about dough means firm, and «яйцо вкрутую» is a hard-boiled egg. In slang «крутой» means cool.
+note: поперчите | pepper (it) | Russian makes verbs from seasonings: «посолить», «поперчить», «подсластить».
+q: main | What is this text? | A restaurant review | *A recipe for pelmeni | A history of Siberian food | A shopping list
+q: detail | Why add ice-cold water to the meat? | To freeze it | *To make the filling juicy | To clean it | To make it lighter
+q: detail | How long do pelmeni cook after they float? | One minute | *Five to seven minutes | Twenty minutes | An hour
+sum: Make a stiff dough of flour, egg, salt and cold water and rest it for half an hour. Grind beef, pork and onion, season, and add ice water for juiciness. Roll the dough thin, cut circles, fill and pinch shut, then boil for 5–7 minutes after they float. Serve with sour cream, vinegar or butter.
+
+=== id: crime-news
+title: Мошенники звонят «из банка»
+level: 3
+genre: society
+source_note: Written for this app.
+---
+ru: Полиция предупреждает о новой волне телефонного мошенничества. || The police [warn]{предупреждает} of a new [wave]{волне} of [phone fraud]{телефонного мошенничества}.
+ru: Злоумышленники представляются сотрудниками службы безопасности банка и сообщают, что с карты пытаются списать деньги. || The [criminals]{злоумышленники} [pose as]{представляются} employees of a bank's [security service]{службы безопасности} and say that someone is trying to [withdraw]{списать} money from the [card]{карты}.
+ru: Чтобы «защитить сбережения», жертву уговаривают перевести средства на «безопасный счёт» или продиктовать код из СМС. || To "protect your [savings]{сбережения}," the [victim]{жертву} is talked into [transferring]{перевести} [funds]{средства} to a "safe [account]{счёт}" or [reading out]{продиктовать} the code from a [text message]{СМС}.
+ru: На прошлой неделе таким образом пенсионерка лишилась всех накоплений — более восьмисот тысяч рублей. || Last week a pensioner [lost]{лишилась} all her [savings]{накоплений} this way: more than eight hundred thousand rubles.
+ru: Возбуждено уголовное дело по статье «Мошенничество». || A criminal case has been opened under the article "[Fraud]{мошенничество}."
+ru: Сотрудники полиции напоминают: настоящий банк никогда не просит сообщить код или перевести деньги, а при подозрительном звонке нужно сразу положить трубку и перезвонить по номеру, указанному на карте. || Police officers [remind]{напоминают} people: a real bank never asks for a code or for money to be transferred, and if a call seems [suspicious]{подозрительном} you should [hang up]{положить трубку} at once and call back the number [printed]{указанному} on the card.
+note: злоумышленники | criminals, perpetrators | Standard police and news word for people with criminal intent (from «злой умысел», malicious intent).
+note: положить трубку | to hang up | Literally "to put the receiver down," still used for mobile phones. «Бросить трубку» means to hang up on someone.
+q: main | What is the news item about? | A bank robbery | *A phone scam where fraudsters pose as bank security | A new bank card | A police recruitment drive
+q: detail | What do the fraudsters ask victims to do? | Visit the bank | *Move money to a "safe account" or read out an SMS code | Change their PIN online | Buy gift cards
+q: key | What should you do if you get such a call? | Give only half the code | *Hang up and call the number on your card | Ask for the caller's name | Wait for a second call
+sum: Police warn of fraudsters posing as bank security who claim your card is under attack and persuade you to move money to a "safe account" or read out an SMS code. A pensioner lost over 800,000 rubles this way and a fraud case has been opened. Real banks never ask for codes; hang up and call the number on your card.
+
+=== id: weather-forecast
+title: Прогноз погоды на выходные
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: В субботу в Москве ожидается переменная облачность, без существенных осадков. || On Saturday Moscow can expect [variable cloud]{переменная облачность}, with no significant [precipitation]{осадков}.
+ru: Температура днём составит плюс восемнадцать — двадцать градусов. || The daytime [temperature]{температура} will be plus eighteen to twenty [degrees]{градусов}.
+ru: Ветер северо-западный, умеренный. || The wind will be [northwesterly]{северо-западный} and [moderate]{умеренный}.
+ru: В воскресенье к вечеру придёт холодный атмосферный фронт: возможны кратковременные дожди и гроза, порывы ветра до пятнадцати метров в секунду. || On Sunday toward evening a cold [front]{фронт} will arrive: [brief]{кратковременные} [showers]{дожди} and a [thunderstorm]{гроза} are possible, with [gusts]{порывы} of wind up to fifteen meters per second.
+ru: Синоптики советуют не забыть зонт и не оставлять машины под деревьями. || [Forecasters]{синоптики} advise you not to forget your [umbrella]{зонт} and not to leave cars under trees.
+note: синоптики | weather forecasters | A specifically Russian word. In news they say «по прогнозу синоптиков».
+note: метров в секунду | meters per second | Russian forecasts give wind in m/s; 15 m/s is about 54 km/h, or 34 mph.
+q: main | What is this text? | *A weekend weather forecast | A news report on a storm | Advice on buying an umbrella | A climate study
+q: detail | What will Saturday be like? | Rainy and cold | *Partly cloudy and mild, about 18–20 degrees | Snowy | Very windy
+q: detail | Why not park under trees on Sunday? | Birds | *Strong gusts during the storm | Sap from the trees | Parking is forbidden
+sum: Saturday in Moscow will be partly cloudy and dry, 18–20°C, with a moderate northwest wind. On Sunday evening a cold front brings brief rain, possible thunderstorms and gusts up to 15 m/s, so bring an umbrella and don't park under trees.

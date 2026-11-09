@@ -1,0 +1,1122 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>OPI Memory Tool</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: sticky progress bar; tabs; a two-level picker (item, then stage 1-7) over one working panel per stage. */
+:root {
+  --paper: #EEF1F5;
+  --card: #FFFFFF;
+  --ink: #17202B;
+  --muted: #5A6676;
+  --line: #D6DCE4;
+  --accent: #1F4FD1;
+  --accent-soft: #E3E9FB;
+  --good: #1D7A4D;
+  --good-soft: #DDF1E6;
+  --again: #B04E27;
+  --again-soft: #F8E4DA;
+  --font-ru: "Literata", "PT Serif", Georgia, serif;
+  --font-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F141A; --card: #18202A; --ink: #E5EAF0; --muted: #93A0AF; --line: #2A3541;
+    --accent: #84A0FF; --accent-soft: #1D2A4D; --good: #55C78F; --good-soft: #15342A;
+    --again: #E8906A; --again-soft: #3A2219; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F141A; --card: #18202A; --ink: #E5EAF0; --muted: #93A0AF; --line: #2A3541;
+  --accent: #84A0FF; --accent-soft: #1D2A4D; --good: #55C78F; --good-soft: #15342A;
+  --again: #E8906A; --again-soft: #3A2219; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 15px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--card); }
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--card); border-bottom: 1px solid var(--line); }
+.topbar-in { max-width: 860px; margin: 0 auto; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 8px; }
+.topline { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.brand { font-family: var(--font-ru); font-weight: 600; font-size: 1.15rem; margin: 0; }
+.pct { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pct b { color: var(--ink); font-weight: 500; }
+.bigbar { height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.bigbar > i { display: block; height: 100%; background: var(--good); width: 0; transition: width .3s; }
+.tabs { display: flex; gap: 4px; overflow-x: auto; }
+.tab { flex: 0 0 auto; border: 0; background: transparent; color: var(--muted); font: 500 0.88rem var(--font-ui); padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+.tab[aria-pressed="true"] { background: var(--ink); color: var(--card); }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 20px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 18px; }
+h2 { font-family: var(--font-ru); font-weight: 600; font-size: 1.35rem; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--font-ui); font-weight: 600; font-size: 1rem; margin: 0; }
+p { margin: 0; }
+.muted { color: var(--muted); }
+.label { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.lede { max-width: 65ch; color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
+.chip { flex: 0 0 auto; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: 500 0.85rem var(--font-ui); padding: 6px 11px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chip .num { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--card); }
+.chip[aria-pressed="true"] .num { color: var(--card); opacity: .8; }
+.stepper { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 4px; }
+.sbtn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 8px 6px; cursor: pointer; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; min-width: 0; }
+.sbtn .sn { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.sbtn .st { font-size: 0.8rem; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.sbtn.done { background: var(--good-soft); border-color: var(--good); }
+.sbtn.done .sn { color: var(--good); }
+.sbtn.now { border-color: var(--accent); }
+.sbtn[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (max-width: 560px) { .sbtn .st { display: none; } .sbtn { align-items: center; } }
+.goal { font-family: var(--font-ru); font-size: 1.1rem; max-width: 65ch; }
+.why { font-size: 0.88rem; color: var(--muted); max-width: 65ch; }
+.steps { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; max-width: 70ch; }
+.exit { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; background: var(--paper); }
+.exit.ok { border-color: var(--good); }
+.check { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+.check input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--good); flex: 0 0 auto; }
+.auto { display: flex; gap: 8px; align-items: center; font-size: 0.9rem; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); flex: 0 0 auto; }
+.dot.on { background: var(--good); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn { font: 500 0.9rem var(--font-ui); border-radius: 8px; padding: 9px 16px; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--ink); display: inline-flex; align-items: center; gap: 8px; }
+.btn kbd { font-family: var(--font-mono); font-size: 0.7rem; color: inherit; opacity: .65; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--card); }
+.btn.good { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.btn.again { background: var(--again-soft); border-color: var(--again); color: var(--again); }
+.btn.small { padding: 6px 11px; font-size: 0.82rem; }
+.btn:disabled { opacity: .45; cursor: default; }
+.linkish { background: none; border: 0; color: var(--muted); font: inherit; text-decoration: underline; cursor: pointer; padding: 0; }
+.ru { font-family: var(--font-ru); font-size: 1.1rem; line-height: 1.65; max-width: 65ch; }
+.ru.sm { font-size: 0.98rem; }
+.ru.letters { letter-spacing: .06em; word-spacing: .25em; }
+.map { display: flex; flex-direction: column; }
+.maprow { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.maprow:last-child { border-bottom: 0; }
+.maprow .n { font-family: var(--font-mono); font-size: .78rem; color: var(--muted); padding-top: 3px; }
+.mapin { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; margin-top: 6px; }
+@media (max-width: 560px) { .mapin { grid-template-columns: minmax(0, 1fr); } }
+.field { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.field span { font-size: .75rem; color: var(--muted); }
+input[type="text"], textarea { width: 100%; font: .92rem var(--font-ui); padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink); }
+textarea { min-height: 110px; font: 1.02rem/1.6 var(--font-ru); resize: vertical; }
+.block { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.block .ru + .ru { padding-top: 8px; border-top: 1px dashed var(--line); }
+.cue-c { font-weight: 600; font-size: .85rem; color: var(--muted); }
+.beatcard { display: flex; flex-direction: column; gap: 6px; counter-reset: b; margin: 0; padding: 0; list-style: none; }
+.beatcard li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.beatcard li:last-child { border-bottom: 0; }
+.beatcard .n { font-family: var(--font-mono); font-size: .78rem; color: var(--muted); padding-top: 2px; }
+.beatcard .k { font-family: var(--font-ru); color: var(--accent); font-size: .92rem; }
+.hiddencard { border: 1px dashed var(--line); border-radius: 10px; padding: 26px; text-align: center; color: var(--muted); }
+.log { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-family: var(--font-mono); font-size: .72rem; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.pill.ok { border-color: var(--good); color: var(--good); background: var(--good-soft); }
+.pill.bad { border-color: var(--again); color: var(--again); background: var(--again-soft); }
+.drills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 620px) { .drills { grid-template-columns: minmax(0, 1fr); } }
+.drill { border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.drill.done { border-color: var(--good); }
+.roll { font-family: var(--font-ru); font-size: 1rem; background: var(--accent-soft); color: var(--ink); border-radius: 7px; padding: 8px 10px; }
+/* drill widget */
+.modes { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--card); width: fit-content; max-width: 100%; }
+.modes button { border: 0; background: transparent; color: var(--ink); font: 500 .85rem var(--font-ui); padding: 7px 12px; cursor: pointer; border-right: 1px solid var(--line); }
+.modes button:last-child { border-right: 0; }
+.modes button[aria-pressed="true"] { background: var(--ink); color: var(--card); }
+.path { display: flex; flex-wrap: wrap; gap: 6px; }
+.step { min-width: 32px; height: 28px; padding: 0 7px; border-radius: 6px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: 500 .76rem var(--font-mono); cursor: pointer; }
+.step.got { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.step.again { background: var(--again-soft); border-color: var(--again); color: var(--again); }
+.step.current { outline: 2px solid var(--accent); outline-offset: 1px; }
+.dcard { border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 12px; background: var(--paper); }
+.dcue { font-weight: 600; font-size: 1.1rem; }
+.context { font-family: var(--font-ru); color: var(--muted); font-size: .95rem; }
+.veil { border: 1px dashed var(--line); border-radius: 8px; padding: 16px; color: var(--muted); font-size: .9rem; text-align: center; }
+.diff { font-family: var(--font-ru); font-size: 1.08rem; line-height: 1.75; }
+.diff .miss { background: var(--again-soft); color: var(--again); border-radius: 3px; padding: 0 2px; }
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .85rem; color: var(--muted); cursor: pointer; }
+.nav { display: flex; justify-content: space-between; gap: 8px; }
+/* overview */
+.items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 620px) { .items { grid-template-columns: minmax(0, 1fr); } }
+.itemcard { border: 1px solid var(--line); background: var(--card); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; cursor: pointer; text-align: left; color: var(--ink); font: inherit; }
+.itemcard:hover { border-color: var(--accent); }
+.minis { display: flex; gap: 3px; }
+.minis i { flex: 1; height: 5px; border-radius: 3px; background: var(--line); }
+.minis i.on { background: var(--good); }
+.minis i.now { background: var(--accent); }
+.stagelist { display: flex; flex-direction: column; gap: 0; margin: 0; padding: 0; list-style: none; }
+.stagelist li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.stagelist li:last-child { border-bottom: 0; }
+.stagelist .n { font-family: var(--font-mono); color: var(--accent); }
+.queue { display: flex; flex-direction: column; gap: 6px; }
+.qrow { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.qrow:last-child { border-bottom: 0; }
+/* mock */
+.mockprompt { font-family: var(--font-ru); font-size: 1.2rem; line-height: 1.55; }
+.interrupt { border: 2px solid var(--again); background: var(--again-soft); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.interrupt .ru { color: var(--ink); }
+.clock { font-family: var(--font-mono); font-size: 1.6rem; font-variant-numeric: tabular-nums; }
+.phr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px 16px; }
+@media (max-width: 560px) { .phr { grid-template-columns: minmax(0, 1fr); } }
+.phr div { font-family: var(--font-ru); }
+.phr small { display: block; font-family: var(--font-ui); color: var(--muted); font-size: .78rem; }
+.tmap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px 24px; }
+@media (max-width: 620px) { .tmap { grid-template-columns: minmax(0, 1fr); } }
+.tmrow { background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); font: inherit; text-align: left; cursor: pointer; width: 100%; }
+.tmrow:hover span:first-child { color: var(--accent); }
+.dot.now { background: var(--accent); }
+.edrow { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); align-items: start; }
+.edrow .n { font-family: var(--font-mono); font-size: .78rem; color: var(--muted); padding-top: 22px; }
+.edfields { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.edfields textarea { min-height: 70px; font-size: .98rem; }
+.edbtns { display: flex; flex-direction: column; gap: 4px; padding-top: 18px; }
+.edbtns .btn { padding: 4px 9px; justify-content: center; }
+@media (max-width: 480px) { .edrow { grid-template-columns: minmax(0, 1fr) auto; } .edrow .n { display: none; } }
+summary { cursor: pointer; }
+select { font: .85rem var(--font-ui); padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--card); color: var(--ink); max-width: 100%; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .bigbar > i { transition: none; } }
+</style>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="topline">
+      <p class="brand">OPI Memory Tool</p>
+      <span class="pct" id="pct"></span>
+    </div>
+    <div class="bigbar" aria-hidden="true"><i id="bigbar"></i></div>
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <button type="button" class="tab" data-tab="overview">Overview</button>
+      <button type="button" class="tab" data-tab="scripts">Scripts</button>
+      <button type="button" class="tab" data-tab="templates">Templates</button>
+      <button type="button" class="tab" data-tab="vocab">Vocab</button>
+      <button type="button" class="tab" data-tab="phrases">Phrases</button>
+      <button type="button" class="tab" data-tab="mock">Mock interview</button>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap" id="app"></div>
+
+<script>
+const VERSION = 'blank';   // opi-example.html is the same file with 'example' here
+const P = [
+ {n:'1', name:'Introduction', ilr:'ILR 1+ / 2', ru:'Представьтесь (расскажите о себе, вашей семье, ваших хобби, вашем образовании, чем вы занимались до службы и т. п.)', groups:[
+  {g:'Script', c:[
+   ['Hello + job','Здравствуйте! Меня зовут Алекс, мне двадцать восемь лет. Я уже четыре года работаю переводчиком русского языка в переводческом агентстве.'],
+   ['Why Russian','Ещё в школе я мечтал изучать иностранный язык, а именно русский, потому что прочитал «Преступление и наказание» и захотел прочитать его в оригинале. Как говорится, «великий и могучий».'],
+   ['University + Suvorov','В две тысячи шестнадцатом году я поступил в университет на отделение славистики. Учиться было нелегко, но, как говорил Суворов, «тяжело в учении – легко в бою».'],
+   ['Degree + Kazan','В две тысячи двадцатом году я окончил университет и получил степень бакалавра, а потом целый год стажировался в Казани.'],
+   ['Spokane','Я родился и вырос в Спокане. Это не очень большой город на востоке штата Вашингтон, недалеко от границы с Айдахо. Мои родители до сих пор там живут.'],
+   ['Parents + sister','Мой отец двадцать лет проработал пожарным, а мама преподаёт математику в местной школе. У меня есть младшая сестра, которой двенадцать лет.'],
+   ['Sister = Mom','Она вылитая мама: зелёные глаза, веснушки и рыжие волосы. А ещё она такая же упрямая, каким я был в её возрасте!'],
+   ['Chess','Когда я приезжаю домой, мы с ней обязательно играем в шахматы, и, честно говоря, она уже иногда у меня выигрывает.'],
+   ['Dad: same hobbies','С отцом у нас общие увлечения: мы оба любим рыбалку и походы в горы. Видимо, яблоко от яблони недалеко падает.'],
+   ['Dad’s boat','У отца есть старая деревянная лодка, которую он построил сам ещё до моего рождения.'],
+   ['Wife, apartment, dog','Я женат. Мы с женой живём в Денвере, в небольшой квартире, вместе с нашим лабрадором по кличке Бублик.'],
+   ['Free time','В свободное время я играю на гитаре и пеку хлеб на закваске, а ещё веду блог о русской литературе.']
+  ]}]},
+ {n:'2', name:'Past Narration', ilr:'ILR 2', ru:'Расскажите о наиболее запомнившейся вам поездке и объясните, почему именно это событие запомнилось вам больше других.', groups:[
+  {g:'Script', c:[
+   ['Yellowstone','Больше всего мне запомнилась поездка в Йеллоустонский национальный парк. Это огромный парк на северо-западе США, который знаменит своими гейзерами.'],
+   ['Ten years ago','Мы с семьёй часто ходили в походы, но именно поездка десять лет назад запомнилась мне на всю жизнь. Как говорится, без приключений не обошлось.'],
+   ['First night','В первый же вечер мы поставили палатку у озера, приготовили ужин на костре и легли спать.'],
+   ['A noise','Посреди ночи меня разбудил странный шум: кто-то рылся в наших вещах прямо рядом с палаткой.'],
+   ['The bear','Я выглянул наружу и увидел медведя, который пытался открыть наш холодильник с едой.'],
+   ['Dad stays calm','Мой отец, человек очень спокойный, тихо сказал нам не двигаться, а сам начал громко хлопать в ладоши и разговаривать с медведем ровным голосом.'],
+   ['The bear leaves','Минут через пять медведь, видимо, решил, что мы не стоим его внимания, и ушёл в лес.'],
+   ['Great trip','Но всё хорошо, что хорошо кончается. Остаток поездки прошёл замечательно: мы видели гейзер «Старый служака», бизонов и даже волков.'],
+   ['Why: how Dad acted','Эта поездка запомнилась мне больше других не из-за гейзеров, а из-за того, как повёл себя мой отец. Вместо того чтобы паниковать, он первым делом позаботился о нашей безопасности.'],
+   ['The lesson','Именно тогда я понял, что в трудной ситуации главное – не терять голову. А ещё с тех пор мы всегда храним еду в машине!']
+  ]}]},
+ {n:'3', name:'Present Narration', ilr:'ILR 2', ru:'Расскажите о семейной традиции, которая имеет для вас особое значение.', groups:[
+  {g:'Script', c:[
+   ['Thanksgiving at Grandma’s','Моя любимая семейная традиция связана с Днём благодарения. Каждый год вся наша семья собирается у бабушки в Сиэтле.'],
+   ['Grandma’s pie','Ни один День благодарения не обходится без бабушкиного тыквенного пирога. Пальчики оближешь!'],
+   ['Baking together','Кроме того, у нас с бабушкой есть своя маленькая традиция: утром, пока все спят, мы вдвоём печём пироги по рецепту её мамы.'],
+   ['The recipe card','Рецепт написан от руки на старой пожелтевшей карточке, и бабушка не разрешает его фотографировать: она говорит, что его надо знать наизусть.'],
+   ['The gratitude jar','А вечером, после ужина, начинается самое главное. У нас есть «банка благодарности»: весь год каждый член семьи кладёт туда записки о том, за что он благодарен.'],
+   ['Reading the notes','За столом мы по очереди достаём записки и читаем их вслух. Иногда мы смеёмся до слёз, а иногда кто-нибудь тихо плачет.'],
+   ['My sister’s note','В прошлом году моя сестра написала, что благодарна мне за то, что я научил её играть в шахматы. Честно говоря, у меня мурашки по коже пошли.'],
+   ['Passing it on','Теперь и мы с женой завели такую же банку у себя дома. Так эта традиция и передаётся из поколения в поколение.'],
+   ['What it means','Для меня День благодарения – это не просто индейка и пироги, а время, когда вся семья собирается вместе.']
+  ]}]},
+ {n:'4', name:'Future Narration', ilr:'ILR 2', ru:'Расскажите о своих планах на предстоящие выходные (или: чем вы собираетесь заниматься после службы и т. п.)', groups:[
+  {g:'This weekend', c:[
+   ['We’re moving','На этих выходных мы с женой переезжаем. Мы наконец купили небольшой дом в пригороде Денвера, и у нашей собаки будет свой двор.'],
+   ['Saturday: packing','В субботу утром приедут грузчики, но вещи мы будем упаковывать сами. Это работа не на один час, но, как говорится, глаза боятся, а руки делают.'],
+   ['Furniture + kitchen','Когда мы перевезём мебель, я соберу кровать и шкафы, а жена займётся кухней.'],
+   ['Sunday: housewarming','А в воскресенье, если всё пойдёт по плану, мы пригласим друзей на новоселье. Я испеку свой фирменный хлеб, а друзья, как положено, принесут подарки для дома.'],
+   ['Worn out but happy','Думаю, к вечеру воскресенья мы будем совершенно без сил, но очень довольны.']
+  ]},
+  {g:'In a few years', c:[
+   ['Master’s in translation','Через несколько лет я хочу поступить в магистратуру по переводоведению. Я давно увлекаюсь литературным переводом, и мне хочется заниматься этим профессионально.'],
+   ['Save, study, translate','Сначала я планирую накопить денег и подготовиться к экзаменам. Как только я получу диплом, я хочу переводить современную русскую прозу на английский.'],
+   ['Why it matters','Мне хочется, чтобы американские читатели знали не только Толстого и Достоевского, но и современных авторов. Не боги горшки обжигают, так что я уверен, что у меня всё получится.']
+  ]},
+  {g:'What the house will look like', c:[
+   ['Paint it ourselves','Когда мы закончим ремонт, дом будет выглядеть совсем по-другому. Стены мы покрасим сами в светло-серый цвет.'],
+   ['Bookcase + chair','В гостиной будет большой книжный шкаф во всю стену, а у окна – моё любимое кресло для чтения.'],
+   ['Bread oven','А на заднем дворе я построю небольшую печь для хлеба. Как говорится, мой дом – моя крепость.']
+  ]}]},
+ {n:'5', name:'Description of a Person', ilr:'ILR 2', ru:'Опишите своего родственника / друга / коллегу / соседа и т. п.', groups:[
+  {g:'Script', c:[
+   ['Who: Grandma','Я хочу рассказать о своей бабушке, потому что она самый важный человек в нашей семье.'],
+   ['Her looks','Ей восемьдесят лет. Она невысокого роста, худенькая, с короткими седыми волосами и очень живыми голубыми глазами. Она всегда носит очки на цепочке и яркий шарф.'],
+   ['Kind but firm','По характеру бабушка – добрейшей души человек, она и мухи не обидит. Но при этом она очень твёрдая: если она что-то решила, переубедить её невозможно.'],
+   ['Forty years a librarian','Сорок лет она проработала библиотекарем, поэтому прочитала, наверное, тысячи книг и за словом в карман не лезет.'],
+   ['Proof: the Chekhov','Например, когда я сказал, что хочу изучать русский язык, все родственники удивились, а она сразу подарила мне свой старый томик Чехова.'],
+   ['Sister takes after her','Моя сестра пока ещё маленькая, но уже видно, что она вся в бабушку: такая же упрямая и любопытная.'],
+   ['What we do together','С бабушкой нас объединяют книги и выпечка. Каждый раз, когда я к ней приезжаю, мы пьём чай, обсуждаем, что прочитали, и, конечно, что-нибудь печём.'],
+   ['An example to follow','Для меня бабушка – пример во всём. Именно у неё я научился любить книги и ценить время с семьёй.']
+  ]}]},
+ {n:'6', name:'Description of a Place', ilr:'ILR 2', ru:'Опишите свой дом / ваше любимое место отдыха / торговый центр / городской парк / ваш любимый ресторан и т. п.', groups:[
+  {g:'Template', c:[
+   ['What and where','Я хочу рассказать о ___. Он(о) находится в ___, недалеко от ___.'],
+   ['Overall impression','Это ___ (небольшой, просторный, уютный) ___.'],
+   ['Walk through it','Как только заходишь, сразу видишь ___. Слева – ___, справа – ___. В центре ___. Дальше ___.'],
+   ['Senses','Там всегда пахнет ___. Слышно ___. Стены ___.'],
+   ['What happens there','Обычно мы там ___. / Больше всего я люблю ___.'],
+   ['Why it matters','Это место дорого мне, потому что ___. Мой дом – моя крепость.'],
+   ['What I’d change','Если бы я мог что-то изменить, я бы ___.']
+  ]},
+  {g:'Sample: the apartment', c:[
+   ['The apartment','Мы с женой живём в небольшой квартире в центре Денвера. В ней одна спальня, гостиная, совмещённая с кухней, и маленький балкон.'],
+   ['The dog greets you','Как только заходишь в квартиру, тебя встречает наш лабрадор Бублик, и сразу пахнет свежим хлебом.'],
+   ['The reading corner','Но больше всего времени я провожу в гостиной у окна: там стоит моё кресло и полка с русскими книгами. Если бы я мог что-то изменить, я бы сделал квартиру побольше.']
+  ]}]},
+ {n:'7', name:'Instructions', ilr:'ILR 2', ru:'Расскажите, как получить водительские права / снять квартиру / заказать вещи онлайн / поменять колесо в машине и т. п.', groups:[
+  {g:'Script: changing a tire', c:[
+   ['Easy if you know how','Поменять колесо совсем не сложно, если знать, что делать.'],
+   ['Safe spot, hazards, brake','Прежде всего нужно остановиться в безопасном месте, включить аварийку и поставить машину на ручник.'],
+   ['Spare, jack, wrench','Затем достаньте из багажника запаску, домкрат и баллонный ключ.'],
+   ['Loosen nuts on the ground','Пока машина ещё стоит на земле, немного ослабьте гайки, но не откручивайте их до конца.'],
+   ['Jack up, wheel off','После этого поднимите машину домкратом, полностью открутите гайки и снимите колесо.'],
+   ['Spare on, hand-tight','Наденьте запаску и закрутите гайки от руки.'],
+   ['Lower, tighten in a star','Потом опустите машину и как следует затяните гайки крест-накрест.'],
+   ['Check the pressure','И наконец, не забудьте проверить давление в запаске. Вот и всё, ничего сложного!']
+  ]},
+  {g:'Template for any task', c:[
+   ['Intro','___ – это совсем не сложно, если знать, что делать.'],
+   ['First step','Прежде всего нужно ___.'],
+   ['Middle steps','Затем ___. После этого ___. Пока ___, ___.'],
+   ['Warning','Главное – не забыть ___. / Будьте осторожны: ___.'],
+   ['Last step','И наконец, ___.'],
+   ['Wrap-up','Вот и всё, ничего сложного!']
+  ]}]},
+ {n:'8', name:'Current Events', ilr:'ILR 2 / 2+', ru:'Расскажите о последних событиях, происходящих в вашем городе / штате / стране / мире.', groups:[
+  {g:'Template', c:[
+   ['What happened','Недавно в ___ произошло ___. / Сейчас много говорят о ___.'],
+   ['Background','Дело в том, что ___. Всё началось с того, что ___.'],
+   ['Details','По данным ___ / по сообщениям СМИ, ___.'],
+   ['Reactions','Одни считают, что ___, другие – что ___.'],
+   ['Effect on people','Это касается ___, потому что ___. / Это может привести к ___.'],
+   ['Your take','На мой взгляд, ___. / Поживём – увидим.']
+  ]}]},
+ {n:'9', name:'Role Play', ilr:'ILR 2', ru:'Отменили рейс / заказ не пришёл / проблема в гостинице. Позвоните и добейтесь решения.', groups:[
+  {g:'Call template', c:[
+   ['Greeting','Здравствуйте! Меня зовут ___. Я звоню по поводу ___.'],
+   ['The problem','Дело в том, что ___. Номер заказа / брони / рейса – ___.'],
+   ['Ask for options','Скажите, пожалуйста, какие у меня есть варианты? / Что вы можете мне предложить?'],
+   ['Push politely','Я вас понимаю, но поймите и вы меня: ___. / Это меня не устраивает, потому что ___.'],
+   ['Escalate','Могу ли я поговорить с вашим руководителем / старшим менеджером?'],
+   ['Confirm','Давайте уточним: вы ___, а я ___. Правильно? / Можно получить письменное подтверждение?'],
+   ['Close','Спасибо за помощь. Всего доброго!']
+  ]},
+  {g:'Sample: cancelled flight', c:[
+   ['Why I’m calling','Здравствуйте! Меня зовут Алекс, я звоню по поводу своего рейса в Чикаго. Дело в том, что мой рейс только что отменили, а мне обязательно нужно быть там сегодня вечером.'],
+   ['What are my options','Скажите, пожалуйста, какие у меня есть варианты? Есть ли места на ближайший рейс, может быть, с пересадкой или другой авиакомпанией?'],
+   ['Not my fault → hotel + meals','Я вас понимаю, но поймите и меня: рейс отменили не по моей вине. Если сегодня улететь никак нельзя, тогда мне нужен номер в гостинице и ваучер на питание за счёт авиакомпании.'],
+   ['Confirm + thanks','Давайте уточним: вы переоформляете меня на рейс в восемь утра и даёте ваучер на гостиницу. Правильно? Спасибо большое за помощь!']
+  ]}]},
+ {n:'10', name:'Express an Opinion', ilr:'ILR 3', ru:'Выскажите свою точку зрения на экономику / здравоохранение / образование / климат / запрет машин на бензине и т. п.', groups:[
+  {g:'Argument template', c:[
+   ['Position','На мой взгляд, ___. / Я склоняюсь к мнению, что ___.'],
+   ['Reason 1','Во-первых, ___.'],
+   ['Reason 2 + example','Во-вторых, ___. Например, ___.'],
+   ['Counterargument','Конечно, есть и другая точка зрения: некоторые считают, что ___. И в чём-то они правы, ведь ___.'],
+   ['Rebuttal','Тем не менее, ___. / Однако нельзя забывать, что ___.'],
+   ['Conclusion','Таким образом, ___. / В итоге я считаю, что ___.']
+  ]},
+  {g:'Sample: gas-car ban', c:[
+   ['Opening','На мой взгляд, полный запрет машин на бензине – это палка о двух концах.'],
+   ['Fair to the other side','Конечно, сторонники запрета считают, что ___, и в чём-то они правы. Тем не менее, ___.']
+  ]}]},
+ {n:'11', name:'Hypothetical Situation', ilr:'ILR 3', ru:'Представьте, что вы президент (США / Украины / России). Что бы вы предложили и почему?', groups:[
+  {g:'Template', c:[
+   ['Accept the role','Если бы я был ___, то в первую очередь я бы ___.'],
+   ['Priority 1 + why','Прежде всего я бы ___, потому что ___.'],
+   ['Priority 2 + why','Кроме того, я бы ___. Это помогло бы ___.'],
+   ['Admit it’s hard','Конечно, это было бы непросто, ведь ___. / Не все бы с этим согласились.'],
+   ['Win over opponents','Чтобы убедить ___, я бы ___.'],
+   ['Expected result','Я надеюсь, что в итоге ___. / Если бы всё получилось, ___.']
+  ]},
+  {g:'Sample: running for president', c:[
+   ['Three pillars','Если бы я решил баллотироваться в президенты, моя программа строилась бы на трёх вещах.'],
+   ['First, second, third','Во-первых, я бы ___, потому что ___. Во-вторых, я бы ___. Это помогло бы ___. И в-третьих, я бы уделил особое внимание ___.'],
+   ['Not everyone agrees','Конечно, не все бы со мной согласились, но я бы постарался ___.']
+  ]}]},
+ {n:'12', name:'Analysis of a Situation', ilr:'ILR 3', ru:'Терроризм / подорожание цен / конфликт России и Украины / Ближний Восток / американо-китайские отношения.', groups:[
+  {g:'Analysis template', c:[
+   ['Frame the issue','___ – одна из самых острых / обсуждаемых проблем на сегодняшний день.'],
+   ['Causes','Причин этому несколько. Во-первых, ___. Во-вторых, ___. Немаловажную роль играет и ___.'],
+   ['Current state','На данный момент ___. По данным ___, ___.'],
+   ['Consequences','Это приводит к ___ / влечёт за собой ___. В первую очередь это сказывается на ___.'],
+   ['Perspectives','Одни эксперты считают, что ___, другие же полагают, что ___.'],
+   ['Outlook','Что касается перспектив, то ___. Многое будет зависеть от того, ___.'],
+   ['Conclusion','Таким образом, ___. / Время покажет.']
+  ]}]},
+ {n:'★', name:'Idioms', ilr:'Any prompt', ru:'The sayings worth dropping into your answers. Cue is the English meaning; say the Russian.', idioms:true, groups:[
+  {g:'Idioms and allusions', c:[
+   ['The apple doesn’t fall far from the tree','Яблоко от яблони недалеко падает.'],
+   ['Hard in training, easy in battle (Suvorov)','Тяжело в учении – легко в бою.'],
+   ['Turgenev: the great and mighty language','Великий и могучий русский язык.'],
+   ['You can’t grasp Russia with the mind (Tyutchev)','Умом Россию не понять.'],
+   ['Live and learn','Век живи – век учись.'],
+   ['It didn’t go without adventures','Без приключений не обошлось.'],
+   ['All’s well that ends well','Всё хорошо, что хорошо кончается.'],
+   ['Every cloud has a silver lining','Нет худа без добра.'],
+   ['Seeing once beats hearing a hundred times','Лучше один раз увидеть, чем сто раз услышать.'],
+   ['Visiting is nice, home is better','В гостях хорошо, а дома лучше.'],
+   ['Finger-licking good','Пальчики оближешь!'],
+   ['Goosebumps','Мурашки по коже.'],
+   ['A tale is a lie, but it holds a hint (Pushkin)','Сказка ложь, да в ней намёк.'],
+   ['The eyes fear, the hands get it done','Глаза боятся, а руки делают.'],
+   ['Anyone can learn a skill (gods didn’t fire the pots)','Не боги горшки обжигают.'],
+   ['Measure seven times, cut once','Семь раз отмерь, один раз отрежь.'],
+   ['Wouldn’t hurt a fly','Он и мухи не обидит.'],
+   ['Totally trustworthy (you’d go on recon with him)','С ним можно пойти в разведку.'],
+   ['Never at a loss for words','За словом в карман не лезет.'],
+   ['Packed full (no room for an apple)','Яблоку негде упасть.'],
+   ['My home is my castle','Мой дом – моя крепость.'],
+   ['Easier than easy (steamed turnip)','Проще пареной репы.'],
+   ['Put yourself in my shoes','Войдите в моё положение.'],
+   ['That’s completely unacceptable','Это не лезет ни в какие ворота.'],
+   ['A promise takes three years to keep','Обещанного три года ждут.'],
+   ['A double-edged sword','Палка о двух концах.'],
+   ['The road to hell is paved with good intentions','Благими намерениями вымощена дорога в ад.'],
+   ['As many people, as many opinions','Сколько людей, столько и мнений.'],
+   ['A bad peace beats a good quarrel','Худой мир лучше доброй ссоры.'],
+   ['Rome wasn’t built in a day','Москва не сразу строилась.'],
+   ['Time will tell / We’ll see','Время покажет. / Поживём – увидим.'],
+   ['A powder keg','Пороховая бочка.']
+  ]}]}
+];
+
+
+// ---------- extra data ----------
+P.find(p => p.n === '★').groups.push({g: 'Bridges and recovery', c: [
+  ['Getting back to what I was saying', 'Если вернуться к тому, о чём я говорил…'],
+  ['As I already said', 'Как я уже сказал…'],
+  ['How should I put it', 'Как бы это сказать…'],
+  ['Let me think', 'Дайте подумать…'],
+  ['More precisely', 'Точнее говоря…'],
+  ['What I mean is', 'Я имею в виду, что…']
+]});
+// directions prompt (new)
+P.splice(P.findIndex(p => p.n === '8'), 0, {n: 'D', name: 'Directions', ilr: 'Level 2/2+', ru: 'Объясните, как добраться (пешком или на машине) от вашего дома или работы до какого-нибудь места.', groups: [
+  {g: 'Driving', c: [
+   ['Leave the lot', 'Выезжайте с парковки / со стоянки / из гаража.'],
+   ['Take the road', 'Поезжайте по дороге / по улице / по трассе ___.'],
+   ['Head in a direction', 'Поезжайте на юго-запад / на северо-восток, по направлению к ___.'],
+   ['Landmark you’ll see', 'На углу / справа / слева вы увидите ___.'],
+   ['Turn', 'Поверните направо / налево.'],
+   ['Drive up to', 'Доезжайте до перекрёстка / до поворота / до светофора.'],
+   ['Drive past', 'Проезжайте мимо заправки / магазина / кафе.'],
+   ['Keep going straight', 'Продолжайте ехать прямо по дороге ещё минуты три / миль восемь.'],
+   ['Highway on and off', 'Выезжайте на шоссе… Съезжайте с шоссе на ___.'],
+   ['You’ve arrived', 'Через пять минут вы увидите стоянку / парковку – вы на месте!'],
+   ['Send-off', 'Удачной поездки! / Счастливого пути!']
+  ]},
+  {g: 'Walking', c: [
+   ['Walk straight to', 'Идите прямо до ___.'],
+   ['Cross the street', 'Перейдите улицу на светофоре.'],
+   ['Go two blocks', 'Пройдите два квартала.'],
+   ['Turn at the corner', 'За углом сверните направо / налево.'],
+   ['It’s a short walk', 'Это минут десять пешком, не больше.']
+  ]},
+  {g: 'Sample: from work to a café', c: [
+   ['Out of the lot', 'Выезжайте со стоянки и поверните направо на ___.'],
+   ['Straight, then the light', 'Поезжайте прямо минуты три и доезжайте до светофора. Там поверните налево.'],
+   ['Past the gas station', 'Проезжайте мимо заправки. Слева вы увидите большой магазин ___.'],
+   ['Arrive', 'Через две минуты справа будет кафе ___ с небольшой парковкой – вы на месте! Счастливого пути!']
+  ]}
+]});
+
+// vocabulary deck (from the vocab handouts)
+P.push({n: 'V', name: 'Vocabulary', ilr: 'Descriptions', ru: 'Words for describing people and places. The cue is the English meaning; say the Russian.', idioms: true, groups: [
+  {g: 'Appearance', c: [
+   ['Build: average', 'среднего телосложения'], ['Build: slim', 'стройный, стройного телосложения'], ['Build: athletic', 'спортивный, спортивного телосложения'], ['Build: thin', 'худой'], ['Build: heavy-set', 'полный'], ['Height: tall / medium / short', 'высокого / среднего / невысокого роста'],
+   ['Face: oval', 'овальное лицо'], ['Face: round', 'круглое лицо'], ['Face: pleasant', 'приятное лицо'], ['Face: open', 'открытое лицо'], ['Face: attractive', 'привлекательное лицо'], ['Face: sweet, cute', 'милое лицо'], ['Face: friendly, welcoming', 'приветливое лицо'],
+   ['Eyes: cheerful', 'весёлые глаза'], ['Eyes: playful', 'игривые глаза'], ['Eyes: warm', 'тёплые глаза'], ['Eyes: lively', 'живые глаза'], ['Eyes: mysterious', 'загадочные глаза'], ['Eyes: sad', 'печальные / грустные глаза'], ['Eyes: brown / blue / green', 'карие / голубые / зелёные глаза'],
+   ['Hair: long / short', 'длинные / короткие волосы'], ['Hair: straight / wavy', 'прямые / волнистые волосы'], ['Hair: dark / fair / brown / grey', 'тёмные / светлые / каштановые / седые волосы'],
+   ['Feature: mole, beauty mark', 'родинка'], ['Feature: freckles', 'веснушки'], ['Feature: scars', 'шрамы'], ['Feature: beard / mustache', 'борода / усы'], ['Charming', 'обаятельный']
+  ]},
+  {g: 'Character: positive', c: [['kind', 'добрый'], ['honest', 'честный'], ['confident', 'уверенный'], ['responsible', 'ответственный'], ['generous', 'щедрый'], ['calm, peaceful', 'спокойный'], ['friendly', 'дружелюбный'], ['attentive', 'внимательный'], ['brave', 'смелый'], ['optimistic', 'оптимистичный'], ['smart', 'умный'], ['hardworking', 'трудолюбивый'], ['reliable', 'надёжный']]},
+  {g: 'Character: negative', c: [['rude', 'грубый'], ['lazy', 'ленивый'], ['selfish', 'эгоистичный'], ['envious, jealous', 'завистливый'], ['indecisive', 'нерешительный'], ['hot-tempered', 'вспыльчивый'], ['arrogant', 'высокомерный'], ['irresponsible', 'безответственный'], ['dishonest', 'лживый'], ['greedy', 'жадный']]},
+  {g: 'Behavior', c: [['polite', 'вежливый'], ['neat, tidy', 'аккуратный'], ['organized', 'организованный'], ['sociable, outgoing', 'общительный'], ['proactive, takes initiative', 'инициативный'], ['reserved', 'замкнутый'], ['noisy', 'шумный'], ['bold, sassy', 'дерзкий'], ['level-headed', 'уравновешенный'], ['emotional', 'эмоциональный']]},
+  {g: 'Mind', c: [['reasonable, sensible', 'рассудительный'], ['observant', 'наблюдательный'], ['analytical', 'аналитический'], ['quick-witted', 'сообразительный'], ['creative', 'креативный'], ['logical', 'логичный'], ['wise', 'мудрый']]},
+  {g: 'Social and work', c: [['a leader', 'лидер'], ['a team player', 'командный игрок'], ['diplomatic', 'дипломатичный'], ['helpful, responsive', 'отзывчивый'], ['tactful', 'тактичный'], ['charismatic', 'харизматичный'], ['dutiful, efficient', 'исполнительный'], ['punctual', 'пунктуальный'], ['goal-oriented', 'целеустремлённый'], ['disciplined', 'дисциплинированный'], ['productive', 'продуктивный']]},
+  {g: 'Places', c: [['beautiful', 'красивый'], ['cozy, homey', 'уютный'], ['quiet', 'тихий'], ['modern', 'современный'], ['old, historic', 'старинный'], ['spacious', 'просторный'], ['narrow', 'узкий'], ['bright, vivid', 'яркий'], ['gloomy, dark', 'мрачный'], ['busy, lively (city)', 'оживлённый'], ['densely populated', 'густонаселённый'], ['industrial', 'промышленный'], ['popular with tourists', 'туристический'], ['green, lots of nature', 'зелёный'], ['developed', 'развитый'], ['rural', 'сельский'], ['traditional', 'традиционный'], ['picturesque, scenic', 'живописный'], ['wild', 'дикий'], ['mountainous', 'горный'], ['wooded', 'лесной'], ['sunny', 'солнечный'], ['windy', 'ветреный'], ['foggy', 'туманный'], ['relaxing', 'расслабляющий'], ['romantic', 'романтичный'], ['exciting', 'захватывающий'], ['pleasant', 'приятный'], ['popular', 'популярный'], ['full of light (room)', 'светлый'], ['clean / dirty', 'чистый / грязный'], ['well-kept', 'ухоженный'], ['abandoned', 'заброшенный']]}
+]});
+
+// labels from the task handout
+const LEVEL = {'1': 'Level 2/2+ · FORTE', '2': 'Level 2/2+', '3': 'Level 2/2+', '4': 'Level 2/2+', '5': 'Level 2/2+', '6': 'Level 2/2+', 'D': 'Level 2/2+', '7': 'Level 2/2+', '8': 'Level 2/2+', '9': 'Level 3/3+ · also covers situation with complication', '10': 'Level 3/3+', '11': 'Level 3/3+', '12': 'Level 3/3+'};
+P.forEach(p => { if (LEVEL[p.n]) p.ilr = LEVEL[p.n]; });
+
+const SCRIPTS = ['1', '2', '3', '4', '5', '7'];
+const TEMPLATES = ['6', 'D', '8', '9', '10', '11', '12'];
+const isSample = g => /^Sample/.test(g);
+
+// starting frames for writing your own script
+const STARTERS = {
+  '1': [['Who you are', 'Меня зовут ___, мне ___ лет. Я родом из ___.'], ['Job', 'Я уже ___ лет служу в ___ / работаю ___. В мои обязанности входит ___.'], ['Why / how', 'Ещё до ___ я мечтал ___, потому что ___. К счастью, ___.'], ['Education', 'В ___ году я окончил ___ и получил ___.'], ['Hometown', 'Я вырос в ___. Это ___ город недалеко от ___. Моя семья до сих пор там живёт.'], ['Family', 'Мой отец ___, а мама ___. У меня есть ___, которому ___ лет.'], ['Life now', 'Я женат / замужем. Мы живём в ___ вместе с ___.'], ['Hobbies', 'В свободное время я увлекаюсь ___. Больше всего мне нравится ___, потому что ___.'], ['Wrap-up', 'Вот, вкратце, и всё обо мне.']],
+  '2': [['Hook', 'Больше всего мне запомнилась поездка в ___, которая была ___ лет назад.'], ['Background', 'Тогда я ___. Мы давно хотели поехать в ___, потому что ___.'], ['Getting there', 'Мы выехали рано утром / вылетели из ___. Дорога заняла ___ часов.'], ['Main events', 'Сначала мы ___. Потом ___. На следующий день ___.'], ['Problem or surprise', 'Но вдруг ___. / Как назло, ___.'], ['Resolution', 'В итоге ___. / К счастью, всё обошлось.'], ['Why it mattered', 'Эта поездка запомнилась мне больше других, потому что ___. Именно тогда я понял, что ___.'], ['Wrap-up', 'До сих пор, когда я вспоминаю ___, не могу сдержать улыбку.']],
+  '3': [['The tradition', 'В нашей семье есть традиция: ___.'], ['Every year', 'Каждый год мы ___. Обычно ___. Ни один ___ не обходится без ___.'], ['A smaller ritual', 'Кроме того, у нас с ___ есть своя традиция: ___.'], ['A story or detail', 'Больше всего я люблю ___. / Однажды ___.'], ['Why it matters', 'Для меня ___ – это не просто ___, а ___. Эта традиция передаётся из поколения в поколение.']],
+  '4': [['The plan', 'На этих выходных я собираюсь ___.'], ['Why', 'Дело в том, что ___. / Я давно хочу ___, потому что ___.'], ['Process', 'Сначала я буду ___. Потом ___.'], ['Results', 'Когда я ___, я ___. Как только ___, ___.'], ['Condition', 'Если всё пойдёт по плану, ___. / Если что-то пойдёт не так, ___.'], ['Outcome', 'Думаю, к ___ я ___. / Надеюсь, что ___.']],
+  '5': [['Who', 'Я хочу рассказать о ___. Это мой / моя ___.'], ['Age, height, build', 'Ему / ей ___ лет. Он(а) ___ роста, ___ телосложения.'], ['Face and eyes', 'У него / неё ___ лицо и ___ глаза.'], ['Hair and features', 'У него / неё ___ волосы. ___ (особые приметы).'], ['Character', 'По характеру он(а) ___. Он(а) ___ и ___.'], ['Story as proof', 'Например, однажды ___.'], ['Together', 'Нас объединяет ___. Мы часто ___.'], ['Why they matter', 'Для меня он(а) – ___. Именно у него / неё я научился ___.']],
+  '7': [['Intro', '___ – это совсем не сложно, если знать, что делать.'], ['First step', 'Прежде всего нужно ___.'], ['Middle steps', 'Затем ___. После этого ___. Пока ___, ___.'], ['Warning', 'Главное – не забыть ___.'], ['Last step', 'И наконец, ___.'], ['Wrap-up', 'Вот и всё, ничего сложного!']]
+};
+
+if (VERSION === 'blank') {
+  SCRIPTS.forEach(n => { byN0(n).groups = []; });
+  byN0('6').groups = byN0('6').groups.filter(g => !isSample(g.g));
+  byN0('9').groups.forEach(g => g.c.forEach(c => { c[1] = c[1].replace('Меня зовут Алекс', 'Меня зовут ___'); }));
+}
+function byN0(n) { return P.find(p => p.n === n); }
+
+// build items; scripts can be overridden by the user's own version
+function buildItems() {
+  P.forEach(p => {
+    const custom = SCRIPTS.includes(p.n) && S.custom && S.custom[p.n];
+    if (custom) {
+      p.items = []; p.groups = [];
+      custom.forEach(sec => { const g = {g: sec.g || 'Script', c: []}; p.groups.push(g); sec.c.forEach(c => { if ((c.text || '').trim()) { g.c.push([c.cue, c.text]); p.items.push({id: c.id, group: g.g, cue: c.cue || '(no cue)', text: c.text}); } }); });
+      p.groups = p.groups.filter(g => g.c.length);
+    } else {
+      p.groups = p.defaultGroups;
+      p.items = [];
+      p.groups.forEach((g, gi) => g.c.forEach((c, ci) => p.items.push({id: p.n + '-' + gi + '-' + ci, group: g.g, cue: c[0], text: c[1]})));
+    }
+  });
+}
+P.forEach(p => { p.defaultGroups = p.groups; });
+const byN = n => P.find(p => p.n === n);
+const drillItems = id => { const p = byN(id); return TEMPLATES.includes(id) ? p.items.filter(it => !isSample(it.group)) : p.items; };
+
+const FOLLOW = {
+  '1': ['Почему вы решили стать переводчиком?', 'Что вам больше всего нравится в вашей работе?', 'Расскажите подробнее о вашем хобби.', 'Чем вы планируете заниматься в будущем?'],
+  '2': ['С кем вы ездили?', 'Что вы почувствовали в тот момент?', 'Как бы вы поступили на месте отца?', 'Что было бы, если бы медведь не ушёл?', 'Поехали бы вы туда снова?'],
+  '3': ['Как празднуют День благодарения в Америке?', 'Есть ли похожий праздник в России?', 'Какие ещё традиции есть в вашей семье?', 'Почему эта традиция важна для вас?'],
+  '4': ['Почему вы решили переехать?', 'Что самое сложное в переезде?', 'А если что-то пойдёт не так?', 'Каких современных русских авторов вы хотели бы перевести?', 'Вам не страшно менять профессию?'],
+  '5': ['Чем вы похожи и чем отличаетесь?', 'Какие качества вы больше всего цените в людях?', 'Как часто вы видитесь с бабушкой?', 'Опишите своего коллегу.'],
+  '6': ['Чем это место отличается от других?', 'Что бы вы изменили?', 'Где бы вы хотели жить в будущем?'],
+  '7': ['Что делать, если что-то пойдёт не так?', 'А как это делается в России?', 'Вы когда-нибудь сами это делали?'],
+  '8': ['Как это повлияет на жителей?', 'Что, по-вашему, нужно сделать?', 'Откуда вы узнаёте новости?'],
+  '9': ['Извините, свободных мест на сегодня нет.', 'К сожалению, вернуть деньги мы не можем.', 'Все номера заняты, переселить вас некуда.', 'Это не наша вина, обращайтесь в службу доставки.'],
+  '10': ['А что бы вы сделали на месте правительства?', 'Как это влияет лично на вас?', 'Как обстоят дела с этим в России?'],
+  '11': ['А если бы союзники были против?', 'Почему вы думаете, что это сработает?', 'Чем бы вы пожертвовали ради этого?'],
+  '12': ['Как это скажется на обычных людях?', 'Что, по-вашему, будет через пять лет?', 'Кто, на ваш взгляд, в этом виноват?'],
+  'D': ['А если там пробка?', 'Сколько времени это займёт?', 'А на общественном транспорте туда можно доехать?', 'А пешком дойти можно?', 'Где там можно припарковаться?']
+};
+if (VERSION === 'blank') Object.assign(FOLLOW, {
+  '1': ['Почему вы выбрали эту профессию?', 'Что вам больше всего нравится в вашей работе?', 'Расскажите подробнее о вашем хобби.', 'Чем вы планируете заниматься в будущем?'],
+  '2': ['С кем вы ездили?', 'Что вы почувствовали в тот момент?', 'Что бы вы сделали по-другому?', 'Поехали бы вы туда снова?'],
+  '3': ['Как этот праздник празднуют в России?', 'Какие ещё традиции есть в вашей семье?', 'Почему эта традиция важна для вас?', 'Вы будете продолжать эту традицию?'],
+  '4': ['Почему именно это?', 'Что будет самым сложным?', 'А если что-то пойдёт не так?', 'Кто вам в этом поможет?'],
+  '5': ['Чем вы похожи и чем отличаетесь?', 'Какие качества вы больше всего цените в людях?', 'Как часто вы видитесь?', 'Опишите своего коллегу.']
+});
+
+const TOPICS = {
+  '6': ['ваш любимый ресторан', 'городской парк', 'торговый центр', 'ваше любимое место отдыха', 'ваш дом', 'ваше рабочее место', 'город, где вы выросли', 'ваша школа или университет'],
+  '8': ['новость из вашего города', 'новость из вашего штата', 'новость об экономике', 'новость из мира', 'новость о технологиях или науке', 'погода или стихийное бедствие'],
+  '9': ['отменили рейс', 'онлайн-заказ не пришёл вовремя', 'в номере нет горячей воды', 'шумные соседи в гостинице', 'в номере пропал интернет', 'потеряли ваш багаж', 'нет машины, которую вы забронировали напрокат', 'вас поселили не в тот номер'],
+  '10': ['состояние экономики', 'система здравоохранения', 'стоимость высшего образования', 'изменение климата', 'зелёная энергия', 'медицинская марихуана', 'запрет машин на бензине', 'соцсети для детей', 'искусственный интеллект и рабочие места'],
+  '11': ['вы баллотируетесь в президенты США', 'вы президент Украины', 'вы президент России', 'вы президент США и посредник в конфликте', 'вы мэр своего города', 'вы директор своей компании', 'вы выиграли в лотерею', 'вы можете жить в любой стране'],
+  '12': ['борьба с международным терроризмом', 'подорожание жилья, еды и товаров', 'военный конфликт между Россией и Украиной', 'ситуация на Ближнем Востоке', 'американо-китайские отношения', 'стоимость жилья для молодых семей'],
+  'D': ['от вашего дома до ближайшего магазина', 'от работы до вашего любимого ресторана', 'от аэропорта до вашего дома', 'от гостиницы до центра города, пешком', 'от вашего дома до ближайшей заправки', 'от вашего дома до парка, пешком', 'от вокзала до музея, пешком']
+};
+if (VERSION === 'blank') Object.assign(TOPICS, {
+  '6': ['ваш любимый ресторан', 'городской парк', 'торговый центр', 'ваше любимое место отдыха', 'ваш дом', 'ваше рабочее место', 'город, где вы выросли', 'ваша школа или университет'],
+  '8': ['новость из вашего города', 'новость из вашего штата', 'новость об экономике', 'новость из мира', 'новость о технологиях или науке', 'погода или стихийное бедствие'],
+  '11': ['вы баллотируетесь в президенты США', 'вы президент Украины', 'вы президент России', 'вы президент США и посредник в конфликте', 'вы мэр своего города', 'вы директор своей компании', 'вы выиграли в лотерею', 'вы можете жить в любой стране']
+});
+const GRAMMAR = {
+  '6': 'Use «как только заходишь…» to walk through the place, and «находится» + prepositional for location.',
+  '8': 'Reported speech keeps you neutral: «по словам…», «как сообщают СМИ…». Add one passive: «было принято решение».',
+  '9': 'Polite conditional carries this one: «не могли бы вы…», «я бы хотел…». Never accept the first refusal.',
+  '10': 'Concession is the Level 3 move: «хотя…», «несмотря на то что…», «тем не менее…».',
+  '11': 'Keep «бы» + past tense going for the whole answer. Don’t slip back into plain future.',
+  '12': 'Cause and effect: «поэтому», «в результате», «из-за того, что», «это приводит к…».',
+  'D': 'Directions use the polite imperative: поезжайте, поверните, проезжайте. Watch the prepositions: по + dative (по улице), до + genitive (до светофора), мимо + genitive (мимо заправки), к + dative (по направлению к центру).'
+};
+
+// ---------- stage definitions ----------
+const SCRIPT_STAGES = [
+  {t: 'Understand and map', goal: 'Know what each chunk is for before you try to keep it.',
+   why: 'Actors who learn for meaning remember more than actors who try to memorize. Fixing stress now matters because practice strengthens whatever you rehearse, mistakes included.',
+   how: ['For each chunk, write the beat: what you are doing to the listener (set the scene, explain why, admit a problem, draw the lesson).', 'Write the key phrase you must keep word-perfect: a connector, an idiom, a tricky case or aspect.', 'Check stress on any word you’re unsure of, from a native recording or a stress dictionary.', 'Say the beat list out loud in English, in order, without looking.'],
+   exit: 'You can explain every beat and its order from memory.',
+   checks: ['I wrote a beat for each chunk (or kept the cue)', 'I picked a key phrase for the chunks that have one', 'I checked stress on every word I wasn’t sure of', 'I can say the beat list in order from memory']},
+  {t: 'Encode aloud', goal: 'Get each chunk into your mouth, not just your eyes.',
+   why: 'Words said aloud are remembered better than words read silently, and talking to a real person in your head makes it meaning, not text.',
+   how: ['Work one block (2–3 chunks) at a time. Read each block aloud at speaking volume, to a specific person who needs to hear it.', 'Two or three read-throughs per block, no more. Extra rereading mostly builds false confidence.', 'Record yourself reading the whole answer naturally, then shadow the recording once or twice.', 'Add one small natural gesture per beat where it fits: counting off, pointing back in time, an open hand for a contrast.'],
+   exit: 'Reading each block aloud sounds like talking: no stumbles on stress or endings.',
+   checks: ['I read every block aloud to an imagined listener', 'I recorded the whole answer and shadowed it', 'Reading it aloud now sounds like talking']},
+  {t: 'Fade the cues', goal: 'Turn recognizing the text into recalling it.',
+   why: 'Recall with feedback roughly doubles retention over rereading, and fading the hints step by step works when plain testing is still too hard.',
+   how: ['First letters: say each chunk from the first letters, then reveal and check.', 'Recall: from the cue and the end of the previous chunk, say it, reveal, mark honestly. A wrong ending or key phrase counts as “Again.”', 'If you miss more than about half of a block, drop back to First letters for that block.', 'Stop a block once you get it right once. Coming back after sleep beats drilling it more now.', 'Use Type it for chunks that keep failing.'],
+   exit: 'After a night’s sleep, every chunk passes in Recall on the first try (one or two misses at most).',
+   checks: ['My last full pass came after a night’s sleep'], auto: 'drill'},
+  {t: 'Whole answer', goal: 'Deliver the whole answer from the beat card, then from nothing.',
+   why: 'Free recall of the whole is the closest practice to the real test, and the order of beats is the part you can lock in hardest.',
+   how: ['Stand up and give the full answer from the beat card, out loud, at speaking pace. Record it.', 'Play it back against the text. Note skipped beats, lost key phrases and long searches.', 'If the wording drifted but it’s still correct, natural Russian, keep it. Only the beat order and key phrases are fixed.', 'Then hide the card and do it from nothing. If you blank, think of the next beat in English and keep going.', 'If the order won’t stick, place each beat at a spot along a route you know (front door, hall, kitchen) and walk it in your head.'],
+   exit: 'Two clean card-free deliveries on separate days: all beats, in order, key phrases intact.',
+   checks: [], auto: 'deliveries'},
+  {t: 'Keep it fresh', goal: 'Keep the answer available with as little time as possible.',
+   why: 'Spaced reviews with sleep in between hold memory far better than massed practice. Mixing scripts forces you to pick the right one, like the interview does.',
+   how: ['Each review starts as a card-free delivery, recorded. Only open the drill for chunks that failed.', 'Mix scripts in one sitting instead of repeating one.', 'If a review was shaky, review that script sooner. If it was clean, wait longer before the next one.', 'Don’t learn a new script right before reviewing this one.'],
+   exit: 'Three clean reviews logged, with gaps between them.',
+   checks: [], auto: 'reviews'},
+  {t: 'Break it on purpose', goal: 'Rebuild the answer from any point, at any length, in any form.',
+   why: 'Raters flag answers that ignore the question or repeat word-for-word. These drills make the answer fit whatever the tester actually asks.',
+   how: ['Use the rolls below to get a random starting point, length, change or follow-up.', 'Say each version aloud. Keep the key phrases, let everything else change.'],
+   exit: 'You can do any of the drills below without stopping for more than a few seconds.',
+   checks: [], auto: 'variations'},
+  {t: 'Test conditions', goal: 'Recall reliably under pressure and after interruptions.',
+   why: 'Testers interrupt and change topics on purpose. Practicing retrieval under pressure and in different places makes recall less fragile.',
+   how: ['Run mock interviews (Mock interview tab) with a partner or the auto-interrupt. Record them.', 'When cut off, answer the new question fully. Only come back with a bridge phrase if it makes sense.', 'If you blank, use a stalling phrase and jump to the next beat you remember.', 'Practice in different rooms, standing and sitting, and once over the phone if you can.'],
+   exit: 'You handle every interruption, nothing comes out as a full word-for-word recital, and the content comes out even when the wording changes.',
+   checks: ['This prompt came up in a mock with interruptions and I recovered', 'I answered it without reciting it word for word', 'I used a bridge or stalling phrase at least once and kept going']}
+];
+const VARIATIONS = [
+  {id: 'start', t: 'Start anywhere', d: 'Begin at a random beat, then cover the rest in a sensible order.'},
+  {id: 'len', t: 'Short, medium, long', d: 'Same answer at a different length.'},
+  {id: 'fact', t: 'Change one fact', d: 'Swap a detail and fix everything that depends on it: cases, agreement, aspect.'},
+  {id: 'time', t: 'Change the time frame', d: 'Tell it as a habit, a one-time past story, or a future plan.'},
+  {id: 'para', t: 'Paraphrase pass', d: 'Give the whole answer without reusing any sentence word for word. Keep only the key phrases.'},
+  {id: 'follow', t: 'Answer the follow-up', d: 'Answer a likely follow-up question without preparing.'}
+];
+const ROLLS = {
+  len: ['30 seconds: two or three beats only', 'About one minute: the main beats', 'Full length, every beat'],
+  fact: ['a different relative', 'a different city', 'a different year', 'a different car or object', 'a different number (age, hours, years)', 'a different reason why'],
+  time: ['as a habit: «каждый год / обычно…»', 'as a one-time past story: «однажды…»', 'as a future plan: «в следующий раз я…»']
+};
+
+const TEMPLATE_STAGES = [
+  {t: 'Learn the frame', goal: 'Know the frame and its connectors cold. The content changes every time.',
+   why: 'Ready-made chunks and discourse frames let you speak in longer, smoother runs. A frame you know is how you build Level 3 answers live.',
+   how: ['Read the frame aloud once, line by line.', 'Drill it in First letters, then Recall, until each line passes.', 'Don’t memorize the sample answers word for word. They show the frame at work.'],
+   exit: 'Every line of the frame passes in Recall.', checks: [], auto: 'drill'},
+  {t: 'Fill it fresh', goal: 'Build a new answer on the frame with a new topic every time.',
+   why: 'A filled-in answer you repeat becomes a canned answer, and canned answers are what raters listen for. Fresh fills build the real skill.',
+   how: ['Roll a topic. Give a full answer aloud on the frame, with no notes.', 'Use a new topic each time. Never memorize a filled-in version.', 'Mind the grammar this prompt depends on (below).'],
+   exit: 'Five fresh fills on different topics, done aloud.', checks: [], auto: 'fills'},
+  {t: 'Under pressure', goal: 'Build the answer live while someone pushes back.',
+   why: 'The opinion, hypothetical and analysis prompts are rated on whether you can build an argument on the spot. That only shows under pressure.',
+   how: ['Get this prompt type in a mock interview with interruptions.', 'When pushed, concede a point and come back: «Это так, но…», «Согласен, однако…».'],
+   exit: 'You built this answer live in a mock and handled the push-back.',
+   checks: ['I answered this prompt type in a mock with interruptions', 'I built it live, not from a filled-in version I’d memorized']}
+];
+const PHRASE_STAGES = [
+  {t: 'Learn the deck', goal: 'Make every idiom and bridge phrase automatic.',
+   why: 'Formulaic phrases cut pauses and lengthen fluent runs, and raters notice them. They only help if they come out without effort.',
+   how: ['Recall mode: read the English meaning, say the Russian aloud, reveal, mark honestly.', 'For each idiom, say one sentence of your own that uses it.', 'Come back after sleep and redo the ones marked “Again.”'],
+   exit: 'Every phrase in the deck passes in Recall.', checks: [], auto: 'drill'},
+  {t: 'Use them live', goal: 'Use phrases where they fit the answer you’re actually giving.',
+   why: 'An idiom planted where it doesn’t fit, or a sudden jump in level, is one of the signs raters use to spot rehearsed speech.',
+   how: ['One or two idioms per answer at most.', 'Use them in variation drills and mocks when they fit, not in a fixed spot.'],
+   exit: 'You’ve used idioms and bridge phrases naturally under pressure.',
+   checks: ['I used an idiom where it fit, in a drill or mock, without planning the spot', 'I used a bridge phrase to get back on track after an interruption']}
+];
+
+const VOCAB_STAGES = [
+  {t: 'Learn the words', goal: 'Have the description words ready the moment you need them.',
+   why: 'Describing people and places is a Level 2 task, and a wider set of adjectives is the quickest way to make those answers sound fuller.',
+   how: ['Pick a section. Recall mode: read the English, say the Russian aloud, reveal, mark honestly.', 'For adjectives, say the phrase you\u2019d actually use: «он высокого роста», «у неё голубые глаза», «это уютное место».', 'Come back after sleep and redo the ones marked \u201cAgain.\u201d'],
+   exit: 'Every word in the deck passes in Recall.', checks: [], auto: 'drill'},
+  {t: 'Use them live', goal: 'Pull the words into real descriptions without looking.',
+   why: 'Words you\u2019ve only flashcarded can still stall in speech. Using them in full descriptions makes them available under pressure.',
+   how: ['Describe someone you know, following the appearance frame, without looking at the lists.', 'Describe a place: overall impression, layout, details, why it matters.', 'Aim for variety over quantity. Five well-chosen words beat fifteen in a row.'],
+   exit: 'You\u2019ve described a person and a place out loud using the deck, without looking.',
+   checks: ['I described a person\u2019s looks and character aloud using at least five deck words, without looking', 'I described a place aloud using at least five deck words, without looking']}
+];
+
+function stagesFor(id) { return SCRIPTS.includes(id) ? SCRIPT_STAGES : TEMPLATES.includes(id) ? TEMPLATE_STAGES : id === 'V' ? VOCAB_STAGES : PHRASE_STAGES; }
+const ALL_ITEMS = [...SCRIPTS, ...TEMPLATES, 'V', '★'];
+const TOTAL = ALL_ITEMS.reduce((a, id) => a + stagesFor(id).length, 0) + 1; // +1 mock readiness
+
+// ---------- state ----------
+const KEY = VERSION === 'blank' ? 'opi-path-blank-v1' : 'opi-path-example-v1';
+let S = {marks: {}, beats: {}, done: {}, checks: {}, deliveries: {}, reviews: {}, fills: {}, vars: {}, touched: {}, mocks: [], custom: {}, ui: {tab: 'overview', script: '1', tmpl: '6', stage: {}}};
+try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && s.ui) S = Object.assign(S, s, {ui: Object.assign(S.ui, s.ui)}); } catch (e) {}
+// progress from the older single-version tool carries over into your own copy once
+if (VERSION === 'blank' && !localStorage.getItem(KEY)) { try { const old = JSON.parse(localStorage.getItem('opi-path-v1') || 'null'); if (old && old.ui) S = Object.assign(S, old, {ui: Object.assign(S.ui, old.ui)}); } catch (e) {} }
+if (!S.custom) S.custom = {};
+buildItems();
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+const today = () => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+function touch(id) { S.touched[id] = today(); }
+function ago(d) {
+  if (!d) return 'not yet';
+  const a = new Date(d + 'T00:00'), b = new Date(today() + 'T00:00');
+  const n = Math.round((b - a) / 86400000);
+  return n <= 0 ? 'today' : n === 1 ? 'yesterday' : n + ' days ago';
+}
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[ch]));
+const rand = a => a[Math.floor(Math.random() * a.length)];
+
+function isDone(id, s) { return !!S.done[id + ':' + s]; }
+function currentStage(id) { const st = stagesFor(id); for (let i = 0; i < st.length; i++) if (!isDone(id, i)) return i; return st.length; }
+function doneCount() { let n = 0; ALL_ITEMS.forEach(id => stagesFor(id).forEach((_, i) => { if (isDone(id, i)) n++; })); if (mockReady()) n++; return n; }
+function cleanMocks() { return S.mocks.filter(m => m.ok).length; }
+function mockReady() { return cleanMocks() >= 3; }
+
+function autoStatus(id, def) {
+  const items = drillItems(id);
+  if (def.auto === 'drill' && !items.length) return {ok: false, text: 'Write your script first (use the box above)'};
+  if (def.auto === 'drill') { const got = items.filter(it => S.marks[it.id] === 'got').length; return {ok: got === items.length, text: got + ' of ' + items.length + ' chunks passed in Recall'}; }
+  if (def.auto === 'deliveries') { const days = new Set((S.deliveries[id] || []).filter(x => x.ok).map(x => x.d)); return {ok: days.size >= 2, text: days.size + ' of 2 clean card-free deliveries on separate days'}; }
+  if (def.auto === 'reviews') { const days = new Set((S.reviews[id] || []).filter(x => x.ok).map(x => x.d)); return {ok: days.size >= 3, text: days.size + ' of 3 clean reviews on separate days'}; }
+  if (def.auto === 'variations') { const v = S.vars[id] || {}; const n = VARIATIONS.filter(x => v[x.id]).length; return {ok: n === VARIATIONS.length, text: n + ' of ' + VARIATIONS.length + ' drills done'}; }
+  if (def.auto === 'fills') { const f = S.fills[id] || []; const n = new Set(f.map(x => x.topic)).size; return {ok: n >= 5, text: n + ' of 5 fresh fills on different topics'}; }
+  return null;
+}
+function exitMet(id, s) {
+  const def = stagesFor(id)[s];
+  if (SCRIPTS.includes(id) && !byN(id).items.length) return false;
+  const checksOk = def.checks.every((_, k) => S.checks[id + ':' + s + ':' + k]);
+  const a = def.auto ? autoStatus(id, def) : null;
+  return checksOk && (!a || a.ok);
+}
+
+// ---------- drill widget ----------
+let D = {key: '', mode: 'recall', idx: 0, revealed: false, typed: null, againOnly: false, group: ''};
+function drillReset(key, mode) { if (D.key !== key) { D = {key, mode: mode || D.mode || 'recall', idx: 0, revealed: false, typed: null, againOnly: false, group: ''}; } }
+function drillVisible(items) { return items.map((it, i) => ((!D.againOnly || S.marks[it.id] === 'again') && (!D.group || it.group === D.group)) ? i : -1).filter(i => i >= 0); }
+const letters = t => t.replace(/[\p{L}\p{N}]+/gu, w => w[0]);
+const norm = w => w.toLowerCase().replace(/ё/g, 'е').replace(/[^\p{L}\p{N}]/gu, '');
+function diff(target, attempt) {
+  const tw = target.split(/\s+/).filter(Boolean), tn = tw.map(norm);
+  const an = attempt.split(/\s+/).map(norm).filter(Boolean);
+  const m = tn.length, n = an.length;
+  const dp = Array.from({length: m + 1}, () => new Array(n + 1).fill(0));
+  for (let i = m - 1; i >= 0; i--) for (let j = n - 1; j >= 0; j--) dp[i][j] = (tn[i] && tn[i] === an[j]) ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+  const ok = new Array(m).fill(false); let i = 0, j = 0;
+  while (i < m && j < n) { if (tn[i] && tn[i] === an[j]) { ok[i] = true; i++; j++; } else if (dp[i + 1][j] >= dp[i][j + 1]) i++; else j++; }
+  const counted = tn.map((w, k) => w ? k : -1).filter(k => k >= 0);
+  const hits = counted.filter(k => ok[k]).length;
+  return {html: tw.map((w, k) => (!tn[k] || ok[k]) ? esc(w) : '<span class="miss">' + esc(w) + '</span>').join(' '), pct: counted.length ? Math.round(100 * hits / counted.length) : 100};
+}
+function drillHTML(id, opts) {
+  opts = opts || {};
+  const p = byN(id), items = drillItems(id);
+  drillReset(id + ':' + (opts.tag || ''), opts.mode);
+  const modes = opts.modes || ['letters', 'recall', 'type'];
+  const names = {letters: 'First letters', recall: 'Recall', type: 'Type it'};
+  if (!modes.includes(D.mode)) D.mode = modes[0];
+  if (!items.length) return '<div class="dcard"><p class="dcue">Nothing to drill yet.</p><p class="muted">Write your script in the box above, then come back here.</p></div>';
+  const vis = drillVisible(items);
+  const groups = [...new Set(items.map(it => it.group))];
+  let h = (opts.groups && groups.length > 1 ? '<label class="toggle" for="dGroup">Section <select id="dGroup"><option value="">All sections</option>' + groups.map(g => '<option value="' + esc(g) + '"' + (D.group === g ? ' selected' : '') + '>' + esc(g) + ' (' + items.filter(it => it.group === g).length + ')</option>').join('') + '</select></label>' : '') +
+    '<div class="row" style="justify-content:space-between"><div class="modes" role="group" aria-label="Drill mode">' +
+    modes.map(m => '<button type="button" data-dmode="' + m + '" aria-pressed="' + (D.mode === m) + '">' + names[m] + '</button>').join('') +
+    '</div><label class="toggle"><input type="checkbox" id="dAgain"' + (D.againOnly ? ' checked' : '') + '> Only “Again” chunks</label></div>';
+  h += '<div class="path" aria-label="Chunks">' + vis.map((i, k) => { const it = items[i], m = S.marks[it.id]; return '<button type="button" class="step' + (m ? ' ' + m : '') + (k === D.idx ? ' current' : '') + '" data-dk="' + k + '" title="' + esc(it.cue) + '">' + (i + 1) + '</button>'; }).join('') + '</div>';
+  if (!vis.length) return h + '<div class="dcard"><p class="dcue">Nothing marked “Again” here.</p><p class="muted">Turn the filter off to drill everything.</p></div>';
+  if (D.idx >= vis.length) D.idx = vis.length - 1;
+  const i = vis[D.idx], it = items[i];
+  const prev = !p.idioms && i > 0 && items[i - 1].group === it.group ? items[i - 1].text.split(/\s+/).slice(-6).join(' ') : '';
+  let body;
+  if (D.mode === 'recall') body = D.revealed ? '<p class="ru">' + esc(it.text) + '</p>' : '<div class="veil">Say it out loud, then reveal.</div>';
+  else if (D.mode === 'letters') body = D.revealed ? '<p class="ru">' + esc(it.text) + '</p>' : '<p class="ru letters">' + esc(letters(it.text)) + '</p>';
+  else body = D.typed ? '<p class="diff">' + D.typed.html + '</p><span class="label">' + D.typed.pct + '% of words matched</span>' : '<textarea id="dAttempt" lang="ru" spellcheck="false" placeholder="Печатайте здесь…" aria-label="Your version"></textarea>';
+  const graded = D.mode === 'type' ? !!D.typed : D.revealed;
+  const main = D.mode === 'type' ? (D.typed ? '' : '<button type="button" class="btn primary" data-act="dCheck">Check</button>') : (D.revealed ? '' : '<button type="button" class="btn primary" data-act="dReveal">Reveal <kbd>Space</kbd></button>');
+  const grade = graded ? '<button type="button" class="btn again" data-act="dAgainMark">Again <kbd>1</kbd></button><button type="button" class="btn good" data-act="dGot">Got it <kbd>2</kbd></button>' : '';
+  h += '<div class="dcard"><div class="row" style="justify-content:space-between"><span class="label">' + esc(it.group) + ' · ' + (i + 1) + ' of ' + items.length + '</span>' + (S.marks[it.id] ? '<span class="label" style="color:var(--' + (S.marks[it.id] === 'got' ? 'good' : 'again') + ')">' + (S.marks[it.id] === 'got' ? 'Got it' : 'Again') + '</span>' : '') + '</div>' +
+    (prev ? '<p class="context">…' + esc(prev) + '</p>' : '') + '<p class="dcue">' + esc(it.cue) + '</p>' + body +
+    '<div class="row">' + main + grade + '</div></div>' +
+    '<div class="nav"><button type="button" class="btn small" data-act="dPrev"' + (D.idx === 0 ? ' disabled' : '') + '>← Previous</button><button type="button" class="btn small" data-act="dNext"' + (D.idx >= vis.length - 1 ? ' disabled' : '') + '>Next →</button></div>';
+  return h;
+}
+let drillOwner = null; // item id currently showing a drill
+function drillMark(v) {
+  const items = drillItems(drillOwner), vis = drillVisible(items); if (!vis.length) return;
+  const it = items[vis[D.idx]]; S.marks[it.id] = v; touch(drillOwner); save();
+  const atEnd = D.idx >= vis.length - 1;
+  if (D.againOnly && v === 'got') { D.revealed = false; D.typed = null; }
+  else if (!atEnd) { D.idx++; D.revealed = false; D.typed = null; }
+  render();
+}
+
+// ---------- views ----------
+function stepperHTML(id, sel) {
+  const st = stagesFor(id), cur = currentStage(id);
+  return '<div class="stepper" style="--n:' + st.length + '">' + st.map((s, i) =>
+    '<button type="button" class="sbtn' + (isDone(id, i) ? ' done' : '') + (i === cur ? ' now' : '') + '" data-stage="' + i + '" aria-pressed="' + (i === sel) + '" aria-label="Stage ' + (i + 1) + ': ' + esc(s.t) + '"><span class="sn">' + (isDone(id, i) ? '✓ ' : '') + (i + 1) + '</span><span class="st">' + esc(s.t) + '</span></button>').join('') + '</div>';
+}
+
+function exitHTML(id, s) {
+  const def = stagesFor(id)[s];
+  const a = def.auto ? autoStatus(id, def) : null;
+  const met = exitMet(id, s), prevOk = s === 0 || isDone(id, s - 1), done = isDone(id, s);
+  let h = '<div class="exit' + (met ? ' ok' : '') + '"><span class="label">Move on when</span><p>' + esc(def.exit) + '</p>';
+  if (a) h += '<div class="auto"><span class="dot' + (a.ok ? ' on' : '') + '"></span>' + esc(a.text) + '</div>';
+  def.checks.forEach((c, k) => { const ck = id + ':' + s + ':' + k; h += '<label class="check"><input type="checkbox" data-check="' + ck + '"' + (S.checks[ck] ? ' checked' : '') + '><span>' + esc(c) + '</span></label>'; });
+  if (done) h += '<div class="row"><span class="pill ok">Stage done</span><button type="button" class="linkish" data-act="undoStage">Reopen this stage</button></div>';
+  else h += '<div class="row"><button type="button" class="btn primary" data-act="doneStage"' + (met && prevOk ? '' : ' disabled') + '>Mark stage ' + (s + 1) + ' done</button>' + (!prevOk ? '<span class="muted">Finish stage ' + s + ' first.</span>' : '') + '</div>';
+  return h + '</div>';
+}
+
+function stageShell(id, s, tool) {
+  const def = stagesFor(id)[s];
+  return '<div class="card"><span class="label">Stage ' + (s + 1) + ' of ' + stagesFor(id).length + '</span><h2>' + esc(def.t) + '</h2>' +
+    '<p class="goal">' + esc(def.goal) + '</p><p class="why">' + esc(def.why) + '</p>' +
+    '<div><h3 style="margin-bottom:6px">Do this</h3><ol class="steps">' + def.how.map(x => '<li>' + esc(x) + '</li>').join('') + '</ol></div>' +
+    (tool ? '<div style="display:flex;flex-direction:column;gap:12px;min-width:0">' + tool + '</div>' : '') +
+    exitHTML(id, s) + '</div>';
+}
+
+function beatOf(it) { const b = S.beats[it.id]; return b && b.beat ? b.beat : it.cue; }
+function keyOf(it) { const b = S.beats[it.id]; return b && b.key ? b.key : ''; }
+
+let ui4 = {hide: false, text: false}; let showReviewDrill = false; let rolls = {};
+
+function scriptTool(id, s) {
+  const p = byN(id), items = p.items;
+  if (s === 0) return '<div class="map">' + items.map((it, i) =>
+    '<div class="maprow"><span class="n">' + String(i + 1).padStart(2, '0') + '</span><div style="min-width:0"><div class="cue-c">' + esc(it.cue) + '</div><p class="ru sm">' + esc(it.text) + '</p>' +
+    '<div class="mapin"><label class="field"><span>Beat: what I’m doing</span><input type="text" id="beat-' + it.id + '" data-beat="' + it.id + '" value="' + esc((S.beats[it.id] || {}).beat || '') + '" placeholder="e.g. set the scene"></label>' +
+    '<label class="field"><span>Key phrase to keep exact</span><input type="text" id="key-' + it.id + '" data-key="' + it.id + '" lang="ru" value="' + esc((S.beats[it.id] || {}).key || '') + '" placeholder="e.g. как говорится"></label></div></div></div>').join('') + '</div>';
+  if (s === 1) {
+    const blocks = []; for (let i = 0; i < items.length; i += 3) blocks.push(items.slice(i, i + 3));
+    return blocks.map((b, bi) => '<div class="block"><span class="label">Block ' + String.fromCharCode(65 + bi) + ' · chunks ' + (bi * 3 + 1) + '–' + (bi * 3 + b.length) + '</span>' + b.map(it => '<div><div class="cue-c">' + esc(beatOf(it)) + '</div><p class="ru">' + esc(it.text) + '</p></div>').join('') + '</div>').join('');
+  }
+  if (s === 2) { drillOwner = id; return drillHTML(id, {tag: 'fade', mode: 'letters'}); }
+  if (s === 3 || s === 4) {
+    const card = ui4.hide ? '<div class="hiddencard">Card hidden. Deliver from nothing.</div>' :
+      '<ol class="beatcard">' + items.map((it, i) => '<li><span class="n">' + (i + 1) + '</span><div>' + esc(beatOf(it)) + (keyOf(it) ? '<div class="k">' + esc(keyOf(it)) + '</div>' : '') + '</div></li>').join('') + '</ol>';
+    const list = s === 3 ? (S.deliveries[id] || []) : (S.reviews[id] || []);
+    let h = '<div class="row"><button type="button" class="btn small" data-act="toggleCard">' + (ui4.hide ? 'Show the beat card' : 'Hide the beat card') + '</button><button type="button" class="btn small" data-act="toggleText">' + (ui4.text ? 'Hide full text' : 'Show full text to check') + '</button></div>' + card;
+    if (ui4.text) h += '<div class="block">' + items.map(it => '<p class="ru sm">' + esc(it.text) + '</p>').join('') + '</div>';
+    h += '<div class="row"><span class="label">' + (s === 3 ? 'Log a card-free delivery' : 'Log a review') + '</span></div><div class="row"><button type="button" class="btn good" data-act="' + (s === 3 ? 'logDel' : 'logRev') + '" data-ok="1">Clean</button><button type="button" class="btn again" data-act="' + (s === 3 ? 'logDel' : 'logRev') + '" data-ok="0">Shaky</button><span class="muted">Last practiced: ' + ago(S.touched[id]) + '</span></div>';
+    if (list.length) h += '<div class="log">' + list.slice(-12).map(x => '<span class="pill ' + (x.ok ? 'ok' : 'bad') + '">' + (x.ok ? 'clean' : 'shaky') + ' · ' + ago(x.d) + '</span>').join('') + '</div>';
+    if (s === 4) {
+      const last = list[list.length - 1];
+      if (last) h += '<p class="muted">' + (last.ok ? 'Last review was clean, so give this one a longer gap before the next.' : 'Last review was shaky, so come back to this one soon.') + '</p>';
+      h += '<div><button type="button" class="btn small" data-act="toggleRevDrill">' + (showReviewDrill ? 'Close the drill' : 'Drill the chunks that failed') + '</button></div>';
+      if (showReviewDrill) { drillOwner = id; D.key !== id + ':rev' && (drillReset(id + ':rev', 'recall'), D.againOnly = true); h += drillHTML(id, {tag: 'rev', mode: 'recall'}); }
+    }
+    return h;
+  }
+  if (s === 5) {
+    const v = S.vars[id] || {};
+    return '<div class="drills">' + VARIATIONS.map(x => {
+      const r = rolls[id + x.id];
+      const canRoll = ['start', 'len', 'fact', 'time', 'follow'].includes(x.id);
+      return '<div class="drill' + (v[x.id] ? ' done' : '') + '"><h3>' + esc(x.t) + '</h3><p class="muted" style="font-size:.88rem">' + esc(x.d) + '</p>' +
+        (r ? '<div class="roll">' + esc(r) + '</div>' : '') +
+        '<div class="row">' + (canRoll ? '<button type="button" class="btn small" data-roll="' + x.id + '">' + (r ? 'Roll again' : 'Roll') + '</button>' : '') +
+        '<label class="check"><input type="checkbox" data-var="' + x.id + '"' + (v[x.id] ? ' checked' : '') + '><span>Done it aloud</span></label></div></div>';
+    }).join('') + '</div>';
+  }
+  if (s === 6) return '<div class="row"><button type="button" class="btn" data-goto="mock">Open the mock interview</button></div>' + phraseRef();
+  return '';
+}
+
+function rollFor(id, kind) {
+  const items = byN(id).items;
+  if (kind === 'start') { const i = Math.floor(Math.random() * items.length); return 'Start at beat ' + (i + 1) + ': ' + beatOf(items[i]); }
+  if (kind === 'follow') return rand(FOLLOW[id] || ['Почему?']);
+  return rand(ROLLS[kind]);
+}
+
+function phraseRef() {
+  const g = byN('★').groups.find(x => x.g === 'Bridges and recovery');
+  return '<div class="phr">' + g.c.map(c => '<div>' + esc(c[1]) + '<small>' + esc(c[0]) + '</small></div>').join('') + '</div>';
+}
+
+function templateTool(id, s) {
+  if (s === 0) { drillOwner = id; return drillHTML(id, {tag: 'frame', mode: 'letters', groups: true}); }
+  if (s === 1) {
+    const r = rolls[id + 'topic'], f = S.fills[id] || [];
+    const gs = byN(id).groups;
+    return gs.filter(g => !isSample(g.g)).map(g => '<div class="block"><span class="label">' + (gs.filter(x => !isSample(x.g)).length > 1 ? 'Frame: ' + esc(g.g) : 'The frame') + '</span><ol class="beatcard">' + g.c.map((c, i) => '<li><span class="n">' + (i + 1) + '</span><div>' + esc(c[0]) + '<div class="k">' + esc(c[1]) + '</div></div></li>').join('') + '</ol></div>').join('') +
+      (gs.some(g => isSample(g.g)) ? gs.filter(g => isSample(g.g)).map(g => '<div class="block"><span class="label">Example: ' + esc(g.g.replace(/^Sample: /, '')) + '</span>' + g.c.map(c => '<p class="ru sm">' + esc(c[1]) + '</p>').join('') + '</div>').join('') : '') +
+      (GRAMMAR[id] ? '<p class="muted">' + esc(GRAMMAR[id]) + '</p>' : '') +
+      '<div class="row"><button type="button" class="btn" data-act="rollTopic">' + (r ? 'Roll another topic' : 'Roll a topic') + '</button></div>' +
+      (r ? '<div class="roll">' + esc(r) + '</div><div class="row"><button type="button" class="btn good" data-act="logFill">I gave a full answer on this aloud</button></div>' : '') +
+      (f.length ? '<div class="log">' + f.map(x => '<span class="pill ok">' + esc(x.topic) + '</span>').join('') + '</div>' : '');
+  }
+  if (s === 2) return '<div class="row"><button type="button" class="btn" data-goto="mock">Open the mock interview</button></div>';
+  return '';
+}
+
+function itemPicker(list, sel, attr) {
+  return '<nav class="chips">' + list.map(id => { const p = byN(id); const cur = currentStage(id), n = stagesFor(id).length;
+    return '<button type="button" class="chip" ' + attr + '="' + id + '" aria-pressed="' + (id === sel) + '"><span class="num">' + p.n + '</span>' + esc(p.name) + '<span class="num">' + (cur >= n ? '✓' : (cur + 1) + '/' + n) + '</span></button>'; }).join('') + '</nav>';
+}
+
+const pLabel = p => p.n === 'D' ? 'Directions prompt' : p.n === 'V' ? 'Vocabulary' : 'Prompt ' + p.n;
+function viewScripts() {
+  const id = S.ui.script, p = byN(id);
+  const s = S.ui.stage[id] != null ? S.ui.stage[id] : Math.min(currentStage(id), SCRIPT_STAGES.length - 1);
+  return itemPicker(SCRIPTS, id, 'data-script') +
+    '<div><span class="label">' + pLabel(p) + ' · ' + esc(p.ilr) + '</span><h2>' + esc(p.name) + '</h2><p class="lede" style="font-family:var(--font-ru)">' + esc(p.ru) + '</p></div>' +
+    editorHTML(id) +
+    (p.items.length ? stepperHTML(id, s) + stageShell(id, s, scriptTool(id, s)) : '');
+}
+function viewTemplates() {
+  const id = S.ui.tmpl, p = byN(id);
+  const s = S.ui.stage[id] != null ? S.ui.stage[id] : Math.min(currentStage(id), TEMPLATE_STAGES.length - 1);
+  return '<p class="lede">These prompts are skills, not scripts. Learn the frame, then build a fresh answer on it every time.</p>' + itemPicker(TEMPLATES, id, 'data-tmpl') +
+    '<div><span class="label">' + pLabel(p) + ' · ' + esc(p.ilr) + '</span><h2>' + esc(p.name) + '</h2><p class="lede" style="font-family:var(--font-ru)">' + esc(p.ru) + '</p></div>' +
+    stepperHTML(id, s) + stageShell(id, s, templateTool(id, s));
+}
+function viewPhrases() {
+  const id = '★';
+  const s = S.ui.stage[id] != null ? S.ui.stage[id] : Math.min(currentStage(id), PHRASE_STAGES.length - 1);
+  let tool = '';
+  if (s === 0) { drillOwner = id; tool = drillHTML(id, {tag: 'deck', mode: 'recall', modes: ['recall', 'type'], groups: true}); }
+  else tool = phraseRef();
+  return '<div><span class="label">Idioms, allusions and recovery phrases</span><h2>Phrase deck</h2><p class="lede">The cue is the English meaning. Say the Russian.</p></div>' + stepperHTML(id, s) + stageShell(id, s, tool);
+}
+
+const APPEARANCE_FRAME = [
+  ['Age, height, build', 'Возраст, рост, телосложение: среднее, стройное, спортивное; худой, полный.'],
+  ['Face', 'Лицо: овальное, круглое, приятное, открытое, привлекательное, милое, приветливое.'],
+  ['Eyes', 'Глаза: цвет; большие, маленькие, весёлые, игривые, яркие, тёплые, живые, загадочные, грустные.'],
+  ['Hair', 'Волосы: цвет; длинные, короткие, прямые, волнистые.'],
+  ['Distinguishing features', 'Особые приметы: родинка, веснушки, шрамы, борода, усы.']
+];
+const APPEARANCE_EXAMPLE = 'У моего отца очень приятная и привлекательная внешность. Он среднего роста, стройного телосложения. У него овальное лицо, приветливая и обаятельная улыбка. Его большие карие глаза выражают доброту и тепло, а взгляд всегда спокойный, искренний и доброжелательный. У него тёмные, короткие, слегка волнистые волосы. Он носит аккуратные усы и бороду, которые придают его внешности особую мужественность. В целом мой отец выглядит очень обаятельным и открытым человеком. По характеру он…';
+function appearanceRef() {
+  return '<details class="card"><summary><h3 style="display:inline">Appearance frame and example</h3></summary>' +
+    '<ol class="beatcard">' + APPEARANCE_FRAME.map((c, i) => '<li><span class="n">' + (i + 1) + '</span><div>' + esc(c[0]) + '<div class="k">' + esc(c[1]) + '</div></div></li>').join('') + '</ol>' +
+    '<div class="block"><span class="label">Example</span><p class="ru sm">' + esc(APPEARANCE_EXAMPLE) + '</p></div></details>';
+}
+function viewVocab() {
+  const id = 'V';
+  const s = S.ui.stage[id] != null ? S.ui.stage[id] : Math.min(currentStage(id), VOCAB_STAGES.length - 1);
+  let tool;
+  if (s === 0) { drillOwner = id; tool = drillHTML(id, {tag: 'vocab', mode: 'recall', modes: ['recall', 'type'], groups: true}); }
+  else tool = byN('V').groups.map(g => '<details class="block"><summary><span class="label">' + esc(g.g) + ' (' + g.c.length + ')</span></summary><div class="phr" style="margin-top:8px">' + g.c.map(c => '<div>' + esc(c[1]) + '<small>' + esc(c[0]) + '</small></div>').join('') + '</div></details>').join('');
+  return '<div><span class="label">Descriptions of people and places</span><h2>Vocabulary</h2><p class="lede">The cue is the English meaning. Say the Russian, ideally as the phrase you’d use in a sentence.</p></div>' + appearanceRef() + stepperHTML(id, s) + stageShell(id, s, tool);
+}
+
+// ---------- script editor ----------
+let E = null, Eid = null, Eopen = false, EreplaceArmed = false, Epaste = '';
+function draftFrom(id) {
+  const p = byN(id), secs = [];
+  p.items.forEach(it => { let sec = secs[secs.length - 1]; if (!sec || sec.g !== it.group) { sec = {g: it.group, c: []}; secs.push(sec); } sec.c.push({id: it.id, cue: it.cue, text: it.text}); });
+  return secs.length ? secs : [{g: 'Script', c: [{id: newId(), cue: '', text: ''}]}];
+}
+function newId() { return 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+function splitScript(t) {
+  const sent = t.replace(/\s+/g, ' ').trim().split(/(?<=[.!?…])\s+(?=[«"А-ЯЁA-Z–-])/u).filter(Boolean);
+  const out = []; let cur = '';
+  sent.forEach(x => { cur = cur ? cur + ' ' + x : x; if (cur.split(' ').length >= 16) { out.push(cur); cur = ''; } });
+  if (cur) out.push(cur);
+  return out.map(text => ({id: newId(), cue: text.split(' ').slice(0, 3).join(' ') + '…', text}));
+}
+function editorHTML(id) {
+  const p = byN(id), n = p.items.length;
+  const isCustom = !!S.custom[id];
+  if (Eid !== id) { E = null; Eid = id; Eopen = VERSION === 'blank' && !n; EreplaceArmed = false; Epaste = ''; }
+  if (!Eopen) {
+    return '<div class="card"><div class="row" style="justify-content:space-between"><div><h3>Your script</h3><p class="muted">' + (n ? n + ' chunks' + (isCustom && VERSION !== 'blank' ? ', edited by you' : '') : 'Nothing written yet') + '</p></div>' +
+      '<div class="row"><button type="button" class="btn small" data-act="edOpen">' + (n ? 'Edit script' : 'Write your script') + '</button>' +
+      (isCustom && VERSION !== 'blank' ? '<button type="button" class="linkish" data-act="edRestore">Restore the original</button>' : '') + '</div></div></div>';
+  }
+  if (!E) E = draftFrom(id);
+  let h = '<div class="card"><h3>Your script</h3><p class="muted">Split your answer into chunks of one or two sentences. Give each chunk a short English cue: a few words that remind you what comes next. The cue is all you’ll see when you practice recall.</p>';
+  if (STARTERS[id]) h += '<div class="row"><button type="button" class="btn small" data-act="edStarter">' + (EreplaceArmed ? 'Tap again to replace what’s here' : 'Start from the template') + '</button><span class="muted" style="font-size:.85rem">Fills in a frame with blanks to write over.</span></div>';
+  h += '<details class="block"' + (Epaste ? ' open' : '') + '><summary><span class="label">Paste a whole answer and split it into chunks</span></summary><textarea id="edPaste" lang="ru" placeholder="Вставьте весь текст сюда…" style="margin-top:8px">' + esc(Epaste) + '</textarea><div class="row" style="margin-top:8px"><button type="button" class="btn small" data-act="edSplit">Split into chunks</button><span class="muted" style="font-size:.85rem">Replaces the chunks below. Check the cues afterwards.</span></div></details>';
+  E.forEach((sec, si) => {
+    h += '<div class="block"><label class="field"><span>Section name</span><input type="text" id="ed-g-' + si + '" data-edg="' + si + '" value="' + esc(sec.g) + '"></label>';
+    sec.c.forEach((c, ci) => {
+      h += '<div class="edrow"><span class="n">' + (ci + 1) + '</span><div class="edfields"><label class="field"><span>Cue (English)</span><input type="text" id="ed-c-' + si + '-' + ci + '" data-edc="' + si + ':' + ci + '" value="' + esc(c.cue) + '" placeholder="e.g. Why I chose Russian"></label>' +
+        '<label class="field"><span>Russian text</span><textarea id="ed-t-' + si + '-' + ci + '" data-edt="' + si + ':' + ci + '" lang="ru" rows="3">' + esc(c.text) + '</textarea></label></div>' +
+        '<div class="edbtns"><button type="button" class="btn small" data-edmove="' + si + ':' + ci + ':-1" aria-label="Move up"' + (ci === 0 ? ' disabled' : '') + '>↑</button><button type="button" class="btn small" data-edmove="' + si + ':' + ci + ':1" aria-label="Move down"' + (ci === sec.c.length - 1 ? ' disabled' : '') + '>↓</button><button type="button" class="btn small" data-eddel="' + si + ':' + ci + '" aria-label="Delete chunk">✕</button></div></div>';
+    });
+    h += '<div class="row"><button type="button" class="btn small" data-edadd="' + si + '">+ Add chunk</button>' + (E.length > 1 ? '<button type="button" class="linkish" data-eddelsec="' + si + '">Remove this section</button>' : '') + '</div></div>';
+  });
+  h += '<div class="row"><button type="button" class="btn small" data-act="edAddSec">+ Add section</button></div>';
+  h += '<div class="row"><button type="button" class="btn primary" data-act="edSave">Save script</button>' + (n ? '<button type="button" class="btn" data-act="edCancel">Cancel</button>' : '') + '<span class="muted" style="font-size:.85rem">Chunks you change lose their “Got it” mark so you relearn them.</span></div></div>';
+  return h;
+}
+function editorSave(id) {
+  const old = {}; byN(id).items.forEach(it => { old[it.id] = it.text; });
+  const clean = E.map(sec => ({g: (sec.g || 'Script').trim(), c: sec.c.filter(c => c.text.trim()).map(c => ({id: c.id, cue: c.cue.trim(), text: c.text.trim()}))})).filter(sec => sec.c.length);
+  clean.forEach(sec => sec.c.forEach(c => { if (old[c.id] !== c.text) delete S.marks[c.id]; if (!c.cue) c.cue = c.text.split(' ').slice(0, 3).join(' ') + '…'; }));
+  S.custom[id] = clean; buildItems(); touch(id); save();
+  E = null; Eopen = false;
+}
+
+const tabOf = id => SCRIPTS.includes(id) ? 'scripts' : TEMPLATES.includes(id) ? 'templates' : id === 'V' ? 'vocab' : 'phrases';
+const TASKMAP = [
+  {lv: 'Level 2/2+', rows: [['FORTE: family, occupation, recreation, travel, education', '1'], ['Past narration', '2'], ['Present narration', '3'], ['Future narration', '4'], ['Description of a person', '5'], ['Description of a place', '6'], ['Directions to a place (walking or driving)', 'D'], ['Instructions: how to do something', '7'], ['Situation with a complication', '9'], ['Current events', '8']]},
+  {lv: 'Level 3/3+', rows: [['Role play', '9'], ['Express an opinion', '10'], ['Hypothetical situation', '11'], ['Analysis of a situation', '12']]}
+];
+function taskMapHTML() {
+  const st = id => { const n = stagesFor(id).length, c = currentStage(id); return c >= n ? 'on' : c > 0 || (SCRIPTS.includes(id) && byN(id).items.length && Object.keys(S.marks).some(k => k.startsWith(id + '-'))) ? 'now' : ''; };
+  return '<div class="card"><h2>What the test covers</h2><p class="lede">The OPI tasks by level. Tap one to open it.</p><div class="tmap">' +
+    TASKMAP.map(col => '<div><span class="label">' + col.lv + '</span><div class="queue">' + col.rows.map(r => '<button type="button" class="qrow tmrow" data-open="' + tabOf(r[1]) + '" data-id="' + r[1] + '"><span>' + esc(r[0]) + '</span><span class="row"><span class="muted" style="font-size:.8rem">' + esc(byN(r[1]).name) + '</span><span class="dot ' + st(r[1]) + '"></span></span></button>').join('') + '</div></div>').join('') +
+    '</div></div>';
+}
+function viewOverview() {
+  const items = id => { const p = byN(id), st = stagesFor(id), cur = currentStage(id);
+    const tab = tabOf(id);
+    return '<button type="button" class="itemcard" data-open="' + tab + '" data-id="' + id + '"><span class="label">' + (id === '★' ? 'Phrases' : pLabel(p)) + '</span><h3>' + esc(id === '★' ? 'Phrase deck' : p.name) + '</h3>' +
+      '<div class="minis">' + st.map((_, i) => '<i class="' + (isDone(id, i) ? 'on' : i === cur ? 'now' : '') + '"></i>').join('') + '</div>' +
+      '<span class="muted" style="font-size:.85rem">' + (cur >= st.length ? 'All stages done' : 'Next: stage ' + (cur + 1) + ', ' + esc(st[cur].t)) + '</span></button>'; };
+  const queue = SCRIPTS.filter(id => isDone(id, 3)).sort((a, b) => (S.touched[a] || '').localeCompare(S.touched[b] || ''));
+  const exampleNote = VERSION === 'blank'
+    ? '<div class="card"><div class="row" style="justify-content:space-between"><div><h3>Want to see it filled in?</h3><p class="muted">The worked example has complete answers for every prompt from a made-up learner, Alex. Use it as a model, then write your own here.</p></div><a class="btn small" style="text-decoration:none;white-space:nowrap" href="launch:opi-example">Open the worked example</a></div></div>'
+    : '<div class="card"><h3>This is a worked example</h3><p class="muted">Every answer here belongs to a made-up learner, Alex. Practice with it as much as you like; it keeps its own progress. To write your own answers, open the OPI Memory Tool from the main screen.</p></div>';
+  return exampleNote + taskMapHTML() + '<div class="card"><h2>The path</h2><p class="lede">Every script goes through the same seven stages. Templates and phrases have shorter tracks. Each stage ends when you meet its exit check, not after a set amount of time.</p>' +
+    '<ol class="stagelist">' + SCRIPT_STAGES.map((s, i) => '<li><span class="n">' + (i + 1) + '</span><div><h3>' + esc(s.t) + '</h3><p class="muted">' + esc(s.goal) + '</p></div></li>').join('') + '</ol>' +
+    '<p class="muted">Rules that apply everywhere: always say it out loud, always check yourself against the text, stop once you get it right and come back after sleep, and mix scripts instead of repeating one.</p></div>' +
+    (queue.length ? '<div class="card"><h3>Review queue</h3><p class="muted">Scripts you can already deliver card-free, least recently practiced first.</p><div class="queue">' + queue.map(id => '<div class="qrow"><span>' + esc(byN(id).name) + '</span><span class="row"><span class="muted">' + ago(S.touched[id]) + '</span><button type="button" class="btn small" data-open="scripts" data-id="' + id + '" data-st="4">Review</button></span></div>').join('') + '</div></div>' : '') +
+    '<h3>Scripts</h3><div class="items">' + SCRIPTS.map(items).join('') + '</div>' +
+    '<h3>Templates</h3><div class="items">' + TEMPLATES.map(items).join('') + '</div>' +
+    '<h3>Vocabulary, phrases and mock interviews</h3><div class="items">' + items('V') + items('★') +
+    '<button type="button" class="itemcard" data-open="mock"><span class="label">Final check</span><h3>Mock interviews</h3><div class="minis">' + [0, 1, 2].map(i => '<i class="' + (i < cleanMocks() ? 'on' : '') + '"></i>').join('') + '</div><span class="muted" style="font-size:.85rem">' + Math.min(cleanMocks(), 3) + ' of 3 clean mocks logged</span></button></div>';
+}
+
+// mock
+let M = {prompt: null, start: 0, timer: null, tick: null, interrupt: null, auto: true, checks: [false, false, false]};
+function newMock() {
+  const n = rand([...SCRIPTS, ...TEMPLATES]); const p = byN(n);
+  let line = p.ru;
+  if (TOPICS[n] && Math.random() < .6) line = p.name + ': ' + rand(TOPICS[n]);
+  clearTimeout(M.timer); clearInterval(M.tick);
+  M.prompt = {n, line}; M.interrupt = null; M.start = Date.now(); M.checks = M.checks.map(() => false);
+  if (M.auto) M.timer = setTimeout(() => { doInterrupt(); }, (25 + Math.random() * 35) * 1000);
+  M.tick = setInterval(() => { const el = document.getElementById('clock'); if (el) el.textContent = fmt((Date.now() - M.start) / 1000); else clearInterval(M.tick); }, 500);
+  render();
+}
+function doInterrupt() {
+  if (!M.prompt) return;
+  const pool = Math.random() < .7 ? (FOLLOW[M.prompt.n] || []) : Object.values(FOLLOW).flat();
+  M.interrupt = rand(pool); clearTimeout(M.timer); if (S.ui.tab === 'mock') render();
+}
+const fmt = s => { s = Math.floor(s); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+function viewMock() {
+  let h = '<div><span class="label">Stage 7 for everything</span><h2>Mock interview</h2><p class="lede">You get a random prompt. Answer out loud right away, no prep. With auto-interrupt on, a follow-up cuts in at a random moment, the way a tester would. Record yourself if you can.</p></div>';
+  h += '<div class="card"><div class="row" style="justify-content:space-between"><button type="button" class="btn primary" data-act="newMock">' + (M.prompt ? 'Next prompt' : 'Start') + '</button>' +
+    '<label class="toggle"><input type="checkbox" id="mAuto"' + (M.auto ? ' checked' : '') + '> Auto-interrupt</label></div>';
+  if (M.prompt) {
+    h += '<span class="label">Prompt ' + M.prompt.n + '</span><p class="mockprompt">' + esc(M.prompt.line) + '</p><div class="row"><span class="clock" id="clock">' + fmt((Date.now() - M.start) / 1000) + '</span><button type="button" class="btn small" data-act="interrupt">Interrupt me now</button></div>';
+    if (M.interrupt) h += '<div class="interrupt"><span class="label" style="color:var(--again)">Interruption</span><p class="ru">' + esc(M.interrupt) + '</p><p class="muted" style="font-size:.85rem">Answer this fully. Come back to your answer only if it makes sense, with a bridge phrase.</p></div>';
+    const labels = ['I handled every interruption without freezing', 'Nothing came out as a word-for-word recital', 'The content came out even when the wording changed'];
+    h += '<div class="exit"><span class="label">After the answer</span>' + labels.map((l, k) => '<label class="check"><input type="checkbox" data-mcheck="' + k + '"' + (M.checks[k] ? ' checked' : '') + '><span>' + l + '</span></label>').join('') +
+      '<div class="row"><button type="button" class="btn good" data-act="logMock">Log this round</button></div></div>';
+  }
+  h += '</div>';
+  h += '<div class="card"><h3>Bridges and recovery</h3>' + phraseRef() + '<p class="muted">If you blank: stall with one of these, then jump to the next beat you remember. Don’t hunt for the lost sentence.</p></div>';
+  const ok = cleanMocks();
+  h += '<div class="card"><h3>Mock log</h3><p class="muted">Ready when three rounds are clean: every box ticked.</p>' +
+    (S.mocks.length ? '<div class="log">' + S.mocks.slice(-20).map(m => '<span class="pill ' + (m.ok ? 'ok' : 'bad') + '">' + esc(byN(m.n).name) + ' · ' + (m.ok ? 'clean' : 'not yet') + '</span>').join('') + '</div>' : '<p class="muted">No rounds logged yet.</p>') +
+    '<div class="auto"><span class="dot' + (ok >= 3 ? ' on' : '') + '"></span>' + Math.min(ok, 3) + ' of 3 clean rounds</div></div>';
+  return h;
+}
+
+// ---------- render ----------
+function render() {
+  const n = doneCount();
+  document.getElementById('pct').innerHTML = '<b>' + Math.round(100 * n / TOTAL) + '%</b> · ' + n + ' of ' + TOTAL + ' steps';
+  document.getElementById('bigbar').style.width = (100 * n / TOTAL) + '%';
+  document.querySelectorAll('#tabs .tab').forEach(t => t.setAttribute('aria-pressed', t.dataset.tab === S.ui.tab));
+  drillOwner = null;
+  const v = {overview: viewOverview, scripts: viewScripts, templates: viewTemplates, vocab: viewVocab, phrases: viewPhrases, mock: viewMock}[S.ui.tab] || viewOverview;
+  document.getElementById('app').innerHTML = v();
+  const ta = document.getElementById('dAttempt'); if (ta) ta.focus({preventScroll: true});
+}
+function curItem() { return S.ui.tab === 'scripts' ? S.ui.script : S.ui.tab === 'templates' ? S.ui.tmpl : S.ui.tab === 'phrases' ? '★' : S.ui.tab === 'vocab' ? 'V' : null; }
+function curStage() { const id = curItem(); if (!id) return null; return S.ui.stage[id] != null ? S.ui.stage[id] : Math.min(currentStage(id), stagesFor(id).length - 1); }
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const d = b.dataset;
+  if (d.tab) { S.ui.tab = d.tab; save(); render(); window.scrollTo(0, 0); return; }
+  if (d.script) { S.ui.script = d.script; save(); render(); return; }
+  if (d.tmpl) { S.ui.tmpl = d.tmpl; save(); render(); return; }
+  if (d.stage != null) { const id = curItem(); S.ui.stage[id] = +d.stage; showReviewDrill = false; save(); render(); return; }
+  if (d.open) { S.ui.tab = d.open; if (d.id) { if (d.open === 'scripts') S.ui.script = d.id; if (d.open === 'templates') S.ui.tmpl = d.id; if (d.st) S.ui.stage[d.id] = +d.st; else delete S.ui.stage[d.id]; } save(); render(); window.scrollTo(0, 0); return; }
+  if (d.goto) { S.ui.tab = d.goto; save(); render(); window.scrollTo(0, 0); return; }
+  if (d.dmode) { D.mode = d.dmode; D.revealed = false; D.typed = null; render(); return; }
+  if (d.dk != null) { D.idx = +d.dk; D.revealed = false; D.typed = null; render(); return; }
+  if (d.roll) { const id = curItem(); rolls[id + d.roll] = rollFor(id, d.roll); render(); return; }
+  const id = curItem(), s = curStage();
+  if (d.edmove) { const [si, ci, dir] = d.edmove.split(':').map(Number); const arr = E[si].c; const j = ci + dir; if (j >= 0 && j < arr.length) { [arr[ci], arr[j]] = [arr[j], arr[ci]]; } render(); return; }
+  if (d.eddel) { const [si, ci] = d.eddel.split(':').map(Number); E[si].c.splice(ci, 1); if (!E[si].c.length) E[si].c.push({id: newId(), cue: '', text: ''}); render(); return; }
+  if (d.edadd != null && d.edadd !== '') { E[+d.edadd].c.push({id: newId(), cue: '', text: ''}); render(); const si = +d.edadd; document.getElementById('ed-c-' + si + '-' + (E[si].c.length - 1))?.focus(); return; }
+  if (d.eddelsec != null && d.eddelsec !== '') { E.splice(+d.eddelsec, 1); render(); return; }
+  switch (d.act) {
+    case 'edOpen': Eopen = true; E = null; EreplaceArmed = false; render(); break;
+    case 'edCancel': Eopen = false; E = null; render(); break;
+    case 'edRestore': delete S.custom[id]; buildItems(); E = null; save(); render(); break;
+    case 'edStarter': {
+      const hasText = E && E.some(sec => sec.c.some(c => c.text.trim()));
+      if (hasText && !EreplaceArmed) { EreplaceArmed = true; render(); break; }
+      E = [{g: 'Script', c: STARTERS[id].map(c => ({id: newId(), cue: c[0], text: c[1]}))}]; EreplaceArmed = false; render(); break;
+    }
+    case 'edSplit': { const parts = splitScript(Epaste); if (parts.length) { E = [{g: 'Script', c: parts}]; Epaste = ''; } render(); break; }
+    case 'edAddSec': E.push({g: 'New section', c: [{id: newId(), cue: '', text: ''}]}); render(); break;
+    case 'edSave': editorSave(id); render(); window.scrollTo(0, 0); break;
+    case 'dReveal': D.revealed = true; render(); break;
+    case 'dCheck': { const ta = document.getElementById('dAttempt'); if (!ta) break; const items = drillItems(drillOwner); const vis = drillVisible(items); D.typed = diff(items[vis[D.idx]].text, ta.value); render(); break; }
+    case 'dAgainMark': drillMark('again'); break;
+    case 'dGot': drillMark('got'); break;
+    case 'dPrev': D.idx = Math.max(0, D.idx - 1); D.revealed = false; D.typed = null; render(); break;
+    case 'dNext': D.idx++; D.revealed = false; D.typed = null; render(); break;
+    case 'doneStage': if (exitMet(id, s) && (s === 0 || isDone(id, s - 1))) { S.done[id + ':' + s] = true; touch(id); if (s + 1 < stagesFor(id).length) S.ui.stage[id] = s + 1; save(); render(); window.scrollTo(0, 0); } break;
+    case 'undoStage': delete S.done[id + ':' + s]; save(); render(); break;
+    case 'toggleCard': ui4.hide = !ui4.hide; render(); break;
+    case 'toggleText': ui4.text = !ui4.text; render(); break;
+    case 'toggleRevDrill': showReviewDrill = !showReviewDrill; render(); break;
+    case 'logDel': (S.deliveries[id] = S.deliveries[id] || []).push({d: today(), ok: d.ok === '1'}); touch(id); save(); render(); break;
+    case 'logRev': (S.reviews[id] = S.reviews[id] || []).push({d: today(), ok: d.ok === '1'}); touch(id); save(); render(); break;
+    case 'rollTopic': { const used = new Set((S.fills[id] || []).map(x => x.topic)); const fresh = TOPICS[id].filter(t => !used.has(t)); rolls[id + 'topic'] = rand(fresh.length ? fresh : TOPICS[id]); render(); break; }
+    case 'logFill': { const t = rolls[id + 'topic']; if (t) { (S.fills[id] = S.fills[id] || []).push({topic: t, d: today()}); delete rolls[id + 'topic']; touch(id); save(); render(); } break; }
+    case 'newMock': newMock(); break;
+    case 'interrupt': doInterrupt(); break;
+    case 'logMock': if (M.prompt) { S.mocks.push({n: M.prompt.n, d: today(), ok: M.checks.every(Boolean)}); save(); clearTimeout(M.timer); M.prompt = null; M.interrupt = null; render(); } break;
+  }
+});
+document.addEventListener('change', e => {
+  const t = e.target, d = t.dataset;
+  if (d.check) { S.checks[d.check] = t.checked; save(); render(); return; }
+  if (d.var) { const id = curItem(); (S.vars[id] = S.vars[id] || {})[d.var] = t.checked; touch(id); save(); render(); return; }
+  if (d.mcheck != null) { M.checks[+d.mcheck] = t.checked; return; }
+  if (t.id === 'dGroup') { D.group = t.value; D.idx = 0; D.revealed = false; D.typed = null; render(); return; }
+  if (t.id === 'dAgain') { D.againOnly = t.checked; D.idx = 0; D.revealed = false; D.typed = null; render(); return; }
+  if (t.id === 'mAuto') { M.auto = t.checked; if (!M.auto) clearTimeout(M.timer); return; }
+});
+document.addEventListener('input', e => {
+  const t = e.target, d = t.dataset;
+  if (d.edg != null && d.edg !== '' && E) { E[+d.edg].g = t.value; return; }
+  if (d.edc && E) { const [si, ci] = d.edc.split(':').map(Number); E[si].c[ci].cue = t.value; return; }
+  if (d.edt && E) { const [si, ci] = d.edt.split(':').map(Number); E[si].c[ci].text = t.value; return; }
+  if (t.id === 'edPaste') { Epaste = t.value; return; }
+  if (d.beat) { (S.beats[d.beat] = S.beats[d.beat] || {}).beat = t.value; save(); }
+  if (d.key) { (S.beats[d.key] = S.beats[d.key] || {}).key = t.value; save(); }
+});
+document.addEventListener('keydown', e => {
+  if (!drillOwner) return;
+  const tag = e.target.tagName;
+  if (tag === 'TEXTAREA') { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); document.querySelector('[data-act="dCheck"]')?.click(); } return; }
+  if (tag === 'INPUT' || tag === 'SELECT') return;
+  const graded = D.mode === 'type' ? !!D.typed : D.revealed;
+  if (e.key === ' ' && D.mode !== 'type' && !D.revealed && document.querySelector('[data-act="dReveal"]')) { e.preventDefault(); D.revealed = true; render(); }
+  else if (e.key === '1' && graded) drillMark('again');
+  else if (e.key === '2' && graded) drillMark('got');
+});
+
+render();
+
+</script>
+
+</body></html>

@@ -1,0 +1,137 @@
+=== id: chekhov-dama-2
+title: Дама с собачкой: Гуров
+author: А. П. Чехов
+level: 3+
+genre: literature
+src: RussianNovels/corpus/Chekhov_Dama.txt
+from: Ему не было еще сорока
+to: он не мог бы прожить и двух дней.
+---
+1| He was not yet forty, but he already had a twelve-year-old daughter and two sons at [gymnasium]{сына-гимназиста}.
+2| They had [married him off]{женили} early, when he was still a second-year student, and now his wife seemed [half again]{в полтора раза} as old as he was.
+3| She was a tall woman with dark eyebrows, upright, [imposing]{важная}, [solid]{солидная}, and, as she called herself, a [thinking]{мыслящая} woman.
+4| She read a great deal, left the [hard sign]{ъ} out of her letters, called her husband not Dmitri but Dimitri, while he [secretly]{втайне} thought her [narrow-minded]{недалекой}, limited and [inelegant]{неизящной}, was afraid of her and didn't like being at home.
+5| He had begun [cheating on]{изменять} her long ago, cheated often, and probably for that reason almost always [spoke]{отзывался} [badly]{дурно} of women, and when they were discussed [in his presence]{в его присутствии} he called them:
+6| "The [lower race]{низшая раса}!"
+7| It seemed to him that he had been taught enough by [bitter experience]{горьким опытом} to call them whatever he liked, and yet without the "lower race" he could not have lasted two days.
+note: женили | married him off | The verb is active and plural: others (his family) arranged the marriage. «Жениться» is what a man does himself; «женить» is to marry someone off.
+note: не писала в письмах ъ | left the hard sign out of her letters | Before the 1918 reform, words ending in a consonant were written with a final «ъ». Dropping it was a progressive, slightly showy gesture in the 1890s.
+note: мыслящая | thinking (as a self-label) | «Мыслящая женщина» was a fashionable phrase for an educated, emancipated woman. Chekhov's «как она сама себя называла» makes it ironic.
+note: отзывался | spoke of, gave an opinion of | «Отзываться о ком-то» means to speak of someone in a certain way, here «дурно», badly. Compare «отзыв», a review.
+note: научен горьким опытом | taught by bitter experience | A set phrase: «горький опыт» is hard-won experience.
+q: main | What does this passage mainly do? | *It describes Gurov's marriage and his attitude to women | It tells how Gurov met his wife | It explains why Gurov came to Yalta | It describes Gurov's children
+q: detail | How did Gurov come to be married? | He fell in love at the gymnasium | *He was married off young, as a second-year student | He married late, after forty | His wife proposed to him
+q: inference | Why does Gurov call women "the lower race"? | He has studied the question scientifically | His wife taught him the phrase | *He is often unfaithful and speaks badly of women, perhaps to justify himself | He has never met interesting women
+q: tone | What is the narrator's attitude toward Gurov? | Openly admiring | *Detached and quietly ironic | Furious and accusing | Sentimental and pitying
+q: idiom | «Не мог бы прожить и двух дней» suggests that Gurov | *cannot do without women's company | will die in two days | plans to leave Yalta | dislikes his work
+sum: Gurov, not yet forty, was married off young to a stern, self-consciously intellectual woman he fears and doesn't love. He cheats on her constantly and sneers at women as "the lower race," yet he can hardly live two days without them.
+
+=== id: chekhov-dama-3
+title: Дама с собачкой: знакомство
+author: А. П. Чехов
+level: 3+
+genre: literature
+src: RussianNovels/corpus/Chekhov_Dama.txt
+from: И вот однажды под вечер он обедал в саду
+to: Дама взглянула на него и тотчас же опустила глаза.
+---
+1| And then one day [toward evening]{под вечер} he was dining in the garden, and the lady in the beret came up [without hurrying]{не спеша} to take the [next table]{соседний стол}.
+2| Her expression, her [walk]{походка}, her dress, her [hairstyle]{прическа} told him that she was from [respectable]{порядочного} society, married, in Yalta for the first time and alone, and that she was bored here…
+3| There was a lot of untruth in the stories about the [loose]{нечистоте} local [morals]{нравов}; he [despised]{презирал} them and knew that such stories were mostly [made up]{сочиняются} by people who would gladly [sin]{грешили} themselves if they knew how; but when the lady sat down at the next table three steps from him, he remembered those stories of easy conquests and trips to the mountains, and the [tempting]{соблазнительная} thought of a quick, [fleeting]{мимолетной} [affair]{связи}, of a romance with an unknown woman whose name you don't even know, suddenly [took hold of]{овладела} him.
+4| He [beckoned]{поманил} the spitz [affectionately]{ласково}, and when it came up, he [shook his finger]{погрозил} at it.
+5| The spitz [growled]{заворчал}.
+6| Gurov shook his finger again.
+7| The lady glanced at him and at once [lowered her eyes]{опустила глаза}.
+note: порядочного общества | respectable society | «Порядочный» means decent, respectable. «Порядочный человек» is a decent person; «порядочно» can also mean "quite a lot."
+note: связи | affair, liaison | «Связь» usually means a connection or communication; with a man and a woman, especially «мимолетная связь», it means a love affair.
+note: погрозил ему пальцем | shook his finger at it | «Грозить пальцем» is the playful or warning gesture of a raised wagging finger. Gurov uses the dog to start a conversation.
+q: main | What happens in this passage? | *Gurov uses the dog to make first contact with the lady | The lady asks Gurov about Yalta | Gurov decides to leave the resort | The lady's husband arrives
+q: detail | What does Gurov conclude from the lady's appearance? | She is a local resident | She is poor and works in Yalta | *She is respectable, married, new to Yalta, alone and bored | She is a famous actress
+q: inference | What is Gurov's real intention? | To buy the spitz | *To start a brief affair | To warn the lady about local gossip | To ask for directions to the mountains
+q: tone | How does the last line, the lady lowering her eyes, feel? | Hostile | *Shy, with a hint of interest | Mocking | Grief-stricken
+sum: One evening the lady with the dog sits at the table next to Gurov. Reading her as a respectable, bored newcomer, he is seized by the idea of a quick affair and catches her attention by playing with her dog; she glances at him and looks away.
+
+=== id: chekhov-palata-1
+title: Палата № 6: флигель
+author: А. П. Чехов
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/PalataNomer6.txt
+from: В больничном дворе стоит небольшой флигель
+to: и посмотрим, что делается внутри.
+---
+1| In the hospital yard stands a small [annex]{флигель}, surrounded by a whole forest of [burdock]{репейника}, [nettle]{крапивы} and wild [hemp]{конопли}.
+2| Its roof is [rusty]{ржавая}, the chimney has half [collapsed]{обвалилась}, the steps of the [porch]{крыльца} have [rotted]{сгнили} and grown over with grass, and only traces are left of the [plaster]{штукатурки}.
+3| Its front [faces]{обращен} the hospital, and its back looks out on a field, from which it is [separated]{отделяет} by a grey hospital [fence]{забор} [studded with nails]{гвоздями}.
+4| These nails, turned [points]{остриями} [upward]{кверху}, and the fence, and the annex itself have that peculiar [dismal]{унылый}, [cursed]{окаянный} look which in our country only hospital and prison buildings have.
+5| If you're not afraid of getting [stung]{ожечься} by the nettles, let's take the narrow [path]{тропинке} leading to the annex and see what goes on inside.
+note: флигель | annex, wing, outbuilding | A separate smaller building in the grounds of a main house or institution.
+note: окаянный | cursed, damned | An old, church-flavored word. Here it gives the building a feeling of damnation, not just neglect.
+note: у нас | in our country, here in Russia | «У нас» often means "in our country" or "where we live," not literally "at our place."
+q: main | What is the purpose of this opening? | To introduce the hospital doctor | *To describe the grim building where the story takes place | To explain how the hospital is funded | To describe a garden
+q: detail | What is on top of the fence? | Broken glass | *Nails with their points turned upward | Barbed wire | Flowers
+q: inference | The comparison with prison buildings suggests that | the annex is being repaired | *the patients are treated more like prisoners | the hospital is new | the narrator works in a prison
+q: tone | What is the mood of the description? | Cheerful and lively | *Bleak and oppressive | Romantic | Neutral and technical
+sum: The narrator describes a neglected annex in a hospital yard, overgrown with weeds, rotting and fenced with upturned nails, which looks like a prison. He then invites the reader to go inside.
+
+=== id: chekhov-palata-2
+title: Палата № 6: сторож Никита
+author: А. П. Чехов
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/PalataNomer6.txt
+from: Здесь у стен и около печки
+to: что без этого не было бы здесь порядка.
+repl: удушливый, запах => удушливый запах
+---
+1| Here, along the walls and around the stove, whole mountains of hospital [junk]{хлама} are [heaped]{навалены}.
+2| Mattresses, old [torn]{изодранные} [robes]{халаты}, trousers, shirts with blue stripes, [worn-out]{истасканная} footwear that's [good for nothing]{никуда не годная}: all this [rubbish]{рвань} is [dumped]{свалена} in piles, crumpled, tangled together; it rots and gives off a [suffocating]{удушливый} smell.
+3| On the junk, always with a pipe in his teeth, lies the [watchman]{сторож} Nikita, an old [retired]{отставной} soldier with [faded red]{порыжелыми} [stripes]{нашивками}.
+4| He has a [stern]{суровое}, [drink-ravaged]{испитое} face, [overhanging]{нависшие} eyebrows that give his face the look of a steppe [sheepdog]{овчарки}, and a red nose; he is short, [lean]{сухощав} and [sinewy]{жилист} in appearance, but his [bearing]{осанка} is [imposing]{внушительная} and his [fists]{кулаки} are huge.
+5| He belongs to that class of [simple-minded]{простодушных}, [solid]{положительных}, [dutiful]{исполнительных} and dull people who love order above everything in the world and are therefore [convinced]{убеждены} that they have to be beaten.
+6| He beats them in the face, on the chest, on the back, [wherever he can]{по чем попало}, and is sure that without it there would be no order here.
+note: испитое | ravaged by drink | «Испитое лицо» is a face worn out by heavy drinking.
+note: положительных | solid, steady, respectable | In the 19th century «положительный человек» meant a sober, reliable, practical person. Here it's ironic.
+note: по чем попало | wherever he can hit, anywhere at all | «Попало» from «попасть», to hit or land. «Бить по чем попало» is to hit wherever the blow lands.
+note: никуда не годная | good for nothing, useless | «Годиться» means to be fit for; «никуда не годится» means it's no good for anything.
+q: main | What does the passage mainly describe? | *The junk in the entryway and the brutal watchman Nikita | The patients' daily routine | The doctor's office | How the annex was built
+q: detail | What was Nikita before he became a watchman? | A doctor | *A soldier | A shopkeeper | A patient
+q: inference | Why does Nikita beat the patients? | They attack him | The doctor orders him to | *He believes order requires beating | He is drunk and confused
+q: tone | How does Chekhov present Nikita? | As a hero | *With cold irony, as dull and brutal | As a figure of pity | As a comic fool
+sum: The entryway is heaped with rotting hospital junk, on which the watchman Nikita lies smoking. A retired soldier, dull and devoted to order, he beats the patients freely, convinced that order depends on it.
+
+=== id: chekhov-palata-3
+title: Палата № 6: палата
+author: А. П. Чехов
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/PalataNomer6.txt
+from: Далее вы входите в большую
+to: у него начинается чахотка.
+repl: Стены здесь, вымазаны => Стены здесь вымазаны ;; Пол сор и занозист => Пол сер и занозист
+---
+1| Further on you enter a large, [spacious]{просторную} room that takes up the whole annex, [not counting]{если не считать} the [entryway]{сеней}.
+2| The walls here are [smeared]{вымазаны} with dirty blue paint, the ceiling is [sooty]{закопчен}, as in a [chimneyless hut]{курной избе}: clearly the stoves smoke here in winter and the air is [thick with fumes]{угарно}.
+3| The windows are [disfigured]{обезображены} from inside by iron [bars]{решетками}.
+4| The floor is grey and full of [splinters]{занозист}.
+5| It [stinks]{воняет} of sour cabbage, burnt [wicks]{фитильною}, [bedbugs]{клопами} and ammonia, and in the first minute this [stench]{вонь} gives you the impression of entering a [menagerie]{зверинец}.
+6| In the room stand beds [screwed]{привинченные} to the floor.
+7| On them sit and lie people in blue hospital robes and, [in the old-fashioned way]{по-старинному}, in [nightcaps]{колпаках}.
+8| These are [madmen]{сумасшедшие}.
+9| There are five of them here in all.
+10| Only one is of [noble]{благородного} [rank]{звания}; all the rest are [townspeople]{мещане}.
+11| The first from the door, a tall, [lean]{худощавый} townsman with shining red [whiskers]{усами} and [tear-stained]{заплаканными} eyes, sits [propping up]{подперев} his head and staring at one point.
+12| Day and night he [grieves]{грустит}, shaking his head, sighing and smiling bitterly; he rarely takes part in conversation and usually doesn't answer questions.
+13| He eats and drinks [mechanically]{машинально} when he's given food.
+14| [Judging by]{судя по} his tormenting, racking cough, his thinness and the [flush]{румянцу} on his cheeks, he is coming down with [consumption]{чахотка}.
+note: курной избе | a chimneyless peasant hut | A «курная изба» was heated by a stove with no chimney; smoke escaped through an opening, blackening everything.
+note: угарно | full of fumes (carbon monoxide) | «Угар» is the poisonous fumes from a stove closed too early. «Угарно» means the air is thick with them.
+note: мещане | townspeople, the lower urban class | «Мещанин» was a legal estate in tsarist Russia: small traders, craftsmen and clerks. Later the word came to mean a philistine.
+note: благородного звания | of noble rank | «Звание» here is social rank or estate, the opposite of «мещане».
+note: чахотка | consumption (tuberculosis) | The old everyday name for tuberculosis.
+q: main | What does this passage describe? | *The ward itself and the first of its five patients | The town around the hospital | The doctor's daily rounds | Nikita's past
+q: detail | How many patients are in the ward? | Three | *Five | Six | Twelve
+q: detail | Why does the narrator think the first patient has consumption? | He says so himself | The doctor told him | *His cough, thinness and flushed cheeks | He is very old
+q: inference | What does the comparison with a menagerie suggest? | The patients keep animals | *The patients are kept like caged animals | The ward is beautiful | The hospital is a zoo
+q: tone | What is the overall tone? | Comic | *Grim and compassionate | Romantic | Triumphant
+sum: The ward is filthy, smoky and barred, stinking like a menagerie, with beds screwed to the floor. Five mentally ill men live there; the first, a grieving townsman, is silent, eats mechanically and shows signs of tuberculosis.

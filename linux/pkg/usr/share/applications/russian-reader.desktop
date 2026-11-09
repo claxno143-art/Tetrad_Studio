@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Russian Reader
+Comment=Leveled Russian reading with tap-to-learn and comprehension tests
+Exec=russian-reader
+Icon=russian-reader
+StartupWMClass=tetrad-studio
+Categories=Education;Languages;
+Terminal=false
+NoDisplay=true

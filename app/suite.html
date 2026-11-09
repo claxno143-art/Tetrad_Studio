@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tetrad Studio</title>
+<style>
+:root {
+  --paper: #EEF1F5; --card: #FFFFFF; --ink: #17202B; --muted: #5A6676; --line: #D6DCE4;
+  --accent: #1F4FD1; --accent-soft: #E3E9FB;
+  --font-ru: "Literata", "PT Serif", Georgia, serif;
+  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #0F141A; --card: #18202A; --ink: #E5EAF0; --muted: #93A0AF; --line: #2A3541; --accent: #84A0FF; --accent-soft: #1D2A4D; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 var(--font-ui); display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+main { width: 100%; max-width: 760px; display: flex; flex-direction: column; gap: 20px; }
+header { display: flex; align-items: center; gap: 14px; }
+header img { width: 52px; height: 52px; }
+h1 { font-family: var(--font-ru); font-weight: 600; font-size: 1.7rem; margin: 0; line-height: 1.15; }
+.sub { color: var(--muted); margin: 2px 0 0; }
+.apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .apps { grid-template-columns: minmax(0, 1fr); } }
+a.app { display: flex; flex-direction: column; gap: 10px; padding: 20px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none; transition: border-color .15s, transform .15s; }
+a.app:hover, a.app:focus-visible { border-color: var(--accent); transform: translateY(-2px); outline: none; }
+a.app img { width: 56px; height: 56px; }
+a.app b { font-size: 1.1rem; font-weight: 600; }
+a.app span { color: var(--muted); font-size: .9rem; }
+a.app kbd { margin-top: auto; align-self: flex-start; font: 500 .72rem var(--font-mono); color: var(--muted); border: 1px solid var(--line); border-radius: 5px; padding: 1px 7px; }
+footer { color: var(--muted); font-size: .82rem; text-align: center; }
+footer.small { font-size: .76rem; line-height: 1.5; }
+footer a { color: inherit; }
+@media (prefers-reduced-motion: reduce) { a.app { transition: none; } a.app:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="suite-icon.svg" alt="">
+    <div><h1>Tetrad Studio</h1><p class="sub">Russian reading, vocabulary and OPI practice</p></div>
+  </header>
+  <div class="apps">
+    <a class="app" href="launch:reader"><img src="reader-icon.svg" alt=""><b>Russian Reader</b><span>Leveled texts from everyday Russian to Dostoevsky and legal writing, with tap-to-learn.</span><kbd>1</kbd></a>
+    <a class="app" href="launch:list-trainer"><img src="list-trainer-icon.svg" alt=""><b>List Trainer</b><span>Flashcards, quizzes, root drills and your own word sets.</span><kbd>2</kbd></a>
+    <a class="app" href="launch:opi-tool"><img src="opi-tool-icon.svg" alt=""><b>OPI Memory Tool</b><span>Scripts, templates and mock interviews for the oral exam.</span><kbd>3</kbd></a>
+  </div>
+  <footer>Press 1, 2 or 3, or click one. This window closes once the tool opens.</footer>
+  <footer class="small">Free to use. If it helps you, you can <a href="https://buymeacoffee.com/claxno">buy me a coffee</a>.<br>Not affiliated with ACTFL, the ILR or any government agency. “OPI” is used only to describe the exam the tool helps you practice for.</footer>
+</main>
+<script>
+document.addEventListener('keydown', e => {
+  if (e.key === '1') location.href = 'launch:reader';
+  if (e.key === '2') location.href = 'launch:list-trainer';
+  if (e.key === '3') location.href = 'launch:opi-tool';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+=== id: news-wildfire
+title: Лесные пожары в Сибири
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: В нескольких районах Сибири введён режим чрезвычайной ситуации из-за лесных пожаров. || A [state of emergency]{режим чрезвычайной ситуации} has been [declared]{введён} in several [districts]{районах} of Siberia because of forest fires.
+ru: Огонь охватил более ста тысяч гектаров тайги. || The fire has [engulfed]{охватил} more than one hundred thousand [hectares]{гектаров} of taiga.
+ru: Тушить пожары мешают жара, сильный ветер и труднодоступная местность. || [Heat]{жара}, strong wind and [hard-to-reach]{труднодоступная} [terrain]{местность} are making it hard to [put out]{тушить} the fires.
+ru: К работам привлечены пожарные, десантники-парашютисты и авиация: самолёты сбрасывают воду на очаги возгорания. || [Firefighters]{пожарные}, [smokejumpers]{десантники-парашютисты} and [aircraft]{авиация} have been [brought in]{привлечены}: planes [drop]{сбрасывают} water on the [fire sites]{очаги возгорания}.
+ru: Дым дошёл до крупных городов, и жителям рекомендуют не открывать окна и реже выходить на улицу. || The [smoke]{дым} has reached big cities, and residents are [advised]{рекомендуют} not to open windows and to go outside less often.
+ru: По предварительным данным, причиной большинства пожаров стало неосторожное обращение с огнём. || According to [preliminary]{предварительным} data, most of the fires were caused by [careless]{неосторожное} [handling]{обращение} of fire.
+note: очаги возгорания | fire sites, seats of fire | «Очаг» here is the point where a fire is burning. «Возгорание» is ignition.
+note: неосторожное обращение с огнём | careless handling of fire | The standard official phrase for campfires, cigarettes and the like left unattended.
+q: main | What is the news about? | A flood | *Large forest fires in Siberia | A volcanic eruption | A heat record
+q: detail | What makes firefighting difficult? | Lack of water | *Heat, strong wind and hard-to-reach terrain | Snow | Strikes
+q: detail | What caused most fires? | Lightning | *Careless handling of fire | Arson | Power lines
+sum: A state of emergency has been declared in parts of Siberia, where fires cover over 100,000 hectares. Heat, wind and remote terrain hamper firefighters, smokejumpers and water-bombing aircraft; smoke has reached cities, and most fires were caused by careless use of fire.
+
+=== id: travel-kamchatka
+title: Камчатка: край вулканов
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Камчатка — полуостров на самом востоке России, где находится около тридцати действующих вулканов. || Kamchatka is a [peninsula]{полуостров} in the far east of Russia, home to about thirty [active]{действующих} [volcanoes]{вулканов}.
+ru: Самый высокий из них, Ключевская сопка, поднимается почти на пять тысяч метров. || The highest of them, Klyuchevskaya Sopka, rises almost five thousand meters.
+ru: Туристы приезжают сюда, чтобы подняться на вулкан, искупаться в горячих источниках и увидеть Долину гейзеров. || Tourists come here to climb a volcano, bathe in [hot springs]{горячих источниках} and see the Valley of [Geysers]{гейзеров}.
+ru: Летом в реки идёт на нерест лосось, и медведи ловят рыбу прямо у берега. || In summer [salmon]{лосось} go up the rivers to [spawn]{нерест}, and bears catch fish right by the bank.
+ru: Дорог здесь мало, поэтому до многих мест можно добраться только на вертолёте. || There are few roads here, so many places can only be reached by [helicopter]{вертолёте}.
+ru: Погода меняется быстро, и опытные гиды советуют брать тёплую одежду даже в июле. || The weather changes fast, and experienced [guides]{гиды} advise bringing warm clothes even in July.
+note: сопка | (volcanic) hill, mountain | In Siberia and the Far East «сопка» is a common word for a hill or volcano.
+note: идёт на нерест | goes to spawn | «Нерест» is spawning. Fish «идут на нерест» upriver.
+q: main | What is the text about? | Siberian cities | *Kamchatka's volcanoes, nature and tourism | Fishing laws | The history of the Far East
+q: detail | How do people reach many places? | By car | By train | *By helicopter | On foot only
+q: detail | Why bring warm clothes in July? | It snows every day | *The weather changes fast | The guides insist on fashion | The hot springs are cold
+sum: Kamchatka, in Russia's far east, has about thirty active volcanoes, the highest nearly 5,000 m. Tourists climb volcanoes, bathe in hot springs and visit the Valley of Geysers, while bears fish for spawning salmon. Few roads mean helicopter travel, and changeable weather calls for warm clothes even in July.
+
+=== id: buy-used-car
+title: Как купить подержанную машину
+level: 2+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Покупая подержанный автомобиль, прежде всего проверьте документы: совпадает ли номер кузова в паспорте транспортного средства с номером на машине. || When buying a [used]{подержанный} car, first check the documents: whether the [body number]{номер кузова} in the [vehicle registration document]{паспорте транспортного средства} [matches]{совпадает} the number on the car.
+ru: Узнайте по базе, не находится ли автомобиль в залоге или в розыске. || Check the database to see whether the car is [under a lien]{в залоге} or [reported stolen]{в розыске}.
+ru: Осмотрите кузов при дневном свете: разный оттенок краски и неровные зазоры между деталями говорят о том, что машина побывала в аварии. || Inspect the body in daylight: a different [shade]{оттенок} of paint and uneven [gaps]{зазоры} between panels [indicate]{говорят о том} that the car has been in an [accident]{аварии}.
+ru: Заведите двигатель на холодную: стук, сизый дым и рывки при переключении передач — тревожные признаки. || Start the engine [cold]{на холодную}: knocking, [bluish]{сизый} smoke and [jerks]{рывки} when changing gears are [warning]{тревожные} signs.
+ru: Лучше всего показать машину знакомому механику или заказать диагностику в сервисе. || It's best to show the car to a mechanic you know or [order]{заказать} diagnostics at a [service center]{сервисе}.
+ru: И никогда не передавайте деньги до подписания договора купли-продажи. || And never [hand over]{передавайте} money before the contract of sale is signed.
+note: на холодную | (starting) from cold | A garage phrase: «завести на холодную» means to start an engine that hasn't been warmed up, when problems show best.
+note: в розыске | wanted, reported stolen | «Розыск» is a police search: «объявить в розыск».
+q: main | What does the text give? | The history of car sales | *Practical advice for buying a used car | Car loan rates | Driving lessons
+q: detail | What suggests the car was in an accident? | A full tank | *Different paint shades and uneven panel gaps | New tires | A clean interior
+q: key | When should you hand over the money? | Before the test drive | *Only after signing the contract | When the seller asks | Never
+sum: When buying a used car, check that the body number matches the documents and that the car isn't pledged or stolen. Inspect the body in daylight for paint and gap differences, start the engine cold to listen for knocks, smoke or jerky shifting, get a mechanic's opinion, and pay only after signing the sale contract.
+
+=== id: bank-mortgage
+title: Ипотека: на что обратить внимание
+level: 3
+genre: society
+source_note: Written for this app. General information, not financial advice.
+---
+ru: Ипотека — это кредит на покупку жилья, при котором сама квартира служит залогом. || A [mortgage]{ипотека} is a loan to buy housing in which the apartment itself serves as [collateral]{залогом}.
+ru: Помимо процентной ставки, важно учитывать первоначальный взнос, срок кредита и обязательное страхование. || Besides the [interest rate]{процентной ставки}, it's important to consider the [down payment]{первоначальный взнос}, the [loan term]{срок кредита} and [mandatory]{обязательное} [insurance]{страхование}.
+ru: Аннуитетный платёж одинаков на протяжении всего срока, но в первые годы большая его часть уходит на погашение процентов, а не основного долга. || An [annuity]{аннуитетный} payment is the same throughout the term, but in the first years most of it goes to paying off interest rather than the [principal]{основного долга}.
+ru: Досрочное погашение позволяет заметно сэкономить, а по закону банк не вправе брать за него штраф. || [Early repayment]{досрочное погашение} can save a noticeable amount, and by law the bank may not charge a penalty for it.
+ru: Финансовые консультанты советуют, чтобы ежемесячный платёж не превышал трети семейного дохода. || Financial [advisers]{консультанты} recommend that the [monthly]{ежемесячный} payment not exceed a third of [household]{семейного} income.
+note: основного долга | principal | The amount borrowed, as opposed to «проценты», the interest.
+note: аннуитетный платёж | annuity (level) payment | Equal monthly payments. The alternative is «дифференцированный», declining payments.
+q: main | What does the text explain? | How to sell an apartment | *Key things to understand before taking a mortgage | How banks are regulated | Property taxes
+q: detail | What happens in the early years of an annuity mortgage? | Most of the payment goes to principal | *Most of the payment goes to interest | Payments are lower | No interest is charged
+q: detail | What share of income should the payment not exceed? | Half | *A third | A quarter | Ten percent
+sum: A mortgage is a home loan secured by the property. Beyond the rate, consider the down payment, term and required insurance. Level annuity payments go mostly to interest early on; early repayment saves money and can't be penalized, and advisers suggest keeping payments under a third of household income.
+
+=== id: space-iss
+title: Жизнь на МКС
+level: 3
+genre: science
+source_note: Written for this app.
+---
+ru: Международная космическая станция облетает Землю за полтора часа, поэтому экипаж видит шестнадцать рассветов и закатов в сутки. || The International Space Station [circles]{облетает} the Earth in an hour and a half, so the crew sees sixteen [sunrises]{рассветов} and [sunsets]{закатов} a day.
+ru: В невесомости мышцы и кости быстро слабеют, и космонавтам приходится заниматься на тренажёрах по два часа ежедневно. || In [weightlessness]{невесомости} muscles and [bones]{кости} weaken quickly, so cosmonauts have to work out on [exercise machines]{тренажёрах} for two hours [daily]{ежедневно}.
+ru: Воду для питья получают в том числе путём переработки влаги из воздуха и даже мочи. || Drinking water is obtained, among other ways, by [recycling]{переработки} moisture from the air and even [urine]{мочи}.
+ru: Спят в спальных мешках, пристёгнутых к стене, чтобы не уплыть во сне. || They sleep in [sleeping bags]{спальных мешках} [strapped]{пристёгнутых} to the wall so as not to [float away]{уплыть} in their sleep.
+ru: Грузовые корабли регулярно доставляют на станцию продукты, оборудование и топливо. || [Cargo]{грузовые} ships regularly [deliver]{доставляют} food, equipment and fuel to the station.
+note: невесомость | weightlessness | From «вес», weight. «Невесомый» means weightless, very light.
+q: main | What does the text describe? | How rockets are built | *Everyday life aboard the International Space Station | The history of spaceflight | Space tourism
+q: detail | Why do cosmonauts exercise two hours daily? | To pass the time | *Muscles and bones weaken in weightlessness | To stay warm | To produce electricity
+q: detail | How do they sleep? | In beds | *In sleeping bags strapped to the wall | Floating freely | They don't sleep
+sum: The ISS circles Earth every 90 minutes, so the crew sees sixteen sunrises and sunsets a day. Weightlessness weakens muscles and bones, so they exercise two hours daily; water is recycled even from urine, they sleep strapped to the wall, and cargo ships bring supplies.
+
+=== id: fire-safety
+title: Если в доме пожар
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: При пожаре главное — не паниковать и сразу позвонить по номеру сто двенадцать. || In a fire, the main thing is not to [panic]{паниковать} and to call 112 right away.
+ru: Чаще всего люди погибают не от огня, а от угарного газа, поэтому двигаться к выходу нужно пригнувшись, закрыв нос и рот мокрой тканью. || Most often people die not from the flames but from [carbon monoxide]{угарного газа}, so you should move toward the exit [crouching]{пригнувшись}, covering your nose and mouth with a wet [cloth]{тканью}.
+ru: Пользоваться лифтом во время пожара нельзя. || You must not use the elevator during a fire.
+ru: Если путь отрезан огнём, закройте дверь, заткните щели мокрыми полотенцами и подавайте сигнал из окна. || If your way out is [cut off]{отрезан} by fire, close the door, [stuff]{заткните} the [cracks]{щели} with wet towels and [signal]{подавайте сигнал} from the window.
+ru: Дома стоит держать огнетушитель и установить дымовые извещатели — они стоят недорого, а спасают жизни. || It's worth keeping a [fire extinguisher]{огнетушитель} at home and installing [smoke detectors]{дымовые извещатели}: they're inexpensive and save lives.
+note: угарный газ | carbon monoxide | Compare «угар» in Chekhov's ward: stove fumes.
+q: main | What does the text give? | Firefighter training | *Advice on what to do in a house fire | The causes of fires | Fire insurance
+q: detail | What kills most people in fires? | Flames | *Carbon monoxide | Falling | Water
+q: detail | What should you do if the exit is blocked? | Use the elevator | *Close the door, seal cracks with wet towels and signal from the window | Jump immediately | Open all windows
+sum: In a fire, stay calm and call 112. Smoke and carbon monoxide kill more than flames, so crouch and breathe through a wet cloth; never use the elevator. If trapped, shut the door, seal gaps with wet towels and signal from a window. Keep an extinguisher and install smoke detectors.
+
+=== id: chess-endgame
+title: Шахматы: эндшпиль
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Многие любители уделяют внимание дебютам, заучивая длинные варианты, но недооценивают эндшпиль. || Many [amateurs]{любители} pay attention to [openings]{дебютам}, [memorizing]{заучивая} long [variations]{варианты}, but [underestimate]{недооценивают} the [endgame]{эндшпиль}.
+ru: Между тем именно в окончании партии решается судьба половины всех турнирных встреч. || [Meanwhile]{между тем}, it's precisely in the [ending]{окончании} of the game that half of all tournament [games]{встреч} are decided.
+ru: В эндшпиле король превращается из уязвимой фигуры в активного участника борьбы. || In the endgame the [king]{король} turns from a [vulnerable]{уязвимой} [piece]{фигуры} into an active [participant]{участника} in the struggle.
+ru: Ключевую роль играют проходные пешки: каждая из них угрожает превратиться в ферзя. || [Passed pawns]{проходные пешки} play a key role: each threatens to [promote]{превратиться} to a [queen]{ферзя}.
+ru: Классический совет Капабланки — изучать окончания раньше, чем дебюты, потому что они учат понимать силу каждой фигуры. || Capablanca's classic advice is to study endings before openings, because they teach you to understand the strength of each piece.
+note: партия | game (of chess) | «Сыграть партию» means to play a game. Compare «партия» as a political party or a batch.
+note: проходная пешка | passed pawn | A pawn with no enemy pawns in front of it or on adjacent files.
+q: main | What does the text argue? | Openings matter most | *Endgames are underrated and should be studied early | Chess is too hard | Kings should hide
+q: detail | How does the king's role change in the endgame? | It becomes useless | *It becomes an active fighter | It can't move | It turns into a queen
+sum: Amateurs memorize openings but neglect endgames, where half of tournament games are decided. In the endgame the king becomes active and passed pawns threaten to promote; Capablanca advised studying endings first because they teach the true strength of each piece.
+
+=== id: dentist
+title: У стоматолога
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Если зуб реагирует на холодное и горячее, это может быть признаком кариеса. || If a tooth [reacts]{реагирует} to cold and hot, it may be a sign of [cavities]{кариеса}.
+ru: Стоматолог сделает снимок, удалит поражённые ткани и поставит пломбу. || The [dentist]{стоматолог} will take an [X-ray]{снимок}, remove the [affected]{поражённые} tissue and put in a [filling]{пломбу}.
+ru: Если воспаление дошло до нерва, потребуется лечение каналов, а иногда и коронка. || If the [inflammation]{воспаление} has reached the [nerve]{нерва}, [root canal]{каналов} treatment is needed, and sometimes a [crown]{коронка}.
+ru: Современная анестезия делает лечение почти безболезненным. || Modern [anesthesia]{анестезия} makes treatment almost [painless]{безболезненным}.
+ru: Чтобы не доводить до этого, чистите зубы дважды в день, пользуйтесь зубной нитью и раз в полгода приходите на осмотр. || To avoid [getting to that point]{доводить до этого}, brush your teeth twice a day, use [dental floss]{зубной нитью} and come for a [checkup]{осмотр} every six months.
+note: пломба | (dental) filling; seal | Also a lead seal on a meter or a door.
+q: main | What does the text explain? | How to become a dentist | *How tooth decay is treated and prevented | Dental costs | Children's teeth
+q: detail | When is root canal treatment needed? | Always | *When inflammation reaches the nerve | For whitening | Never
+sum: Sensitivity to hot and cold can signal decay. A dentist X-rays the tooth, removes damaged tissue and fills it; if the nerve is inflamed, root canal treatment and maybe a crown follow, with modern anesthesia making it nearly painless. Brush twice daily, floss and get checkups every six months.
+
+=== id: garden-orchard
+title: Весенние работы в саду
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Ранней весной, пока не началось сокодвижение, плодовые деревья обрезают: удаляют сухие, больные и загущающие крону ветви. || In early spring, before the [sap starts to flow]{сокодвижение}, fruit trees are [pruned]{обрезают}: dry, diseased and [crown-thickening]{загущающие крону} [branches]{ветви} are removed.
+ru: Срезы замазывают садовым варом, чтобы в рану не проникла инфекция. || The [cuts]{срезы} are [sealed]{замазывают} with [pruning sealant]{садовым варом} so infection doesn't [get into]{проникла} the wound.
+ru: Стволы белят известью: это защищает кору от солнечных ожогов и вредителей. || The [trunks]{стволы} are [whitewashed]{белят} with [lime]{известью}: this protects the [bark]{кору} from [sunscald]{солнечных ожогов} and [pests]{вредителей}.
+ru: Когда земля прогреется, вскапывают грядки, вносят перегной и высаживают рассаду, выращенную на подоконнике. || When the ground [warms up]{прогреется}, the [beds]{грядки} are [dug]{вскапывают}, [compost]{перегной} is added, and [seedlings]{рассаду} grown on the [windowsill]{подоконнике} are planted out.
+ru: Опытные дачники не спешат: возвратные заморозки в мае могут погубить нежные растения за одну ночь. || Experienced dacha gardeners [are in no hurry]{не спешат}: [late]{возвратные} [frosts]{заморозки} in May can kill [tender]{нежные} plants in a single night.
+note: возвратные заморозки | late spring frosts | Literally "returning frosts" after warm weather has begun.
+note: дачники | dacha owners, weekend gardeners | People who spend summers at their dachas, often growing vegetables.
+q: main | What does the text describe? | Harvesting in autumn | *Spring tasks in an orchard and vegetable garden | Buying a dacha | Indoor plants
+q: detail | Why whitewash tree trunks? | For decoration | *To protect the bark from sunscald and pests | To kill the tree | To mark the trees
+q: inference | Why don't experienced gardeners rush planting? | They are lazy | *Late May frosts can kill young plants | Seedlings need more time indoors | The soil is too wet
+sum: In early spring, before the sap rises, fruit trees are pruned and cuts sealed with pruning compound; trunks are whitewashed against sunscald and pests. Once the soil warms, beds are dug, compost added and windowsill seedlings planted, though wise gardeners wait because May frosts can kill tender plants overnight.
+
+=== id: patent-law
+title: Патент на изобретение
+level: 4
+genre: legal
+source_note: Written for this app in the style of a Russian legal explainer.
+---
+ru: Изобретению предоставляется правовая охрана, если оно является новым, имеет изобретательский уровень и промышленно применимо. || An [invention]{изобретению} is granted legal [protection]{охрана} if it is new, involves an [inventive step]{изобретательский уровень} and is [industrially applicable]{промышленно применимо}.
+ru: Изобретательский уровень означает, что решение не следует для специалиста явным образом из известного уровня техники. || An inventive step means that the solution does not follow [obviously]{явным образом} to a specialist from the [prior art]{уровня техники}.
+ru: Заявка подаётся в федеральный орган исполнительной власти по интеллектуальной собственности и включает описание, формулу изобретения, чертежи и реферат. || The [application]{заявка} is filed with the federal executive body for [intellectual property]{интеллектуальной собственности} and includes a [description]{описание}, the [claims]{формулу изобретения}, [drawings]{чертежи} and an [abstract]{реферат}.
+ru: Именно формула определяет объём охраны, поэтому её составление требует особой тщательности. || It's the claims that define the [scope]{объём} of protection, so [drafting]{составление} them requires special [care]{тщательности}.
+ru: Срок действия патента составляет двадцать лет при условии своевременной уплаты пошлин за его поддержание. || A patent is [valid]{срок действия} for twenty years, provided the fees for [maintaining]{поддержание} it are paid on time.
+note: формула изобретения | patent claims | Not a "formula": it's the legal definition of what the patent protects.
+note: уровень техники | prior art | Everything publicly known before the filing date.
+q: main | What does the text explain? | How to sell an invention | *The conditions and process for patenting an invention | Copyright on books | Trademarks
+q: detail | What defines the scope of patent protection? | The drawings | *The claims (формула изобретения) | The abstract | The inventor's name
+q: detail | How long is a patent valid? | Ten years | *Twenty years | Fifty years | Forever
+sum: An invention is patentable if it is new, involves an inventive step (not obvious from prior art) and is industrially applicable. The application to the IP office includes a description, claims, drawings and abstract; the claims define the scope, so they must be drafted carefully, and a patent lasts twenty years if maintenance fees are paid.
+
+=== id: lit-crit-chekhov
+title: Краткость — сестра таланта
+level: 4
+genre: literature
+source_note: Written for this app.
+---
+ru: Чехов сформулировал своё кредо в письме брату: «Краткость — сестра таланта». || Chekhov [formulated]{сформулировал} his [creed]{кредо} in a letter to his brother: "[Brevity]{краткость} is the sister of talent."
+ru: Его рассказы обходятся без пространных описаний и авторских оценок: характер раскрывается через деталь, жест, реплику. || His stories [do without]{обходятся без} [lengthy]{пространных} descriptions and the author's [judgments]{оценок}: character is [revealed]{раскрывается} through a [detail]{деталь}, a [gesture]{жест}, a [line of dialogue]{реплику}.
+ru: Финалы у Чехова часто открыты: читатель остаётся наедине с недосказанностью, и именно в этой паузе рождается смысл. || Chekhov's endings are often [open]{открыты}: the reader is left alone with what is [left unsaid]{недосказанностью}, and it's precisely in this pause that meaning is born.
+ru: Современники упрекали его в отсутствии мировоззрения, но сам писатель настаивал, что дело художника — не решать вопросы, а правильно их ставить. || Contemporaries [reproached]{упрекали} him for lacking a [worldview]{мировоззрения}, but the writer himself insisted that the artist's job is not to solve questions but to [pose]{ставить} them correctly.
+ru: Эта сдержанность оказала огромное влияние на прозу двадцатого века — от Хемингуэя до Карвера. || This [restraint]{сдержанность} had a huge influence on twentieth-century [prose]{прозу}, from Hemingway to Carver.
+note: кредо | creed, credo | A person's core principles, from Latin «credo», I believe.
+note: недосказанность | understatement, the unsaid | From «недосказать», to leave unsaid. A key term for Chekhov's style.
+q: main | What is the text about? | Chekhov's biography | *The features and influence of Chekhov's concise style | Chekhov's plays only | A letter to his brother
+q: detail | How does Chekhov reveal character? | Through long descriptions | *Through details, gestures and lines of dialogue | Through the narrator's comments | Through dreams
+q: inference | What did Chekhov mean by posing questions correctly? | Writers should solve problems | *Art should show problems clearly without preaching answers | Questions are useless | Readers should write the ending
+sum: Chekhov's credo was "brevity is the sister of talent." He avoids long descriptions and authorial judgment, revealing character through details, gestures and dialogue, and leaves endings open so meaning arises from the unsaid. Accused of lacking a worldview, he said the artist's task is to pose questions correctly, not solve them, and his restraint shaped 20th-century prose.
+
+=== id: geo-minerals
+title: Как образуются алмазы
+level: 4
+genre: science
+source_note: Written for this app.
+---
+ru: Алмазы кристаллизуются на глубине более ста пятидесяти километров, в мантии, где углерод испытывает колоссальное давление и температуру свыше тысячи градусов. || [Diamonds]{алмазы} [crystallize]{кристаллизуются} at depths of more than 150 kilometers, in the [mantle]{мантии}, where carbon is subjected to [colossal]{колоссальное} pressure and temperatures above a thousand degrees.
+ru: На поверхность их выносят магматические прорывы, образующие так называемые кимберлитовые трубки. || They are carried to the surface by [magmatic]{магматические} [eruptions]{прорывы} that form so-called [kimberlite pipes]{кимберлитовые трубки}.
+ru: Подъём происходит стремительно, иначе алмаз успел бы превратиться в графит. || The [ascent]{подъём} happens [rapidly]{стремительно}; otherwise the diamond would have time to turn into [graphite]{графит}.
+ru: Крупнейшие месторождения России находятся в Якутии, где добыча ведётся открытым способом в гигантских карьерах. || Russia's largest [deposits]{месторождения} are in Yakutia, where [mining]{добыча} is done by the [open-pit]{открытым способом} method in [gigantic]{гигантских} [quarries]{карьерах}.
+ru: Лишь небольшая доля добытых камней пригодна для ювелирной огранки; остальные идут на изготовление режущих и шлифовальных инструментов. || Only a small share of the stones mined is [suitable]{пригодна} for [jewelry]{ювелирной} [cutting]{огранки}; the rest go into making [cutting]{режущих} and [grinding]{шлифовальных} tools.
+note: огранка | (gem) cutting | The cutting of facets («грани») into a stone. A cut diamond is a «бриллиант».
+note: открытым способом | by the open-pit method | As opposed to «подземным способом», underground mining.
+q: main | What does the text explain? | Diamond prices | *How diamonds form, reach the surface and are mined and used | Jewelry design | Graphite pencils
+q: detail | Why must the ascent be fast? | To stay cold | *Otherwise the diamond would turn into graphite | To avoid erosion | To break the rock
+q: detail | What happens to most mined diamonds? | They become jewelry | *They are used for cutting and grinding tools | They are stored | They are destroyed
+sum: Diamonds form over 150 km down in the mantle under enormous pressure and heat, and rapid magma eruptions bring them up through kimberlite pipes before they can turn to graphite. Russia's biggest deposits are in Yakutia's open-pit mines; only a small share are gem quality, and the rest become industrial cutting and grinding tools.
+
+=== id: pharm-antibiotics
+title: Антибиотики и резистентность
+level: 4
+genre: science
+source_note: Written for this app. General information, not medical advice.
+---
+ru: Антибиотики подавляют рост бактерий, но бессильны против вирусов, поэтому принимать их при гриппе или простуде бессмысленно. || [Antibiotics]{антибиотики} [suppress]{подавляют} the growth of [bacteria]{бактерий} but are [powerless]{бессильны} against viruses, so taking them for flu or a cold is [pointless]{бессмысленно}.
+ru: Каждый необоснованный курс способствует отбору устойчивых штаммов: выживают те микробы, которые оказались невосприимчивы к препарату. || Every [unjustified]{необоснованный} course [contributes]{способствует} to the [selection]{отбору} of [resistant]{устойчивых} [strains]{штаммов}: the microbes that survive are those that proved [immune]{невосприимчивы} to the drug.
+ru: Особенно опасно прерывать лечение раньше срока, как только стало легче. || It's especially dangerous to stop treatment [early]{раньше срока}, as soon as you feel better.
+ru: Всемирная организация здравоохранения называет антибиотикорезистентность одной из главных угроз здоровью человечества. || The World [Health]{здравоохранения} Organization calls [antibiotic resistance]{антибиотикорезистентность} one of the main threats to [humanity's]{человечества} health.
+ru: Если не изменить практику назначения препаратов, обычные инфекции снова могут стать смертельными. || If prescribing [practice]{практику} doesn't change, ordinary [infections]{инфекции} could again become [deadly]{смертельными}.
+note: штамм | strain (of a microbe) | A variant of a bacterium or virus: «новый штамм гриппа».
+note: невосприимчивы | immune, insusceptible | From «воспринимать», to take in. Not sensitive to something.
+q: main | What is the main warning? | Antibiotics cure all diseases | *Misusing antibiotics breeds resistant bacteria | Viruses are harmless | Vaccines are dangerous
+q: detail | Why are antibiotics useless for a cold? | Colds are allergic reactions | *Colds are caused by viruses, which antibiotics don't affect | They are too weak | They work too slowly
+q: inference | Why is stopping treatment early dangerous? | It wastes money | *The surviving, tougher bacteria multiply and spread resistance | The doctor gets angry | It causes headaches
+sum: Antibiotics stop bacteria but not viruses, so they're useless for flu and colds. Every unnecessary course, and every course stopped early, selects for resistant strains. The WHO calls antibiotic resistance a top global health threat; without better prescribing, common infections could become deadly again.
+
+=== id: vet-dog
+title: Прививки для щенка
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Щенку делают первую прививку в восемь-девять недель, а повторную — через три-четыре недели. || A [puppy]{щенку} gets its first [vaccination]{прививку} at eight to nine weeks and a [booster]{повторную} three to four weeks later.
+ru: Вакцина защищает от чумы, парвовирусного энтерита и бешенства — болезней, которые часто заканчиваются гибелью. || The [vaccine]{вакцина} protects against [distemper]{чумы}, [parvovirus enteritis]{парвовирусного энтерита} and [rabies]{бешенства}, diseases that often end in death.
+ru: За десять дней до прививки нужно дать средство от глистов. || Ten days before the vaccination you need to give a [dewormer]{средство от глистов}.
+ru: Пока не прошёл карантин, гулять с щенком лучше на руках и не подпускать его к чужим собакам. || Until the [quarantine]{карантин} is over, it's better to carry the puppy when you go out and not let it near other dogs.
+ru: Взрослую собаку прививают раз в год, а отметки о прививках ставят в ветеринарный паспорт. || An adult dog is vaccinated once a year, and the vaccinations are recorded in its [veterinary passport]{ветеринарный паспорт}.
+note: чума | distemper (in dogs); plague | In veterinary use «чума плотоядных» is canine distemper; in history «чума» is the plague.
+q: main | What is the text about? | Training a puppy | *Vaccinating a puppy and caring for it during quarantine | Choosing a dog breed | Dog food
+q: detail | When is the first vaccination? | At birth | *At eight to nine weeks | At six months | At one year
+q: detail | What should you do before the vaccination? | Bathe the dog | *Give a dewormer ten days before | Stop feeding | Nothing
+sum: Puppies get their first shots at 8–9 weeks and a booster 3–4 weeks later, against distemper, parvovirus and rabies. Deworm ten days beforehand, keep the puppy away from other dogs during quarantine, and vaccinate adult dogs yearly, with records in the veterinary passport.

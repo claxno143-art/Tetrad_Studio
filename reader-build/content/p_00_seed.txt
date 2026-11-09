@@ -1,0 +1,41 @@
+=== id: chekhov-dama-1
+title: Дама с собачкой, I
+author: А. П. Чехов
+level: 3
+genre: literature
+src: RussianNovels/corpus/Chekhov_Dama.txt
+from: Говорили, что на набережной
+to: и называли ее просто так: дама с собачкой.
+---
+1| People said that a new face had appeared on the [embankment]{набережной}: a lady with a little dog.
+2| Dmitri Dmitrich Gurov, who had [spent]{проживший} two weeks in Yalta by then and had grown used to the place, had also begun to take an interest in new faces.
+3| Sitting in the [pavilion]{павильоне} at Vernet's, he saw a young lady walk along the embankment, a short blonde in a [beret]{берете}; a white [spitz]{шпиц} was running after her.
+4| And after that he kept running into her in the town garden and on the [square]{сквере} [several times]{по нескольку раз} a day.
+5| She walked alone, always in the same beret, with the white spitz; nobody knew who she was, and people simply called her "the lady with the little dog."
+note: новое лицо | a new face, a newcomer | «Лицо» here means a person, as in English "a new face in town." It also has a legal sense: «юридическое лицо», a legal entity.
+note: по нескольку раз | several times each | «По» with «нескольку» (dative of «несколько») gives a distributive sense: several times a day, every day.
+q: main | What is this opening mainly about? | *A newcomer at a seaside resort catches Gurov's attention | Gurov arrives in Yalta and looks for work | A lady loses her dog on the embankment | Gurov describes his family life
+q: detail | How long had Gurov been in Yalta? | One day | *Two weeks | Since spring | Several years
+q: inference | What does it suggest that people call her only "the lady with the little dog"? | *She keeps to herself, so no one knows her name | She is famous in Yalta | She is Gurov's wife | She works at the pavilion
+q: tone | What is the mood of the passage? | Tense and frightening | *Calm and idle, with quiet curiosity | Angry and bitter | Mournful
+sum: In Yalta, the resort crowd notices a newcomer, a young lady who walks alone with a white spitz. Gurov, bored after two weeks there, keeps seeing her and becomes curious about her.
+
+=== id: everyday-family-1
+title: Моя семья
+level: 0+
+genre: everyday
+topic: family
+---
+ru: Меня зовут Анна. || My [name is]{зовут} Anna.
+ru: Это моя семья. || This is my [family]{семья}.
+ru: Мой папа — врач. || My dad is a [doctor]{врач}.
+ru: Моя мама — учитель. || My mom is a [teacher]{учитель}.
+
+ru: У меня есть брат. || I [have]{у меня есть} a [brother]{брат}.
+ru: Его зовут Иван. || His name is Ivan.
+ru: Ему десять лет. || He is [ten]{десять} [years old]{лет}.
+ru: Мы живём в Москве. || We [live]{живём} in Moscow.
+q: main | What is the text about? | A trip to Moscow | *Anna and her family | A doctor's work | A school
+q: detail | What does Anna's mom do? | She is a doctor | *She is a teacher | She is a student | She doesn't work
+q: detail | How old is Ivan? | Five | *Ten | Twenty | We don't know
+sum: Anna introduces her family: her dad is a doctor, her mom is a teacher, and her brother Ivan is ten. They live in Moscow.

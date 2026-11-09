@@ -1,0 +1,146 @@
+=== id: legal-lease
+title: Договор аренды квартиры (выдержки)
+level: 3+
+genre: legal
+source_note: Written for this app in the style of a Russian residential lease.
+---
+ru: 1. Арендодатель передаёт, а Арендатор принимает во временное владение и пользование жилое помещение, расположенное по адресу, указанному в пункте 1.2 настоящего Договора. || 1. The [Landlord]{арендодатель} transfers, and the [Tenant]{арендатор} accepts, into temporary [possession and use]{владение и пользование} the [residential premises]{жилое помещение} located at the address given in clause 1.2 of [this Agreement]{настоящего договора}.
+ru: 2. Арендная плата составляет 45 000 рублей в месяц и вносится не позднее пятого числа текущего месяца путём безналичного перевода. || 2. The [rent]{арендная плата} [amounts to]{составляет} 45,000 rubles per month and is [paid]{вносится} no later than the fifth day of the [current]{текущего} month by [bank transfer]{безналичного перевода}.
+ru: 3. При подписании Договора Арендатор вносит обеспечительный платёж в размере месячной арендной платы, который возвращается по окончании срока аренды за вычетом стоимости устранения повреждений, если таковые будут выявлены. || 3. On signing the Agreement the Tenant pays a [security deposit]{обеспечительный платёж} equal to one month's rent, which is returned at the end of the [lease term]{срока аренды} [less]{за вычетом} the cost of [repairing]{устранения} [damage]{повреждений}, [if any]{если таковые} is [found]{выявлены}.
+ru: 4. Арендатор обязуется содержать помещение в надлежащем состоянии, своевременно оплачивать коммунальные услуги и не производить перепланировку без письменного согласия Арендодателя. || 4. The Tenant [undertakes]{обязуется} to keep the premises in [proper]{надлежащем} condition, to pay for [utilities]{коммунальные услуги} [on time]{своевременно}, and not to carry out any [remodeling]{перепланировку} without the Landlord's written [consent]{согласия}.
+ru: 5. Субаренда допускается лишь с согласия Арендодателя. || 5. [Subletting]{субаренда} is [permitted]{допускается} only with the Landlord's consent.
+ru: 6. Договор может быть расторгнут досрочно по инициативе любой из сторон при условии письменного уведомления другой стороны не менее чем за тридцать календарных дней. || 6. The Agreement may be [terminated]{расторгнут} [early]{досрочно} at the initiative of either [party]{сторон} [provided]{при условии} the other party is given written [notice]{уведомления} no less than thirty [calendar days]{календарных дней} in advance.
+ru: 7. Споры, возникающие из настоящего Договора, разрешаются путём переговоров, а при недостижении согласия — в судебном порядке. || 7. [Disputes]{споры} [arising]{возникающие} from this Agreement are [settled]{разрешаются} through negotiation and, [failing agreement]{при недостижении согласия}, [in court]{в судебном порядке}.
+note: настоящего Договора | this Agreement | In legal Russian «настоящий» means "the present, this one," not "real." «Настоящий закон» is "this law."
+note: если таковые | if any | «Таковой» is a bookish pronoun, "such." «Если таковые будут выявлены» means "if any are found."
+note: в судебном порядке | through the courts | «Порядок» here is a procedure: «в судебном порядке», «в установленном порядке», «в одностороннем порядке».
+q: main | What kind of document is this? | A bank loan | *A residential lease | A job contract | A purchase agreement
+q: detail | When must the rent be paid? | On the last day of the month | *By the fifth of the current month | Every two weeks | Once a year in advance
+q: detail | What may the landlord deduct from the deposit? | Utility bills | *The cost of repairing any damage found | A cleaning fee in all cases | Nothing at all
+q: key | How can either side end the lease early? | Only through a court | By paying a fine | *With written notice at least thirty days ahead | It can't be ended early
+sum: A lease of an apartment for 45,000 rubles a month with a one-month security deposit. The tenant must keep the flat in good order, pay utilities and get written consent for remodeling or subletting; either party can end the lease early on thirty days' written notice, and disputes go to court if talks fail.
+
+=== id: legal-court-car
+title: Решение суда: ремонт автомобиля
+level: 4
+genre: legal
+source_note: Written for this app in the style of a Russian court decision.
+---
+ru: Истец обратился в суд с иском к ответчику о взыскании денежных средств, уплаченных за ремонт автомобиля, неустойки и компенсации морального вреда. || The [plaintiff]{истец} [brought]{обратился} a [claim]{иском} against the [defendant]{ответчику} [for the recovery]{о взыскании} of the money paid for repairing a car, a [penalty]{неустойки}, and compensation for [non-pecuniary damage]{морального вреда}.
+ru: В обоснование требований истец указал, что после выполненного ответчиком ремонта коробки передач неисправность проявилась повторно уже через две недели. || [In support of]{в обоснование} the [claims]{требований} the plaintiff stated that after the defendant had repaired the [gearbox]{коробки передач}, the [fault]{неисправность} [reappeared]{проявилась повторно} within two weeks.
+ru: Ответчик иск не признал, сославшись на нарушение истцом правил эксплуатации транспортного средства. || The defendant [denied the claim]{иск не признал}, [citing]{сославшись} the plaintiff's [violation]{нарушение} of the rules for [operating]{эксплуатации} the [vehicle]{транспортного средства}.
+ru: Согласно заключению судебной автотехнической экспертизы, причиной повторной поломки явилась установка ответчиком деталей, не соответствующих требованиям завода-изготовителя. || According to the [findings]{заключению} of the [court-ordered]{судебной} [automotive]{автотехнической} [expert examination]{экспертизы}, the cause of the repeated [breakdown]{поломки} [was]{явилась} the defendant's installation of parts that did not [meet]{соответствующих} the [manufacturer's]{завода-изготовителя} requirements.
+ru: Доводы ответчика о ненадлежащей эксплуатации автомобиля опровергаются материалами дела. || The defendant's [arguments]{доводы} about [improper]{ненадлежащей} use of the car are [refuted]{опровергаются} by the [case file]{материалами дела}.
+ru: Руководствуясь статьями 194–199 ГПК РФ, суд решил: исковые требования удовлетворить частично. || [Guided by]{руководствуясь} Articles 194–199 of the [Code of Civil Procedure]{ГПК} of the Russian Federation, the court [ruled]{решил}: to [grant]{удовлетворить} the claims [in part]{частично}.
+ru: Взыскать с ответчика в пользу истца стоимость ремонта, неустойку в уменьшенном размере, а также компенсацию морального вреда в сумме пяти тысяч рублей. || To [recover]{взыскать} from the defendant [in favor of]{в пользу} the plaintiff the cost of the repair, a penalty in a [reduced]{уменьшенном} amount, and compensation for non-pecuniary damage in the amount of five thousand rubles.
+ru: Решение может быть обжаловано в апелляционном порядке в течение месяца. || The decision may be [appealed]{обжаловано} [on appeal]{в апелляционном порядке} within one month.
+note: моральный вред | non-pecuniary damage, emotional harm | Literally "moral harm": compensation for suffering, not for a financial loss. Common in consumer cases.
+note: неустойка | contractual penalty | A sum owed for late or improper performance of an obligation, often counted per day of delay.
+note: явилась | was, turned out to be | In formal Russian «являться» replaces «быть»: «причиной явилась…» means "the cause was…".
+note: исковые требования удовлетворить частично | to grant the claims in part | The fixed formula for the operative part of a decision. «Удовлетворить» here means to grant, not to satisfy.
+q: main | What is the outcome of the case? | The claim was rejected entirely | *The claim was partly granted | The case was sent back for retrial | The parties settled out of court
+q: detail | What did the expert examination find? | The plaintiff drove carelessly | *The defendant installed parts that didn't meet the manufacturer's requirements | The car was stolen | The gearbox was never repaired
+q: inference | Why was the claim granted only in part? | The plaintiff lost the receipts | *The court reduced the penalty and limited some amounts | The defendant went bankrupt | The judge disliked the plaintiff
+q: key | How long do the parties have to appeal? | Ten days | *One month | One year | They cannot appeal
+sum: A car owner sued a repair shop after the gearbox failed again two weeks after repair. A court-ordered expert found the shop had used non-standard parts, so the court ordered the shop to repay the repair cost, a reduced penalty and 5,000 rubles for distress; the ruling can be appealed within a month.
+
+=== id: legal-protocol
+title: Протокол об административном правонарушении
+level: 3
+genre: legal
+source_note: Written for this app in the style of a Russian traffic violation report.
+---
+ru: Протокол составлен инспектором ДПС в присутствии водителя. || The [report]{протокол} was [drawn up]{составлен} by a [traffic police]{ДПС} [inspector]{инспектором} in the presence of the driver.
+ru: Водитель автомобиля превысил установленную скорость движения на 42 километра в час на участке дороги, где действует ограничение 60 километров в час. || The driver of the car [exceeded]{превысил} the [posted]{установленную} speed by 42 kilometers per hour on a [stretch]{участке} of road where a [limit]{ограничение} of 60 kilometers per hour [applies]{действует}.
+ru: Нарушение зафиксировано прибором измерения скорости, прошедшим поверку. || The [violation]{нарушение} was [recorded]{зафиксировано} by a speed-measuring device that had passed [calibration]{поверку}.
+ru: Водителю разъяснены его права, в том числе право давать объяснения, знакомиться с материалами дела и пользоваться юридической помощью защитника. || The driver's rights were [explained]{разъяснены} to him, including the right to give [explanations]{объяснения}, to [review]{знакомиться} the case materials and to have the legal assistance of a [defense counsel]{защитника}.
+ru: С протоколом водитель ознакомлен, с нарушением не согласен, о чём сделана запись в соответствующей графе. || The driver has [read]{ознакомлен} the report and does not agree with the violation, which is [noted]{сделана запись} in the [relevant]{соответствующей} [box]{графе}.
+ru: Копию протокола водитель получил на руки. || The driver received a copy of the report [in hand]{на руки}.
+note: ДПС | traffic police (patrol service) | «Дорожно-патрульная служба», part of the ГИБДД. In speech people still say «гаишник», from the older name ГАИ.
+note: прошедшим поверку | that has passed calibration | «Поверка» is the official check of a measuring instrument. Don't confuse it with «проверка», an ordinary check.
+note: ознакомлен | has read (and been informed of) | «Ознакомиться с документом» is to read and acquaint oneself with it. On forms: «С протоколом ознакомлен».
+q: main | What is this document about? | A car accident with injuries | *A speeding violation recorded by the traffic police | A parking permit | A driving test
+q: detail | How fast was the driver going? | 60 km/h | 82 km/h | *102 km/h | 42 km/h
+q: detail | What did the driver do about the charge? | Paid the fine on the spot | *Stated in writing that he disagrees | Refused to take a copy | Asked for a new inspector
+sum: A traffic inspector drew up a report against a driver who went 42 km/h over a 60 km/h limit, measured by a calibrated device. The driver was told his rights, wrote that he disagrees, and received a copy.
+
+=== id: legal-power-attorney
+title: Доверенность
+level: 3+
+genre: legal
+source_note: Written for this app in the style of a Russian power of attorney.
+---
+ru: Я, нижеподписавшийся, настоящей доверенностью уполномочиваю своего брата представлять мои интересы во всех государственных органах и учреждениях по вопросу оформления права собственности на земельный участок. || I, the [undersigned]{нижеподписавшийся}, [by this power of attorney]{настоящей доверенностью} [authorize]{уполномочиваю} my brother to represent my interests before all state [bodies]{органах} and [institutions]{учреждениях} [concerning]{по вопросу} the [registration]{оформления} of [ownership]{права собственности} of a [plot of land]{земельный участок}.
+ru: Для этого предоставляю ему право подавать и получать документы, оплачивать государственную пошлину, расписываться за меня и совершать все действия, связанные с выполнением данного поручения. || To this end I give him the right to submit and receive documents, pay the [state fee]{государственную пошлину}, [sign]{расписываться} on my behalf and perform all actions connected with carrying out this [assignment]{поручения}.
+ru: Доверенность выдана сроком на один год без права передоверия. || The power of attorney is [issued]{выдана} for a term of one year without the right of [delegation]{передоверия}.
+ru: Содержание статей 185–189 Гражданского кодекса Российской Федерации мне разъяснено. || The content of Articles 185–189 of the Civil Code of the Russian Federation has been explained to me.
+ru: Доверенность удостоверена нотариусом, личность доверителя установлена, дееспособность проверена. || The power of attorney is [certified]{удостоверена} by a [notary]{нотариусом}; the [principal's]{доверителя} [identity]{личность} has been [established]{установлена} and his [legal capacity]{дееспособность} [verified]{проверена}.
+note: без права передоверия | without the right of delegation | The brother can't pass his powers on to a third person. «Передоверие» is re-delegation.
+note: дееспособность | legal capacity | The ability to acquire rights and take on duties through one's own actions. Compare «правоспособность», the capacity to have rights at all.
+q: main | What is the purpose of this document? | To sell the land | *To let the brother handle the land registration on the writer's behalf | To make a will | To rent out the plot
+q: detail | How long is it valid? | One month | *One year | Five years | Indefinitely
+q: inference | What does "without the right of delegation" mean for the brother? | He can't sign anything | *He can't hand these powers to someone else | He must pay the fees himself | He must appear in court
+sum: The writer authorizes his brother, through a notarized one-year power of attorney, to handle all paperwork for registering ownership of a land plot: filing documents, paying fees and signing on his behalf, without the right to pass these powers on.
+
+=== id: legal-suspect-rights
+title: Права подозреваемого
+level: 4
+genre: legal
+source_note: Written for this app as a summary in the style of Russian criminal procedure law.
+---
+ru: Подозреваемым является лицо, в отношении которого возбуждено уголовное дело, либо которое задержано по подозрению в совершении преступления. || A [suspect]{подозреваемым} is a [person]{лицо} [against whom]{в отношении которого} a [criminal case]{уголовное дело} [has been opened]{возбуждено}, or who has been [detained]{задержано} [on suspicion]{по подозрению} of [committing]{совершении} a [crime]{преступления}.
+ru: Подозреваемый вправе знать, в чём он подозревается, и получить копию постановления о возбуждении уголовного дела. || The suspect [has the right]{вправе} to know what he is suspected of and to receive a copy of the [decision]{постановления} to open the criminal case.
+ru: Он вправе давать показания либо отказаться от дачи показаний. || He has the right to give [testimony]{показания} or to [refuse]{отказаться} to testify.
+ru: При согласии подозреваемого дать показания он должен быть предупреждён о том, что его показания могут быть использованы в качестве доказательств по уголовному делу, в том числе и при его последующем отказе от этих показаний. || If the suspect agrees to testify, he must be [warned]{предупреждён} that his testimony may be used as [evidence]{доказательств} in the case, including if he later [retracts]{отказе} it.
+ru: С момента фактического задержания подозреваемый вправе пользоваться помощью защитника и иметь с ним свидания наедине и конфиденциально. || From the moment of actual [detention]{задержания}, the suspect has the right to the assistance of defense counsel and to meet with him [in private]{наедине} and [confidentially]{конфиденциально}.
+ru: Он также вправе приносить жалобы на действия и решения дознавателя, следователя и прокурора. || He also has the right to file [complaints]{жалобы} about the actions and decisions of the [inquiry officer]{дознавателя}, the [investigator]{следователя} and the [prosecutor]{прокурора}.
+ru: Срок задержания до избрания меры пресечения не может превышать сорока восьми часов. || Detention before a [preventive measure]{меры пресечения} is [chosen]{избрания} may not [exceed]{превышать} forty-eight hours.
+note: возбуждено уголовное дело | a criminal case has been opened | The standard verb is «возбудить»: «возбудить дело» means to open a case. Its everyday meaning is "to excite."
+note: мера пресечения | preventive measure | A measure to stop the accused from fleeing or interfering, for example custody, house arrest or a written undertaking not to leave.
+note: вправе | has the right to | A short, formal synonym of «имеет право».
+note: дознаватель | inquiry officer | Handles minor cases through a simplified «дознание», unlike the «следователь», who runs a full investigation («следствие»).
+q: main | What does this text describe? | How to become a police officer | *The legal status and rights of a criminal suspect | The penalties for various crimes | The structure of Russian courts
+q: detail | How long can a person be held before a preventive measure is chosen? | 24 hours | *48 hours | 72 hours | 10 days
+q: inference | Why must the suspect be warned before testifying? | So he can prepare a speech | *Because his words can be used as evidence even if he later takes them back | So the prosecutor can leave the room | Because testimony is always false
+q: detail | When does the right to a lawyer begin? | After the trial starts | *From the moment of actual detention | Only after charges are filed | Only if the suspect can pay
+sum: A suspect is someone under investigation or detained on suspicion of a crime. He must be told the suspicion, may testify or stay silent (and is warned that testimony can be used against him), has a lawyer from the moment of detention, can complain about investigators, and can't be held more than 48 hours without a court-ordered measure.
+
+=== id: legal-consumer
+title: Претензия продавцу
+level: 3+
+genre: legal
+source_note: Written for this app in the style of a Russian consumer complaint letter.
+---
+ru: Двенадцатого марта в вашем магазине мной был приобретён стиральный аппарат стоимостью 38 990 рублей, что подтверждается кассовым чеком. || On March 12 I [purchased]{приобретён} a washing machine in your store [costing]{стоимостью} 38,990 rubles, as [confirmed]{подтверждается} by the [cash receipt]{кассовым чеком}.
+ru: В процессе эксплуатации, в течение гарантийного срока, в товаре был обнаружен существенный недостаток: машина перестала отжимать бельё, а при включении режима стирки появляется код ошибки. || [In the course of]{в процессе} use, during the [warranty period]{гарантийного срока}, a [significant]{существенный} [defect]{недостаток} was [discovered]{обнаружен} in the product: the machine stopped [spinning]{отжимать} the laundry, and an [error code]{код ошибки} appears when a wash cycle is switched on.
+ru: Указанный недостаток не был оговорён продавцом при продаже. || This defect was not [disclosed]{оговорён} by the seller at the time of sale.
+ru: На основании статьи 18 Закона «О защите прав потребителей» требую расторгнуть договор купли-продажи и вернуть уплаченную за товар сумму в течение десяти дней с момента получения настоящей претензии. || [On the basis of]{на основании} Article 18 of the Law "On Consumer Rights Protection," I [demand]{требую} that the [contract of sale]{договор купли-продажи} be [canceled]{расторгнуть} and the amount paid for the product be returned within ten days of [receipt]{получения} of this [claim]{претензии}.
+ru: В случае отказа в удовлетворении моего требования я буду вынужден обратиться в суд, где помимо стоимости товара потребую взыскания неустойки, штрафа и компенсации морального вреда. || If my demand is [refused]{отказа}, I will be [forced]{вынужден} to go to court, where [in addition to]{помимо} the price of the product I will seek a penalty, a [fine]{штрафа} and compensation for non-pecuniary damage.
+note: претензия | formal complaint, claim | In law a «претензия» is a written demand to the other party before going to court. In everyday speech «у меня к вам претензии» means "I have complaints about you."
+note: оговорён | mentioned in advance, disclosed | «Оговорить» means to state a reservation in advance. «Недостаток не был оговорён» means the buyer wasn't warned about the defect.
+q: main | What does the writer want? | A free repair | *To cancel the purchase and get the money back | A discount on a new machine | An apology only
+q: detail | What is wrong with the machine? | It leaks water | *It stopped spinning and shows an error code | It was delivered late | It is the wrong color
+q: key | What will the writer do if refused? | Post a bad review | *Sue for the price, a penalty, a fine and damages | Return the machine without a receipt | Contact the manufacturer
+sum: A customer whose washing machine broke under warranty demands, under the consumer protection law, that the store cancel the sale and refund 38,990 rubles within ten days; otherwise he will sue for the price plus penalties and damages.
+
+=== id: legal-inheritance
+title: Наследование по закону
+level: 4+
+genre: legal
+source_note: Written for this app in the style of a Russian legal explainer.
+---
+ru: Наследство открывается со смертью гражданина; местом открытия наследства является последнее место жительства наследодателя. || An [estate]{наследство} [opens]{открывается} upon a citizen's death; the place where it opens is the last [place of residence]{место жительства} of the [deceased]{наследодателя}.
+ru: При отсутствии завещания имущество переходит к наследникам по закону в порядке очерёдности. || [In the absence]{при отсутствии} of a [will]{завещания}, the [property]{имущество} [passes]{переходит} to the [statutory heirs]{наследникам по закону} [in order of priority]{в порядке очерёдности}.
+ru: Наследниками первой очереди являются дети, супруг и родители наследодателя; внуки наследуют по праву представления, если их родитель умер до открытия наследства. || The heirs [of the first order]{первой очереди} are the deceased's children, spouse and parents; grandchildren [inherit]{наследуют} [by right of representation]{по праву представления} if their parent died before the estate opened.
+ru: Наследники каждой последующей очереди призываются к наследованию лишь при отсутствии наследников предшествующих очередей либо если никто из них не принял наследство или все они от него отказались. || Heirs of each [subsequent]{последующей} order are [called]{призываются} to inherit only if there are no heirs of the [preceding]{предшествующих} orders, or if none of them has [accepted]{принял} the estate or all have [renounced]{отказались} it.
+ru: Принять наследство необходимо в течение шести месяцев со дня его открытия, подав заявление нотариусу либо совершив действия, свидетельствующие о фактическом принятии наследства, например вступив во владение имуществом или погасив долги наследодателя. || The estate must be accepted within six months of the day it opens, by [filing an application]{подав заявление} with a notary or by [taking actions]{совершив действия} that [show]{свидетельствующие} [de facto]{фактическом} acceptance, for example [taking possession]{вступив во владение} of the property or [paying off]{погасив} the deceased's [debts]{долги}.
+ru: Наследник, пропустивший указанный срок, может восстановить его в судебном порядке, если докажет, что не знал и не должен был знать об открытии наследства. || An heir who [has missed]{пропустивший} this deadline can have it [restored]{восстановить} in court if he proves that he did not know and [had no reason to know]{не должен был знать} that the estate had opened.
+ru: Выморочное имущество, то есть имущество, у которого нет наследников, переходит в собственность государства или муниципального образования. || [Escheated]{выморочное} property, that is, property with no heirs, passes into the ownership of the state or the [municipality]{муниципального образования}.
+note: по праву представления | by right of representation | Grandchildren "represent" their dead parent and take that parent's share.
+note: выморочное имущество | escheated property | An old legal term, «вымереть», to die out: property left with no heirs at all.
+note: наследодатель | the deceased (testator) | The person whose estate is inherited. Literally "the one who gives the inheritance."
+q: main | What is the subject of this text? | How to write a will | *How property passes to heirs when there is no will | How to buy property at auction | Property taxes
+q: detail | Who are first-order heirs? | Brothers and sisters | *Children, spouse and parents | Grandparents | Nieces and nephews
+q: detail | How long does an heir have to accept the estate? | One month | *Six months | One year | Three years
+q: inference | When do second-order heirs inherit? | Always, together with the first order | *Only if there are no first-order heirs or they don't accept | Only with a court order | Never
+sum: Without a will, property passes to heirs in order of priority: first children, spouse and parents, with grandchildren standing in for a dead parent. Heirs must accept within six months, by notary application or by acting as owner; a missed deadline can be restored in court, and property with no heirs goes to the state.

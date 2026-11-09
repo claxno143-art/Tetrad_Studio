@@ -1,0 +1,209 @@
+=== id: pushkin-smotritel-1
+title: Станционный смотритель
+author: А. С. Пушкин
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/PovestiBelkina.txt
+from: Кто не проклинал станционных смотрителей
+to: а виноват смотритель.
+---
+1| Who has not [cursed]{проклинал} [stationmasters]{станционных смотрителей}, who has not [squabbled]{бранивался} with them?
+2| Who, in a moment of [anger]{гнева}, has not demanded the [fateful]{роковой} book from them, in order to write in [it]{оную} his useless [complaint]{жалобу} of [oppression]{притеснение}, rudeness and [negligence]{неисправность}?
+3| Who does not consider them the [monsters]{извергами} of the human race, equal to the late [clerks]{подъячим} or, at the very least, the [robbers]{разбойникам} of Murom?
+4| Let us, however, be fair, let us try to [put ourselves in their place]{войти в их положение}, and perhaps we will judge them far more [leniently]{снисходительнее}.
+5| What is a stationmaster?
+6| A [true]{сущий} [martyr]{мученик} of the fourteenth class, [protected]{огражденный} by his rank [only]{токмо} from [beatings]{побоев}, and not always even from those (I [appeal]{ссылаюсь} to my readers' [conscience]{совесть}).
+7| What is the [office]{должность} of [this]{сего} dictator, as Prince Vyazemsky jokingly calls him?
+8| Is it not [penal servitude]{каторга} itself?
+9| No rest day or night.
+10| All the [vexation]{досаду} [accumulated]{накопленную} during a tedious ride, the traveler [takes out]{вымещает} on the stationmaster.
+11| The weather is [unbearable]{несносная}, the road is foul, the [coachman]{ямщик} [stubborn]{упрямый}, the horses won't pull, and the stationmaster is to blame.
+note: дабы вписать в оную | so as to write in it | «Дабы» is an archaic "in order to." «Оный» is an archaic "the said, that." Pushkin's narrator Belkin writes in a deliberately old-fashioned style.
+note: войти в их положение | put ourselves in their place | A living idiom: «войдите в моё положение», please understand my situation.
+note: четырнадцатого класса | of the fourteenth class | The lowest rank on Peter's Table of Ranks.
+note: токмо | only | Archaic form of «только».
+q: main | What is the narrator's argument? | Stationmasters are villains | *Travelers abuse stationmasters, who deserve sympathy | Roads should be improved | The Table of Ranks should be abolished
+q: detail | What does the stationmaster's rank protect him from? | Fines | *Beatings, and not always even those | Hard work | Rudeness
+q: tone | The tone of the passage is | dry and official | *rhetorical and mock-indignant, turning to sympathy | angry at the stationmasters | tragic
+q: idiom | «Не настоящая ли каторга?» means | *"Isn't it real penal servitude?" | "It's not a real prison" | "Is it a real job?" | "Is this the right road?"
+sum: The narrator asks who hasn't cursed stationmasters, then argues for sympathy: these lowest-rank officials are martyrs who get no rest, take abuse from every frustrated traveler, and are blamed for weather, roads and lazy horses.
+
+=== id: pushkin-pikovaya-1
+title: Пиковая дама: у Нарумова
+author: А. С. Пушкин
+level: 3+
+genre: literature
+src: RussianNovels/corpus/Pushkin_Pikovaya.txt
+from: Однажды играли в карты
+to: так это моя бабушка графиня Анна Федотовна.
+repl: И ты не разу не соблазнился => И ты ни разу не соблазнился
+---
+1| Once there was card play at the home of Narumov, an officer of the [Horse Guards]{конногвардейца}.
+2| The long winter night passed [unnoticed]{незаметно}; they sat down to supper [after four]{в пятом часу} in the morning.
+3| Those who had [come out ahead]{остались в выигрыше} ate with great appetite; the others sat [absent-mindedly]{в рассеянности} before their [place settings]{приборами}.
+4| But the champagne appeared, the conversation [livened up]{оживился}, and everyone took part in it.
+5| "How did you do, Surin?" asked the host.
+6| "Lost, [as usual]{по обыкновению}.
+7| I must admit I'm unlucky: I play [mirandole]{мирандолем}, never [get heated]{горячусь}, nothing can [throw me off]{с толку не собьёшь}, and still I keep losing!"
+8| "And you've never once [been tempted]{соблазнился}? Never once bet [on a rute]{поставил на руте}?..
+9| Your [firmness]{твердость} amazes me."
+10| "And what about Hermann!" said one of the guests, pointing to the young engineer. "[Never in his life]{отроду} has he taken cards in hand, never in his life has he [bent]{загнул} a single [paroli]{пароли}, yet he sits with us until five and watches our game!"
+11| "The game interests me greatly," said Hermann, "but I am not [in a position]{не в состоянии} to [sacrifice]{жертвовать} the [necessary]{необходимым} in the hope of [acquiring]{приобрести} the [superfluous]{излишнее}."
+12| "Hermann is a German: he's [calculating]{расчетлив}, that's all!" [remarked]{заметил} Tomsky.
+13| "But if anyone is a mystery to me, it's my grandmother, Countess Anna Fedotovna."
+note: в пятом часу | between four and five | Russian counts the hour in progress: «в пятом часу» means after four, before five.
+note: мирандолем | (playing) mirandole | Faro jargon for cautious play, always betting the same small stake. «Руте» and «пароли» are other faro terms Pushkin's readers knew.
+note: с толку не собьёшь | you can't throw me off | «Сбить с толку» is a living idiom: to confuse, to throw off track.
+q: main | What happens in this opening scene? | *Card players talk over a late supper about luck and the cautious Hermann | Hermann wins a fortune | Tomsky's grandmother arrives | The players quarrel and fight
+q: detail | Why does Hermann never play? | He doesn't understand the rules | *He won't risk what he needs for the hope of what he doesn't | He has no money at all | He is forbidden by his family
+q: inference | What does Tomsky's last remark set up? | A duel | *A story about his grandmother's secret | A new game | Hermann's departure
+q: tone | The atmosphere is | *aristocratic, idle and late-night | military and tense | rural and peaceful | tragic from the start
+sum: After an all-night card game at Narumov's, the players chat over supper. Surin complains he always loses; the young engineer Hermann watches but never plays, saying he won't risk necessities for luxuries. Tomsky then remarks that his grandmother, the countess, is the real mystery.
+
+=== id: pushkin-dochka-buran
+title: Капитанская дочка: буран
+author: А. С. Пушкин
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/KapitanskayaDochka.txt
+from: Я приближался к месту моего назначения
+to: ВсЈ исчезло.
+repl: ВсЈ => Всё ;; всЈ => всё
+---
+1| I was [approaching]{приближался} my place of [posting]{назначения}.
+2| All around me [stretched]{простирались} sad [wastelands]{пустыни}, [crossed]{пересеченные} by hills and [ravines]{оврагами}.
+3| Everything was covered with snow.
+4| The sun was setting.
+5| The [covered sleigh]{кибитка} went along a narrow road, or more [precisely]{точнее} along a [track]{следу} [laid]{проложенному} by peasants' [sledges]{санями}.
+6| Suddenly the coachman began glancing to the side, and finally, taking off his cap, turned to me and said: "Sir, won't you order us to [turn back]{воротиться}?"
+7| "What for?"
+8| "The weather's [unreliable]{ненадежно}: the wind's picking up a little; see how it's sweeping up the [powder snow]{порошу}."
+9| "[What's the harm]{что ж за беда}!"
+10| "And do you see what's over there?"
+11| (The coachman pointed east with his [whip]{кнутом}.)
+12| "I see nothing but the white [steppe]{степи} and a clear sky."
+13| "There, over there: that little cloud."
+14| I did indeed see a small white cloud at the edge of the sky, which I had at first [taken for]{принял было} a distant [hillock]{холмик}.
+15| The coachman explained to me that the little cloud [foretold]{предвещало} a [blizzard]{буран}.
+16| I had heard of the [snowstorms]{мятелях} there, and knew that whole [wagon trains]{обозы} had been [buried]{занесены} by them.
+17| Savelyich, [agreeing]{согласно} with the coachman, advised turning back.
+18| But the wind didn't seem strong to me; I hoped to reach the next station [in good time]{заблаговременно}, and ordered him to go faster.
+19| The coachman [set off at a gallop]{поскакал}, but kept glancing east.
+20| The horses ran [in step]{дружно}.
+21| Meanwhile the wind grew stronger [by the hour]{час от часу}.
+22| The little cloud turned into a white [storm cloud]{тучу}, which rose heavily, grew and gradually [covered]{облегала} the sky.
+23| Fine snow began to fall, and suddenly it came down in [flakes]{хлопьями}.
+24| The wind [howled]{завыл}; a snowstorm [broke]{сделалась}.
+25| In one instant the dark sky merged with the sea of snow.
+26| Everything vanished.
+note: принял было | had at first taken (for) | «Было» after a past verb marks an action begun but reversed: «я принял было облачко за холмик» means I had taken it for a hill (but it wasn't).
+note: мятелях | snowstorms | Pushkin's spelling of «метель». «Буран», «метель», «вьюга» all name snowstorms; «буран» is the steppe kind.
+note: Что ж за беда | what's the harm | «Беда» means misfortune. «Что за беда?» means so what?
+note: воротиться | to turn back | Older form of «вернуться».
+q: main | What happens in the passage? | *The narrator ignores the coachman's warning and is caught in a blizzard | The narrator arrives safely at the fortress | The coachman gets lost in a forest | Savelyich falls ill
+q: detail | What sign did the coachman see? | Dark smoke | *A small white cloud in the east | Wolves | A frozen river
+q: inference | What does the narrator's decision reveal about him? | Caution and wisdom | *Youthful overconfidence | Fear of the coachman | Experience with the steppe
+q: tone | How does the mood change? | From tense to relaxed | *From calm to sudden chaos | From sad to happy | It stays the same
+sum: Traveling across the snowy steppe to his post, the young narrator dismisses the coachman's warning about a small cloud on the horizon. Despite Savelyich's advice he orders them on; the cloud swells, the wind rises, and a blizzard swallows everything.
+
+=== id: lermontov-bela-1
+title: Герой нашего времени: Койшаурская долина
+author: М. Ю. Лермонтов
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/GerojNashegoVremeni.txt
+from: Я ехал на перекладных из Тифлиса
+to: сверкает, как змея своею чешуею.
+---
+1| I was traveling [by post-horses]{на перекладных} from Tiflis.
+2| All the [luggage]{поклажа} of my [cart]{тележки} [consisted]{состояла} of one small suitcase, half [stuffed]{набит} with travel [notes]{записками} about Georgia.
+3| Most of them, luckily for you, are lost, while the suitcase with the rest of my things, luckily for me, remained [intact]{цел}.
+4| The sun was already beginning to hide behind the snowy [ridge]{хребет} when I drove into the Koishaur valley.
+5| The [Ossetian driver]{осетин-извозчик} [tirelessly]{неутомимо} [urged on]{погонял} the horses, to manage to [climb]{взобраться} Koishaur Mountain before nightfall, and sang songs [at the top of his voice]{во все горло}.
+6| A [glorious]{славное} place, this valley!
+7| On all sides [inaccessible]{неприступные} mountains, reddish [cliffs]{скалы} hung with green [ivy]{плющом} and [crowned]{увенчанные} with [clusters]{купами} of [plane trees]{чинар}, yellow [precipices]{обрывы} [furrowed]{исчерченные} by [gullies]{промоинами}, and there, high, high up, the golden [fringe]{бахрома} of the snows, and below, the Aragva, [embracing]{обнявшись} another nameless stream that bursts noisily out of a black [gorge]{ущелья} full of [mist]{мглою}, stretches like a silver thread and [glitters]{сверкает} like a snake with its [scales]{чешуею}.
+note: на перекладных | by post-horses | Traveling with horses changed at each post station. The adjective is used as a noun: «ехать на перекладных».
+note: во все горло | at the top of one's voice | «Горло» is throat. «Кричать/петь во всё горло» means as loud as possible.
+note: Славное | glorious, splendid | In the 19th century «славный» meant fine, excellent: «славный парень», a great guy.
+q: main | What is this passage mainly? | *The narrator's arrival in a majestic mountain valley | A battle in the Caucasus | A lost manuscript | A meeting with a friend
+q: detail | What was in the narrator's suitcase? | Weapons | *Travel notes about Georgia | Gold | Letters from home
+q: inference | What does the joke "luckily for you, they are lost" suggest? | The notes were stolen | *The narrator is self-ironic about his own writing | The reader asked for them | He is angry
+q: tone | The description of the valley is | *rapturous and richly visual | dull and factual | frightening | sarcastic
+sum: The narrator travels from Tiflis by post-horses with a suitcase of travel notes (mostly lost, "luckily for you"). At sunset he enters the Koishaur valley and describes its sheer cliffs, ivy, plane trees, gullies, snowy peaks and the glittering Aragva river.
+
+=== id: lermontov-taman-1
+title: Тамань
+author: М. Ю. Лермонтов
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/GerojNashegoVremeni.txt
+from: Тамань — самый скверный городишко
+to: мы подъехали к небольшой хате на самом берегу моря.
+repl: в добавок => вдобавок
+---
+1| Taman is the [nastiest]{скверный} little town of all Russia's [coastal]{приморских} towns.
+2| I nearly died of hunger there, and [on top of that]{вдобавок} they tried to drown me.
+3| I arrived in a post cart late at night.
+4| The coachman stopped the tired [troika]{тройку} at the gates of the only stone house, the one [at the entrance to town]{при въезде}.
+5| The [sentry]{часовой}, a Black Sea [Cossack]{казак}, hearing the [jingle]{звон} of the bell, shouted [half-asleep]{спросонья} in a wild voice: "Who goes there?"
+6| Out came a [sergeant]{урядник} and a [corporal]{десятник}.
+7| I explained to them that I was an officer, going to a unit [in the field]{действующий отряд} [on official business]{по казенной надобности}, and began to demand [government quarters]{казенную квартиру}.
+8| The corporal led us through the town.
+9| Whichever hut we drove up to, it was taken.
+10| It was cold, I hadn't slept for three nights, I was worn out and beginning to get angry.
+11| "Take me somewhere, you [bandit]{разбойник}! [To the devil if need be]{хоть к черту}, as long as it's a place!" I shouted. "There's one more [billet]{фатера}," answered the corporal, scratching the back of his head, "only Your Honor won't like it; it's [unclean]{нечисто} there!"
+12| Not grasping the exact meaning of the last word, I told him to go ahead, and after long [wandering]{странствования} through muddy [lanes]{переулкам}, where on either side I saw nothing but [ramshackle]{ветхие} fences, we drove up to a small [hut]{хате} on the very shore of the sea.
+note: нечисто | unclean (haunted, shady) | Folk usage: «там нечисто» means there's something evil or uncanny there, haunted or bad people. The narrator takes it to mean "dirty."
+note: по казенной надобности | on official business | «Казённый» means belonging to the state: «казённая квартира», state lodging.
+note: фатера | billet, lodging | A folk pronunciation of «квартира», showing the corporal's speech.
+note: спросонья | half-asleep, just woken | «Спросонья не понял» means he didn't understand, still half-asleep.
+q: main | What is the passage about? | A sea battle | *The narrator's miserable arrival in Taman and finding lodging | A Cossack wedding | The narrator's childhood
+q: detail | Why is every hut refused? | The narrator has no money | *They are all occupied | It's forbidden for officers | The Cossacks are hostile
+q: inference | What does the corporal's warning "it's unclean there" foreshadow? | A dirty room | *Something sinister or uncanny at the lodging | A fire | Good luck
+q: tone | The opening line sets a tone that is | *wry and ominous | cheerful | romantic | academic
+sum: The narrator calls Taman the worst coastal town in Russia, where he nearly starved and was almost drowned. Arriving exhausted at night on official business, he finds every hut taken until a corporal offers one last lodging by the sea, warning that it's "unclean."
+
+=== id: turgenev-asya-1
+title: Ася: молодость
+author: И. С. Тургенев
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/Asya.txt
+from: Мне было тогда лет двадцать пять
+to: Но толковать об этом не для чего.
+---
+1| "I was about twenty-five then," began N.N. "Matters of [days long past]{дела давно минувших дней}, as you see.
+2| I had just [broken free]{вырвался на волю} and gone abroad, not in order to 'complete my education,' as people [used to say]{говаривалось} then, but simply because I wanted to see the wide world.
+3| I was healthy, young, cheerful, the money [never ran out]{не переводились}, worries hadn't yet had time [to set in]{завестись}; I lived [without looking back]{без оглядки}, did what I wanted, [flourished]{процветал}, in a word.
+4| It never even [occurred to me]{в голову не приходило} then that a man is not a plant and can't flourish for long.
+5| Youth eats [gilded]{золоченые} [gingerbread]{пряники} and thinks this is our [daily bread]{хлеб насущный}; but the time will come when you'll [beg]{напросишься} for a crust.
+6| But there's no point [discussing]{толковать} that."
+note: дела давно минувших дней | matters of days long past | A quotation from Pushkin's «Руслан и Людмила», which every Russian reader would recognize.
+note: хлеб насущный | daily bread | From the Lord's Prayer («Хлеб наш насущный даждь нам днесь»). Now it means basic necessities.
+note: не переводились | never ran out | «Не переводиться» means always to be present: «у него деньги не переводятся».
+note: без оглядки | without looking back, recklessly | «Оглядка» means a glance back. «Жить без оглядки» is to live carelessly.
+q: main | What does the narrator describe? | His career in Germany | *His carefree youth abroad and what he later learned | A love affair | His education
+q: detail | Why did he go abroad? | To finish his education | *Simply to see the world | To work | For his health
+q: idiom | «Молодость ест пряники золоченые…» means | *Young people mistake luxuries for necessities until hard times teach them | Young people should eat more | Gingerbread is a Russian staple | Old age is sweet
+q: tone | The narrator looks back on his youth with | anger | *gentle, rueful irony | indifference | despair
+sum: N.N. recalls being twenty-five, newly free and traveling abroad simply to see the world, with money and no worries. Looking back, he notes ruefully that youth takes luxuries for daily bread until later it has to beg for a crust.
+
+=== id: turgenev-asya-2
+title: Ася: путешествие без цели
+author: И. С. Тургенев
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/Asya.txt
+from: Я путешествовал без всякой цели
+to: я чуть с ума не сошел в дрезденском "Грюне Гевелбе".
+---
+1| I traveled without any [aim]{цели}, without a plan; I stopped wherever I liked and moved on at once as soon as I felt the [desire]{желание} to see new faces: faces [precisely]{именно}.
+2| People [alone]{исключительно} interested me; I hated [notable]{любопытные} [monuments]{памятники} and [remarkable]{замечательные} [collections]{собрания}; the mere sight of a [hired guide]{лон-лакея} [stirred]{возбуждал} in me a feeling of [tedium]{тоски} and [spite]{злобы}; I nearly [went out of my mind]{с ума не сошел} in Dresden's Green Vault.
+note: лон-лакея | hired guide | From French «laquais de louage», a servant hired by travelers to show them the sights.
+note: с ума не сошел | (nearly) went out of my mind | «Сойти с ума» means to go mad. «Чуть не» means nearly: «чуть не упал», nearly fell.
+note: любопытные памятники | notable sights | Here «любопытный» means interesting or curious, the thing being looked at, not the one looking.
+q: main | What does the narrator tell us about his travels? | He studied art in Dresden | *He wandered aimlessly, interested only in people, not sights | He worked as a guide | He followed a strict plan
+q: detail | What did he hate? | People | *Famous monuments, collections and guides | Faces | Travel
+q: tone | The narrator's attitude to tourist sights is | reverent | *impatient and comically irritated | scholarly | fearful
+sum: The narrator traveled with no plan, moving on whenever he wanted to see new people. Only people interested him; sights, collections and guides bored him to fury, and Dresden's Green Vault nearly drove him mad.
+

@@ -1,0 +1,134 @@
+=== id: gogol-shinel-1
+title: Шинель: «в одном департаменте»
+author: Н. В. Гоголь
+level: 4+
+genre: literature
+src: word2vec-russian-novels/vector-school/Shinel.txt
+from: В департаменте... но лучше не называть
+to: мы назовем одним департаментом.
+---
+1| In the department… but it's better not to say which department.
+2| There's nothing [touchier]{сердитее} than every sort of department, regiment, [office]{канцелярий} and, in a word, every sort of [official class]{должностных сословий}.
+3| Nowadays every [private]{частный} person considers the whole of society [insulted]{оскорбленным} in his own person.
+4| They say that quite recently a [petition]{просьба} came in from a certain [district police chief]{капитан-исправника} of I don't remember which town, in which he [sets out]{излагает} clearly that state [ordinances]{постановления} are [perishing]{гибнут} and that his sacred name is being taken absolutely [in vain]{всуе}.
+5| And [as proof]{в доказательство} he [attached]{приложил} to the petition an enormous volume of some romantic [composition]{сочинения} in which a district police chief appears every ten pages, in places even completely [drunk]{в пьяном виде}.
+6| And so, [to avoid]{во избежание} any unpleasantness, we'd better call the department [in question]{о котором идет дело} "a certain department."
+note: капитан-исправника | district police chief | In tsarist Russia the «капитан-исправник» headed the rural police of a district. Gogol mocks the touchiness of officials who see every story as an attack on them.
+note: всуе | in vain | Church Slavonic, from the commandment «Не произноси имени Господа Бога твоего всуе». Applying it to a police chief's name is the joke.
+note: о котором идет дело | in question, being discussed | «Идти о чём-то» in the sense "to be about": «речь идёт о…», «дело идёт о…».
+note: преогромнейший | enormous, the most gigantic | A doubled intensifier: «пре-» plus the superlative «-ейший». Gogol uses it for mock grandeur.
+q: main | Why does the narrator refuse to name the department? | *He fears that touchy officials will take offense | The department no longer exists | He has forgotten its name | It is a state secret
+q: detail | What did the police chief attach to his petition? | A list of his medals | *A huge romantic novel featuring a police chief, sometimes drunk | A map of his town | A letter from the governor
+q: tone | What is the tone of this opening? | Solemn and patriotic | *Mock-serious satire | Tragic | Dry and technical
+q: inference | What is Gogol really mocking? | Romantic novels | *The vanity and oversensitivity of officialdom | The Church | Private citizens
+sum: Before beginning the story, the narrator refuses to name the department, joking that officials take every mention as an insult to the whole service; he cites a police chief who complained that a novel mocked his office.
+
+=== id: gogol-shinel-2
+title: Шинель: Акакий Акакиевич
+author: Н. В. Гоголь
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/Shinel.txt
+from: Итак, в одном департаменте служил один чиновник
+to: переменяя только раза три в год подметки.
+---
+1| And so, in a certain department there served a certain [official]{чиновник}; an official who could not be called very [remarkable]{замечательный}: short, somewhat [pockmarked]{рябоват}, somewhat [reddish]{рыжеват}, somewhat even [weak-sighted]{подслеповат} in appearance, with a small [bald spot]{лысиной} on his forehead, [wrinkles]{морщинами} on both cheeks and a complexion of the kind called [hemorrhoidal]{геморроидальным}...
+2| What can you do! The Petersburg climate is [to blame]{виноват}.
+3| As for his [rank]{чина} (for with us the rank must be announced first of all), he was what is called an [eternal titular councillor]{вечный титулярный советник}, at whom, as is well known, various writers have [mocked and jeered to their heart's content]{натрунились и наострились вдоволь}, writers who have the [laudable]{похвальное} [habit]{обыкновенье} of [bearing down]{налегать} on those who cannot bite.
+4| The official's surname was Bashmachkin.
+5| From the name itself it's plain that it once [came from]{произошла} a [shoe]{башмака}; but when, at what time and in what way it came from a shoe, none of this is known.
+6| His father, and his grandfather, and even his [brother-in-law]{шурин}, and absolutely all the Bashmachkins went about in boots, changing the [soles]{подметки} only about three times a year.
+note: рябоват | somewhat pockmarked | The suffix «-оват» softens an adjective: «рябой» means pockmarked, «рябоват» rather pockmarked. Gogol stacks «рябоват, рыжеват, подслеповат» for comic effect.
+note: вечный титулярный советник | eternal titular councillor | A low rank, 9th class on the Table of Ranks. «Вечный» means he was stuck there for life, a stock comic figure in 1830s–40s literature.
+note: налегать на тех, которые не могут кусаться | bearing down on those who can't bite back | A dig at writers who mock the weak because it's safe. «Налегать» means to lean on hard.
+note: шурин | brother-in-law (wife's brother) | Russian has separate words: «шурин» is the wife's brother, «деверь» the husband's brother, «зять» a sister's husband or a son-in-law.
+q: main | What is the main purpose of this passage? | *To introduce Akaky Akakievich as an utterly unremarkable little clerk | To describe St. Petersburg's climate | To explain the Table of Ranks | To tell the history of shoemaking
+q: detail | What rank does the clerk hold? | General | *Titular councillor | Collegiate assessor | Police chief
+q: inference | Why does Gogol joke about the origin of the name Bashmachkin? | He wants to praise the family | *To deepen the comic, absurd smallness of the hero | Because the family were shoemakers | To criticize footwear prices
+q: idiom | «Что ж делать!» here means | *"What can you do!" | "What should I do now?" | "Let's get to work!" | "Who did this?"
+sum: Gogol introduces his hero: a short, pockmarked, balding, permanently low-ranking clerk named Bashmachkin, a name absurdly derived from "shoe," while mocking writers who pick on such defenseless people.
+
+=== id: gogol-nos-1
+title: Нос: утро цирюльника
+author: Н. В. Гоголь
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/Nos.txt
+from: Марта 25 числа
+to: И бросила один хлеб на стол.
+---
+1| On the 25th of March an [extraordinarily]{необыкновенно} strange [occurrence]{происшествие} took place in Petersburg.
+2| The [barber]{цирюльник} Ivan Yakovlevich, who lived on Voznesensky Prospect (his surname has been [lost]{утрачена}, and even on his [signboard]{вывеске}, which shows a gentleman with a [lathered]{запыленною} cheek and the words "And bloodletting done", nothing more is [displayed]{выставлено}), the barber Ivan Yakovlevich woke up rather early and smelled hot bread.
+3| [Raising himself]{приподнявшись} a little on the bed, he saw that his [spouse]{супруга}, a rather [respectable]{почтенная} lady who was very fond of drinking coffee, was taking freshly [baked]{испеченные} loaves out of the oven.
+4| "Today, Praskovya Osipovna, I won't drink coffee," said Ivan Yakovlevich, "instead I feel like eating some hot bread with onion."
+5| (That is, Ivan Yakovlevich would have liked both, but he knew it was completely impossible to demand two things [at once]{разом}, [for]{ибо} Praskovya Osipovna strongly disliked such [whims]{прихотей}.)
+6| "Let the fool eat bread; so much the better for me," the spouse thought to herself, "there'll be an [extra]{лишняя} [portion]{порция} of coffee left."
+7| And she threw one loaf onto the table.
+note: И кровь отворяют | and bloodletting done | Barbers also did bloodletting, a common "cure." «Отворять кровь» literally means to open the blood, an old medical phrase.
+note: запыленною щекою | with a lathered (powdered) cheek | Here «запыленный» means covered in soap lather or powder, not dust. The «-ою» ending is an old form of «-ой».
+note: ибо | for, because | A bookish, archaic conjunction. Gogol uses it here with mock solemnity.
+note: кофию | some coffee (old genitive) | Gogol's era used «кофий», genitive «кофию». Modern Russian says «кофе».
+q: main | What is this passage about? | *An ordinary morning at a barber's home, on the day of a strange event | A trip along Voznesensky Prospect | How to bake bread | A quarrel about money
+q: detail | What does Ivan Yakovlevich ask to eat? | Coffee with sugar | *Hot bread with onion | Fish soup | Nothing at all
+q: inference | Why does his wife happily give him bread? | She loves him dearly | *It leaves more coffee for her | The bread is stale | She wants him to go to work
+q: tone | The tone is | tragic | *comic and matter-of-fact, before something absurd | frightening | lyrical
+sum: On March 25th, the Petersburg barber Ivan Yakovlevich wakes to the smell of fresh bread. He asks for bread and onion instead of coffee, and his wife, pleased to have more coffee for herself, tosses him a loaf.
+
+=== id: gogol-nos-2
+title: Нос: находка
+author: Н. В. Гоголь
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/Nos.txt
+from: Иван Яковлевич для приличия
+to: которое овладело его супругою.
+repl: как будто чей-то знакомый, Ужас => как будто чей-то знакомый. Ужас
+---
+1| [For decency's sake]{для приличия} Ivan Yakovlevich put on a [tailcoat]{фрак} over his shirt and, settling at the table, [poured out]{насыпал} some salt, got two onions ready, took the knife in hand and, putting on a [significant air]{значительную мину}, [set about]{принялся} cutting the bread.
+2| Having cut the loaf into two halves, he looked into the middle and, to his surprise, saw something [white]{белевшееся}.
+3| Ivan Yakovlevich [poked at]{ковырнул} it carefully with the knife and [felt]{пощупал} it with his finger.
+4| "[Solid]{плотное}!" he said to himself. "What could this be?"
+5| He stuck his fingers in and pulled out… a nose!..
+6| Ivan Yakovlevich's hands [dropped]{руки опустил}; he began rubbing his eyes and feeling it: a nose, a nose [all right]{точно}! And what's more it seemed to be somebody's [he knew]{знакомый}.
+7| [Horror]{ужас} [showed]{изобразился} in Ivan Yakovlevich's face.
+8| But this horror was nothing compared to the [indignation]{негодования} that seized his spouse.
+note: сделавши значительную мину | putting on a meaningful face | «Мина» here is a facial expression, from French «mine». «Сделать мину» means to put on a look.
+note: руки опустил | his hands dropped; he was stunned | «Опустить руки» means to lose heart or be at a loss. Here it is literal and figurative at once.
+note: точно нос | definitely a nose | Older «точно» means "indeed, exactly": «точно так» is "exactly so."
+note: белевшееся | something showing white | From «белеть», to show white. Gogol uses a reflexive participle, an unusual, colloquial form.
+q: main | What happens in this passage? | *The barber finds a nose inside his loaf of bread | The barber cuts a customer's nose by accident | The barber's wife bakes a cake | The barber loses his knife
+q: detail | Why does Ivan Yakovlevich put on a tailcoat? | He is going to church | *For decency, before eating | It is cold in the room | A customer has come
+q: inference | Why is the barber especially horrified? | He hates onions | *The nose seems to belong to someone he knows | His wife sees him eating | The bread is burnt
+q: tone | How does Gogol make the absurd scene funny? | With long technical descriptions | *By telling it in a calm, detailed, everyday way | Through tragic monologues | With rhyming verse
+sum: Dressed in his tailcoat for decency, the barber cuts the loaf and finds something white inside: a nose, which looks like someone he knows. He is horrified, and his wife is even more indignant.
+
+=== id: gogol-dushi-1
+title: Мёртвые души: въезд
+author: Н. В. Гоголь
+level: 4
+genre: literature
+src: RussianNovels/corpus/Gogol_Mertvye.txt
+from: В ворота гостиницы
+to: и пошел своей дорогой.
+repl: Этим разговор и кончился Да еще => Этим разговор и кончился. Да еще
+---
+1| Through the gates of the inn in the [provincial]{губернского} town of NN drove a rather handsome small [sprung]{рессорная} [carriage]{бричка}, the kind [bachelors]{холостяки} ride in: retired lieutenant colonels, [staff captains]{штабс-капитаны}, [landowners]{помещики} with about a hundred [souls of peasants]{душ крестьян}; in a word, all those who are called gentlemen [of the middling sort]{средней руки}.
+2| In the carriage sat a gentleman, no beauty but not bad-looking either, neither too fat nor too thin; you couldn't say he was old, yet he wasn't all that young either.
+3| His [arrival]{въезд} made no [stir]{шума} whatsoever in the town and was [accompanied]{сопровожден} by nothing special; only two Russian peasants standing at the door of the [tavern]{кабака} opposite the inn made a few remarks, which [however]{впрочем} [concerned]{относившиеся} the [carriage]{экипажу} more than the man sitting in it.
+4| "Look at that," one said to the other, "what a wheel! What do you think, would that wheel make it to Moscow, [if it came to that]{если б случилось}, or not?"
+5| "It would," answered the other.
+6| "But to Kazan, I'd say, it wouldn't?"
+7| "To Kazan it wouldn't," answered the other.
+8| And that was the end of the conversation.
+9| And also, when the carriage drove up to the inn, it met a young man in white [canvas]{канифасовых} trousers, very narrow and short, and in a tailcoat with [pretensions to fashion]{покушеньями на моду}, under which a [shirtfront]{манишка} could be seen, fastened with a Tula [pin]{булавкою} with a bronze pistol.
+10| The young man turned around, looked at the carriage, held down with his hand his [cap]{картуз}, which had nearly flown off in the wind, and went on his way.
+note: душ крестьян | souls (serfs) | Serfs were counted as «души», souls. The title «Мёртвые души» plays on this: Chichikov buys dead serfs who are still on the census rolls.
+note: средней руки | of the middling sort | A fixed expression for average, middling: «гостиница средней руки», «помещик средней руки».
+note: с покушеньями на моду | with pretensions to fashion | «Покушение» usually means an attempt, often an assassination attempt. Gogol ironically has the coat "attempting" to be fashionable.
+note: Вишь ты | look at that, well I never | Colloquial, from «видишь ты». Peasant speech.
+q: main | What does this opening scene show? | *An unremarkable gentleman arriving in a provincial town, noticed by almost no one | A grand reception for a governor | Two peasants repairing a wheel | A fashion parade
+q: detail | What do the two peasants discuss? | The gentleman's face | *Whether the carriage's wheel would make it to Moscow or Kazan | The price of the inn | The weather
+q: inference | How does Gogol characterize the newcomer? | As striking and memorable | *As deliberately average and hard to pin down | As old and sickly | As a famous general
+q: tone | The peasants' dialogue is | *pointless and comic, showing how little the arrival matters | tense and suspicious | tragic | full of political meaning
+sum: A middling gentleman in a modest carriage drives into the inn of a provincial town. Nobody pays much attention; two peasants idly debate how far the carriage wheel would last, and a would-be dandy glances at the carriage and walks on.
+

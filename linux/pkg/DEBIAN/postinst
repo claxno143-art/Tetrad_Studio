@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+command -v gtk-update-icon-cache >/dev/null && gtk-update-icon-cache -q -t /usr/share/icons/hicolor || true
+command -v update-desktop-database >/dev/null && update-desktop-database -q /usr/share/applications || true
+
+# Put the icons on the Desktop of whoever ran "sudo apt install".
+if [ "$1" = configure ] && [ -n "$SUDO_USER" ] && [ "$SUDO_USER" != root ]; then
+  uid=$(id -u "$SUDO_USER" 2>/dev/null) || exit 0
+  bus="unix:path=/run/user/$uid/bus"
+  runuser -u "$SUDO_USER" -- env HOME="$(getent passwd "$SUDO_USER" | cut -d: -f6)" \
+    DBUS_SESSION_BUS_ADDRESS="$bus" XDG_RUNTIME_DIR="/run/user/$uid" \
+    /usr/bin/russian-study-tools-desktop-icons >/dev/null 2>&1 || true
+fi
+exit 0

@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Russian Reader</title>
+<style>
+/* Layout: sticky bar (level + goals); views: setup, placement test, home/library, reading, questions, results, side by side. */
+:root {
+  --paper: #EEF1F5; --card: #FFFFFF; --ink: #17202B; --muted: #5A6676; --line: #D6DCE4;
+  --accent: #1F4FD1; --accent-soft: #E3E9FB;
+  --good: #1D7A4D; --good-soft: #DDF1E6;
+  --mid: #9A6A0B; --mid-soft: #F6ECD5;
+  --again: #B04E27; --again-soft: #F8E4DA;
+  --idiom: #7A3DB8; --idiom-soft: #EEE3F8;
+  --new: #1F4FD1; --new-soft: #E3E9FB;
+  --font-ru: "Literata", "PT Serif", Georgia, serif;
+  --font-ui: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #0F141A; --card: #18202A; --ink: #E5EAF0; --muted: #93A0AF; --line: #2A3541;
+    --accent: #84A0FF; --accent-soft: #1D2A4D; --good: #55C78F; --good-soft: #15342A; --mid: #E0B44E; --mid-soft: #3A3018;
+    --again: #E8906A; --again-soft: #3A2219; --idiom: #C59BF0; --idiom-soft: #2E2240; --new: #84A0FF; --new-soft: #1D2A4D; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 var(--font-ui); }
+p { margin: 0; }
+h1, h2 { font-family: var(--font-ru); font-weight: 600; margin: 0; text-wrap: balance; }
+h1 { font-size: 1.55rem; } h2 { font-size: 1.25rem; }
+h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+.label { font-family: var(--font-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.topbar { position: sticky; top: 0; z-index: 5; background: var(--card); border-bottom: 1px solid var(--line); }
+.topin { max-width: 900px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.brand { font-family: var(--font-ru); font-weight: 600; font-size: 1.15rem; background: none; border: 0; color: var(--ink); padding: 0; cursor: pointer; }
+.pill { font-family: var(--font-mono); font-size: .78rem; border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; color: var(--muted); white-space: nowrap; }
+.pill b { color: var(--ink); font-weight: 500; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 80px; display: flex; flex-direction: column; gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.between { justify-content: space-between; }
+.btn { font: 500 .9rem var(--font-ui); border-radius: 8px; padding: 9px 16px; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--ink); display: inline-flex; align-items: center; gap: 8px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--card); }
+.btn.good { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.btn.again { background: var(--again-soft); border-color: var(--again); color: var(--again); }
+.btn.small { padding: 6px 11px; font-size: .82rem; }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn kbd { font: .7rem var(--font-mono); opacity: .65; }
+.linkish { background: none; border: 0; color: var(--muted); font: inherit; text-decoration: underline; cursor: pointer; padding: 0; }
+.goals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 680px) { .goals { grid-template-columns: minmax(0, 1fr); } }
+.goal { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; background: var(--card); }
+.goal b.big { font-family: var(--font-mono); font-size: 1.3rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.bar { height: 7px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--good); }
+.bar i.acc { background: var(--accent); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { border: 1px solid var(--line); background: var(--card); color: var(--ink); font: 500 .82rem var(--font-ui); padding: 5px 11px; border-radius: 999px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--card); border-color: var(--ink); }
+select { font: .88rem var(--font-ui); padding: 6px 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--card); color: var(--ink); }
+.lib { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 4px; border: 0; border-bottom: 1px solid var(--line); background: none; text-align: left; color: var(--ink); font: inherit; cursor: pointer; width: 100%; }
+.item:hover .t { color: var(--accent); }
+.item .t { font-family: var(--font-ru); font-weight: 600; font-size: 1.02rem; }
+.lvl { font-family: var(--font-mono); font-size: .78rem; border-radius: 6px; padding: 3px 6px; min-width: 52px; box-sizing: border-box; white-space: nowrap; text-align: center; background: var(--accent-soft); color: var(--accent); }
+.lvl.above { background: var(--again-soft); color: var(--again); }
+.lvl.below { background: var(--good-soft); color: var(--good); }
+.status { font-size: .8rem; color: var(--muted); text-align: right; white-space: nowrap; }
+.status .ok { color: var(--good); font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: .8rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 18px; height: 10px; border-radius: 3px; display: inline-block; }
+.text { font-family: var(--font-ru); font-size: 1.22rem; line-height: 1.85; }
+.text p { margin: 0 0 .9em; text-indent: 1.4em; }
+.w { cursor: pointer; border-radius: 3px; }
+.w:hover { background: var(--accent-soft); }
+.w.new { background: var(--new-soft); color: var(--new); box-shadow: inset 0 -2px 0 var(--new); }
+.w.learn { background: var(--mid-soft); color: var(--mid); box-shadow: inset 0 -2px 0 var(--mid); }
+.w.miss { background: var(--again-soft); color: var(--again); box-shadow: inset 0 -2px 0 var(--again); }
+.w.idiom { background: var(--idiom-soft); color: var(--idiom); box-shadow: inset 0 -2px 0 var(--idiom); }
+.w.sel { outline: 2px solid var(--accent); outline-offset: 1px; }
+.pop { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); width: min(560px, calc(100% - 24px)); z-index: 20; background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.18); padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; }
+.pop .hw { font-family: var(--font-ru); font-size: 1.4rem; font-weight: 600; }
+.pop .gl { font-size: 1.05rem; }
+.tag { font-family: var(--font-mono); font-size: .7rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag.idiom { border-color: var(--idiom); color: var(--idiom); }
+.tag.lt { border-color: var(--mid); color: var(--mid); }
+.q { display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.q:last-child { border-bottom: 0; }
+.opt { text-align: left; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 9px; padding: 10px 13px; font: .95rem var(--font-ui); cursor: pointer; }
+.opt.ru { font-family: var(--font-ru); }
+.opt.pick { border-color: var(--accent); background: var(--accent-soft); }
+.opt.right { border-color: var(--good); background: var(--good-soft); }
+.opt.wrong { border-color: var(--again); background: var(--again-soft); }
+.opt:disabled { cursor: default; }
+textarea { width: 100%; min-height: 80px; font: 1rem/1.5 var(--font-ui); padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); resize: vertical; }
+.result { border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+.result.good { background: var(--good-soft); } .result.bad { background: var(--again-soft); } .result.info { background: var(--accent-soft); }
+.sbs { display: flex; flex-direction: column; }
+.pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4px 20px; padding: 10px 6px; border-bottom: 1px solid var(--line); border-radius: 6px; }
+@media (max-width: 640px) { .pair { grid-template-columns: minmax(0, 1fr); } }
+.pair.on { background: var(--accent-soft); }
+.pair .r { font-family: var(--font-ru); font-size: 1.08rem; line-height: 1.7; }
+.pair .e { font-size: .97rem; line-height: 1.6; color: var(--ink); cursor: pointer; }
+.lk { border-bottom: 1.5px dotted var(--muted); cursor: pointer; border-radius: 3px; }
+.lk.on, .w.on { background: var(--mid-soft); color: var(--ink); box-shadow: 0 0 0 2px var(--mid); }
+.explain { position: sticky; bottom: 12px; }
+.levels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 680px) { .levels { grid-template-columns: minmax(0, 1fr); } }
+.lvbtn { text-align: left; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); padding: 12px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; font: inherit; }
+.lvbtn:hover { border-color: var(--accent); }
+.lvbtn b { font-family: var(--font-mono); font-weight: 500; }
+.lvbtn span { font-size: .83rem; color: var(--muted); }
+.lvbtn.cur { border-color: var(--accent); background: var(--accent-soft); }
+.ptword { font-family: var(--font-ru); font-size: 2.4rem; text-align: center; padding: 28px 0 12px; }
+.answers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.answers .btn { justify-content: center; padding: 14px; font-size: 1rem; }
+.summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.summary div { border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.summary b { display: block; font-family: var(--font-mono); font-size: 1.35rem; font-weight: 500; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+th { font: 500 .7rem var(--font-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+button:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topin">
+  <button type="button" class="brand" data-go="home">Russian Reader</button>
+  <span class="row"><span class="pill" id="lvlpill"></span><button type="button" class="btn small" data-go="settings">Level &amp; settings</button></span>
+</div></div>
+<div class="wrap" id="app"></div>
+<div id="popwrap"></div>
+<script src="reader-data.js"></script>
+<script>
+const D = window.READER_DATA, LEX = D.lex, P = D.passages;
+const byId = id => P.find(p => p.id === id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const dayNum = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
+const plain = s => String(s || '').toLowerCase().replace(/́/g, '').replace(/ё/g, 'е').trim();
+
+// ILR levels with an approximate CEFR equivalent and a target receptive vocabulary (an estimate, not an official mapping)
+const LEVELS = [
+  {id: '0+', cefr: 'A1−', v: 400, d: 'Memorized words and phrases, signs, names and numbers.'},
+  {id: '1', cefr: 'A1', v: 800, d: 'Short simple notes, forms and ads on everyday topics.'},
+  {id: '1+', cefr: 'A2', v: 1600, d: 'Most high-frequency words; simple stories about daily life and work.'},
+  {id: '2', cefr: 'B1', v: 2900, d: 'Straightforward news, descriptions, instructions and narration.'},
+  {id: '2+', cefr: 'B1+/B2', v: 5000, d: 'Longer texts with some idioms, figurative language and cultural references.'},
+  {id: '3', cefr: 'B2+/C1', v: 8000, d: 'Argument, opinion and inference; editorials, unabridged short fiction.'},
+  {id: '3+', cefr: 'C1', v: 11000, d: 'Several prose styles; low-frequency words; social and theoretical concepts.'},
+  {id: '4', cefr: 'C1+/C2', v: 14500, d: 'Literature, satire and commentary with many low-frequency words.'},
+  {id: '4+', cefr: 'C2', v: 18000, d: 'Nuanced, rare vocabulary, dialect, skaz and dense legal or technical prose.'}
+];
+const li = id => LEVELS.findIndex(l => l.id === id);
+// level labels in the scale the learner picked in settings: 'ilr', 'cefr' or 'both'
+const SCALES = {ilr: 'ILR', cefr: 'CEFR', both: 'ILR and CEFR'};
+function scale() { return SCALES[R.scale] ? R.scale : 'ilr'; }
+function lv(id) {                      // full label, e.g. "ILR 3", "CEFR B2+/C1", "ILR 3 (B2+/C1)"
+  const L = LEVELS[li(id)]; if (!L) return id;
+  return scale() === 'cefr' ? 'CEFR ' + L.cefr : scale() === 'both' ? 'ILR ' + L.id + ' (' + L.cefr + ')' : 'ILR ' + L.id;
+}
+function lvShort(id) {                 // badge text in the library list
+  const L = LEVELS[li(id)]; if (!L) return id;
+  return scale() === 'cefr' ? L.cefr : scale() === 'both' ? L.id + ' · ' + L.cefr.split('/')[0] : L.id;
+}
+function relWords(id) {                // where a text sits compared with the learner
+  const d = li(id) - li(R.lvl);
+  return d === 0 ? 'at your level' : d === 1 ? 'one step above your level' : d > 1 ? d + ' steps above your level' : d === -1 ? 'one step below your level' : (-d) + ' steps below your level';
+}
+const GENRES = {literature: 'Literature', everyday: 'Everyday', legal: 'Legal', technical: 'Technical', mechanical: 'Mechanical', science: 'Science', politics: 'Politics', society: 'Society', history: 'History', military: 'Military'};
+
+// ---------- state ----------
+const KEY = 'cl-reader-v1';
+let R = {setup: false, lvl: '2', vocab: 2900, words: {}, done: {}, track: {pass: 0, fail: 0}, ui: {genre: '', show: 'near'}};
+try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && s.lvl) R = Object.assign(R, s, {ui: Object.assign(R.ui, s.ui || {})}); } catch (e) {}
+function save() { try { localStorage.setItem(KEY, JSON.stringify(R)); } catch (e) {} }
+let VIEW = R.setup ? 'home' : 'setup', CUR = null, SES = null, TEST = null, PT = null, SBS = null, POP = null, FLASH = '';
+
+// ---------- shared with the List Trainer ----------
+const CKEY = 'ru-lists-custom-v1', LTKEY = 'ru-lists-v1', SETKEY = 'u_reading';
+function ltMastered() {
+  const out = new Set();
+  try {
+    const cards = (JSON.parse(localStorage.getItem(LTKEY) || '{}') || {}).cards || {};
+    (JSON.parse(localStorage.getItem(CKEY) || '[]') || []).forEach(d => (d.items || []).forEach(it => { const c = cards[d.key + '|' + it[3]]; if (c && c.b >= 4) out.add(plain(it[0])); }));
+  } catch (e) {}
+  return out;
+}
+let MASTERED = ltMastered();
+window.addEventListener('storage', ev => { if (ev.key === LTKEY || ev.key === CKEY) { MASTERED = ltMastered(); if (VIEW === 'read') render(); } });
+function ltEdit(fn) {
+  let decks = [];
+  try { decks = JSON.parse(localStorage.getItem(CKEY) || '[]') || []; } catch (e) {}
+  let d = decks.find(x => x.key === SETKEY);
+  if (!d) { d = {key: SETKEY, name: 'From reading', desc: 'Words you tapped in the Russian Reader.', items: []}; decks.push(d); }
+  fn(d);
+  try { localStorage.setItem(CKEY, JSON.stringify(decks)); } catch (e) {}
+}
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+function ltAdd(ru, en, tag) { ltEdit(d => { if (!d.items.some(it => plain(it[0]) === plain(ru))) d.items.push([ru, en, tag || 'Reading', uid()]); }); }
+function ltRemove(ru) { ltEdit(d => { d.items = d.items.filter(it => plain(it[0]) !== plain(ru)); }); }
+
+// ---------- word knowledge ----------
+const W = l => R.words[l] || (R.words[l] = {t: 0, m: 0, ok: 0, seen: 0, st: ''});
+const isKnown = l => (R.words[l] && R.words[l].st === 'k') || MASTERED.has(l);
+function noteAt(p, s, t) { return p.notes.find(n => n.s === s && n.t.includes(t)); }
+function cls(p, s, t, lid) {
+  const e = LEX[lid];
+  if (e.n) return '';
+  const note = noteAt(p, s, t), key = note ? '~' + note.g : e.l, w = R.words[key];
+  if (w && w.st === 'l') return w.m > 0 ? 'miss' : 'learn';
+  if (note) return isKnown(key) ? '' : 'idiom';
+  if (isKnown(e.l)) return '';
+  return e.r > R.vocab ? 'new' : '';
+}
+function coverage(p) {
+  let n = 0, k = 0;
+  p.sents.forEach(s => s.ru.forEach(t => { if (Array.isArray(t)) { const e = LEX[t[1]]; if (e.n) return; n++; if (e.r <= R.vocab || isKnown(e.l)) k++; } }));
+  return n ? k / n : 1;
+}
+const allLemmas = (() => { const s = new Set(); P.forEach(p => p.sents.forEach(x => x.ru.forEach(t => { if (Array.isArray(t) && !LEX[t[1]].n) s.add(LEX[t[1]].l); }))); return s; })();
+function lemmasOf(p) { const s = new Set(); p.sents.forEach(x => x.ru.forEach(t => { if (Array.isArray(t) && !LEX[t[1]].n) s.add(LEX[t[1]].l); })); return s; }
+
+// ---------- views ----------
+function pill() {
+  const L = LEVELS[li(R.lvl)];
+  document.getElementById('lvlpill').innerHTML = R.setup ? 'Your level: <b>' + esc(lv(L.id)) + '</b> · ~' + Math.round(R.vocab).toLocaleString() + ' words' : 'Not set up yet';
+}
+function scalePicker() {
+  return '<div class="card"><h2>Level scale</h2><p class="muted small">Choose how levels are shown everywhere in the Reader: your level, the library and each passage.</p><div class="chips">' +
+    Object.keys(SCALES).map(k => '<button type="button" class="chip" data-scale="' + k + '" aria-pressed="' + (scale() === k) + '">' + SCALES[k] + '</button>').join('') + '</div></div>';
+}
+function viewSetup() {
+  return '<div><h1>Where are you starting?</h1><p class="muted" style="max-width:62ch">Pick your level, or take a 5-minute vocabulary check that estimates it for you. Either way the Reader adjusts as you go, based on the words you tap and how you do on the questions.</p></div>' + scalePicker() +
+    '<div class="card"><div class="row between"><h2>Take the vocabulary check</h2><button type="button" class="btn primary" data-act="ptStart">Start the check</button></div><p class="muted">You’ll see 80 words, one at a time, and say whether you know each. Some are made-up words that look Russian. Saying yes to those lowers your score, so only say yes when you’re sure.</p></div>' +
+    '<div class="card"><h2>Or pick your level</h2><p class="muted small">' + (scale() === 'ilr' ? 'ILR levels (the US government scale).' : scale() === 'cefr' ? 'CEFR levels (the European scale). The Reader’s steps are finer than CEFR, so some steps sit between two letters, like B2+/C1.' : 'ILR levels with a rough CEFR match.') + ' Matching ILR to CEFR is approximate, not official.</p><div class="levels">' +
+    LEVELS.map(L => '<button type="button" class="lvbtn' + (R.setup && R.lvl === L.id ? ' cur' : '') + '" data-setlvl="' + L.id + '"><b>' + esc(lv(L.id)) + '</b><span>' + esc(L.d) + '</span></button>').join('') + '</div></div>';
+}
+function viewSettings() {
+  return '<div><button type="button" class="linkish" data-go="home">← Library</button></div>' + viewSetup().replace('<h1>Where are you starting?</h1>', '<h1>Level and settings</h1>') +
+    '<div class="card"><h2>Your numbers</h2><p class="muted">Estimated vocabulary: about ' + Math.round(R.vocab).toLocaleString() + ' words. Words on your learn list: ' + Object.values(R.words).filter(w => w.st === 'l').length + '. Words now known: ' + Object.values(R.words).filter(w => w.st === 'k').length + '.</p>' +
+    '<div class="row"><button type="button" class="btn small again" data-act="resetAll">' + (ARMED ? 'Tap again to erase all Reader progress' : 'Reset Reader progress') + '</button></div><p class="muted small">Resetting doesn’t touch the From reading set in the List Trainer.</p></div>' +
+    '<div class="card"><h2>Support</h2><p class="muted small">The Reader is free. If it’s helping your Russian, you can <a href="https://buymeacoffee.com/claxno">buy me a coffee</a>.</p></div>' +
+    '<div class="card"><h2>Credits</h2><p class="muted small">Dictionary: OpenRussian.org (CC BY-SA 4.0). Frequency data derived from OpenSubtitles via hermitdave/FrequencyWords (CC BY-SA 4.0) and public-domain literature. Lemmatizer: pymorphy3 with OpenCorpora dictionaries (CC BY-SA). Literary texts are public domain; the legal, technical and other non-fiction passages, all translations and all notes were written for this app. The word list in this app, adapted from OpenRussian and FrequencyWords, is shared under CC BY-SA 4.0.</p></div>';
+}
+let ARMED = false;
+
+// placement test
+function ptStart() {
+  const items = [];
+  D.place.bands.forEach(b => shuffle(b.w).slice(0, 7).forEach(w => items.push({w, band: b, real: true})));
+  shuffle(D.place.fake).slice(0, 24).forEach(w => items.push({w, real: false}));
+  PT = {items: shuffle(items), i: 0, ans: []};
+  VIEW = 'pt'; render();
+}
+function viewPT() {
+  if (PT.i >= PT.items.length) return viewPTResult();
+  const it = PT.items[PT.i];
+  return '<div class="card"><div class="row between"><span class="label">Word ' + (PT.i + 1) + ' of ' + PT.items.length + '</span><button type="button" class="linkish" data-act="ptQuit">Stop and go back</button></div>' +
+    '<div class="bar"><i class="acc" style="width:' + (100 * PT.i / PT.items.length) + '%"></i></div>' +
+    '<p class="ptword">' + esc(it.w) + '</p><div class="answers"><button type="button" class="btn" data-pt="0">Don’t know <kbd>F</kbd></button><button type="button" class="btn primary" data-pt="1">Know it <kbd>J</kbd></button></div>' +
+    '<p class="muted small" style="text-align:center">Know it means you could say roughly what it means.</p></div>';
+}
+function ptScore() {
+  const fakes = PT.ans.filter(a => !a.real), f = fakes.length ? fakes.filter(a => a.yes).length / fakes.length : 0;
+  let vocab = 0; const rows = [];
+  D.place.bands.forEach(b => {
+    const ans = PT.ans.filter(a => a.real && a.band === b);
+    const h = ans.length ? ans.filter(a => a.yes).length / ans.length : 0;
+    const c = f >= 1 ? 0 : Math.max(0, (h - f) / (1 - f));
+    vocab += c * (b.hi - b.lo + 1); rows.push({b, h, c});
+  });
+  return {vocab: Math.max(200, vocab), f, rows};
+}
+function levelFor(v) { let k = 0; LEVELS.forEach((L, i) => { if (v >= L.v * 0.85) k = i; }); return LEVELS[k].id; }
+function viewPTResult() {
+  const s = ptScore(), lv = levelFor(s.vocab), L = LEVELS[li(lv)];
+  return '<div class="card"><span class="label">Result</span><h1>About ' + Math.round(s.vocab / 100) * 100 + ' words · ' + esc(lv(L.id)) + '</h1>' +
+    '<p class="muted">' + esc(L.d) + '</p>' +
+    (s.f > 0.25 ? '<div class="result bad"><p>You said yes to ' + Math.round(s.f * 100) + '% of the made-up words, so this estimate isn’t reliable. Retake it, saying yes only when you’re sure, or pick your level by hand.</p></div>' : '<p class="muted small">You said yes to ' + Math.round(s.f * 100) + '% of the made-up words, and the estimate is corrected for that.</p>') +
+    '<div class="tablewrap"><table><thead><tr><th>Frequency band</th><th>Said yes</th><th>Estimated known</th></tr></thead><tbody>' + s.rows.map(r => '<tr><td>' + r.b.lo.toLocaleString() + '–' + r.b.hi.toLocaleString() + '</td><td>' + Math.round(r.h * 100) + '%</td><td>' + Math.round(r.c * 100) + '%</td></tr>').join('') + '</tbody></table></div>' +
+    '<div class="row"><button type="button" class="btn primary" data-act="ptAccept">Start reading at ' + esc(lv(L.id)) + '</button><button type="button" class="btn" data-act="ptStart">Retake</button><button type="button" class="btn" data-go="setup">Pick a level instead</button></div></div>';
+}
+
+// home / library
+function nextUp() {
+  const me = li(R.lvl);
+  const near = P.filter(p => !R.done[p.id] && li(p.level) >= me - 1 && li(p.level) <= me + 1);
+  near.sort((a, b) => Math.abs(li(a.level) - me) - Math.abs(li(b.level) - me) || coverage(b) - coverage(a));
+  return near[0] || P.find(p => !R.done[p.id]);
+}
+function viewHome() {
+  const me = li(R.lvl), met = new Set(), learning = Object.values(R.words).filter(w => w.st === 'l').length;
+  Object.keys(R.done).forEach(id => { const p = byId(id); if (p) lemmasOf(p).forEach(l => met.add(l)); });
+  const nx = nextUp(), up = LEVELS[me + 1];
+  let h = FLASH ? '<div class="result good"><p>' + FLASH + '</p></div>' : ''; FLASH = '';
+  h += '<div class="goals">' +
+    '<div class="goal"><span class="label">Next level</span>' + (up ? '<b class="big">' + Math.min(3, R.track.pass) + ' / 3</b><span class="muted small">passages at your level (' + esc(lv(R.lvl)) + ') or above with 80%+ to reach ' + esc(lv(up.id)) + '</span><div class="bar"><i style="width:' + (100 * Math.min(3, R.track.pass) / 3) + '%"></i></div>' : '<b class="big">Top level</b><span class="muted small">Keep reading the hardest texts.</span>') + '</div>' +
+    '<div class="goal"><span class="label">Library words met</span><b class="big">' + met.size.toLocaleString() + '</b><span class="muted small">of ' + allLemmas.size.toLocaleString() + ' different words in the library</span><div class="bar"><i class="acc" style="width:' + (100 * met.size / allLemmas.size) + '%"></i></div></div>' +
+    '<div class="goal"><span class="label">Learn list</span><b class="big">' + learning + '</b><span class="muted small">words you’re learning. A word leaves the list once you read past it three times without tapping it.</span></div></div>';
+  if (R.track.pass >= 3 && up) h += '<div class="result info"><p><b>You’re ready for ' + esc(lv(up.id)) + '.</b> You passed three passages at your level with 80% or better.</p><div class="row"><button type="button" class="btn primary small" data-setlvl="' + up.id + '" data-keep="1">Move up to ' + esc(lv(up.id)) + '</button><button type="button" class="btn small" data-act="stay">Stay at ' + esc(lv(R.lvl)) + '</button></div></div>';
+  if (R.track.fail >= 2 && me > 0) h += '<div class="result bad"><p>The last few passages were a struggle. Dropping one level makes the texts readable again, and you can come back up after three good passages.</p><div class="row"><button type="button" class="btn small" data-setlvl="' + LEVELS[me - 1].id + '" data-keep="1">Go to ' + esc(lv(LEVELS[me - 1].id)) + '</button><button type="button" class="btn small" data-act="stay">Stay at ' + esc(lv(R.lvl)) + '</button></div></div>';
+  if (nx) h += '<div class="card"><span class="label">Up next</span><div class="row between"><div><h2>' + esc(nx.title) + '</h2><p class="muted">' + esc(nx.author || GENRES[nx.genre] || '') + ' · text level ' + esc(lv(nx.level)) + ', ' + relWords(nx.level) + ' · you know about ' + Math.round(coverage(nx) * 100) + '% of the words</p></div><button type="button" class="btn primary" data-open="' + nx.id + '">Read it</button></div></div>';
+  const gs = [...new Set(P.map(p => p.genre))];
+  let list = P.filter(p => (!R.ui.genre || p.genre === R.ui.genre));
+  if (R.ui.show === 'near') list = list.filter(p => Math.abs(li(p.level) - me) <= 1);
+  else if (R.ui.show !== 'all') list = list.filter(p => p.level === R.ui.show);
+  list.sort((a, b) => li(a.level) - li(b.level));
+  h += '<div class="card"><div class="row between"><h2>Library</h2><select id="show"><option value="near"' + (R.ui.show === 'near' ? ' selected' : '') + '>Around my level</option><option value="all"' + (R.ui.show === 'all' ? ' selected' : '') + '>All levels</option>' + LEVELS.map(L => '<option value="' + L.id + '"' + (R.ui.show === L.id ? ' selected' : '') + '>' + esc(lv(L.id)) + ' only</option>').join('') + '</select></div>' +
+    '<div class="chips"><button type="button" class="chip" data-genre="" aria-pressed="' + !R.ui.genre + '">All</button>' + gs.map(g => '<button type="button" class="chip" data-genre="' + g + '" aria-pressed="' + (R.ui.genre === g) + '">' + (GENRES[g] || g) + ' (' + P.filter(p => p.genre === g).length + ')</button>').join('') + '</div>' +
+    '<div class="lib">' + (list.length ? list.map(p => {
+      const d = R.done[p.id], rel = li(p.level) - me;
+      return '<button type="button" class="item" data-open="' + p.id + '"><span class="lvl' + (rel > 0 ? ' above' : rel < 0 ? ' below' : '') + '" title="Text level ' + esc(lv(p.level)) + ', ' + relWords(p.level) + '">' + esc(lvShort(p.level)) + '</span><span><span class="t">' + esc(p.title) + '</span><br><span class="muted small">' + esc((p.author ? p.author + ' · ' : '') + (GENRES[p.genre] || p.genre)) + '</span></span>' +
+        '<span class="status">' + (d ? '<span class="ok">' + Math.round(d.best * 100) + '%</span>' + (d.clean ? ' · clean read' : '') : Math.round(coverage(p) * 100) + '% known') + '</span></button>';
+    }).join('') : '<p class="muted">Nothing here with these filters.</p>') + '</div><p class="muted small">' + P.length + ' passages and ' + allLemmas.size.toLocaleString() + ' different words in total.</p></div>';
+  return h;
+}
+
+// reading
+function openPassage(id) {
+  CUR = byId(id); SES = {tapped: new Set(), added: new Set(), start: Date.now()}; POP = null; TEST = null; SBS = null;
+  VIEW = 'read'; render(); window.scrollTo(0, 0);
+}
+function textHTML(p, mode) {
+  return p.paras.map(row => '<p>' + row.map(si => p.sents[si].ru.map((t, ti) => Array.isArray(t)
+    ? '<span class="w ' + (mode === 'plain' ? '' : cls(p, si, ti, t[1])) + '" data-s="' + si + '" data-t="' + ti + '">' + esc(t[0]) + '</span>' : esc(t)).join('')).join(' ') + '</p>').join('');
+}
+function viewRead() {
+  const p = CUR, hl = (() => { let n = 0, all = 0; p.sents.forEach((s, si) => s.ru.forEach((t, ti) => { if (Array.isArray(t)) { all++; if (cls(p, si, ti, t[1])) n++; } })); return {n, all}; })();
+  return '<div class="row between"><button type="button" class="linkish" data-go="home">← Library</button><span class="muted small">' + hl.n + ' highlighted of ' + hl.all + ' words' + (hl.n === 0 ? ' · a clean page' : '') + '</span></div>' +
+    '<div><span class="label">Text level ' + esc(lv(p.level)) + ' · ' + relWords(p.level) + ' · ' + esc(GENRES[p.genre] || p.genre) + '</span><h1>' + esc(p.title) + '</h1>' + (p.author ? '<p class="muted">' + esc(p.author) + '</p>' : '') + '</div>' +
+    '<div class="legend"><span><i style="background:var(--new-soft);box-shadow:inset 0 -2px 0 var(--new)"></i>New for your level</span><span><i style="background:var(--idiom-soft);box-shadow:inset 0 -2px 0 var(--idiom)"></i>Idiom or unusual sense</span><span><i style="background:var(--mid-soft);box-shadow:inset 0 -2px 0 var(--mid)"></i>On your learn list</span><span><i style="background:var(--again-soft);box-shadow:inset 0 -2px 0 var(--again)"></i>Missed before</span></div>' +
+    '<div class="card"><div class="text" id="text">' + textHTML(p) + '</div></div>' +
+    '<p class="muted small">Tap any word to see what it means. Tapping adds it to your learn list and to the From reading set in the List Trainer.</p>' +
+    '<div class="row"><button type="button" class="btn primary" data-act="toTest">I’ve finished reading</button>' + (R.done[p.id] ? '<button type="button" class="btn" data-act="sbs">Side by side</button>' : '') + '</div>';
+}
+function entryFor(p, si, ti) {
+  const t = p.sents[si].ru[ti], e = LEX[t[1]], note = noteAt(p, si, ti);
+  return {t, e, note};
+}
+function tap(si, ti) {
+  const p = CUR, {t, e, note} = entryFor(p, si, ti);
+  if (e.n) { POP = {si, ti, name: true}; renderPop(); return; }
+  const key = note ? '~' + note.g : e.l, w = W(key);
+  if (!SES.tapped.has(key)) {
+    SES.tapped.add(key);
+    w.t++;
+    if (w.st === 'l' && !SES.added.has(key)) w.m++; // tapped again on a later passage: missed
+    if (w.st !== 'l') { w.st = 'l'; w.ok = 0; SES.added.add(key); }
+    w.d = dayNum();
+    if (note) { const phrase = note.t.map(i => p.sents[si].ru[i][0]).join(' '); ltAdd(phrase, note.g, GENRES[p.genre]); w.ru = phrase; }
+    else ltAdd(e.a || e.l, e.g || '', GENRES[p.genre]);
+    save();
+  }
+  POP = {si, ti}; render(); renderPop();
+}
+function renderPop() {
+  const box = document.getElementById('popwrap');
+  if (!POP) { box.innerHTML = ''; return; }
+  const p = CUR, {t, e, note} = entryFor(p, POP.si, POP.ti);
+  if (POP.name) { box.innerHTML = '<div class="pop"><div class="row between"><span class="hw">' + esc(t[0]) + '</span><button type="button" class="linkish" data-act="popClose">Close</button></div><p class="muted">A name. Names aren’t added to your list.</p></div>'; return; }
+  const key = note ? '~' + note.g : e.l, w = R.words[key] || {};
+  const head = note ? note.t.map(i => p.sents[POP.si].ru[i][0]).join(' ') : (e.a || e.l);
+  const bits = [];
+  if (!note && t[0].toLowerCase() !== e.l) bits.push('form of <span style="font-family:var(--font-ru)">' + esc(e.a || e.l) + '</span>');
+  if (e.asp) bits.push(e.asp === 'im' ? 'imperfective' : 'perfective' + '');
+  if (e.pair) bits.push('pair: <span style="font-family:var(--font-ru)">' + esc(e.pair) + '</span>');
+  if (e.gen) bits.push({m: 'masculine', f: 'feminine', n: 'neuter'}[e.gen] || '');
+  bits.push(e.r >= 90000 ? 'very rare' : 'frequency rank ' + e.r.toLocaleString());
+  box.innerHTML = '<div class="pop" role="dialog" aria-label="Word details"><div class="row between"><span class="hw">' + esc(head) + '</span><button type="button" class="linkish" data-act="popClose">Close</button></div>' +
+    (note ? '<p class="gl">' + esc(note.g) + '</p>' + (note.x ? '<p class="muted">' + esc(note.x) + '</p>' : '') + (note.k === 'sense' && e.g ? '<p class="muted small">Usual dictionary meaning: ' + esc(e.g) + '</p>' : '')
+          : '<p class="gl">' + esc(e.g || 'No dictionary entry for this word.') + '</p>') +
+    '<p class="muted small">' + bits.filter(Boolean).join(' · ') + '</p>' +
+    '<div class="row">' + (w.st === 'l' ? '<span class="tag lt">On your learn list' + (w.m ? ', missed ' + w.m + '×' : '') + '</span><button type="button" class="btn small" data-act="knew">I knew this, remove it</button>' : '<button type="button" class="btn small" data-act="readd">Add to learn list</button>') + '</div></div>';
+}
+function popKnew(add) {
+  const p = CUR, {t, e, note} = entryFor(p, POP.si, POP.ti), key = note ? '~' + note.g : e.l, w = W(key);
+  if (add) { w.st = 'l'; w.m = 0; w.ok = 0; SES.tapped.add(key); SES.added.add(key); if (note) ltAdd(note.t.map(i => p.sents[POP.si].ru[i][0]).join(' '), note.g, GENRES[p.genre]); else ltAdd(e.a || e.l, e.g || '', GENRES[p.genre]); }
+  else { w.st = 'k'; w.t = Math.max(0, w.t - 1); SES.tapped.delete(key); if (note) ltRemove(w.ru || ''); else ltRemove(e.a || e.l); }
+  save(); render(); renderPop();
+}
+
+// questions
+function makeTest() {
+  const p = CUR, qs = p.q.map(q => ({k: q.k, q: q.q, o: q.o, a: q.a, pick: -1}));
+  // vocabulary items: the words tapped this time, or else highlighted new words you skipped
+  const keys = [...SES.tapped].filter(k => !k.startsWith('~')).slice(0, 3);
+  if (keys.length < 2) {
+    const skipped = [];
+    p.sents.forEach((s, si) => s.ru.forEach((t, ti) => { if (Array.isArray(t) && cls(p, si, ti, t[1]) === 'new') { const l = LEX[t[1]].l; if (!skipped.includes(l) && LEX[t[1]].g) skipped.push(l); } }));
+    shuffle(skipped).slice(0, 2 - keys.length).forEach(l => keys.push(l));
+  }
+  keys.forEach(l => {
+    const e = LEX.find(x => x.l === l && !x.n); if (!e || !e.g) return;
+    const here = lemmasOf(p), pool = shuffle(LEX.filter(x => x.g && !x.n && !here.has(x.l) && x.g !== e.g && Math.abs(x.r - e.r) < 6000 && x.k === e.k)).slice(0, 3);
+    if (pool.length < 3) return;
+    const opts = shuffle([e.g, ...pool.map(x => x.g)]);
+    qs.push({k: 'vocab', q: 'In this text, «' + (e.a || e.l) + '» means', o: opts, a: opts.indexOf(e.g), pick: -1, lemma: l, ru: true});
+  });
+  TEST = {qs, done: false, sum: '', showSum: false};
+}
+const KIND = {main: 'Main idea', detail: 'Detail', inference: 'Inference', tone: 'Tone and mood', idiom: 'Expression in context', key: 'Key point', vocab: 'Vocabulary'};
+function viewTest() {
+  const p = CUR;
+  let h = '<div class="row between"><button type="button" class="linkish" data-act="backRead">← Back to the text</button><span class="label">' + esc(p.title) + '</span></div><div class="card"><h2>Questions</h2>';
+  TEST.qs.forEach((q, i) => {
+    h += '<div class="q"><span class="label">' + (KIND[q.k] || q.k) + '</span><p><b>' + esc(q.q) + '</b></p>' + q.o.map((o, j) => {
+      let c = 'opt'; if (TEST.done) { if (j === q.a) c += ' right'; else if (j === q.pick) c += ' wrong'; } else if (j === q.pick) c += ' pick';
+      return '<button type="button" class="' + c + '" data-q="' + i + '" data-o="' + j + '"' + (TEST.done ? ' disabled' : '') + '>' + esc(o) + '</button>';
+    }).join('') + '</div>';
+  });
+  h += '</div><div class="card"><h2>Sum it up</h2><p class="muted">In a sentence or two, in English or Russian, what happened or what’s the argument? Then compare with the model summary.</p><textarea id="sumIn">' + esc(TEST.sum) + '</textarea>' +
+    (TEST.showSum ? '<div class="result info"><span class="label">Model summary</span><p>' + esc(p.sum) + '</p></div>' : '<div class="row"><button type="button" class="btn small" data-act="showSum">Show the model summary</button></div>') + '</div>';
+  const answered = TEST.qs.every(q => q.pick >= 0);
+  h += TEST.done ? resultsHTML() : '<div class="row"><button type="button" class="btn primary" data-act="grade"' + (answered ? '' : ' disabled') + '>Check my answers</button><span class="muted small">' + TEST.qs.filter(q => q.pick >= 0).length + ' of ' + TEST.qs.length + ' answered</span></div>';
+  return h;
+}
+function grade() {
+  const p = CUR; TEST.done = true;
+  const content = TEST.qs.filter(q => q.k !== 'vocab'), vocab = TEST.qs.filter(q => q.k === 'vocab');
+  const score = content.length ? content.filter(q => q.pick === q.a).length / content.length : 1;
+  // vocabulary answers feed the word list
+  vocab.forEach(q => { const w = W(q.lemma); if (q.pick !== q.a) { if (w.st !== 'l') { w.st = 'l'; const e = LEX.find(x => x.l === q.lemma); ltAdd(e.a || e.l, e.g, GENRES[p.genre]); } w.m++; } });
+  // words on the learn list that you read past without tapping count toward knowing them
+  let promoted = 0, met = 0, skippedKeys = 0, tappedEasy = 0;
+  const seen = new Set();
+  p.sents.forEach((s, si) => s.ru.forEach((t, ti) => {
+    if (!Array.isArray(t)) return; const e = LEX[t[1]];
+    const note = noteAt(p, si, ti);
+    if (note) { const nk = '~' + note.g, nw = R.words[nk]; if (!seen.has(nk)) { seen.add(nk); if (nw && nw.st === 'l' && !SES.tapped.has(nk) && nw.d !== dayNum()) { nw.ok++; if (nw.ok >= 3) { nw.st = 'k'; promoted++; } } } return; }
+    if (e.n || seen.has(e.l)) return; seen.add(e.l);
+    const w = R.words[e.l], c = cls(p, si, ti, t[1]);
+    if (w && w.st === 'l' && !SES.tapped.has(e.l) && w.d !== dayNum()) { w.ok++; if (w.ok >= 3) { w.st = 'k'; promoted++; } }
+    if (c === 'new' && !SES.tapped.has(e.l)) { const ww = W(e.l); ww.seen++; skippedKeys++; if (ww.seen >= 2 && !vocab.some(q => q.lemma === e.l && q.pick !== q.a)) { ww.st = 'k'; promoted++; } }
+    if (SES.tapped.has(e.l) && e.r <= R.vocab) tappedEasy++;
+    met++;
+  }));
+  // nudge the vocabulary estimate from what you tapped and skipped
+  R.vocab = Math.max(200, Math.min(25000, R.vocab + 20 * Math.min(10, skippedKeys) - 60 * Math.min(8, tappedEasy)));
+  const prev = R.done[p.id];
+  const clean = SES.tapped.size === 0 && score === 1;
+  R.done[p.id] = {best: Math.max(score, prev ? prev.best : 0), last: score, n: (prev ? prev.n : 0) + 1, d: dayNum(), clean: (prev && prev.clean) || clean};
+  if (li(p.level) >= li(R.lvl)) { if (score >= 0.8) R.track.pass++; else if (score < 0.5) R.track.fail++; }
+  TEST.score = score; TEST.promoted = promoted; TEST.added = SES.added.size;
+  save(); render();
+}
+function resultsHTML() {
+  const t = TEST, pct = Math.round(t.score * 100);
+  return '<div class="card"><h2>' + (pct >= 80 ? 'Nicely done' : pct >= 50 ? 'Getting there' : 'That one was tough') + '</h2><div class="summary"><div><b>' + pct + '%</b><span class="muted small">comprehension</span></div><div><b>' + t.added + '</b><span class="muted small">words added to your list</span></div><div><b>' + t.promoted + '</b><span class="muted small">words now known</span></div></div>' +
+    '<p class="muted">' + (li(CUR.level) >= li(R.lvl) ? (pct >= 80 ? 'This counts toward your next level.' : pct < 50 ? 'Below 50% at your level counts as a struggle. Two of those and the Reader suggests easing off.' : 'Passages at 80% or better count toward your next level.') : 'This passage is below your level, so it doesn’t count toward leveling up.') + '</p>' +
+    '<div class="row"><button type="button" class="btn primary" data-act="sbs">See it side by side</button>' + (nextUp() ? '<button type="button" class="btn" data-open="' + nextUp().id + '">Next passage</button>' : '') + '<button type="button" class="btn" data-go="home">Library</button></div></div>';
+}
+
+// side by side
+function viewSBS() {
+  const p = CUR;
+  let h = '<div class="row between"><button type="button" class="linkish" data-act="backRead">← Back to the text</button><span class="label">Side by side</span></div>' +
+    '<div><h1>' + esc(p.title) + '</h1><p class="muted">Click a word or phrase on either side to see its partner and what it means. Dotted English phrases are linked to a specific Russian word.</p></div><div class="card sbs">';
+  p.sents.forEach((s, si) => {
+    if (s.en === null) return; // covered by an earlier merged line
+    const span = s.span || 1, rows = [];
+    for (let k = si; k < si + span; k++) rows.push(k);
+    const ru = rows.map(k => p.sents[k].ru.map((t, ti) => Array.isArray(t) ? '<span class="w' + (SBS && SBS.ru.some(x => x[0] === k && x[1] === ti) ? ' on' : '') + '" data-ss="' + k + '" data-st="' + ti + '">' + esc(t[0]) + '</span>' : esc(t)).join('')).join(' ');
+    const en = (s.en || []).map((seg, li2) => typeof seg === 'string' ? esc(seg) : '<span class="lk' + (SBS && SBS.row === si && SBS.link === li2 ? ' on' : '') + '" data-es="' + si + '" data-el="' + li2 + '">' + esc(seg[0]) + '</span>').join('');
+    h += '<div class="pair' + (SBS && SBS.row === si ? ' on' : '') + '" data-row="' + si + '"><div class="r">' + ru + '</div><div class="e" data-erow="' + si + '">' + en + '</div></div>';
+  });
+  h += '</div>';
+  if (SBS && SBS.explain) h += '<div class="card explain">' + SBS.explain + '</div>';
+  return h;
+}
+function rowOf(p, si) { for (let k = si; k >= 0; k--) if (p.sents[k].en !== null && k + (p.sents[k].span || 1) > si) return k; return si; }
+function explainToken(p, si, ti) {
+  const {t, e, note} = entryFor(p, si, ti);
+  if (e.n) return '<h3>' + esc(t[0]) + '</h3><p class="muted">A name.</p>';
+  const head = note ? note.t.map(i => p.sents[si].ru[i][0]).join(' ') : (e.a || e.l);
+  return '<div class="row between"><h3 style="font-family:var(--font-ru);font-size:1.2rem">' + esc(head) + '</h3>' + (note ? '<span class="tag idiom">' + (note.k === 'idiom' ? 'idiom' : 'unusual sense') + '</span>' : '') + '</div>' +
+    '<p>' + esc(note ? note.g : (e.g || 'No dictionary entry.')) + '</p>' + (note && note.x ? '<p class="muted">' + esc(note.x) + '</p>' : '') +
+    (!note && t[0].toLowerCase() !== e.l ? '<p class="muted small">Here it’s «' + esc(t[0]) + '», a form of ' + esc(e.a || e.l) + '.</p>' : '');
+}
+function sbsRu(si, ti) {
+  const p = CUR, row = rowOf(p, si), en = p.sents[row].en || [];
+  let link = -1;
+  en.forEach((seg, j) => { if (Array.isArray(seg) && seg[1].some(x => x[0] === si && x[1] === ti)) link = j; });
+  const note = noteAt(p, si, ti);
+  const ru = link >= 0 ? en[link][1] : note ? note.t.map(i => [si, i]) : [[si, ti]];
+  SBS = {row, link, ru, explain: explainToken(p, si, ti)};
+  render();
+}
+function sbsEn(si, j) {
+  const p = CUR, seg = p.sents[si].en[j];
+  if (!Array.isArray(seg)) { SBS = {row: si, link: -1, ru: [], explain: ''}; render(); return; }
+  const first = seg[1][0];
+  SBS = {row: si, link: j, ru: seg[1], explain: '<p class="label">“' + esc(seg[0]) + '”</p>' + explainToken(p, first[0], first[1])};
+  render();
+}
+
+// ---------- render & events ----------
+function render() {
+  pill();
+  const v = {setup: viewSetup, settings: viewSettings, pt: viewPT, home: viewHome, read: viewRead, test: viewTest, sbs: viewSBS}[VIEW] || viewHome;
+  document.getElementById('app').innerHTML = v();
+  if (VIEW !== 'read') { POP = null; document.getElementById('popwrap').innerHTML = ''; }
+}
+document.addEventListener('click', ev => {
+  const w = ev.target.closest('[data-t]');
+  if (w && VIEW === 'read') { tap(+w.dataset.s, +w.dataset.t); return; }
+  const ss = ev.target.closest('[data-ss]');
+  if (ss) { sbsRu(+ss.dataset.ss, +ss.dataset.st); return; }
+  const lk = ev.target.closest('[data-el]');
+  if (lk) { sbsEn(+lk.dataset.es, +lk.dataset.el); return; }
+  const er = ev.target.closest('[data-erow]');
+  if (er) { SBS = {row: +er.dataset.erow, link: -1, ru: [], explain: ''}; render(); return; }
+  const b = ev.target.closest('button'); if (!b) return;
+  const d = b.dataset;
+  if (d.act !== 'resetAll') ARMED = false;
+  if (d.go) { VIEW = d.go === 'setup' && R.setup ? 'settings' : d.go; render(); window.scrollTo(0, 0); return; }
+  if (d.open) { openPassage(d.open); return; }
+  if (d.genre != null) { R.ui.genre = d.genre; save(); render(); return; }
+  if (d.scale) { R.scale = d.scale; save(); render(); return; }
+  if (d.setlvl) {
+    const L = LEVELS[li(d.setlvl)];
+    R.lvl = L.id; R.track = {pass: 0, fail: 0};
+    if (!d.keep || !R.setup) R.vocab = L.v; else R.vocab = Math.max(R.vocab, L.v * 0.85);
+    if (d.keep && R.vocab > L.v * 1.3) R.vocab = L.v;
+    R.setup = true; save(); FLASH = 'Your level is now ' + lv(L.id) + '.'; VIEW = 'home'; render(); window.scrollTo(0, 0); return;
+  }
+  if (d.pt != null) { const it = PT.items[PT.i]; PT.ans.push({real: it.real, band: it.band, yes: d.pt === '1'}); PT.i++; render(); return; }
+  if (d.q != null) { if (!TEST.done) { TEST.qs[+d.q].pick = +d.o; TEST.sum = (document.getElementById('sumIn') || {}).value || TEST.sum; render(); } return; }
+  switch (d.act) {
+    case 'ptStart': ptStart(); break;
+    case 'ptQuit': VIEW = R.setup ? 'settings' : 'setup'; render(); break;
+    case 'ptAccept': { const s = ptScore(); R.vocab = s.vocab; R.lvl = levelFor(s.vocab); R.track = {pass: 0, fail: 0}; R.setup = true; save(); FLASH = 'Your level is now ' + lv(R.lvl) + ', from the vocabulary check.'; VIEW = 'home'; render(); break; }
+    case 'stay': R.track = {pass: 0, fail: 0}; save(); render(); break;
+    case 'popClose': POP = null; renderPop(); break;
+    case 'knew': popKnew(false); break;
+    case 'readd': popKnew(true); break;
+    case 'toTest': makeTest(); VIEW = 'test'; POP = null; render(); window.scrollTo(0, 0); break;
+    case 'backRead': VIEW = 'read'; render(); window.scrollTo(0, 0); break;
+    case 'showSum': TEST.sum = (document.getElementById('sumIn') || {}).value || ''; TEST.showSum = true; render(); break;
+    case 'grade': TEST.sum = (document.getElementById('sumIn') || {}).value || ''; grade(); break;
+    case 'sbs': SBS = null; VIEW = 'sbs'; render(); window.scrollTo(0, 0); break;
+    case 'resetAll': if (ARMED) { const keep = {lvl: R.lvl, vocab: LEVELS[li(R.lvl)].v, setup: true}; R = Object.assign({words: {}, done: {}, track: {pass: 0, fail: 0}, ui: {genre: '', show: 'near'}}, keep); ARMED = false; save(); FLASH = 'Reader progress reset.'; VIEW = 'home'; } else ARMED = true; render(); break;
+  }
+});
+document.addEventListener('change', ev => {
+  if (ev.target.id === 'show') { R.ui.show = ev.target.value; save(); render(); }
+});
+document.addEventListener('keydown', ev => {
+  if (/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName)) return;
+  if (VIEW === 'pt' && PT && PT.i < PT.items.length && (ev.key === 'j' || ev.key === 'f' || ev.key === 'ArrowRight' || ev.key === 'ArrowLeft')) {
+    const it = PT.items[PT.i]; PT.ans.push({real: it.real, band: it.band, yes: ev.key === 'j' || ev.key === 'ArrowRight'}); PT.i++; render();
+  }
+  if (ev.key === 'Escape' && POP) { POP = null; renderPop(); }
+});
+render();
+</script>
+</body>
+</html>

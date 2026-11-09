@@ -1,0 +1,360 @@
+=== id: anat-skeleton
+title: Скелет человека
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Скелет взрослого человека насчитывает около двухсот шести костей, а у новорождённого их больше, поскольку многие кости со временем срастаются. || The [skeleton]{скелет} of an adult [numbers]{насчитывает} about two hundred and six bones, while a [newborn]{новорождённого} has more, since many bones [fuse]{срастаются} over time.
+ru: Позвоночник состоит из позвонков, между которыми лежат упругие межпозвоночные диски, смягчающие нагрузку. || The [spine]{позвоночник} consists of [vertebrae]{позвонков}, between which lie [elastic]{упругие} [intervertebral discs]{межпозвоночные диски} that [cushion]{смягчающие} the load.
+ru: Грудная клетка, образованная рёбрами и грудиной, защищает сердце и лёгкие. || The [rib cage]{грудная клетка}, formed by the [ribs]{рёбрами} and the [breastbone]{грудиной}, protects the heart and lungs.
+ru: Самая длинная кость — бедренная, а самая маленькая — стремечко в среднем ухе. || The longest bone is the [femur]{бедренная}, and the smallest is the [stirrup]{стремечко} in the [middle ear]{среднем ухе}.
+ru: Кости соединяются суставами, связками и хрящами, а приводят их в движение мышцы, прикреплённые сухожилиями. || Bones are joined by [joints]{суставами}, [ligaments]{связками} and [cartilage]{хрящами}, and they are [set]{приводят} in motion by muscles attached by [tendons]{сухожилиями}.
+q: main | What does the text describe? | Muscles only | *The structure of the human skeleton | How bones heal | Exercise routines
+q: detail | Why does a newborn have more bones? | They shrink later | *Many bones fuse over time | Adults lose bones | They're counted differently
+q: detail | What is the smallest bone? | The finger bone | *The stirrup in the middle ear | A vertebra | A rib
+sum: An adult skeleton has about 206 bones, fewer than a newborn's because some fuse. The spine is made of vertebrae cushioned by discs, the rib cage protects heart and lungs, the femur is longest and the ear's stirrup smallest, and bones are linked by joints, ligaments and cartilage and moved by muscles via tendons.
+
+=== id: bot-photosynthesis
+title: Фотосинтез
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Фотосинтез — процесс, в ходе которого растения, водоросли и некоторые бактерии превращают энергию солнечного света в химическую. || [Photosynthesis]{фотосинтез} is the process [in the course of which]{в ходе которого} plants, algae and some bacteria [convert]{превращают} the energy of sunlight into chemical energy.
+ru: Он протекает в хлоропластах, содержащих зелёный пигмент хлорофилл. || It [takes place]{протекает} in [chloroplasts]{хлоропластах}, which contain the green [pigment]{пигмент} [chlorophyll]{хлорофилл}.
+ru: Из углекислого газа и воды образуется глюкоза, а побочным продуктом становится кислород. || [Glucose]{глюкоза} is formed from carbon dioxide and water, and oxygen becomes a [by-product]{побочным продуктом}.
+ru: Через устьица на нижней стороне листа растение поглощает газ и испаряет влагу. || Through the [stomata]{устьица} on the [underside]{нижней стороне} of the [leaf]{листа} the plant [absorbs]{поглощает} gas and [evaporates]{испаряет} moisture.
+ru: Именно благодаря фотосинтезу в атмосфере Земли накопился кислород, сделавший возможной жизнь животных. || It's thanks to photosynthesis that oxygen [accumulated]{накопился} in the Earth's atmosphere, making animal life possible.
+q: main | What does the text explain? | How plants grow roots | *How photosynthesis works and why it matters | Plant diseases | Gardening tips
+q: detail | Where does photosynthesis take place? | In the roots | *In chloroplasts | In the stomata | In the flowers
+q: detail | What is the by-product? | Glucose | Water | *Oxygen | Carbon dioxide
+sum: Photosynthesis turns sunlight into chemical energy in chlorophyll-filled chloroplasts, making glucose from CO2 and water and releasing oxygen. Leaves take in gas and release moisture through stomata, and photosynthesis built up the oxygen that made animal life possible.
+
+=== id: zoo-wolves
+title: Волчья стая
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Волки живут семейными стаями, ядро которых составляют родительская пара и их потомство разных лет. || Wolves live in family [packs]{стаями} whose [core]{ядро} is a [parent pair]{родительская пара} and their [offspring]{потомство} of different years.
+ru: Стая охраняет свою территорию и метит её границы запаховыми метками и воем. || The pack [guards]{охраняет} its territory and [marks]{метит} its boundaries with [scent marks]{запаховыми метками} and [howling]{воем}.
+ru: Охотятся волки сообща: загоняют лося или оленя, выбирая ослабленных, больных или молодых животных. || Wolves hunt [together]{сообща}: they [run down]{загоняют} a [moose]{лося} or a [deer]{оленя}, choosing [weakened]{ослабленных}, sick or young animals.
+ru: Поэтому экологи называют их санитарами леса. || That's why ecologists call them the [orderlies]{санитарами} of the forest.
+ru: Вопреки распространённому мнению, волки крайне редко нападают на людей и обычно избегают встреч с ними. || [Contrary to]{вопреки} [popular]{распространённому} belief, wolves [extremely]{крайне} rarely attack people and usually [avoid]{избегают} encounters with them.
+note: санитары леса | the forest's orderlies | A stock phrase: predators that cull the weak and sick. «Санитар» is a hospital orderly.
+q: main | What does the text describe? | Wolf hunting | *The social life and role of wolves | Dangerous animals | Zoos
+q: detail | Which animals do wolves usually catch? | The strongest | *Weakened, sick or young ones | Only birds | Only fish
+q: detail | How often do wolves attack people? | Often | *Extremely rarely | Every winter | Never at all
+sum: Wolves live in family packs led by a parent pair with offspring of several years. They defend territory with scent marks and howling and hunt together, taking weak, sick or young prey, which is why they're called the forest's orderlies. Contrary to popular belief, they very rarely attack people.
+
+=== id: weather-hurricane
+title: Как рождается ураган
+level: 4
+genre: science
+source_note: Written for this app.
+---
+ru: Тропические циклоны зарождаются над океаном, когда температура поверхностного слоя воды превышает двадцать шесть градусов. || [Tropical cyclones]{тропические циклоны} [form]{зарождаются} over the ocean when the temperature of the [surface layer]{поверхностного слоя} of water exceeds twenty-six degrees.
+ru: Тёплый влажный воздух поднимается, конденсируется в облака и высвобождает скрытую теплоту, которая подпитывает вихрь. || Warm, moist air rises, [condenses]{конденсируется} into clouds and releases [latent heat]{скрытую теплоту}, which [feeds]{подпитывает} the [vortex]{вихрь}.
+ru: Из-за вращения Земли поток закручивается, и в центре образуется глаз бури — зона относительного затишья. || Because of the Earth's [rotation]{вращения} the flow [spirals]{закручивается}, and in the center the [eye of the storm]{глаз бури} forms, a zone of relative [calm]{затишья}.
+ru: Наибольшие разрушения причиняет не столько ветер, сколько штормовой нагон воды, затопляющий побережье. || The greatest [destruction]{разрушения} is caused not so much by the wind as by the [storm surge]{штормовой нагон} that [floods]{затопляющий} the [coast]{побережье}.
+ru: Над сушей ураган теряет источник энергии и постепенно ослабевает. || Over land a hurricane loses its source of energy and gradually [weakens]{ослабевает}.
+note: не столько | not so much… as | A useful construction: «не столько ветер, сколько вода».
+q: main | What does the text explain? | Weather forecasting | *How hurricanes form, behave and weaken | Ocean fishing | Climate history
+q: detail | What causes most hurricane damage? | Wind | *Storm surge flooding the coast | Lightning | Hail
+q: detail | Why does a hurricane weaken over land? | It gets colder | *It loses its energy source, warm ocean water | Mountains stop it | It rains out instantly
+sum: Tropical cyclones form over ocean water warmer than 26°C: rising moist air condenses and releases latent heat that feeds the storm, and Earth's rotation spins it around a calm eye. Storm surge does more damage than wind, and over land the storm loses its energy and fades.
+
+=== id: ocean-currents
+title: Течения океана
+level: 4
+genre: science
+source_note: Written for this app.
+---
+ru: Морские течения переносят огромные массы воды и тепла, влияя на климат целых континентов. || Ocean [currents]{течения} carry huge [masses]{массы} of water and heat, influencing the climate of whole [continents]{континентов}.
+ru: Поверхностные течения возникают под действием постоянных ветров, а глубинные — из-за разницы плотности, зависящей от температуры и солёности. || [Surface]{поверхностные} currents arise under the action of [prevailing winds]{постоянных ветров}, and [deep]{глубинные} ones from differences in [density]{плотности}, which depends on temperature and [salinity]{солёности}.
+ru: Тёплое Северо-Атлантическое течение объясняет, почему порт Мурманск, расположенный за Полярным кругом, не замерзает зимой. || The warm North Atlantic Current explains why the port of Murmansk, located beyond the [Arctic Circle]{полярным кругом}, doesn't [freeze]{замерзает} in winter.
+ru: Холодные течения у западных берегов материков, напротив, создают пустыни, поскольку охлаждённый воздух почти не даёт осадков. || Cold currents off the western [shores]{берегов} of [continents]{материков}, by contrast, create [deserts]{пустыни}, since [cooled]{охлаждённый} air gives almost no precipitation.
+ru: Климатологи опасаются, что таяние льдов опреснит воду и ослабит глобальную циркуляцию. || [Climatologists]{климатологи} fear that melting ice will [freshen]{опреснит} the water and weaken global [circulation]{циркуляцию}.
+note: опреснит | will make (water) less salty | From «пресный», fresh (not salty). «Опреснение» is desalination.
+q: main | What does the text explain? | Fishing grounds | *How ocean currents form and shape climate | Shipping routes | Tides
+q: detail | Why doesn't Murmansk freeze? | It is heated | *The warm North Atlantic Current | It's too salty | Icebreakers
+q: inference | Why might melting ice weaken circulation? | Ice adds heat | *Fresher water changes density, which drives deep currents | Ice blocks ships | Melting creates wind
+sum: Ocean currents move vast amounts of water and heat. Winds drive surface currents and density differences from temperature and salinity drive deep ones. The warm North Atlantic Current keeps Murmansk ice-free, cold coastal currents create deserts, and melting ice could freshen water and weaken global circulation.
+
+=== id: wood-joinery
+title: Столярное дело
+level: 3+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Хороший столяр начинает работу с выбора древесины: сосна мягкая и податливая, дуб твёрдый и долговечный, а берёза плохо переносит влагу. || A good [joiner]{столяр} starts work by choosing the [wood]{древесины}: pine is soft and [workable]{податливая}, oak hard and [durable]{долговечный}, while birch [tolerates]{переносит} moisture poorly.
+ru: Заготовки размечают угольником и рейсмусом, затем распиливают ножовкой или на циркулярной пиле. || The [blanks]{заготовки} are [marked out]{размечают} with a [square]{угольником} and a [marking gauge]{рейсмусом}, then [sawn]{распиливают} with a [handsaw]{ножовкой} or on a [circular saw]{циркулярной пиле}.
+ru: Поверхность выравнивают рубанком, а мелкие неровности снимают шкуркой. || The surface is [planed]{выравнивают} with a [plane]{рубанком}, and small [irregularities]{неровности} are removed with [sandpaper]{шкуркой}.
+ru: Детали соединяют шипами, шкантами или в ласточкин хвост, а для прочности сажают на клей и стягивают струбцинами. || Parts are joined with [tenons]{шипами}, [dowels]{шкантами} or [dovetails]{в ласточкин хвост}, and for strength they are set in glue and [clamped]{стягивают} with [clamps]{струбцинами}.
+ru: Готовое изделие покрывают морилкой, маслом или лаком, подчёркивая рисунок волокон. || The finished piece is coated with [stain]{морилкой}, oil or varnish, [bringing out]{подчёркивая} the pattern of the [grain]{волокон}.
+fix: пиле=пила
+note: ласточкин хвост | dovetail | Literally "swallow's tail." The classic interlocking joint.
+note: шкурка | sandpaper | Short for «наждачная шкурка». Also «наждачка».
+q: main | What does the text describe? | Building a house | *The basic steps of joinery | Types of trees | Furniture shopping
+q: detail | What is a plane used for? | Cutting boards | *Smoothing and leveling the surface | Drilling holes | Gluing parts
+q: detail | How are parts joined? | Only nails | *Tenons, dowels or dovetails, glued and clamped | Tape | Welding
+sum: Joinery starts with choosing wood: pine is soft, oak hard and durable, birch weak in damp. Blanks are marked with a square and gauge, sawn, planed and sanded; parts are joined with tenons, dowels or dovetails, glued and clamped, then finished with stain, oil or varnish to show the grain.
+
+=== id: plumb-leak
+title: Течёт кран
+level: 2+
+genre: mechanical
+source_note: Written for this app.
+---
+ru: Если из смесителя капает вода, чаще всего виновата изношенная прокладка или картридж. || If water [drips]{капает} from the [mixer tap]{смесителя}, a worn [washer]{прокладка} or [cartridge]{картридж} is most often to blame.
+ru: Прежде всего перекройте воду: вентили обычно находятся под раковиной или на стояке. || First of all, shut off the water: the [valves]{вентили} are usually under the [sink]{раковиной} or on the [riser pipe]{стояке}.
+ru: Затем снимите ручку, открутите гайку разводным ключом и достаньте картридж. || Then remove the [handle]{ручку}, unscrew the [nut]{гайку} with an [adjustable wrench]{разводным ключом} and take out the cartridge.
+ru: Новую деталь лучше взять с собой в магазин старую, чтобы не ошибиться с размером. || When buying the new part, it's best to take the old one to the store so you don't get the size wrong.
+ru: Если же течёт из-под гайки на трубе, иногда достаточно подмотать резьбу сантехнической лентой. || But if it leaks from under a nut on the pipe, sometimes it's enough to wrap the [thread]{резьбу} with [plumber's tape]{сантехнической лентой}.
+note: перекройте воду | shut off the water | «Перекрыть» means to close off: «перекрыть газ», «перекрыть дорогу».
+q: main | What does the text explain? | Installing a sink | *How to fix a dripping faucet | Choosing pipes | Calling a plumber
+q: detail | What should you do first? | Remove the handle | *Shut off the water | Buy a new tap | Call the neighbors
+q: detail | Why take the old part to the store? | To get a refund | *To match the size | To recycle it | To show the plumber
+sum: A dripping mixer tap usually needs a new washer or cartridge. Shut off the water under the sink or at the riser, remove the handle, unscrew the nut with an adjustable wrench and pull the cartridge, taking the old one to the store to match it. Leaks at a pipe nut may just need plumber's tape on the thread.
+
+=== id: bake-bread
+title: Домашний хлеб на закваске
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Закваска — это смесь муки и воды, в которой живут дикие дрожжи и молочнокислые бактерии. || A [sourdough starter]{закваска} is a mixture of flour and water in which wild [yeast]{дрожжи} and [lactic acid]{молочнокислые} bacteria live.
+ru: Её подкармливают свежей мукой, пока она не станет пузыриться и увеличиваться вдвое за несколько часов. || It is [fed]{подкармливают} fresh flour until it starts to [bubble]{пузыриться} and [double]{увеличиваться вдвое} in a few hours.
+ru: Тесто замешивают, дают ему отдохнуть, а затем несколько раз растягивают и складывают, чтобы развилась клейковина. || The dough is [mixed]{замешивают}, allowed to rest, and then [stretched]{растягивают} and [folded]{складывают} several times so the [gluten]{клейковина} develops.
+ru: После расстойки буханку надрезают острым лезвием и выпекают в раскалённой духовке с паром. || After [proofing]{расстойки} the [loaf]{буханку} is [scored]{надрезают} with a sharp [blade]{лезвием} and baked in a [red-hot]{раскалённой} [oven]{духовке} with steam.
+ru: Хорошая корка должна быть хрустящей, а мякиш — пористым и влажным. || A good [crust]{корка} should be [crunchy]{хрустящей}, and the [crumb]{мякиш} [airy]{пористым} and moist.
+note: мякиш | crumb (inside of bread) | The soft inside of bread, as opposed to the «корка», crust.
+q: main | What does the text describe? | Buying bread | *Making sourdough bread at home | The history of baking | Bread prices
+q: detail | Why stretch and fold the dough? | To cool it | *To develop gluten | To add air from outside | To shape it
+q: detail | How should the crust be? | Soft | *Crunchy | Burnt | Wet
+sum: A sourdough starter is flour and water full of wild yeast and lactic bacteria, fed until it bubbles and doubles. The dough is mixed, rested and stretched and folded to build gluten, then proofed, scored and baked hot with steam for a crunchy crust and an airy, moist crumb.
+
+=== id: bees
+title: Пасека
+level: 3+
+genre: everyday
+source_note: Written for this app.
+---
+ru: В пчелиной семье одна матка, которая откладывает яйца, несколько тысяч рабочих пчёл и летом — трутни. || A bee [colony]{пчелиной семье} has one [queen]{матка}, who [lays]{откладывает} eggs, several thousand [worker bees]{рабочих пчёл} and, in summer, [drones]{трутни}.
+ru: Рабочие пчёлы строят соты из воска, выкармливают личинок и собирают нектар и пыльцу. || Worker bees build [honeycombs]{соты} from [wax]{воска}, feed the [larvae]{личинок} and collect [nectar]{нектар} and [pollen]{пыльцу}.
+ru: Пчеловод осматривает ульи в защитной сетке, успокаивая насекомых дымом из дымаря. || The [beekeeper]{пчеловод} inspects the [hives]{ульи} in a protective [veil]{сетке}, calming the insects with smoke from a [smoker]{дымаря}.
+ru: Мёд откачивают на медогонке, а рамки возвращают в улей, чтобы пчёлы снова их заполнили. || The honey is [extracted]{откачивают} with an [extractor]{медогонке}, and the [frames]{рамки} are returned to the hive for the bees to fill again.
+ru: Главная беда пасечника — клещ варроа и роение, когда часть семьи улетает вместе со старой маткой. || The [apiarist's]{пасечника} main troubles are the varroa [mite]{клещ} and [swarming]{роение}, when part of the colony flies off with the old queen.
+fix: ульи=улей
+note: пасечника | apiarist, beekeeper | From «пасека», an apiary. A homelier word than «пчеловод».
+q: main | What does the text describe? | Honey recipes | *Bee colonies and the work of a beekeeper | Flower pollination | Insect bites
+q: detail | Why does the beekeeper use smoke? | To kill mites | *To calm the bees | To warm the hive | To flavor the honey
+q: detail | What is swarming? | Bees fighting | *Part of the colony leaving with the old queen | Bees making wax | Drones dying
+sum: A colony has one egg-laying queen, thousands of workers that build wax combs, raise larvae and gather nectar and pollen, and summer drones. Beekeepers inspect hives in veils using smoke, extract honey with a spinner and return the frames; varroa mites and swarming are the main problems.
+
+=== id: photo-exposure
+title: Экспозиция в фотографии
+level: 3+
+genre: technical
+source_note: Written for this app.
+---
+ru: Экспозиция определяется тремя параметрами: диафрагмой, выдержкой и светочувствительностью. || [Exposure]{экспозиция} is determined by three [parameters]{параметрами}: [aperture]{диафрагмой}, [shutter speed]{выдержкой} and [sensitivity]{светочувствительностью}.
+ru: Открытая диафрагма пропускает больше света и размывает фон, что удобно для портрета. || A wide-open aperture lets in more light and [blurs]{размывает} the [background]{фон}, which suits a [portrait]{портрета}.
+ru: Короткая выдержка замораживает движение, а длинная превращает поток машин в светящиеся линии. || A fast shutter speed [freezes]{замораживает} motion, while a slow one turns a stream of cars into [glowing]{светящиеся} lines.
+ru: Высокое значение ISO позволяет снимать в сумерках, но добавляет на снимок цифровой шум. || A high ISO lets you shoot at [dusk]{сумерках}, but adds [digital noise]{цифровой шум} to the [shot]{снимок}.
+ru: Мастерство фотографа заключается в том, чтобы найти баланс между этими величинами под конкретный замысел. || A photographer's [skill]{мастерство} lies in finding a balance between these [values]{величинами} for a particular [idea]{замысел}.
+note: выдержка | shutter speed; endurance | In photography it's exposure time. In daily life «выдержка» means self-control, composure.
+q: main | What does the text explain? | Camera brands | *The three settings that control exposure | Photo editing | Famous photographers
+q: detail | What does a fast shutter speed do? | Blurs motion | *Freezes motion | Adds noise | Opens the aperture
+q: detail | What is the downside of high ISO? | Blurred background | *Digital noise | Darker images | Shorter battery life
+sum: Exposure depends on aperture, shutter speed and ISO. A wide aperture lets in more light and blurs the background, a fast shutter freezes motion while a slow one streaks lights, and high ISO allows low-light shooting at the cost of noise; skill lies in balancing them for your intent.
+
+=== id: mountain-climb
+title: Восхождение на Эльбрус
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Эльбрус — высочайшая вершина Европы, потухший вулкан высотой более пяти с половиной тысяч метров. || Elbrus is the highest [peak]{вершина} in Europe, an [extinct]{потухший} volcano more than five and a half thousand meters high.
+ru: Технически подъём несложен, но главную опасность представляют горная болезнь и резкая смена погоды. || Technically the climb isn't hard, but the main dangers are [altitude sickness]{горная болезнь} and sudden changes in weather.
+ru: Поэтому альпинисты несколько дней проводят на акклиматизации, поднимаясь всё выше и возвращаясь ночевать ниже. || That's why [mountaineers]{альпинисты} spend several days on [acclimatization]{акклиматизации}, climbing higher and higher and coming back down to sleep lower.
+ru: На штурм вершины выходят глубокой ночью, в кошках и с ледорубом, связавшись верёвкой. || They set out for the [summit push]{штурм вершины} in the dead of night, in [crampons]{кошках} and with an [ice axe]{ледорубом}, [roped together]{связавшись верёвкой}.
+ru: Опытные гиды повторяют: вершина — это только половина пути, главное — благополучно спуститься. || Experienced guides repeat: the summit is only half the way; the main thing is to get back down [safely]{благополучно}.
+note: кошки | crampons; cats | Spiked frames strapped to boots for ice. Same word as cats.
+q: main | What does the text describe? | Skiing on Elbrus | *Climbing Elbrus and its dangers | The geology of volcanoes | Mountain villages
+q: detail | Why acclimatize for several days? | To rest | *To adapt to altitude and avoid altitude sickness | To wait for permits | To train with crampons
+q: key | What do guides say is the main thing? | Reaching the summit | *Getting back down safely | Taking photos | Speed
+sum: Elbrus, an extinct volcano over 5,600 m, is Europe's highest peak. The climb is technically easy, but altitude sickness and sudden weather are dangerous, so climbers acclimatize for days, then leave for the summit at night roped together in crampons with ice axes. Guides stress that getting down safely matters most.
+
+=== id: ice-fishing
+title: Зимняя рыбалка
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Зимняя рыбалка начинается, когда лёд становится достаточно толстым — не менее семи сантиметров. || Ice fishing begins when the ice becomes thick enough: at least seven centimeters.
+ru: Рыбак сверлит лунку ледобуром, садится на ящик и опускает в воду короткую удочку с мормышкой. || The [angler]{рыбак} [drills]{сверлит} a [hole]{лунку} with an [ice auger]{ледобуром}, sits on a box and lowers a short [rod]{удочку} with a [jig]{мормышкой} into the water.
+ru: Чтобы привлечь рыбу, в лунку бросают прикормку — мотыля или размоченный хлеб. || To [attract]{привлечь} the fish, [groundbait]{прикормку} is thrown into the hole: [bloodworms]{мотыля} or [soaked]{размоченный} bread.
+ru: Клёв часто бывает утром, а в оттепель рыба становится вялой. || The [bite]{клёв} is often in the morning, and in a [thaw]{оттепель} the fish become [sluggish]{вялой}.
+ru: Выходить на лёд весной опасно: он становится рыхлым и может проломиться под ногами. || Going out on the ice in spring is dangerous: it becomes [mushy]{рыхлым} and may [break]{проломиться} underfoot.
+note: клёв | bite (of fish) | «Клевать» means to peck or to bite. «Сегодня хороший клёв» means the fish are biting today.
+q: main | What does the text describe? | Summer fishing | *How ice fishing works and its dangers | Buying fish | Fish species
+q: detail | How thick should the ice be? | 2 cm | *At least 7 cm | 50 cm | Any thickness
+q: detail | Why is spring ice dangerous? | It's slippery | *It becomes mushy and can break | Fish attack | It's too thick
+sum: Ice fishing starts once ice is at least 7 cm thick. The angler drills a hole, sits on a box and jigs a short rod, throwing in bloodworms or bread to attract fish. Bites come mostly in the morning, fish are sluggish in thaws, and spring ice is soft and dangerous.
+
+=== id: customs-trade
+title: Таможенное оформление
+level: 4
+genre: society
+source_note: Written for this app.
+---
+ru: При ввозе товаров в страну импортёр подаёт декларацию, в которой указывает код товара по товарной номенклатуре, его таможенную стоимость и страну происхождения. || When [importing]{ввозе} goods into a country, the [importer]{импортёр} files a [declaration]{декларацию} stating the product's [code]{код} under the [commodity nomenclature]{товарной номенклатуре}, its [customs value]{таможенную стоимость} and its [country of origin]{страну происхождения}.
+ru: От кода зависят ставка пошлины, нетарифные ограничения и необходимость сертификатов. || The code determines the [duty rate]{ставка пошлины}, [non-tariff]{нетарифные} [restrictions]{ограничения} and the need for [certificates]{сертификатов}.
+ru: Помимо пошлины, уплачивается налог на добавленную стоимость и таможенный сбор. || Besides the duty, [value-added tax]{налог на добавленную стоимость} and a [customs fee]{таможенный сбор} are paid.
+ru: Таможня вправе провести досмотр груза и запросить документы, подтверждающие стоимость. || Customs has the right to [inspect]{досмотр} the [cargo]{груза} and request documents [confirming]{подтверждающие} the value.
+ru: Ошибка в классификации может обернуться доначислением платежей и штрафом, поэтому крупные компании пользуются услугами таможенных брокеров. || A [classification]{классификации} error can [result in]{обернуться} [additional assessments]{доначислением} and a fine, which is why large companies use customs [brokers]{брокеров}.
+note: обернуться | to turn into, result in | «Обернуться» means to turn around, but also to turn out as: «шутка обернулась скандалом».
+q: main | What does the text describe? | Travel through customs | *How imported goods are declared and taxed | Smuggling | Export bans
+q: detail | What does the product code determine? | The color | *The duty rate, restrictions and certificates needed | The delivery date | The broker's fee
+q: inference | Why do companies use brokers? | Brokers are cheaper | *Classification mistakes are costly | It's mandatory for everyone | Brokers pay the duty
+sum: Importers file a customs declaration with the product's tariff code, customs value and origin. The code sets duty, restrictions and certification; VAT and a customs fee are also paid, and customs may inspect cargo and question the value. Misclassification brings extra charges and fines, so big firms hire customs brokers.
+
+=== id: vat-tax
+title: Что такое НДС
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Налог на добавленную стоимость взимается на каждом этапе производства и продажи, но лишь с той части цены, которая добавлена на этом этапе. || [Value-added tax]{налог на добавленную стоимость} is [levied]{взимается} at every [stage]{этапе} of production and sale, but only on the part of the price added at that stage.
+ru: Предприятие начисляет налог на свою продукцию и одновременно принимает к вычету налог, уплаченный поставщикам. || A company [charges]{начисляет} tax on its products and at the same time [deducts]{принимает к вычету} the tax paid to its [suppliers]{поставщикам}.
+ru: В итоге всю сумму налога фактически оплачивает конечный потребитель. || [In the end]{в итоге} the whole amount of the tax is effectively paid by the [end consumer]{конечный потребитель}.
+ru: Для ряда социально значимых товаров — продуктов питания, детских товаров, лекарств — применяется пониженная ставка. || For a number of [socially important]{социально значимых} goods, such as [food]{продуктов питания}, children's goods and medicines, a [reduced]{пониженная} rate applies.
+ru: Экспорт, как правило, облагается по нулевой ставке, чтобы отечественные товары оставались конкурентоспособными за рубежом. || [Exports]{экспорт} are, [as a rule]{как правило}, [taxed]{облагается} at a zero rate so that domestic goods stay competitive [abroad]{за рубежом}.
+note: принимает к вычету | deducts | Tax jargon: «вычет» is a deduction. «Налоговый вычет» is a tax deduction for individuals.
+q: main | What does the text explain? | Income tax | *How value-added tax works | Corporate profit | Tax evasion
+q: detail | Who ultimately pays VAT? | The manufacturer | *The end consumer | The government | The supplier
+q: detail | Why are exports zero-rated? | Exports are illegal | *To keep domestic goods competitive abroad | Foreign governments pay | To reduce exports
+sum: VAT is charged at each stage on the value added there: firms charge tax on sales and deduct tax paid to suppliers, so the final consumer effectively pays it all. Essential goods like food, children's goods and medicine get a reduced rate, and exports are usually zero-rated to stay competitive.
+
+=== id: elections-station
+title: На избирательном участке
+level: 3
+genre: politics
+source_note: Written for this app.
+---
+ru: Избирательные участки открываются в восемь утра и закрываются в восемь вечера. || [Polling stations]{избирательные участки} open at eight in the morning and close at eight in the evening.
+ru: Избиратель предъявляет паспорт, расписывается в списке и получает бюллетень. || The [voter]{избиратель} [shows]{предъявляет} his passport, signs the [register]{списке} and receives a [ballot]{бюллетень}.
+ru: Голосование тайное: бюллетень заполняют в кабинке и опускают в прозрачную урну. || Voting is [secret]{тайное}: the ballot is filled in in a [booth]{кабинке} and dropped into a [transparent]{прозрачную} [ballot box]{урну}.
+ru: Тех, кто по состоянию здоровья не может прийти, члены комиссии посещают на дому с переносным ящиком. || Members of the [election commission]{комиссии} visit those who can't come for health reasons at home, with a [portable]{переносным} box.
+ru: После закрытия участка комиссия подсчитывает голоса в присутствии наблюдателей и составляет протокол об итогах. || After the station closes, the commission [counts]{подсчитывает} the votes in the presence of [observers]{наблюдателей} and draws up a report on the [results]{итогах}.
+note: урна | ballot box; trash bin | The same word means a ballot box, an urn and a street trash can.
+q: main | What does the text describe? | Election campaigning | *The voting procedure at a polling station | How candidates are chosen | Election results
+q: detail | How can people who are ill vote? | By phone | *Commission members visit them at home with a portable box | They can't vote | By mail only
+q: detail | Who is present when votes are counted? | Only the commission | *Observers | Candidates only | Police
+sum: Polling stations open 8 a.m. to 8 p.m. Voters show a passport, sign the register, mark the ballot in a booth and drop it in a clear box; those too ill to come vote at home via a portable box. After closing, the commission counts votes before observers and records the results.
+
+=== id: jury-trial
+title: Суд присяжных
+level: 4
+genre: legal
+source_note: Written for this app in the style of a Russian legal explainer.
+---
+ru: По ряду тяжких преступлений обвиняемый вправе ходатайствовать о рассмотрении дела судом с участием присяжных заседателей. || For a number of [grave]{тяжких} crimes the [accused]{обвиняемый} has the right to [petition]{ходатайствовать} for the case to be heard by a court with [jurors]{присяжных заседателей}.
+ru: Присяжных отбирают случайным образом из граждан, не имеющих судимости, и стороны вправе заявить им мотивированные и немотивированные отводы. || Jurors are [selected]{отбирают} [at random]{случайным образом} from citizens with no [criminal record]{судимости}, and the parties may make [challenges]{отводы} [for cause]{мотивированные} and [peremptory]{немотивированные} ones.
+ru: Присяжные решают лишь вопросы факта: доказано ли, что деяние имело место, совершил ли его подсудимый и виновен ли он. || Jurors decide only questions of [fact]{факта}: whether it is proven that the [act]{деяние} [took place]{имело место}, whether the [defendant]{подсудимый} committed it and whether he is [guilty]{виновен}.
+ru: Вопросы права, в том числе квалификацию содеянного и назначение наказания, решает председательствующий судья. || Questions of law, including the [legal characterization]{квалификацию} of the [act]{содеянного} and [sentencing]{назначение наказания}, are decided by the [presiding]{председательствующий} judge.
+ru: Оправдательный вердикт присяжных обязателен для судьи. || The jury's [acquittal]{оправдательный} [verdict]{вердикт} is [binding]{обязателен} on the judge.
+note: отвод | challenge (to a juror or judge) | A legal objection removing someone from a case: «заявить отвод судье».
+note: деяние | act, deed | Bookish and legal: «преступное деяние», a criminal act.
+q: main | What does the text explain? | How judges are appointed | *How jury trials work in Russia | Prison conditions | Civil lawsuits
+q: detail | What do jurors decide? | The sentence | *Questions of fact, including guilt | The law to apply | The fine
+q: detail | Who decides the sentence? | The jury | *The presiding judge | The prosecutor | The defense
+sum: For some grave crimes the accused may request a jury. Jurors are randomly chosen citizens without records, subject to challenges. They decide the facts: whether the act occurred, whether the defendant did it, and guilt. The judge decides legal questions and sentencing, and a jury acquittal binds the judge.
+
+=== id: mil-nav
+title: Ориентирование на местности
+level: 3
+genre: military
+source_note: Written for this app.
+---
+ru: Чтобы определить своё местоположение, карту ориентируют по сторонам горизонта с помощью компаса. || To [determine]{определить} your [position]{местоположение}, the map is [oriented]{ориентируют} to the [cardinal directions]{сторонам горизонта} using a [compass]{компаса}.
+ru: Затем находят на местности два-три заметных ориентира — вышку, перекрёсток, излучину реки — и сравнивают их с картой. || Then you find two or three [prominent]{заметных} [landmarks]{ориентира} on the ground (a [tower]{вышку}, a [crossroads]{перекрёсток}, a [bend]{излучину} in a river) and compare them with the map.
+ru: Направление движения задают азимутом — углом между направлением на север и направлением на цель. || The direction of travel is set by an [azimuth]{азимутом}: the [angle]{углом} between north and the direction to the [objective]{цель}.
+ru: Расстояние на марше удобно считать парами шагов. || On the [march]{марше} it's convenient to count distance in [pairs of steps]{парами шагов}.
+ru: При отсутствии компаса север можно приблизительно определить по солнцу, Полярной звезде или по коре деревьев. || Without a compass, north can be [roughly]{приблизительно} found by the sun, the [North Star]{полярной звезде} or tree bark.
+note: стороны горизонта | cardinal directions | North, south, east and west: «север, юг, восток, запад».
+q: main | What does the text explain? | How to read street signs | *Basic land navigation with map and compass | Military ranks | Weather prediction
+q: detail | What is an azimuth? | A distance | *The angle between north and the direction to the target | A landmark | A type of map
+q: detail | How can distance be measured on the march? | By time | *By counting pairs of steps | By GPS only | By the sun
+sum: Orient the map with a compass, then match two or three landmarks such as a tower, crossroads or river bend to fix your position. Set direction by azimuth, the angle from north to the objective, count pairs of steps for distance, and without a compass estimate north from the sun, the North Star or tree bark.
+
+=== id: psych-memory
+title: Как работает память
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Кратковременная память удерживает информацию лишь несколько секунд и вмещает в среднем семь элементов. || [Short-term memory]{кратковременная память} [holds]{удерживает} information for only a few seconds and [holds]{вмещает} seven [items]{элементов} on average.
+ru: Чтобы сведения перешли в долговременную память, их нужно осмыслить и связать с уже известным. || For information to pass into [long-term]{долговременную} memory, it must be [understood]{осмыслить} and [connected]{связать} with what is already known.
+ru: Учёные доказали, что интервальное повторение эффективнее зубрёжки: материал лучше запоминается, если возвращаться к нему через увеличивающиеся промежутки времени. || Scientists have shown that [spaced repetition]{интервальное повторение} is more effective than [cramming]{зубрёжки}: material is remembered better if you come back to it at [increasing]{увеличивающиеся} [intervals]{промежутки}.
+ru: Ещё один мощный приём — активное воспроизведение: попытка вспомнить без подсказки укрепляет следы памяти сильнее, чем перечитывание. || Another powerful [technique]{приём} is [active recall]{активное воспроизведение}: trying to remember without a [hint]{подсказки} [strengthens]{укрепляет} memory [traces]{следы} more than [rereading]{перечитывание} does.
+ru: Немаловажен и сон: именно во сне мозг закрепляет то, что было выучено за день. || Sleep matters too: it's during sleep that the brain [consolidates]{закрепляет} what was learned during the day.
+note: зубрёжка | cramming, rote learning | From «зубрить», to cram. Colloquial and mildly disapproving.
+q: main | What does the text explain? | Memory disorders | *How memory works and how to study effectively | The anatomy of the brain | Sleep problems
+q: detail | Which is more effective than cramming? | Rereading | *Spaced repetition | Studying all night | Listening to music
+q: detail | Why is sleep important? | It rests the eyes | *The brain consolidates what was learned | It replaces study | It improves handwriting
+sum: Short-term memory holds about seven items for seconds; to reach long-term memory, information must be understood and connected to what you know. Spaced repetition beats cramming, active recall beats rereading, and sleep consolidates the day's learning.
+
+=== id: soc-survey
+title: Как проводят опросы
+level: 4
+genre: society
+source_note: Written for this app.
+---
+ru: Чтобы результаты опроса были репрезентативными, выборка должна отражать структуру генеральной совокупности по полу, возрасту, образованию и месту жительства. || For survey results to be [representative]{репрезентативными}, the [sample]{выборка} must reflect the [structure]{структуру} of the [population]{генеральной совокупности} by sex, age, education and place of residence.
+ru: Даже при тысяче респондентов погрешность составляет около трёх процентных пунктов. || Even with a thousand [respondents]{респондентов}, the [margin of error]{погрешность} is about three [percentage points]{процентных пунктов}.
+ru: На ответы сильно влияет формулировка вопроса: наводящие вопросы подталкивают к нужному ответу. || The [wording]{формулировка} of the question strongly affects the answers: [leading]{наводящие} questions [push]{подталкивают} people toward the desired answer.
+ru: Кроме того, часть людей отказывается участвовать, и если отказы неслучайны, выборка смещается. || Moreover, some people [refuse]{отказывается} to take part, and if the [refusals]{отказы} aren't random, the sample becomes [biased]{смещается}.
+ru: Поэтому добросовестные социологи публикуют не только результаты, но и методику, размер выборки и точные формулировки вопросов. || That's why [conscientious]{добросовестные} [sociologists]{социологи} publish not only results but also the [methodology]{методику}, sample size and the exact wording of the questions.
+note: генеральная совокупность | (statistical) population | The whole group a survey describes, as opposed to «выборка», the sample.
+q: main | What does the text explain? | How to win elections | *What makes opinion surveys reliable or biased | Population growth | Sociology careers
+q: detail | What is the margin of error with 1,000 respondents? | 1 point | *About 3 points | 10 points | Zero
+q: inference | Why should methodology be published? | It's required by law | *So others can judge how reliable the results are | To advertise | To confuse readers
+sum: A representative sample must mirror the population by sex, age, education and region; even 1,000 respondents leave a margin of error of about 3 points. Leading questions skew answers and non-random refusals bias samples, so honest sociologists publish their methodology, sample size and exact questions.
+
+=== id: folk-maslenitsa
+title: Масленица
+level: 2+
+genre: history
+source_note: Written for this app.
+---
+ru: Масленица — старинный праздник проводов зимы, который отмечают за неделю до Великого поста. || Maslenitsa is an ancient holiday of [seeing off]{проводов} winter, celebrated the week before Great [Lent]{поста}.
+ru: Главное угощение — блины: круглые и золотистые, они символизируют солнце. || The main [treat]{угощение} is [blini]{блины}: round and [golden]{золотистые}, they [symbolize]{символизируют} the sun.
+ru: Всю неделю ходят в гости, катаются с горок и на санях, устраивают кулачные бои и взятие снежного городка. || All week people visit each other, [sled]{катаются с горок} and ride in [sleighs]{санях}, hold [fistfights]{кулачные бои} and the storming of a [snow fort]{снежного городка}.
+ru: Последний день называется Прощёное воскресенье: люди просят друг у друга прощения за обиды. || The last day is called [Forgiveness Sunday]{прощёное воскресенье}: people ask one another's [forgiveness]{прощения} for [offenses]{обиды}.
+ru: Вечером сжигают соломенное чучело Масленицы, прощаясь с зимой. || In the evening a [straw]{соломенное} [effigy]{чучело} of Maslenitsa is burned, saying goodbye to winter.
+note: Великий пост | Great Lent | The forty-day Orthodox fast before Easter.
+note: Прощёное воскресенье | Forgiveness Sunday | People say «Прости меня» and answer «Бог простит».
+q: main | What is Maslenitsa? | A summer festival | *A week-long farewell to winter before Lent | A Christmas tradition | A harvest feast
+q: detail | What do blini symbolize? | The moon | *The sun | Money | Snow
+q: detail | What happens on the last day? | A big dinner only | *People ask forgiveness and burn a straw effigy | Children get presents | Everyone fasts
+sum: Maslenitsa, the week before Lent, sees off winter. Round golden blini symbolize the sun; people visit, sled, ride sleighs, hold fistfights and storm snow forts. On Forgiveness Sunday people ask each other's forgiveness, and a straw effigy of winter is burned.
+
+=== id: folk-baba-yaga
+title: Баба-яга
+level: 3+
+genre: history
+source_note: Written for this app.
+---
+ru: Баба-яга — один из самых загадочных персонажей русских сказок. || Baba Yaga is one of the most [mysterious]{загадочных} [characters]{персонажей} in Russian [fairy tales]{сказок}.
+ru: Она живёт в избушке на курьих ножках на границе дремучего леса, летает в ступе, погоняя её пестом, и заметает след помелом. || She lives in a [hut on chicken legs]{избушке на курьих ножках} at the edge of a [dense]{дремучего} forest, flies in a [mortar]{ступе}, driving it with a [pestle]{пестом}, and sweeps away her tracks with a [broom]{помелом}.
+ru: Фольклористы видят в ней хранительницу границы между миром живых и миром мёртвых: недаром у неё «костяная нога». || [Folklorists]{фольклористы} see her as the [guardian]{хранительницу} of the boundary between the world of the living and the world of the dead: [not for nothing]{недаром} does she have a "[bone]{костяная} leg."
+ru: Образ двойствен: она может съесть незваного гостя, а может напоить, накормить и подсказать герою дорогу. || The [image]{образ} is [dual]{двойствен}: she may eat an [uninvited]{незваного} guest, or she may give the hero drink and food and tell him the way.
+ru: Многое зависит от того, как герой себя поведёт — с почтением или с дерзостью. || Much depends on how the hero [behaves]{поведёт}: with [respect]{почтением} or with [insolence]{дерзостью}.
+note: избушка на курьих ножках | hut on chicken legs | A fixed fairy-tale image. «Курий» is an old adjective for chicken.
+note: недаром | not for nothing | Means there's a reason: «недаром говорят…», it's not for nothing they say…
+q: main | What does the text describe? | A modern novel | *The fairy-tale figure Baba Yaga and her meaning | Russian forests | Witch trials
+q: detail | How does Baba Yaga fly? | On a broom | *In a mortar, steered with a pestle | On a cloud | On a horse
+q: inference | What decides whether she helps the hero? | Luck | *His behavior: respect or insolence | His wealth | The weather
+sum: Baba Yaga lives in a hut on chicken legs at the edge of a dense forest, flies in a mortar steered by a pestle and sweeps her tracks with a broom. Folklorists see her as guardian of the border between the living and the dead, hence her bone leg. She can devour guests or feed and guide the hero, depending on whether he is respectful or insolent.

@@ -1,0 +1,267 @@
+=== id: low-cafe
+title: В кафе
+level: 0+
+genre: everyday
+---
+ru: — Здравствуйте! Что вы хотите? || "[Hello]{здравствуйте}! What would you like?"
+ru: — Кофе и чай, пожалуйста. || "Coffee and tea, [please]{пожалуйста}."
+ru: — Что ещё? || "[Anything else]{что ещё}?"
+ru: — Ещё суп и хлеб. || "Also [soup]{суп} and [bread]{хлеб}."
+ru: — Хорошо. Двести рублей. || "OK. Two hundred [rubles]{рублей}."
+ru: — Спасибо! || "[Thank you]{спасибо}!"
+q: main | Where are they? | At school | *In a café | At home | At the bank
+q: detail | What does the person order? | Only coffee | *Coffee, tea, soup and bread | Pizza | Water
+q: detail | How much does it cost? | 100 rubles | *200 rubles | 300 rubles | It's free
+sum: A customer in a café orders coffee, tea, soup and bread, pays two hundred rubles and says thank you.
+
+=== id: low-city
+title: Мой город
+level: 0+
+genre: everyday
+---
+ru: Это мой город. || This is my [city]{город}.
+ru: Он большой и красивый. || It is [big]{большой} and [beautiful]{красивый}.
+ru: Здесь есть парк, музей и театр. || There is a [park]{парк}, a [museum]{музей} and a [theater]{театр} here.
+ru: Мой дом на улице Ленина. || My house is on Lenin [Street]{улице}.
+ru: Рядом магазин и школа. || [Nearby]{рядом} there is a [store]{магазин} and a [school]{школа}.
+ru: Я люблю мой город. || I [love]{люблю} my city.
+q: main | What is the text about? | A trip | *The writer's city | A school | A theater play
+q: detail | What is near the writer's house? | A museum | *A store and a school | A park | A river
+sum: The writer describes a big, beautiful city with a park, museum and theater; the writer lives on Lenin Street near a store and a school, and loves the city.
+
+=== id: low-weekday
+title: Мой день
+level: 0+
+genre: everyday
+---
+ru: Утром я встаю в семь часов. || In the [morning]{утром} I [get up]{встаю} at seven o'clock.
+ru: Я завтракаю и иду на работу. || I have [breakfast]{завтракаю} and go to [work]{работу}.
+ru: Я работаю в офисе. || I work in an [office]{офисе}.
+ru: Вечером я ужинаю, читаю и смотрю телевизор. || In the [evening]{вечером} I have [dinner]{ужинаю}, [read]{читаю} and [watch]{смотрю} TV.
+ru: Я ложусь спать в одиннадцать. || I [go to bed]{ложусь спать} at eleven.
+q: main | What is the text about? | A holiday | *An ordinary day | A job interview | A weekend trip
+q: detail | When does the writer get up? | At six | *At seven | At eight | At eleven
+sum: The writer gets up at seven, has breakfast, works in an office, spends the evening eating, reading and watching TV, and goes to bed at eleven.
+
+=== id: low-shop
+title: В магазине
+level: 1
+genre: everyday
+---
+ru: В субботу мы с мамой пошли в магазин. || On [Saturday]{субботу} Mom and I went to the store.
+ru: Нам нужно было купить молоко, сыр, яблоки и рыбу. || We needed to [buy]{купить} [milk]{молоко}, [cheese]{сыр}, [apples]{яблоки} and [fish]{рыбу}.
+ru: Молоко стоило девяносто рублей, а сыр — четыреста. || The milk [cost]{стоило} ninety rubles, and the cheese four hundred.
+ru: Рыбы не было, поэтому мы купили курицу. || There was no fish, [so]{поэтому} we bought a [chicken]{курицу}.
+ru: На кассе была большая очередь. || There was a long [line]{очередь} at the [checkout]{кассе}.
+ru: Мы заплатили картой и пошли домой пешком. || We [paid]{заплатили} by [card]{картой} and walked home [on foot]{пешком}.
+note: мы с мамой | Mom and I | Russian says «мы с мамой», literally "we with Mom," to mean "Mom and I."
+q: main | What happened? | They went to a restaurant | *They went shopping for food | They cooked dinner | They went fishing
+q: detail | Why did they buy chicken? | It was cheap | *There was no fish | Mom likes chicken | It was on sale
+q: detail | How did they pay? | In cash | *By card | They didn't pay | By phone
+sum: On Saturday the writer and Mom went to buy milk, cheese, apples and fish. There was no fish, so they bought chicken, waited in a long line, paid by card and walked home.
+
+=== id: low-friend
+title: Мой друг
+level: 1
+genre: everyday
+---
+ru: У меня есть хороший друг. || I have a good [friend]{друг}.
+ru: Его зовут Саша. || His name is Sasha.
+ru: Он высокий, у него тёмные волосы и голубые глаза. || He is [tall]{высокий}; he has [dark]{тёмные} [hair]{волосы} and [blue]{голубые} [eyes]{глаза}.
+ru: Саша учится в университете на инженера. || Sasha is [studying]{учится} at university to be an [engineer]{инженера}.
+ru: Он очень любит футбол и играет каждую неделю. || He really loves [soccer]{футбол} and plays every [week]{неделю}.
+ru: Мы дружим уже десять лет. || We have been friends for ten years [now]{уже}.
+ru: Он всегда помогает мне, когда у меня проблемы. || He always [helps]{помогает} me when I have [problems]{проблемы}.
+note: инженера | (to be) an engineer | «Учиться на» plus accusative means to train for a profession: «учиться на врача».
+q: main | Who is the text about? | The writer's brother | *The writer's friend Sasha | A football coach | A teacher
+q: detail | What does Sasha study? | Medicine | *Engineering | Music | Law
+q: detail | How long have they been friends? | One year | Five years | *Ten years | Since yesterday
+sum: The writer's good friend Sasha is tall with dark hair and blue eyes, studies engineering, plays soccer every week, and has been a helpful friend for ten years.
+
+=== id: low-weekend
+title: Выходные на даче
+level: 1
+genre: everyday
+---
+ru: Летом мы часто ездим на дачу. || In [summer]{летом} we often go to the [dacha]{дачу}.
+ru: Дача находится в деревне, недалеко от реки. || The dacha [is located]{находится} in a [village]{деревне}, not far from a [river]{реки}.
+ru: Там у нас маленький дом и огород. || We have a small house and a [vegetable garden]{огород} there.
+ru: Бабушка выращивает помидоры, огурцы и картошку. || Grandma [grows]{выращивает} [tomatoes]{помидоры}, [cucumbers]{огурцы} and [potatoes]{картошку}.
+ru: Папа ловит рыбу, а я купаюсь и загораю. || Dad [fishes]{ловит рыбу}, and I [swim]{купаюсь} and [sunbathe]{загораю}.
+ru: Вечером мы жарим шашлыки и сидим у костра. || In the evening we [grill]{жарим} [shashlik]{шашлыки} and sit by the [campfire]{костра}.
+note: дача | dacha, summer house | A country cottage, usually with a garden plot, where city families spend summer weekends.
+q: main | What is the text about? | A trip abroad | *Summer weekends at the family dacha | Working on a farm | A fishing competition
+q: detail | What does Grandma grow? | Flowers | *Tomatoes, cucumbers and potatoes | Apples | Wheat
+sum: In summer the family often goes to their dacha in a village near a river. Grandma grows vegetables, Dad fishes, the writer swims and sunbathes, and in the evening they grill shashlik by the fire.
+
+=== id: low-doctor
+title: У врача
+level: 1+
+genre: everyday
+---
+ru: Вчера у меня заболело горло и поднялась температура. || Yesterday my [throat]{горло} [started to hurt]{заболело} and my [temperature]{температура} [went up]{поднялась}.
+ru: Утром я позвонил в поликлинику и записался к врачу. || In the morning I called the [clinic]{поликлинику} and [made an appointment]{записался} with the doctor.
+ru: Врач меня осмотрел, послушал лёгкие и сказал, что у меня простуда. || The doctor [examined]{осмотрел} me, listened to my [lungs]{лёгкие} and said I had a [cold]{простуда}.
+ru: Он выписал лекарство и посоветовал пить много тёплой воды и чая с мёдом. || He [prescribed]{выписал} [medicine]{лекарство} and [advised]{посоветовал} me to drink a lot of warm water and tea with [honey]{мёдом}.
+ru: Ещё он дал мне больничный на пять дней. || He also gave me [sick leave]{больничный} for five days.
+ru: Я надеюсь, что скоро выздоровею. || I hope I will [get well]{выздоровею} soon.
+note: больничный | sick leave (certificate) | Short for «больничный лист». «Быть на больничном» means to be on sick leave.
+q: main | What happened? | The writer broke a leg | *The writer had a cold and saw a doctor | The writer visited a friend in hospital | The writer became a doctor
+q: detail | What did the doctor advise? | Going to work | *Drinking lots of warm water and tea with honey | Eating ice cream | Running every day
+q: detail | How long is the sick leave? | One day | *Five days | Two weeks | A month
+sum: With a sore throat and fever, the writer booked a clinic appointment. The doctor diagnosed a cold, prescribed medicine, advised warm drinks with honey and gave five days of sick leave.
+
+=== id: low-train
+title: Поездка на поезде
+level: 1+
+genre: everyday
+---
+ru: В прошлом месяце я ездил из Москвы в Петербург на поезде. || Last month I went from Moscow to Petersburg by [train]{поезде}.
+ru: Билет я купил заранее через интернет. || I bought the [ticket]{билет} [in advance]{заранее} online.
+ru: Поезд «Сапсан» идёт всего четыре часа, а раньше дорога занимала целую ночь. || The Sapsan train takes only four hours, while the [journey]{дорога} used to [take]{занимала} a whole night.
+ru: В вагоне было удобно и тихо: я читал книгу и смотрел в окно на леса и деревни. || The [car]{вагоне} was comfortable and quiet: I read a book and looked out the window at forests and villages.
+ru: На вокзале меня встретила сестра. || My sister met me at the [station]{вокзале}.
+ru: Мы гуляли по Невскому проспекту и катались на кораблике по каналам. || We walked along Nevsky Prospekt and took a little boat ride along the [canals]{каналам}.
+note: катались на кораблике | took a boat ride | «Кататься на чём-то» means to ride for fun: «кататься на велосипеде, на коньках, на лодке».
+q: main | What is the text about? | Buying a train | *A train trip to Petersburg and a visit to a sister | Working on a train | A night in a hotel
+q: detail | How long does the Sapsan take? | A whole night | *Four hours | Ten hours | One hour
+q: detail | Who met the writer? | A friend | *His sister | A taxi driver | Nobody
+sum: Last month the writer took the four-hour Sapsan train from Moscow to Petersburg, bought online in advance. The ride was quiet and pleasant; his sister met him and they walked Nevsky Prospekt and took a canal boat ride.
+
+=== id: low-apartment
+title: Ищу квартиру
+level: 1+
+genre: everyday
+---
+ru: Я ищу двухкомнатную квартиру недалеко от метро. || I'm looking for a [two-room]{двухкомнатную} apartment not far from the [metro]{метро}.
+ru: Квартира должна быть с мебелью и стиральной машиной. || The apartment should be [furnished]{с мебелью} and have a washing machine.
+ru: Мне важно, чтобы в доме был лифт, потому что я живу с бабушкой. || It's important to me that the building has an [elevator]{лифт}, because I live with my grandmother.
+ru: Можно с животными: у нас спокойный старый кот. || Pets [allowed]{можно}: we have a calm old cat.
+ru: Готов платить до сорока тысяч в месяц плюс коммунальные услуги. || I'm [ready]{готов} to pay up to forty thousand a month plus [utilities]{коммунальные услуги}.
+ru: Пишите или звоните после шести вечера. || Write or call after six in the evening.
+note: двухкомнатная | two-room | Russian apartments are counted by rooms excluding the kitchen: a «двушка» has a living room and one bedroom.
+q: main | What kind of text is this? | A hotel ad | *An apartment-wanted ad | A news story | A letter to grandma
+q: detail | Why does the writer need an elevator? | Heavy furniture | *He lives with his grandmother | He has a bad knee | He lives high up
+q: detail | What is the maximum rent? | 20,000 | *40,000 plus utilities | 60,000 | Any price
+sum: The writer seeks a furnished two-room apartment near the metro with a washing machine and an elevator (he lives with his grandmother), allows a calm old cat, and will pay up to 40,000 a month plus utilities.
+
+=== id: low-hobby
+title: Почему я люблю рисовать
+level: 1+
+genre: everyday
+---
+ru: С детства я люблю рисовать. || I've loved to [draw]{рисовать} since [childhood]{детства}.
+ru: Сначала я рисовал карандашами, а потом начал писать красками. || At first I drew with [pencils]{карандашами}, and then began [painting]{писать} with [paints]{красками}.
+ru: Больше всего мне нравится рисовать природу: море, горы, осенний лес. || Most of all I like painting [nature]{природу}: the sea, mountains, the [autumn]{осенний} forest.
+ru: Когда я рисую, я забываю обо всех проблемах и отдыхаю. || When I draw, I forget all my problems and [relax]{отдыхаю}.
+ru: В прошлом году мои картины даже показали на маленькой выставке в библиотеке. || Last year my [pictures]{картины} were even shown at a small [exhibition]{выставке} in the [library]{библиотеке}.
+note: писать красками | to paint | Painters «пишут» pictures: «писать портрет», «писать маслом». «Рисовать» is the general word for drawing.
+q: main | What is the text about? | A famous painter | *The writer's love of painting | An art school | A library
+q: detail | What does the writer like to paint most? | People | *Nature | Cars | Cities
+sum: The writer has loved drawing since childhood, moving from pencils to paints, especially nature scenes. Painting helps them forget problems, and last year their pictures were shown at a small library exhibition.
+
+=== id: low-news-bridge
+title: Новый мост
+level: 2
+genre: everyday
+---
+ru: В нашем городе открыли новый мост через реку. || A new [bridge]{мост} across the river has been opened in our city.
+ru: Строительство продолжалось три года и обошлось бюджету в два миллиарда рублей. || [Construction]{строительство} lasted three years and cost the [budget]{бюджету} two billion rubles.
+ru: Раньше жителям правого берега приходилось ехать в центр через старый мост, где каждое утро образовывались пробки. || Before, residents of the right [bank]{берега} had to drive to the center over the old bridge, where traffic jams [formed]{образовывались} every morning.
+ru: Теперь дорога до центра займёт не больше пятнадцати минут. || Now the trip to the center will take no more than fifteen minutes.
+ru: На мосту также есть широкие тротуары и велосипедная дорожка. || The bridge also has wide [sidewalks]{тротуары} and a [bike lane]{велосипедная дорожка}.
+ru: Однако некоторые жители жалуются на шум от машин. || However, some residents [complain]{жалуются} about the [noise]{шум} from the cars.
+note: обошлось бюджету | cost the budget | «Обойтись» with a dative and a sum means to cost someone: «ремонт обошёлся нам в сто тысяч».
+q: main | What is the news? | A bridge collapsed | *A new bridge opened in the city | The old bridge is being repaired | A new bus route
+q: detail | How long did construction take? | One year | *Three years | Ten years | Six months
+q: detail | What do some residents complain about? | The cost | *Traffic noise | The bike lane | The color
+sum: A new bridge, built over three years for two billion rubles, has opened. It cuts right-bank residents' commute to the center to fifteen minutes and has sidewalks and a bike lane, though some residents complain about traffic noise.
+
+=== id: low-letter
+title: Письмо другу
+level: 2
+genre: everyday
+---
+ru: Привет, Миша! || [Hi]{привет}, Misha!
+ru: Извини, что долго не писал: на работе был настоящий завал. || Sorry I haven't written for so long: work was a real [pile-up]{завал}.
+ru: Зато теперь у меня отпуск, и я наконец-то собираюсь приехать к тебе в Казань. || But now I'm [on vacation]{отпуск}, and I'm [finally]{наконец-то} planning to come visit you in Kazan.
+ru: Я посмотрел билеты: самолёт прилетает двенадцатого в восемь вечера. || I looked at tickets: the plane [arrives]{прилетает} on the twelfth at eight in the evening.
+ru: Сможешь меня встретить или мне лучше взять такси? || Can you [meet]{встретить} me, or should I take a taxi?
+ru: Очень хочу увидеть Кремль и попробовать настоящий эчпочмак, о котором ты столько рассказывал. || I really want to see the Kremlin and try a real [echpochmak]{эчпочмак}, which you've told me so much about.
+ru: Пиши, как у тебя дела! Обнимаю, Крис. || Write and tell me how you're doing! [Hugs]{обнимаю}, Chris.
+note: завал | a pile-up, being swamped | Colloquial: «на работе завал» means I'm swamped at work. Literally a blockage or heap.
+note: эчпочмак | echpochmak | A Tatar triangular pastry filled with meat and potatoes, a Kazan specialty.
+q: main | Why is Chris writing? | To apologize for a fight | *To arrange a visit to his friend in Kazan | To invite Misha to his wedding | To ask for money
+q: detail | When does the plane arrive? | The twelfth at eight in the morning | *The twelfth at eight in the evening | The second at noon | We don't know
+q: detail | What does Chris want to eat? | Pelmeni | *Echpochmak | Borscht | Pizza
+sum: Chris apologizes to Misha for not writing (he's been swamped at work) and says he's coming to Kazan on vacation, arriving on the twelfth at 8 p.m. He asks whether Misha can meet him and says he wants to see the Kremlin and try echpochmak.
+
+=== id: low-interview
+title: Собеседование
+level: 2
+genre: everyday
+---
+ru: — Расскажите, пожалуйста, немного о себе. || "Please tell us a little about yourself."
+ru: — Я окончил технический колледж по специальности «сварщик» и три года работал на судоремонтном заводе. || "I graduated from a technical [college]{колледж}, [specializing]{по специальности} in welding, and worked for three years at a [ship repair]{судоремонтном} [plant]{заводе}."
+ru: — Почему вы решили сменить работу? || "Why did you decide to [change jobs]{сменить работу}?"
+ru: — Завод закрылся, а я хочу развиваться и работать с современным оборудованием. || "The plant [closed]{закрылся}, and I want to [develop]{развиваться} and work with modern equipment."
+ru: — Есть ли у вас допуск к работе на высоте? || "Do you have [certification]{допуск} for working [at height]{на высоте}?"
+ru: — Да, и удостоверение действительно ещё два года. || "Yes, and the [certificate]{удостоверение} is [valid]{действительно} for another two years."
+ru: — Хорошо, мы свяжемся с вами до конца недели. || "Good, we'll [get in touch]{свяжемся} with you by the end of the week."
+note: допуск | clearance, certification, permit | Official permission to do a kind of work: «допуск к работе на высоте», «допуск к секретным сведениям».
+q: main | What is happening? | A doctor's appointment | *A job interview for a welder | A college exam | A factory tour
+q: detail | Why is the candidate changing jobs? | Low pay | *His plant closed and he wants to grow | He moved | He was fired
+q: detail | When will the employer respond? | Today | *By the end of the week | In a month | Never
+sum: In a job interview, a welder explains he trained at a technical college and worked three years at a ship repair plant until it closed; he wants to work with modern equipment. He holds valid certification for work at height, and the employer promises to reply by week's end.
+
+=== id: low-holiday
+title: Новый год
+level: 2
+genre: everyday
+---
+ru: Новый год — самый любимый праздник в России. || New Year is the most [beloved]{любимый} holiday in Russia.
+ru: Тридцать первого декабря семьи наряжают ёлку, готовят салат «Оливье» и селёдку под шубой. || On December thirty-first families [decorate]{наряжают} the [New Year tree]{ёлку} and make Olivier salad and "[herring under a fur coat]{селёдку под шубой}."
+ru: Перед полуночью по телевизору выступает президент, а потом бьют куранты. || Before [midnight]{полуночью} the president [speaks]{выступает} on TV, and then the [Kremlin chimes]{куранты} [strike]{бьют}.
+ru: Под бой курантов принято загадывать желание и пить шампанское. || It's customary to [make a wish]{загадывать желание} and drink champagne [to the striking of the chimes]{под бой курантов}.
+ru: Дети ждут подарков от Деда Мороза и его внучки Снегурочки. || Children [wait for]{ждут} presents from Ded Moroz and his [granddaughter]{внучки} Snegurochka.
+ru: Праздничные каникулы длятся почти две недели, до Рождества и после. || The holiday [break]{каникулы} lasts almost two weeks, [until]{до} [Christmas]{Рождества} and beyond.
+note: селёдка под шубой | herring under a fur coat | A layered salad of herring, beets, potatoes and mayonnaise, a New Year staple.
+note: куранты | chimes (of the Kremlin clock) | The Spasskaya Tower clock, whose chimes on TV mark the New Year.
+q: main | What does the text describe? | Christmas in Europe | *How Russians celebrate New Year | A trip to the Kremlin | A cooking class
+q: detail | What do people do as the chimes strike? | Sing the anthem | *Make a wish and drink champagne | Open presents | Go to sleep
+q: detail | Who brings presents to children? | Santa Claus | *Ded Moroz and Snegurochka | Parents only | The president
+sum: New Year is Russia's favorite holiday: families decorate a tree and prepare traditional salads, the president speaks before midnight, people make wishes and drink champagne as the Kremlin chimes strike, children get gifts from Ded Moroz and Snegurochka, and the break lasts nearly two weeks.
+
+=== id: low-volunteer
+title: Волонтёры в приюте
+level: 2
+genre: society
+---
+ru: Каждые выходные группа студентов приезжает в приют для бездомных собак на окраине города. || Every weekend a group of students comes to a [shelter]{приют} for [homeless]{бездомных} dogs on the [outskirts]{окраине} of the city.
+ru: Волонтёры выгуливают собак, убирают вольеры и помогают ветеринару. || The [volunteers]{волонтёры} [walk]{выгуливают} the dogs, clean the [enclosures]{вольеры} and help the [vet]{ветеринару}.
+ru: Приют существует на пожертвования, и денег всегда не хватает. || The shelter [lives on]{существует на} [donations]{пожертвования}, and there's never enough money.
+ru: Особенно трудно зимой, когда нужно больше корма и отопления. || It's especially hard in winter, when more [feed]{корма} and [heating]{отопления} are needed.
+ru: За прошлый год волонтёрам удалось найти новых хозяев для ста двадцати собак. || Over the past year the volunteers [managed]{удалось} to find new [owners]{хозяев} for one hundred and twenty dogs.
+ru: Руководитель приюта говорит, что лучший подарок — не деньги, а время и внимание. || The head of the shelter says the best gift isn't money but time and [attention]{внимание}.
+note: выгуливают | walk (an animal) | «Выгуливать собаку» means to take a dog for a walk; for people it's «гулять».
+q: main | What is the text about? | A dog show | *Student volunteers at a shelter for homeless dogs | A veterinary clinic | Pet food prices
+q: detail | Why is winter especially hard? | Fewer volunteers | *More food and heating are needed | Dogs get sick | The road is closed
+q: detail | How many dogs found new homes last year? | 12 | 20 | *120 | 200
+sum: Students volunteer every weekend at a dog shelter, walking dogs, cleaning enclosures and helping the vet. The shelter runs on donations and struggles in winter, yet volunteers rehomed 120 dogs last year; its head says time and attention matter more than money.
+
+=== id: low-sport
+title: Как я начал бегать
+level: 2
+genre: everyday
+---
+ru: Два года назад я весил на двадцать килограммов больше и задыхался, поднимаясь на третий этаж. || Two years ago I [weighed]{весил} twenty kilograms more and was [out of breath]{задыхался} climbing to the third floor.
+ru: Врач сказал, что мне необходимо больше двигаться. || The doctor said I [needed]{необходимо} to move more.
+ru: Сначала я ходил пешком по полчаса, потом стал понемногу бегать. || At first I walked for half an hour at a time, then [gradually]{понемногу} began to run.
+ru: Через полгода я пробежал свои первые пять километров без остановки. || Six months later I ran my first five kilometers without stopping.
+ru: Теперь я бегаю три раза в неделю и готовлюсь к полумарафону. || Now I run three times a week and I'm [training]{готовлюсь} for a [half marathon]{полумарафону}.
+ru: Главное, что я понял: не нужно сразу ставить рекорды, важна регулярность. || The main thing I learned: you don't need to [set records]{ставить рекорды} right away; [consistency]{регулярность} is what matters.
+note: на двадцать килограммов больше | twenty kilograms more | «На» plus accusative gives the size of a difference: «на два года старше», two years older.
+q: main | What is the text about? | A marathon champion | *How the writer gradually took up running | A diet plan | A visit to the gym
+q: detail | Why did the writer start exercising? | A friend dared him | *His doctor told him to move more | He wanted to win a race | He lost his car
+q: key | What is the writer's main lesson? | Run as fast as possible | *Consistency matters more than records | Running is dangerous | Only run with a coach
+sum: Two years ago the writer was 20 kg heavier and breathless on stairs. On his doctor's advice he started walking, then running; after six months he ran 5 km nonstop, and now runs three times a week toward a half marathon, having learned that consistency beats records.

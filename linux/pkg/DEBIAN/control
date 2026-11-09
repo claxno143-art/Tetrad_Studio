@@ -1,0 +1,12 @@
+Package: russian-study-tools
+Version: 1.5.0
+Section: education
+Priority: optional
+Architecture: all
+Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-webkit2-4.1, fonts-ibm-plex, xdg-user-dirs
+Recommends: fonts-paratype
+Maintainer: Tetrad Studio <noreply@localhost>
+Description: Tetrad Studio: Russian Reader, List Trainer and OPI Memory Tool
+ Offline Russian study tools in their own windows: a leveled reader with
+ tap-to-learn, a flashcard trainer, and an OPI practice tool with a worked
+ example. Progress is kept in ~/.local/share/russian-study-tools.

@@ -1,0 +1,13 @@
+#!/bin/sh
+# Puts the Tetrad Studio launcher on the current user's Desktop (and clears older
+# shortcuts from earlier versions), marked trusted so GNOME lets you double-click it.
+set -e
+DESK=$(xdg-user-dir DESKTOP 2>/dev/null || true)
+[ -n "$DESK" ] && [ "$DESK" != "$HOME" ] || DESK="$HOME/Desktop"
+mkdir -p "$DESK"
+rm -f "$DESK/russian-list-trainer.desktop" "$DESK/russian-opi-tool.desktop" "$DESK/cunning-linguist.desktop" "$DESK/slovo-studio.desktop"
+dest="$DESK/tetrad-studio.desktop"
+cp /usr/share/applications/tetrad-studio.desktop "$dest"
+chmod 755 "$dest"
+gio set "$dest" metadata::trusted true 2>/dev/null || true
+echo "Put Tetrad Studio on $DESK"

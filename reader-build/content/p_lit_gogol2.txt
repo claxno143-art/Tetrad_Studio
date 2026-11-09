@@ -1,0 +1,106 @@
+=== id: gogol-viy-1
+title: Вий: бурсаки
+author: Н. В. Гоголь
+level: 4+
+genre: literature
+src: RussianNovels/corpus/Gogol_Viy.txt
+from: Как только ударял в Киеве поутру
+to: нюхал, как гончая собака, воздух.
+---
+1| As soon as the fairly [loud]{звонкий} [seminary]{семинарский} [bell]{колокол} that hung at the gates of the Bratsky Monastery rang out in Kyiv in the morning, [schoolboys]{школьники} and [seminarians]{бурсаки} came hurrying from all over the city in [crowds]{толпами}.
+2| [Grammarians]{грамматики}, [rhetoricians]{риторы}, philosophers and [theologians]{богословы}, with notebooks [under their arms]{под мышкой}, [trudged]{брели} to class.
+3| The grammarians were still very small; as they walked they shoved each other and [squabbled]{бранились} in the [thinnest]{тоненьким} [treble]{дискантом}; nearly all of them were in [torn]{изодранных} or [stained]{запачканных} clothes, and their pockets were [forever]{вечно} filled with all sorts of [rubbish]{дрянью}, [namely]{как-то}: [knucklebones]{бабками}, [whistles]{свистелками} made of [feathers]{перышек}, half-eaten pie, and sometimes even little [baby sparrows]{воробьенками}, one of which, suddenly [chirping]{чиликнув} in the midst of an extraordinary silence in class, would earn its [patron]{патрону} a good [whack]{пали} on both hands, and sometimes [cherry-wood]{вишневые} [rods]{розги} as well.
+4| The rhetoricians walked more sedately: their clothes were often quite [whole]{целы}, but [to make up for it]{зато} their faces almost always bore some [ornament]{украшение} in the form of a rhetorical [trope]{тропа}: either one eye had gone up under the very forehead, or in place of a lip there was a whole [blister]{пузырь}, or some other [mark]{примета}; these spoke and [swore]{божились} among themselves in [tenor]{тенором}.
+5| The philosophers [pitched]{брали} a whole [octave]{октавою} lower: in their pockets there was nothing but strong tobacco [stubs]{корешков}.
+6| They laid in no [provisions]{запасов} at all and ate whatever came their way on the spot; the smell of pipe and [vodka]{горелка} carried from them sometimes so far that a [craftsman]{ремесленник} passing by would stop and [sniff]{нюхал} the air for a long time, like a [hound]{гончая собака}.
+note: бурсаки | seminarians (of the bursa) | The «бурса» was a church seminary school with a dormitory; its pupils were proverbial for poverty and rowdiness.
+note: Грамматики, риторы, философы и богословы | grammarians, rhetoricians, philosophers and theologians | Names of the successive classes in the seminary, from youngest to oldest. Gogol plays with them like ranks.
+note: риторического тропа | rhetorical trope | A joke: the rhetoricians' black eyes and swollen lips are their "figures of speech," the marks of fights.
+note: горелка | (Ukrainian) vodka | From Ukrainian «горілка». Here it's the smell of drink.
+q: main | What does the passage portray? | A church service | *The comic procession of Kyiv seminary students of different classes | A market day | A school exam
+q: detail | What do the youngest grammarians carry in their pockets? | Money | *Junk: knucklebones, feather whistles, pie, even sparrows | Books | Tobacco
+q: inference | What does the "ornament in the form of a rhetorical trope" refer to? | A medal | *Bruises and injuries from fighting | Fine clothing | A tattoo
+q: tone | The tone is | solemn | *grotesque, affectionate comedy | tragic | dry
+sum: When the seminary bell rings in Kyiv, students pour in. The little grammarians squabble in squeaky voices, ragged and pockets full of junk, even sparrows that get them caned; the rhetoricians sport black eyes and swollen lips; the philosophers, deeper-voiced, carry only tobacco and smell so strongly of pipe and vodka that passersby stop to sniff.
+
+=== id: gogol-taras-1
+title: Тарас Бульба: степь
+author: Н. В. Гоголь
+level: 4
+genre: literature
+src: RussianNovels/corpus/Gogol_Taras.txt
+from: Степь чем далее
+to: Черт вас возьми, степи, как вы хороши!..
+repl: желтый дров => желтый дрок
+---
+1| The farther they went, the more beautiful the [steppe]{степь} became.
+2| In those days the whole south, all that [expanse]{пространство} which now [makes up]{составляет} New Russia, right down to the Black Sea, was a green, [virgin]{девственною} wilderness.
+3| Never had a [plow]{плуг} passed over the [immeasurable]{неизмеримым} waves of wild plants.
+4| Only the [horses]{кони} hiding in them, as in a forest, [trampled]{вытоптывали} them.
+5| Nothing in nature could be finer.
+6| The whole surface of the earth [looked like]{представлялася} a green-and-gold ocean, over which millions of different flowers had been [splashed]{брызнули}.
+7| Through the thin, tall [stalks]{стебли} of grass [showed]{сквозили} pale blue, deep blue and lilac [cornflowers]{волошки}; yellow [broom]{дрок} shot upward with its [pyramid-shaped]{пирамидальною} [top]{верхушкою}; white [clover]{кашка} [speckled]{пестрела} the surface with its [umbrella-like]{зонтикообразными} caps; an [ear]{колос} of wheat, carried there God knows from where, was [ripening]{наливался} in the [thick]{гуще} of it.
+8| Under their thin roots [partridges]{куропатки} [darted]{шныряли}, stretching out their necks.
+9| The air was filled with a thousand different bird [whistles]{свистов}.
+10| In the sky [hawks]{ястребы} stood motionless, their wings [spread wide]{распластав}, their eyes fixed motionless on the grass.
+11| The cry of a cloud of wild [geese]{гусей} moving off to one side [echoed]{отдавался} [God knows]{бог весть} in what distant lake.
+12| Out of the grass a [gull]{чайка} rose with [measured]{мерными} [wingbeats]{взмахами} and bathed [luxuriously]{роскошно} in the blue waves of the air.
+13| There, it has vanished into the heights and only [flickers]{мелькает} as a single black dot.
+14| There, it has turned over on its wings and [flashed]{блеснула} in the sun...
+15| [Devil take you]{черт вас возьми}, steppes, how beautiful you are!..
+note: Степь чем далее, тем становилась прекраснее | the farther, the more beautiful | The «чем…, тем…» construction: «чем больше, тем лучше», the more the better.
+note: Черт вас возьми | devil take you | An exclamation of rapture here, not anger, like English "damn, you're beautiful!"
+note: представлялася | appeared, looked like | An older reflexive ending «-ся» after a vowel; modern Russian has «представлялась».
+note: бог весть | God knows | «Бог весть где» means God knows where. «Весть» is an old form meaning "knows."
+q: main | What does the passage celebrate? | A Cossack battle | *The wild, untouched beauty of the southern steppe | Farming the land | The Black Sea coast
+q: detail | What had never passed over the steppe? | Horses | *A plow | Birds | Wind
+q: tone | The narrator's voice is | *ecstatic and lyrical | dry and scientific | sad and nostalgic | ironic
+q: idiom | «Черт вас возьми, степи, как вы хороши!» expresses | anger at the steppe | *overwhelming admiration | fear of the devil | boredom
+sum: The steppe grows ever more beautiful: in those days the whole south to the Black Sea was a green virgin wilderness, never plowed. Gogol paints a sea of grass and flowers, partridges, hawks, geese and a gull, and bursts out: "Devil take you, steppes, how beautiful you are!"
+
+=== id: gogol-starosvet-1
+title: Старосветские помещики
+author: Н. В. Гоголь
+level: 4+
+genre: literature
+src: RussianNovels/corpus/Gogol_StarosvyetskiyePomeshchiki.txt
+from: Я очень люблю скромную жизнь
+to: в блестящем, сверкающем сновидении.
+---
+1| I am very fond of the modest life of those [solitary]{уединенных} [owners]{владетелей} of [remote]{отдаленных} villages who in Little Russia are usually called "[old-world]{старосветскими}," who, like [decrepit]{дряхлые} [picturesque]{живописные} little houses, are charming in their [motley]{пестротою} and in their complete [contrast]{противоположностью} with a new, [smooth]{гладеньким} [building]{строением} whose walls the rain has not yet washed, whose roof green [mold]{плесень} has not yet covered, and whose porch, [stripped]{лишенное} of [plaster]{щекатурки}, does not yet show its red [bricks]{кирпичей}.
+2| Sometimes I like to step down for a moment into the [sphere]{сферу} of this extraordinarily solitary life, where not a single desire flies beyond the [paling]{частокол} that [surrounds]{окружающий} the little yard, beyond the [wattle fence]{плетень} of the garden full of apple and [plum]{сливами} trees, beyond the village huts around it, [leaning]{пошатнувшиеся} to one side and [shaded]{осененные} by [willows]{вербами}, [elder]{бузиною} and [pear trees]{грушами}.
+3| The life of their modest owners is so quiet, so quiet, that for a moment you lose yourself and think that [passions]{страсти}, desires and the [restless]{неспокойные} [offspring]{порождения} of the evil spirit that [trouble]{возмущающие} the world do not exist at all, and that you have only seen them in a brilliant, sparkling [dream]{сновидении}.
+note: в Малороссии | in Little Russia | The 19th-century imperial name for central Ukraine, Gogol's homeland.
+note: старосветскими | old-world | From «старый свет», the old world: people who keep to old-fashioned ways.
+note: возмущающие мир | disturbing the world | Here «возмущать» has its old sense of to stir up, agitate, not just to outrage.
+q: main | What does the narrator express? | Contempt for country life | *Affection for the quiet, old-fashioned life of remote landowners | Plans to build a new house | A wish to travel abroad
+q: detail | What do old-world houses contrast with? | Palaces | *New, smooth buildings | Peasant huts | Churches
+q: tone | The mood is | *nostalgic, gentle and dreamy | angry | satirical and cruel | anxious
+sum: The narrator loves the modest, secluded life of old-world landowners in Little Russia, as charming as their decrepit, picturesque houses. In this world, no desire reaches past the fence and orchard, and life is so quiet that passions and evil seem like nothing more than a dazzling dream.
+
+=== id: gogol-dushi-troika
+title: Мёртвые души: птица-тройка
+author: Н. В. Гоголь
+level: 4+
+genre: literature
+src: RussianNovels/corpus/Gogol_Mertvye.txt
+from: И какой же русский не любит быстрой езды?
+to: и вон она понеслась, понеслась, понеслась!..
+---
+1| And what Russian doesn't love [fast driving]{быстрой езды}?
+2| [Is it his soul]{его ли душе}, [eager]{стремящейся} to [whirl]{закружиться}, to [go on a spree]{загуляться}, to say at times "[to hell with it all]{черт побери все}!", is it his soul that wouldn't love it?
+3| How not to love it, when there is something [rapturously wondrous]{восторженно-чудное} to be heard in it?
+4| [It seems]{кажись} an [unknown]{неведомая} force has caught you up onto its wing, and you fly yourself, and everything flies: the [versts]{версты} fly, merchants fly toward you on the [driver's seats]{облучках} of their wagons, the forest flies by on both sides with its dark [ranks]{строями} of [firs]{елей} and pines, with the [knock of axes]{топорным стуком} and the cawing of crows, the whole road flies [no one knows where]{невесть куда} into the vanishing distance, and there is something [terrible]{страшное} [contained]{заключено} in this rapid [flicker]{мельканье}, where a vanishing object has no time to [take shape]{означиться}; only the sky overhead, and the light clouds, and the moon [forcing its way through]{продирающийся} alone seem [motionless]{недвижны}.
+5| Ah, troika! [Bird-troika]{птица тройка}, who invented you? [It seems]{знать} you could only have been born among a [spirited]{бойкого} people, in that land which doesn't like to joke, but has [spread]{разметнулась} [smooth and even]{ровнем-гладнем} over half the world, so go on and count the versts until [your eyes swim]{зарябит тебе в очи}.
+6| And not a cunning [contraption]{снаряд} on the road, it seems, not [held together]{схвачен} by an iron [screw]{винтом}, but hastily, [on the fly]{живьем}, with only an axe and a hammer, a [nimble]{расторопный} Yaroslavl peasant [fitted]{снарядил} and put you together.
+7| The coachman wears no German [jackboots]{ботфортах}: a beard and [mittens]{рукавицы}, and he sits on devil knows what; but he half-rose, swung his arm, [struck up]{затянул} a song, and the horses are a [whirlwind]{вихрем}, the [spokes]{спицы} in the wheels have merged into one smooth circle, the road only [shuddered]{дрогнула}, and a [passerby]{пешеход} who had stopped cried out in fright, and there she [flew off]{понеслась}, flew off, flew off!..
+note: его ли душе… не любить ее? | is it his soul that wouldn't love it? | The particle «ли» on a stressed word makes a rhetorical question: «Мне ли не знать?» means who would know better than me?
+note: кажись | it seems | Colloquial for «кажется». Gogol's narrator slips into folk speech in this lyrical passage.
+note: знать | evidently, it seems | Colloquial particle, not the verb "to know": «знать, не судьба» means evidently it wasn't meant to be.
+note: птица тройка | bird-troika | One of the most famous images in Russian literature: the flying troika as Russia itself, rushing toward an unknown future.
+q: main | What is the passage about? | A traffic accident | *A lyrical hymn to the speeding troika and, through it, to Russia | How to build a carriage | A race between merchants
+q: detail | Who built the troika, according to Gogol? | German engineers | *A nimble Yaroslavl peasant with an axe and hammer | The tsar's craftsmen | Nobody knows
+q: inference | What does the troika symbolize? | Wealth | *Russia and its unstoppable, mysterious momentum | Death | Childhood
+q: tone | The style is | *rhapsodic and soaring, full of rhetorical questions | calm and factual | sarcastic | mournful
+sum: What Russian doesn't love fast driving? Gogol describes the rapture of speed: everything flies past, fearful and wondrous. He hails the "bird-troika," born of a spirited people and a vast land, built simply by a Yaroslavl peasant and driven by a bearded coachman, until it races off and vanishes.
+

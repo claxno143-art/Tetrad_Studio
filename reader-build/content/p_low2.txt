@@ -1,0 +1,283 @@
+=== id: low-wedding
+title: Свадьба сестры
+level: 1+
+genre: everyday
+source_note: Written for this app.
+---
+ru: В субботу у моей сестры Сони была свадьба. || On Saturday my sister Sonya had her [wedding]{свадьба}.
+ru: Её жених Пётр — очень добрый и весёлый человек, мы с ним давно знакомы. || Her [fiancé]{жених} Pyotr is a very kind and cheerful person; we've known each other a long time.
+ru: Невеста была в белом платье, а жених в чёрном костюме и в шляпе. || The [bride]{невеста} wore a white dress, and the groom a black suit and a [hat]{шляпе}.
+ru: Сначала все поехали к реке фотографироваться, а потом был ужин в ресторане. || First everyone went to the [river]{реке} to take photos, and then there was [dinner]{ужин} in a restaurant.
+ru: Гости танцевали, пели и кричали «Горько!», а молодые целовались. || The guests [danced]{танцевали}, sang and shouted "Gorko!", and the newlyweds [kissed]{целовались}.
+ru: Мама плакала от счастья, а папа сказал красивый тост о любви и дружбе. || Mom cried from happiness, and Dad gave a beautiful toast about love and [friendship]{дружбе}.
+ru: Вечером мы пустили в небо фонарики, и это был самый красивый праздник в моей жизни. || In the evening we [let]{пустили} lanterns up into the sky, and it was the most beautiful [celebration]{праздник} of my life.
+note: Горько! | "Bitter!" (wedding toast) | Guests shout it so the couple will kiss and "sweeten" the drink.
+q: main | What is the story about? | A birthday | *A sister's wedding | A trip to the river | A restaurant review
+q: detail | What did guests shout? | "Hurray!" | *"Gorko!" | "Happy birthday!" | "Goodbye!"
+q: tone | The mood is | sad | *joyful | angry | boring
+sum: The narrator's sister Sonya married Pyotr on Saturday. After photos by the river there was dinner with dancing and shouts of "Gorko!", mom cried happily, dad toasted love and friendship, and the evening ended with lanterns released into the sky.
+
+=== id: low-doctor2
+title: У врача
+level: 1+
+genre: everyday
+source_note: Written for this app.
+---
+ru: — Здравствуйте, доктор. Мне больно глотать, и всю ночь я плохо спал. || "Hello, doctor. It [hurts]{больно} to swallow, and I slept badly all night."
+ru: — Садитесь в кресло. Откройте рот... Да, горло красное. Температура есть? || "Sit down in the [chair]{кресло}. Open your mouth... Yes, your throat is red. Do you have a temperature?"
+ru: — Тридцать восемь. И голова болит, и холодно всё время. || "Thirty-eight. And my head [aches]{болит}, and I'm [cold]{холодно} all the time."
+ru: — Ничего страшного, это простуда. Вам нужно лечь в кровать и пить много горячего чая. || "Nothing serious, it's a cold. You need to [lie down]{лечь} in [bed]{кровать} and drink lots of [hot]{горячего} tea."
+ru: — А на работу можно? || "And can I go to work?"
+ru: — Нет, три дня отдыхайте. Здоровье дороже. Вот рецепт, лекарство купите в аптеке. || "No, rest for three days. Your [health]{здоровье} is worth more. Here's a prescription; buy the medicine at the pharmacy."
+note: Ничего страшного | it's nothing serious | Literally "nothing scary." Used to reassure someone.
+q: main | Where does the conversation take place? | At school | *At the doctor's | At a pharmacy | At work
+q: detail | What does the doctor say it is? | The flu | *A cold | An allergy | Nothing at all
+q: detail | How long should the patient rest? | One day | *Three days | A week | A month
+sum: A patient tells the doctor his throat hurts, he has a temperature of 38, a headache and chills. The doctor diagnoses a cold, prescribes bed rest, hot tea and medicine, and says to stay home three days because health comes first.
+
+=== id: low-lost-key
+title: Где ключ?
+level: 1
+genre: everyday
+source_note: Written for this app.
+---
+ru: Утром я не мог найти ключ от квартиры. || In the morning I couldn't find the [key]{ключ} to the apartment.
+ru: Я посмотрел на столе, на кухне и в карманах. || I looked on the table, in the [kitchen]{кухне} and in my pockets.
+ru: Ключа нигде не было, а я уже опаздывал на работу. || The key was nowhere, and I was already late for work.
+ru: Я позвонил жене, но она не ответила. || I [called]{позвонил} my wife, but she didn't answer.
+ru: Тогда я сел на лестнице и стал думать. || Then I sat down on the [stairs]{лестнице} and started to think.
+ru: И вдруг я вспомнил: вчера вечером я гулял с собакой. || And suddenly I remembered: last night I [walked]{гулял} the dog.
+ru: Ключ был в куртке, которая висела в коридоре! || The key was in my jacket, which was hanging in the [hallway]{коридоре}!
+q: main | What is the problem? | He lost his phone | *He couldn't find his key | His dog ran away | His wife was angry
+q: detail | Where was the key? | In the kitchen | *In his jacket in the hallway | On the stairs | With his wife
+sum: The narrator couldn't find his apartment key and was late for work. His wife didn't answer the phone. Sitting on the stairs, he remembered walking the dog the night before: the key was in his jacket in the hallway.
+
+=== id: low-school
+title: Первый день в школе
+level: 1+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Первого сентября мой сын Саша пошёл в школу. || On September first my son Sasha started [school]{школу}.
+ru: Он долго не мог заснуть, волновался и задавал вопросы: «А учительница строгая? А если я сделаю ошибку?» || He couldn't [fall asleep]{заснуть} for a long time; he was [nervous]{волновался} and asked questions: "Is the teacher [strict]{строгая}? And what if I make a [mistake]{ошибку}?"
+ru: Утром он надел новую рубашку, взял букет цветов и большой рюкзак. || In the morning he put on a new [shirt]{рубашку}, took a bouquet of [flowers]{цветов} and a big backpack.
+ru: Во дворе школы было много детей и родителей, играла музыка. || In the schoolyard there were lots of children and parents, and music was playing.
+ru: Учительница оказалась молодой и нежной, она улыбнулась Саше и взяла его за руку. || The teacher turned out to be young and [gentle]{нежной}; she [smiled]{улыбнулась} at Sasha and took his hand.
+ru: После первого урока он выбежал ко мне и закричал: «Папа, мне понравилось! У меня уже есть друг!» || After the first [lesson]{урока} he ran out to me and [shouted]{закричал}: "Dad, I liked it! I already have a friend!"
+note: Первое сентября | September 1st, Day of Knowledge | The first school day in Russia, with flowers for the teacher.
+q: main | What is the story about? | A school exam | *A boy's first day at school | A birthday | A sports day
+q: detail | What was Sasha worried about? | Lunch | *A strict teacher and making mistakes | Getting lost | His backpack
+q: tone | How does the story end? | *Happily | Sadly | With a fight | With fear
+sum: On September 1st Sasha started school. He couldn't sleep, worried about a strict teacher and making mistakes. In the morning he went with a new shirt, flowers and a backpack; the young teacher was kind, and after the first lesson he ran out saying he liked it and already had a friend.
+
+=== id: low-weather
+title: Какая погода?
+level: 1
+genre: everyday
+source_note: Written for this app.
+---
+ru: Сегодня утром был сильный ветер и шёл дождь. || This morning there was a strong [wind]{ветер} and it was [raining]{дождь}.
+ru: Я надел тёплую куртку и взял зонт. || I put on a warm jacket and took an umbrella.
+ru: Но днём вышло солнце, и стало жарко. || But in the afternoon the sun came out and it got hot.
+ru: Небо стало голубым, на траве блестела вода. || The sky turned [light blue]{голубым}, and water [glistened]{блестела} on the [grass]{траве}.
+ru: Вечером опять стало холодно, а ночью пошёл снег. || In the evening it got cold again, and at night it [snowed]{снег}.
+ru: Вот такая у нас весна: за один день — все времена года! || That's our spring: all the seasons in one day!
+q: main | What is the text about? | A trip | *Changeable spring weather | Winter sports | A garden
+q: detail | What happened at night? | Rain | *Snow | Wind | Sun
+sum: In one spring day the weather went from wind and rain in the morning to hot sunshine in the afternoon, cold in the evening and snow at night: all the seasons in one day.
+
+=== id: low-neighbor
+title: Новый сосед
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: Месяц назад в квартиру напротив переехал новый сосед. || A month ago a new [neighbor]{сосед} moved into the apartment [opposite]{напротив}.
+ru: Сначала он казался мне странным: ходил в старой шляпе, ни с кем не разговаривал и всё время что-то записывал в тетрадь. || At first he seemed strange to me: he wore an old hat, didn't talk to anyone and was always writing something down in a notebook.
+ru: Соседки подозревали, что он шпион или даже преступник. || The neighbor women [suspected]{подозревали} that he was a spy or even a [criminal]{преступник}.
+ru: Однажды я встретил его у подъезда с тяжёлой сумкой и предложил помочь. || One day I met him at the [entrance]{подъезда} with a heavy bag and [offered]{предложил} to help.
+ru: Оказалось, что он писатель, пишет роман о нашем районе и собирает истории жильцов. || It turned out he was a writer, writing a [novel]{роман} about our neighborhood and collecting the stories of [residents]{жильцов}.
+ru: Теперь мы дружим, а соседки мечтают попасть в его книгу. || Now we're friends, and the neighbor women [dream]{мечтают} of getting into his book.
+note: подъезд | entrance (to an apartment block) | The stairwell entrance of a Russian apartment building.
+q: main | What is the story about? | A crime | *A mysterious neighbor who turns out to be a writer | Moving house | A spy novel
+q: detail | What did the neighbors suspect? | That he was rich | *That he was a spy or criminal | That he was ill | That he was a teacher
+q: tone | The ending is | frightening | *light and humorous | sad | angry
+sum: A strange new neighbor in an old hat kept to himself and wrote in a notebook, and the neighbor women suspected he was a spy or criminal. When the narrator offered to carry his bag, he turned out to be a writer collecting residents' stories for a novel, and now everyone wants to be in his book.
+
+=== id: low-letter-grandma
+title: Письмо бабушке
+level: 1+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Дорогая бабушка! || Dear Grandma!
+ru: Спасибо за подарок, тёплые носки мне очень пригодились: у нас уже лежит снег. || Thanks for the [present]{подарок}; the warm socks have come in very [handy]{пригодились}: there's already snow here.
+ru: Учёба идёт хорошо, но много домашних заданий, и я часто ложусь спать поздно. || My studies are going well, but there's a lot of [homework]{домашних заданий}, and I often go to bed late.
+ru: По субботам я хожу в бассейн, а по воскресеньям гуляю в парке с подругой. || On Saturdays I go to the pool, and on Sundays I walk in the park with a [girlfriend]{подругой}.
+ru: Я очень скучаю по тебе, по твоим пирогам и по нашему саду в деревне. || I [miss]{скучаю} you very much, and your pies and our garden in the village.
+ru: Летом обязательно приеду на целый месяц. Береги себя и не болей! || In summer I'll definitely come for a whole month. [Take care of yourself]{береги себя} and don't get sick!
+ru: Целую, твоя внучка Катя. || Kisses, your granddaughter Katya.
+note: Береги себя | take care of yourself | A warm closing in letters and goodbyes.
+q: main | What is this text? | A diary | *A letter from a granddaughter to her grandmother | A school essay | An advertisement
+q: detail | What present did Katya receive? | A book | *Warm socks | A pie | Money
+q: detail | When will Katya visit? | In winter | *In summer | Next week | Never
+sum: Katya thanks her grandmother for the warm socks, useful now that snow has fallen. She studies hard with lots of homework, swims on Saturdays and walks with a friend on Sundays. She misses her grandmother's pies and garden and promises to visit for a month in summer.
+
+=== id: low-train2
+title: В поезде
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: Поезд из Москвы во Владивосток идёт почти семь дней. || The train from Moscow to Vladivostok takes almost seven days.
+ru: В купе со мной ехали пожилая пара и молодой солдат. || In the [compartment]{купе} with me were an [elderly]{пожилая} couple and a young [soldier]{солдат}.
+ru: Мы быстро познакомились, пили чай из стаканов в подстаканниках и рассказывали друг другу о жизни. || We quickly [got acquainted]{познакомились}, drank tea from [glasses]{стаканов} in [glass holders]{подстаканниках} and told each other about our lives.
+ru: Старик вспоминал детство в Сибири, а солдат показывал фотографии своей невесты. || The old man [recalled]{вспоминал} his [childhood]{детство} in Siberia, and the soldier showed photos of his fiancée.
+ru: За окном проплывали леса, озеро Байкал, маленькие станции. || Outside the window [floated past]{проплывали} forests, Lake Baikal and little stations.
+ru: На станциях бабушки продавали горячую картошку и пирожки. || At the stations grannies sold hot potatoes and [pirozhki]{пирожки}.
+ru: Когда мы прощались, у меня было чувство, что я расстаюсь со старыми друзьями. || When we said goodbye, I had the feeling I was [parting]{расстаюсь} with old friends.
+note: подстаканник | glass holder | The metal holder for tea glasses, a symbol of Russian train travel.
+q: main | What is the story about? | Buying a ticket | *A long train journey and the people met on it | Lake Baikal | A soldier's life
+q: detail | How long does the train take? | One day | *Almost seven days | Three hours | Two weeks
+q: tone | How did the narrator feel at the end? | Relieved | *As if parting with old friends | Angry | Bored
+sum: On the nearly week-long train from Moscow to Vladivostok, the narrator shared a compartment with an elderly couple and a young soldier. They drank tea from glass holders, shared memories and photos, watched forests and Baikal pass, and bought food from grannies at stations; saying goodbye felt like leaving old friends.
+
+=== id: low-cat
+title: Кошка Мурка
+level: 1
+genre: everyday
+source_note: Written for this app.
+---
+ru: У нас дома живёт кошка Мурка. || We have a cat at home, Murka.
+ru: Она серая, мягкая и очень хитрая. || She's gray, [soft]{мягкая} and very [sly]{хитрая}.
+ru: Днём она спит на подушке, а ночью бегает по квартире. || During the day she sleeps on a [pillow]{подушке}, and at night she [runs]{бегает} around the apartment.
+ru: Мурка любит рыбу и молоко, а ещё любит ловить птиц на балконе. || Murka loves fish and milk, and also loves [catching]{ловить} [birds]{птиц} on the balcony.
+ru: Когда я прихожу домой, она встречает меня у двери. || When I come home, she [meets]{встречает} me at the door.
+ru: Иногда она кусается, но я всё равно её люблю. || Sometimes she [bites]{кусается}, but I love her anyway.
+q: main | Who is the text about? | A dog | *A cat named Murka | A bird | A child
+q: detail | What does Murka do at night? | Sleeps | *Runs around the apartment | Goes outside | Eats
+sum: Murka is a soft, sly gray cat who sleeps on a pillow by day and runs around at night. She loves fish, milk and stalking birds on the balcony, greets her owner at the door and sometimes bites, but is loved anyway.
+
+=== id: low-detective
+title: Пропажа в гостинице
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Утром в гостинице «Северная» пропал дорогой браслет у одной богатой графини. || One morning in the Severnaya hotel a rich countess's expensive [bracelet]{браслет} [went missing]{пропал}.
+ru: Хозяйка гостиницы немедленно вызвала полицию. || The hotel's [owner]{хозяйка} [immediately]{немедленно} called the [police]{полицию}.
+ru: Следователь допросил слугу, повара и молодую горничную, но все клялись, что ничего не знают. || The investigator questioned the [servant]{слугу}, the cook and the young [maid]{горничную}, but all [swore]{клялись} they knew nothing.
+ru: Тогда он внимательно осмотрел комнату и заметил на подоконнике мокрые следы. || Then he [carefully]{внимательно} examined the room and [noticed]{заметил} wet [tracks]{следы} on the windowsill.
+ru: Следы были слишком маленькие для человека. || The tracks were too small for a person.
+ru: Оказалось, что браслет украла ручная сорока, которую соседский мальчишка кормил хлебом. || It turned out the bracelet had been [stolen]{украла} by a tame [magpie]{сорока} that the neighbors' [boy]{мальчишка} fed bread.
+ru: Птица унесла в гнездо не только браслет, но и ложки, кольца и даже ключ от кабинета директора. || The bird had carried off to its [nest]{гнездо} not only the bracelet but also spoons, rings and even the key to the director's office.
+note: сорока | magpie | In Russian folklore («сорока-воровка») the magpie steals shiny things.
+q: main | What is the story about? | A bank robbery | *A missing bracelet stolen by a magpie | A countess's wedding | A lazy policeman
+q: detail | What clue did the investigator find? | A glove | *Small wet tracks on the windowsill | A letter | Fingerprints
+q: tone | The tone is | tragic | *lighthearted and amusing | frightening | political
+sum: A countess's bracelet vanished from a hotel. The investigator questioned the staff, who denied everything, then found tiny wet tracks on the windowsill. The thief was a tame magpie fed by a neighbor boy; its nest held the bracelet, spoons, rings and the director's key.
+
+=== id: low-forest
+title: Заблудились в лесу
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: Осенью мы с другом пошли в лес за грибами и заблудились. || In autumn my friend and I went to the forest for mushrooms and [got lost]{заблудились}.
+ru: Телефон не работал, начинало темнеть, и стало по-настоящему страшно. || The phone didn't work, it was starting to [get dark]{темнеть}, and it got really frightening.
+ru: Друг предложил идти по ручью: вода всегда течёт к реке, а у реки обычно есть деревня. || My friend suggested following the [stream]{ручью}: water always [flows]{течёт} to a river, and there's usually a village by a river.
+ru: Мы шли больше часа, промокли и устали. || We walked for more than an hour, got [soaked]{промокли} and [tired]{устали}.
+ru: Наконец впереди мы увидели огонь и услышали лай собак. || Finally [ahead]{впереди} we saw a light and heard dogs [barking]{лай}.
+ru: Старик-лесник напоил нас чаем, высушил одежду и проводил до дороги. || An [old forester]{Старик-лесник} gave us tea, dried our [clothes]{одежду} and walked us to the road.
+note: за грибами | to go mushroom-picking | «За» + instrumental means to go to get something: «за хлебом», «за водой».
+q: main | What happened? | They found many mushrooms | *They got lost in the forest and found help | They met a bear | They camped overnight
+q: detail | Why did they follow the stream? | It was shorter | *Water leads to a river, and villages are by rivers | Their phone said to | To drink
+q: detail | Who helped them? | Police | *An old forester | Other mushroom pickers | A farmer with a car
+sum: Two friends got lost picking mushrooms; with no phone signal and darkness coming, they followed a stream toward a river. After an hour, soaked and tired, they saw a light and heard dogs, and an old forester gave them tea, dried their clothes and led them to the road.
+
+=== id: low-job
+title: Собеседование
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: — Расскажите, пожалуйста, о себе и о своём опыте. || "Tell me, please, about yourself and your [experience]{опыте}."
+ru: — Я пять лет работала в крупной компании, занималась рекламой и отвечала за связи с клиентами. || "I worked for five years at a [large]{крупной} company, [was in charge of]{занималась} advertising and was [responsible]{отвечала} for client relations."
+ru: — Почему вы решили уйти? || "Why did you decide to leave?"
+ru: — Мне хочется развиваться, а там уже не было возможности для роста. || "I want to grow, and there was no longer any [opportunity]{возможности} for [growth]{роста} there."
+ru: — Какие у вас слабые стороны? || "What are your [weaknesses]{слабые стороны}?"
+ru: — Иногда я слишком много беру на себя и плохо умею отказываться. || "Sometimes I [take on]{беру на себя} too much and I'm bad at [saying no]{отказываться}."
+ru: — Хорошо. Мы рассмотрим вашу кандидатуру и сообщим о решении до пятницы. || "Fine. We'll [consider]{рассмотрим} your [candidacy]{кандидатуру} and let you know our decision by Friday."
+note: брать на себя | to take on (responsibility) | «Взять на себя ответственность», to take responsibility.
+q: main | What is this conversation? | A medical exam | *A job interview | A sales call | A school test
+q: detail | Why is she leaving her job? | Low pay | *No opportunity for growth | A conflict | Moving abroad
+q: detail | What weakness does she name? | Being late | *Taking on too much and not saying no | Lack of experience | Shyness
+sum: At a job interview a candidate explains she spent five years in advertising and client relations at a large company but is leaving for lack of growth. Her weakness is taking on too much and not saying no. The interviewer promises a decision by Friday.
+
+=== id: low-dacha
+title: Дача
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: Каждое лето мы уезжаем на дачу. || Every summer we go off to the [dacha]{дачу}.
+ru: Это маленький деревянный дом с садом в часе езды от города. || It's a small [wooden]{деревянный} house with a garden an hour's drive from the city.
+ru: Папа чинит крышу и забор, мама сажает огурцы, помидоры и клубнику. || Dad fixes the [roof]{крышу} and the [fence]{забор}, and Mom plants [cucumbers]{огурцы}, tomatoes and [strawberries]{клубнику}.
+ru: Мы с братом поливаем грядки и купаемся в озере. || My brother and I water the [garden beds]{грядки} and swim in the lake.
+ru: Вечером топим баню, а потом пьём чай с вареньем на веранде. || In the evening we [heat]{топим} the [bathhouse]{баню}, and then drink tea with [jam]{вареньем} on the [veranda]{веранде}.
+ru: Комаров много, зато тишина и свежий воздух. || There are lots of [mosquitoes]{комаров}, [but then]{зато} there's [quiet]{тишина} and [fresh]{свежий} air.
+note: зато | but on the other hand | Introduces a compensating advantage: «дорого, зато качественно».
+q: main | What is the text about? | A city apartment | *Summers at the family dacha | A camping trip | A farm
+q: detail | What does Mom do? | Fixes the roof | *Plants vegetables and strawberries | Heats the banya | Swims
+q: detail | What is the downside? | Noise | *Mosquitoes | Cold | Distance
+sum: Each summer the family goes to its wooden dacha an hour from the city. Dad repairs the roof and fence, Mom plants vegetables and strawberries, the kids water the beds and swim; evenings bring the banya and tea with jam. There are mosquitoes, but also quiet and fresh air.
+
+=== id: low-hockey
+title: Хоккейный матч
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: Вчера наша команда играла в финале с командой из соседнего города. || Yesterday our [team]{команда} played in the final against a team from a neighboring town.
+ru: Зал был полон, болельщики кричали и махали флагами. || The arena was full, and [fans]{болельщики} shouted and waved flags.
+ru: В первом периоде соперники забили два гола, и мы почти потеряли надежду. || In the first period our [opponents]{соперники} scored two goals, and we almost [lost]{потеряли} [hope]{надежду}.
+ru: Но во втором периоде наш капитан сравнял счёт. || But in the second period our captain [tied]{сравнял} the [score]{счёт}.
+ru: За минуту до конца молодой нападающий бросил шайбу точно в угол ворот. || A minute before the end a young [forward]{нападающий} shot the [puck]{шайбу} right into the corner of the [net]{ворот}.
+ru: Победа! Весь город праздновал до утра. || [Victory]{победа}! The whole town celebrated until morning.
+q: main | What is the text about? | A football match | *A hockey final won at the last minute | A ski race | A town festival
+q: detail | Who tied the score? | The goalie | *The captain | A fan | The coach
+q: detail | When was the winning goal? | In the first minute | *A minute before the end | In overtime | After the match
+sum: In a hockey final against a neighboring town, the home team fell two goals behind in the first period. The captain tied it in the second, and with a minute left a young forward scored the winner; the town celebrated until morning.
+
+=== id: low-birthday-gift
+title: Что подарить?
+level: 1+
+genre: everyday
+source_note: Written for this app.
+---
+ru: — Скоро у папы день рождения. Что ему подарить? || "Dad's birthday is soon. What should we [give]{подарить} him?"
+ru: — Может быть, книгу? Он любит читать про историю. || "Maybe a book? He likes reading about history."
+ru: — У него уже полно книг, вся полка занята. || "He already has [loads]{полно} of books; the whole shelf is full."
+ru: — Тогда часы или новый кошелёк? || "Then a [watch]{часы} or a new [wallet]{кошелёк}?"
+ru: — Часы он не носит. А давай купим ему билеты на концерт! Он давно мечтает послушать живой джаз. || "He doesn't wear a watch. Let's buy him concert tickets! He's long [dreamed]{мечтает} of hearing live jazz."
+ru: — Отличная идея! И пойдём все вместе. || "[Excellent]{отличная} idea! And we'll all go together."
+q: main | What are they deciding? | Where to eat | *What to give Dad for his birthday | Which book to read | Where to travel
+q: detail | Why not a book? | It's expensive | *He already has loads of books | He doesn't read | They're boring
+q: detail | What do they choose? | A watch | A wallet | *Concert tickets | A book
+sum: Two people discuss a birthday present for their father. Books are out because his shelf is full, and he doesn't wear a watch, so they decide on tickets to a live jazz concert he's long wanted to hear and plan to go together.
+
+=== id: low-restaurant
+title: В кафе
+level: 1
+genre: everyday
+source_note: Written for this app.
+---
+ru: — Добрый вечер! Вот меню. Что будете заказывать? || "Good evening! Here's the menu. What will you [order]{заказывать}?"
+ru: — Мне, пожалуйста, борщ и котлету с картошкой. || "For me, please, borshch and a [cutlet]{котлету} with potatoes."
+ru: — А пить что будете? || "And what will you drink?"
+ru: — Стакан сока, а потом кофе с молоком. || "A [glass]{стакан} of juice, and then coffee with milk."
+ru: — Десерт хотите? Сегодня очень вкусный торт. || "Do you want dessert? The cake is very [tasty]{вкусный} today."
+ru: — Нет, спасибо. Принесите, пожалуйста, счёт. || "No, thanks. Please bring the [bill]{счёт}."
+q: main | Where are they? | At home | *In a café | In a shop | At a station
+q: detail | What does the customer drink first? | Coffee | *Juice | Tea | Water
+sum: A customer in a café orders borshch and a cutlet with potatoes, a glass of juice and then coffee with milk, declines the cake and asks for the bill.

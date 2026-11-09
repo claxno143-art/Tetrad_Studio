@@ -1,0 +1,116 @@
+=== add: tolstoy-anna-1
+1| All happy families are [alike]{похожи}; each unhappy family is unhappy [in its own way]{по-своему}.
+2| Everything was [in confusion]{смешалось} in the Oblonskys' house.
+3| The wife had found out that her husband [was having an affair]{был в связи} with the French [governess]{француженкою-гувернанткой} who had been in their house, and had [announced]{объявила} to her husband that she could not live under the same roof with him.
+4| This situation had now lasted for three days and was [painfully]{мучительно} felt by the [spouses]{супругами} themselves, by all the members of the family, and by the [household]{домочадцами}.
+5| All the members of the family and household felt that there was no sense in their [living together]{сожительстве}, and that people who had [met by chance]{случайно сошедшиеся} at any [coaching inn]{постоялом дворе} were more connected with each other than they, the members of the Oblonsky family and household.
+6| The wife did not leave her rooms; the husband had not been home for three days.
+7| The children ran all over the house as if lost; the English governess [quarreled]{поссорилась} with the [housekeeper]{экономкой} and wrote a note to a friend asking her to [find]{приискать} her a new place; the cook had walked out the day before, at dinner time; the [kitchen maid]{черная кухарка} and the [coachman]{кучер} had asked to be [paid off]{просили расчета}.
+note: был в связи | was having an affair | «Быть в связи с кем-то» is the 19th-century way of saying it; compare «связь» in «Дама с собачкой».
+note: черная кухарка | kitchen maid (for rough work) | «Чёрная» here means for rough, dirty work, not the color. It's the opposite of the main cook.
+note: просили расчета | asked to be paid off (to quit) | «Расчёт» is final settlement of wages. «Взять расчёт» means to quit a job.
+note: Все смешалось | everything was in confusion | One of the most quoted lines in Russian: «Всё смешалось в доме Облонских» is used jokingly for any household chaos.
+q: main | What situation does the opening describe? | A happy family celebration | *A household thrown into chaos after the wife discovers her husband's affair | A family preparing for a trip | The death of a servant
+q: detail | How long has the situation lasted? | One hour | *Three days | A month | A year
+q: inference | Why do the servants leave or ask for their wages? | They are paid too little | *The household has fallen apart and no one is in charge | They were fired by the wife | They are going on holiday
+q: idiom | The first sentence is famous because it | *contrasts the sameness of happiness with the variety of unhappiness | praises large families | criticizes the Oblonskys | describes a French custom
+sum: All happy families are alike, but each unhappy family is unhappy in its own way. In the Oblonsky house everything is in confusion: the wife has learned of her husband's affair with the governess, refuses to live with him, and for three days the family and servants have been adrift, with the servants quitting one by one.
+
+=== add: tolstoy-voskr-1
+1| However hard people tried, having gathered several hundred thousand of them in one small place, to [disfigure]{изуродовать} the land on which they [crowded]{жались}, however they [paved over]{забивали} the earth with stones so that nothing would grow on it, however they [scraped away]{счищали} every [sprouting]{пробивающуюся} blade of grass, however they [smoked]{дымили} with [coal]{каменным углем} and oil, however they [lopped]{обрезывали} the trees and drove away all the animals and birds, spring was spring even in the city.
+2| The sun warmed, the grass, coming back to life, grew and turned green wherever it hadn't been [scraped off]{соскребли}, not only on the [lawns]{газонах} of the [boulevards]{бульваров} but between the [paving]{плитами} stones too, and the [birches]{березы}, [poplars]{тополи} and [bird cherry]{черемуха} were opening their [sticky]{клейкие} and [fragrant]{пахучие} leaves, the [lindens]{липы} were swelling their [bursting]{лопавшиеся} [buds]{почки}; [jackdaws]{галки}, [sparrows]{воробьи} and pigeons, joyful [in the spring way]{по-весеннему}, were already getting their [nests]{гнезда} ready, and flies [buzzed]{жужжали} along the walls, [warmed]{пригретые} by the sun.
+3| [Cheerful]{веселы} were the plants, and the birds, and the [insects]{насекомые}, and the children.
+4| But people, big, grown-up people, did not stop [deceiving]{обманывать} and [tormenting]{мучать} themselves and each other.
+5| People thought that what was [sacred]{священно} and important was not this spring morning, not this beauty of God's world, given for the [good]{блага} of all [beings]{существ}, a beauty that [disposes]{располагающая} one toward peace, [harmony]{согласию} and love, but what was sacred and important was what they themselves had [invented]{выдумали} in order to [rule]{властвовать} over one another.
+note: Как ни старались | however hard they tried | «Как ни» plus a verb gives a concessive meaning, "however much…". Tolstoy repeats it five times to build the sentence.
+note: весна была весною | spring was spring | The instrumental «весною» is the predicate: spring remained itself, whatever people did.
+note: располагающая к миру | disposing one toward peace | «Располагать к чему-то» means to incline someone toward something. «Располагающая внешность» is an appealing look.
+q: main | What contrast does the passage draw? | City and village life | *The joy of spring in nature versus people's cruelty and invented hierarchies | Rich and poor children | Summer and winter
+q: detail | Which of these is NOT shown rejoicing in spring? | Plants | Birds | Children | *Grown-up people
+q: inference | What does Tolstoy mean by what people "invented in order to rule over one another"? | Science and medicine | *Social institutions and power structures, such as the prison bureaucracy | Spring festivals | Gardening
+q: tone | The tone is | lighthearted | *moralizing and lyrical, with sharp social criticism | neutral and scientific | comic
+sum: However people crowd into a city, pave it and poison it with smoke, spring still comes: grass, trees, birds and children rejoice. Only adults keep deceiving and tormenting each other, treating as sacred not the beauty of the world but the systems of power they invented.
+
+=== add: dostoevsky-pin-1
+repl: в С — м переулке => в С-м переулке ;; к К — ну мосту => к К-ну мосту
+1| At the beginning of July, during an [extremely]{чрезвычайно} hot spell, toward evening, a young man came out of the [tiny room]{каморки} he rented from tenants in S— Lane, onto the street, and slowly, as if [in indecision]{в нерешимости}, set off toward K— Bridge.
+2| He [successfully]{благополучно} [avoided]{избегнул} meeting his [landlady]{хозяйкой} on the stairs.
+3| His tiny room was [right under]{приходилась под самою} the [roof]{кровлей} of a tall five-story building and was more like a [cupboard]{шкаф} than a room.
+4| His landlady, from whom he rented this little room with meals and [service]{прислугой}, lived one flight of stairs down, in a separate apartment, and every time he went out onto the street he [had]{непременно надо было} to pass the landlady's kitchen, whose door almost always stood [wide open]{настежь отворенной} onto the stairs.
+5| And every time the young man passed by, he felt a sort of [sickly]{болезненное} and [cowardly]{трусливое} sensation, of which he was ashamed and at which he [winced]{морщился}.
+6| He [owed]{был должен} the landlady [all around]{кругом} and was afraid to meet her.
+note: был должен кругом | owed (her) all around | «Быть должным кругом» means to be in debt on every count, up to one's ears.
+note: настежь | wide open | Used only of doors, windows and gates: «распахнуть дверь настежь».
+note: С-м переулке | S— Lane | Dostoevsky abbreviates real Petersburg street names (Stolyarny Lane, Kokushkin Bridge), a common 19th-century convention.
+q: main | What does the opening establish? | *A poor, anxious young man sneaking out to avoid his landlady | A summer celebration in Petersburg | A young man moving into a new apartment | A love meeting at a bridge
+q: detail | What was the young man's room like? | A spacious apartment | *A tiny room under the roof, more like a cupboard | A room in a hotel | A basement
+q: detail | Why does he fear meeting his landlady? | She is rude | *He owes her money | She is ill | She wants to marry him
+q: tone | The mood is | *tense, stifling and uneasy | peaceful and sunny | festive | comic
+sum: On a hot July evening a young man slips out of his cupboard-like garret, managing to avoid his landlady, whose open kitchen he must pass every time. He owes her money everywhere and feels a sickly, cowardly dread each time, which shames him.
+
+=== add: dostoevsky-pin-2
+1| Not that he was so [cowardly]{труслив} and [downtrodden]{забит}, quite the opposite in fact; but for some time he had been in an [irritable]{раздражительном} and [tense]{напряженном} state, close to [hypochondria]{ипохондрию}.
+2| He had become so [absorbed in himself]{углубился в себя} and [withdrawn]{уединился} from everyone that he dreaded any meeting at all, not only a meeting with his landlady.
+3| He was [crushed]{задавлен} by [poverty]{бедностью}; but even his [straitened]{стесненное} circumstances had lately stopped [weighing on]{тяготить} him.
+4| He had completely stopped attending to his [pressing]{насущными} affairs, and didn't want to.
+5| He was not, [in essence]{в сущности}, afraid of any landlady, whatever she might be [plotting]{замышляла} against him.
+note: Не то чтоб | not that | «Не то чтобы…» introduces a denial before a correction: "Not that he was…, but…".
+note: ипохондрию | hypochondria (melancholy) | In Dostoevsky's time it meant a morbid, gloomy state of mind, not specifically fear of illness.
+note: насущными делами | pressing affairs | «Насущный» means vital, urgent. Compare «хлеб насущный» in Turgenev's «Ася».
+q: main | What does this passage reveal? | *The young man's withdrawn, irritable state of mind | His plans for the future | How he pays his rent | His family history
+q: detail | What is he really afraid of? | His landlady's anger | *Any meeting with anyone at all | The police | Losing his room
+q: inference | What does it suggest that poverty no longer troubles him? | He has found money | *He is sinking into a morbid inner state that dwarfs practical worries | He has found a job | He is content
+sum: The young man isn't naturally cowardly, but has fallen into an irritable, hypochondriac state, so withdrawn that he fears all encounters. Crushed by poverty, he has stopped caring even about that, abandoning his practical affairs; it isn't really the landlady he fears.
+
+=== add: goncharov-oblomov-1
+1| On Gorokhovaya Street, in one of the big buildings whose [population]{народонаселения} would [suffice for]{стало бы на} a whole [district town]{уездный город}, Ilya Ilyich Oblomov was lying in bed one morning in his apartment.
+2| He was a man of about thirty-two or thirty-three, of medium height, of pleasant [appearance]{наружности}, with dark grey eyes, but with an [absence]{отсутствием} of any definite idea, of any [concentration]{сосредоточенности}, in his [features]{чертах лица}.
+3| Thought wandered over his face like a [free bird]{вольной птицей}, [fluttered]{порхала} in his eyes, [perched]{садилась} on his [half-open]{полуотворенные} lips, hid in the [folds]{складках} of his [brow]{лба}, then vanished altogether, and then an even light of [carefreeness]{беспечности} [glowed]{теплился} over his whole face.
+4| From his face, the carefreeness passed into the [postures]{позы} of his whole body, even into the folds of his [dressing gown]{шлафрока}.
+note: стало бы на | would suffice for | Older «стать на что-то» means to be enough for: «денег не станет на поездку».
+note: шлафрок | dressing gown | From German «Schlafrock». Oblomov's famous oriental robe becomes a symbol of his idleness.
+note: беспечности | carefreeness, unconcern | «Беспечный» means without care (без + печь in the old sense of worry). The opposite is «озабоченный».
+q: main | What is this passage? | *A portrait of Oblomov's appearance and drifting, carefree nature | A description of Gorokhovaya Street's history | Oblomov's daily schedule | A conversation with a servant
+q: detail | Where is Oblomov at the start? | At the office | *Lying in bed in his apartment | Walking on the street | In the country
+q: inference | What does "thought wandered over his face like a free bird" suggest? | He is a deep thinker | *His thoughts drift without focus or purpose | He loves birds | He is anxious
+sum: In a huge Petersburg building, Oblomov, about thirty-two, pleasant-looking, lies in bed in the morning. His face lacks any focused idea: thoughts flit across it and vanish, leaving a calm glow of carefreeness that extends to his posture and even the folds of his dressing gown.
+
+=== add: goncharov-oblomov-2
+1| Sometimes his gaze [darkened]{помрачался} with an expression as if of weariness or boredom; but neither weariness nor boredom could for a moment [drive]{согнать} from his face the gentleness that was the [dominant]{господствующим} and basic expression not of his face only but of his whole soul; and his soul shone so openly and clearly in his eyes, in his smile, in every movement of his head and hand.
+2| And a [superficially]{поверхностно} observant, cold person, glancing at Oblomov [in passing]{мимоходом}, would say: "Must be a [good-natured fellow]{добряк}, a [simple soul]{простота}!"
+3| A deeper and more [sympathetic]{посимпатичнее} person, after [gazing]{вглядываясь} at his face for a long time, would walk away in pleasant [thought]{раздумье}, smiling.
+note: Добряк должен быть, простота | must be a good fellow, a simple soul | Colloquial: «должен быть» here means "probably is." «Простота» used of a person means a simple, artless soul.
+note: поглубже и посимпатичнее | deeper and more sympathetic | The prefix «по-» on a comparative softens it: "a bit deeper, rather more…".
+q: main | What quality defines Oblomov, according to the passage? | Ambition | *Gentleness, visible in his whole being | Cruelty | Restlessness
+q: inference | How do the two observers differ? | They don't; both dislike him | *A cold observer sees a simpleton; a deeper one is charmed | Both find him boring | One is his servant
+q: tone | The narrator's attitude to Oblomov is | hostile | *warm and affectionate, with gentle irony | indifferent | mocking
+sum: Even when weariness clouds Oblomov's face, his dominant gentleness shines through in his eyes, smile and gestures. A shallow observer would dismiss him as a simple good fellow, while someone deeper would leave charmed and smiling.
+
+=== add: karamzin-liza-1
+1| Perhaps no one living in Moscow knows the [surroundings]{окрестностей} of [this]{сего} city as well as I do, because no one is out in the fields more often than I, no one [wanders]{бродит} more than I on foot, without a plan, without an aim, [wherever my eyes lead]{куда глаза глядят}, over [meadows]{лугам} and [groves]{рощам}, over hills and [plains]{равнинам}.
+2| Every summer I find new pleasant places, or new beauties in old ones.
+3| But most pleasant of all to me is the place where the [gloomy]{мрачные} Gothic [towers]{башни} of the Si…nov [Monastery]{монастыря} [rise]{возвышаются}.
+4| Standing on [this]{сей} hill, you see on the right almost all of Moscow, [that]{сию} terrible [mass]{громаду} of houses and churches, which [presents itself]{представляется} to the eye [in the form]{в образе} of a [majestic]{величественного} [amphitheater]{амфитеатра}: a magnificent picture, [especially]{особливо} when the sun shines on it, when its evening rays [blaze]{пылают} on countless [golden]{златых} [domes]{куполах}, on countless crosses [rising]{возносящихся} toward the sky!
+5| Below spread [lush]{тучные}, deep-green flowering meadows, and beyond them, over yellow sands, flows a bright river, stirred by the light [oars]{веслами} of fishermen's boats or [rustling]{шумящая} under the [rudders]{рулем} of heavy [barges]{стругов}, which sail from the most [fertile]{плодоноснейших} lands of the Russian Empire and [supply]{наделяют} [greedy]{алчную} Moscow with grain.
+note: сего, сей, сию | this (archaic) | Forms of the old pronoun «сей», "this." It survives in set phrases: «до сих пор», «сию минуту», «сего года».
+note: куда глаза глядят | wherever one's eyes lead, aimlessly | A living idiom: «идти куда глаза глядят», to go off with no destination.
+note: златых | golden (archaic) | A Church Slavonic short form for «золотых», giving an elevated, poetic tone.
+note: Си...нова монастыря | the Si…nov Monastery | Simonov Monastery. Karamzin coyly abbreviates the name, as Dostoevsky does with streets.
+q: main | What does the opening present? | The plot of the story | *The narrator's love of Moscow's surroundings and a panoramic view from a monastery hill | A history of the monastery | Moscow's trade
+q: detail | What does the narrator see on the right from the hill? | Fields and forests | *Almost all of Moscow | A river port | The Kremlin only
+q: tone | The style of the passage is | *sentimental and elevated, full of feeling and archaic words | dry and factual | ironic | journalistic
+sum: The narrator, who knows Moscow's outskirts better than anyone, loves best the hill by the Simonov Monastery. From there he describes Moscow spread out like a golden-domed amphitheater, lush meadows and a river busy with fishing boats and grain barges supplying the city.
+
+=== add: gorky-izergil-1
+1| I heard these stories near Akkerman, in Bessarabia, on the seashore.
+2| One evening, having finished the day's [grape harvest]{сбор винограда}, the [party]{партия} of Moldavians I was working with went off to the seashore, while old Izergil and I stayed in the thick shade of the [vines]{лоз} and, lying on the ground, were silent, watching the [silhouettes]{силуэты} of those who had gone to the sea [melt]{тают} in the blue [haze]{мгле} of night.
+3| They walked, singing and laughing; the men [bronzed]{бронзовые}, with [lush]{пышными} black [mustaches]{усами} and thick [curls]{кудрями} down to their shoulders, in short jackets and wide [trousers]{шароварах}; the women and girls cheerful, [supple]{гибкие}, with dark-blue eyes, also bronzed.
+4| Their hair, silky and black, was [loose]{распущены}; the wind, warm and light, playing with it, [jingled]{звякал} the coins [woven]{вплетенными} into it.
+5| The wind flowed in a broad, even wave, but sometimes it seemed to leap over something invisible and, giving rise to a strong [gust]{порыв}, [blew]{развевал} the women's hair into fantastic [manes]{гривы} that [billowed]{вздымавшиеся} around their heads.
+note: шароварах | wide trousers | «Шаровары» are wide, baggy trousers gathered at the ankle, worn in Ukraine, Moldova and the Caucasus.
+note: партия | group, party (of workers) | Here «партия» is a work team. Compare «партия товара», a batch of goods, and «партия» in chess, a game.
+note: точно | as if | Here «точно» is a literary "as if, like": «он точно прыгал» means as if it were leaping. Compare «как будто».
+q: main | What does the opening describe? | A storm at sea | *A romantic evening scene among Moldavian grape-pickers by the sea | Life in a Bessarabian town | The narrator's childhood
+q: detail | Who stays behind with the narrator? | A young girl | *The old woman Izergil | The Moldavian men | Nobody
+q: tone | The style is | dry and documentary | *romantic and richly pictorial | ironic | gloomy
+sum: The narrator heard these tales on the Bessarabian coast. After a day of picking grapes, the Moldavian workers walk singing to the sea, bronzed men and women with loose black hair full of jingling coins tossed by the wind, while he and old Izergil stay behind in the vines.

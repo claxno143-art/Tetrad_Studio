@@ -1,0 +1,258 @@
+=== id: mid-secret-letter
+title: Тайное письмо
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Разбирая вещи покойного дедушки, Катерина нашла в ящике стола пожелтевший конверт. || Sorting through her late [grandfather's]{дедушки} things, Katerina found a yellowed envelope in a desk drawer.
+ru: Внутри было письмо от незнакомой женщины, которая умоляла деда о прощении и признавалась ему в любви. || Inside was a letter from an [unfamiliar]{незнакомой} woman who [begged]{умоляла} Grandpa for [forgiveness]{прощении} and [confessed]{признавалась} her love for him.
+ru: Катерину охватили любопытство и тревога: неужели у деда была тайна, о которой не знала даже бабушка? || Katerina was gripped by [curiosity]{любопытство} and [anxiety]{тревога}: could Grandpa really have had a [secret]{тайна} that even Grandma didn't know about?
+ru: Она долго сомневалась, стоит ли рассказывать родным, и наконец решилась позвонить тётушке. || She long [hesitated]{сомневалась} over whether to tell the family, and finally [made up her mind]{решилась} to call her [aunt]{тётушке}.
+ru: Тётушка помолчала, а потом засмеялась: «Да это же бабушкин почерк! Они поссорились перед свадьбой, и она написала ему это письмо, назвавшись чужим именем». || The aunt [was silent for a moment]{помолчала}, then laughed: "Why, that's Grandma's handwriting! They [quarreled]{поссорились} before the wedding, and she wrote him this letter under a [false]{чужим} name."
+ru: Дед хранил его всю жизнь как самое дорогое сокровище. || Grandpa had [kept]{хранил} it all his life as his most precious [treasure]{сокровище}.
+q: main | What is the story about? | A crime | *A mysterious letter that turns out to be from the grandmother | A family quarrel | A lost treasure
+q: detail | What did Katerina fear? | That the letter was fake | *That Grandpa had a secret love | That she'd lose the letter | That her aunt was angry
+q: tone | The ending is | tragic | *touching and a little funny | frightening | bitter
+sum: Among her late grandfather's things Katerina found an old love letter from an unknown woman begging forgiveness. Worried he had a secret, she called her aunt, who laughed: it was Grandma's handwriting, written under another name after a prewedding quarrel. Grandpa had kept it all his life as a treasure.
+
+=== id: mid-mushroom-thief
+title: Убийство в усадьбе
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Утром в гостиной старой усадьбы нашли труп хозяина, отставного полковника. || In the morning the [body]{труп} of the owner, a retired [colonel]{полковника}, was found in the [drawing room]{гостиной} of the old manor.
+ru: Возле камина валялся пистолет, а на ковре темнело пятно. || A [pistol]{пистолет} lay by the fireplace, and a [stain]{пятно} was darkening on the [carpet]{ковре}.
+ru: Подозрение сразу пало на племянника, который накануне громко ссорился с дядей из-за наследства. || [Suspicion]{подозрение} at once fell on the [nephew]{племянника}, who the day before had [loudly]{громко} quarreled with his [uncle]{дядей} over the inheritance.
+ru: Однако следователь обратил внимание на странную подробность: часы в спальне остановились ровно в полночь, хотя слуга уверял, что слышал выстрел в два часа ночи. || However, the investigator [paid attention]{обратил внимание} to a strange [detail]{подробность}: the clock in the [bedroom]{спальне} had stopped [exactly]{ровно} at midnight, though the servant [insisted]{уверял} he'd heard the [shot]{выстрел} at two in the morning.
+ru: Значит, кто-то нарочно перевёл стрелки, чтобы создать себе алиби. || That meant someone had [deliberately]{нарочно} moved the clock hands to create an alibi.
+ru: Под давлением фактов слуга признался: полковник собирался его выгнать за кражу серебра. || Under the pressure of [facts]{фактов} the servant confessed: the colonel had been about to [throw him out]{выгнать} for stealing silver.
+note: обратить внимание | to pay attention, notice | «Обратите внимание» means "please note."
+q: main | What is the story about? | A robbery | *A murder solved by a clock detail | A family inheritance | A hunting accident
+q: detail | Who was first suspected? | The servant | *The nephew | The investigator | The colonel's wife
+q: inference | Why did the servant change the clock? | It was broken | *To create an alibi | He liked midnight | By accident
+sum: A retired colonel was found shot in his manor's drawing room, and suspicion fell on his nephew, who had argued with him over the inheritance. But the bedroom clock had stopped at midnight while the servant claimed to hear the shot at two; the servant had moved the hands for an alibi and confessed he'd been about to be fired for stealing silver.
+
+=== id: mid-actor
+title: Провал на премьере
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: На премьере молодой актёр так волновался, что забыл первую же реплику. || At the [premiere]{премьере} the young actor was so nervous that he forgot his very first [line]{реплику}.
+ru: Публика замолчала, в зале стало неловко. || The [audience]{публика} [fell silent]{замолчала}, and the hall became [awkward]{неловко}.
+ru: Он покраснел, оглянулся на суфлёра, но тот, как назло, задремал. || He [blushed]{покраснел} and [looked back]{оглянулся} at the [prompter]{суфлёра}, but [as luck would have it]{как назло} the prompter had dozed off.
+ru: Тогда актёр шагнул к краю сцены и честно сказал: «Простите, я так мечтал об этой роли, что от восторга всё забыл». || Then the actor stepped to the edge of the [stage]{сцены} and said [honestly]{честно}: "Forgive me, I dreamed of this [role]{роли} so much that I forgot everything from sheer [delight]{восторга}."
+ru: Зал засмеялся и зааплодировал, напряжение исчезло, и спектакль прошёл блестяще. || The hall laughed and applauded, the tension [vanished]{исчезло}, and the play went [brilliantly]{блестяще}.
+ru: Критики потом писали, что такой искренности на этой сцене давно не видели. || Critics later wrote that such [sincerity]{искренности} hadn't been seen on that stage for a long time.
+note: как назло | as luck would have it | Used when something goes wrong at the worst moment.
+q: main | What happened at the premiere? | The theater burned | *An actor forgot his line but won the audience with honesty | The play was canceled | Critics booed
+q: detail | Why couldn't the prompter help? | He was absent | *He had dozed off | He forgot too | He was laughing
+q: tone | The story is | tragic | *warm and humorous | angry | dull
+sum: A nervous young actor forgot his first line at a premiere, and the prompter had fallen asleep. He stepped forward and admitted he'd forgotten everything from delight at getting the role; the audience laughed and applauded, the play went brilliantly, and critics praised his sincerity.
+
+=== id: mid-hunter
+title: Охотник и волк
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Старый охотник Степан всю жизнь прожил в тайге и знал повадки каждого зверя. || The old [hunter]{охотник} Stepan had lived all his life in the [taiga]{тайге} and knew the [habits]{повадки} of every [beast]{зверя}.
+ru: Однажды зимой он нашёл в капкане раненого волчонка. || One winter he found a [wounded]{раненого} wolf cub in a [trap]{капкане}.
+ru: Рука сама потянулась к ружью, но волчонок смотрел на него так жалко, что Степан пожалел его. || His hand reached for his [rifle]{ружью} on its own, but the cub looked at him so [pitifully]{жалко} that Stepan [took pity]{пожалел} on it.
+ru: Он перевязал лапу, накормил зверёныша и отпустил его в лес. || He bandaged the [paw]{лапу}, fed the little beast and [let it go]{отпустил} into the forest.
+ru: Через несколько лет Степан провалился под лёд на реке и уже прощался с жизнью, когда услышал вой. || Several years later Stepan fell through the ice on the river and was already saying farewell to life when he heard a [howl]{вой}.
+ru: Огромный волк с белым пятном на лапе стоял на берегу, и на его вой прибежали лесорубы. || A huge wolf with a white [spot]{пятном} on its paw stood on the [bank]{берегу}, and at its howl [woodcutters]{лесорубы} came running.
+note: прощаться с жизнью | to say farewell to life | To believe one is about to die.
+q: main | What is the story about? | Hunting wolves for fur | *A hunter who spared a wolf cub and was later saved | Life in a village | A fishing trip
+q: detail | Why didn't Stepan shoot the cub? | He had no bullets | *It looked at him so pitifully | It ran away | He was ill
+q: inference | Why is the white spot mentioned? | It's decorative | *It shows it's the same wolf he once saved | Wolves are white | It's a wound
+sum: Old hunter Stepan found a wounded wolf cub in a trap, pitied it, bandaged its paw and released it. Years later, when he fell through river ice, a big wolf with a white spot on its paw howled from the bank and brought woodcutters to rescue him.
+
+=== id: mid-guest
+title: Незваный гость
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Поздно вечером в дверь позвонили. || Late in the evening the doorbell rang.
+ru: На пороге стоял мой бывший однокурсник Борис, которого я не видел лет двадцать, мокрый, голодный и с огромным чемоданом. || On the [doorstep]{пороге} stood my former classmate Boris, whom I hadn't seen in some twenty years, wet, [hungry]{голодный} and with an enormous suitcase.
+ru: «Прости за беспокойство, — сказал он, — я опоздал на поезд, а гостиницы все заняты». || "Sorry for the [bother]{беспокойство}," he said. "I [missed]{опоздал} my train, and the hotels are all full."
+ru: Жена посмотрела на меня с намёком, но я не мог выгнать старого приятеля. || My wife gave me a [meaningful look]{намёком}, but I couldn't throw out an old [friend]{приятеля}.
+ru: Мы поставили чайник, достали водку и проговорили до утра, вспоминая студенческие проделки. || We put the kettle on, got out the [vodka]{водку} and talked until morning, recalling our student [pranks]{проделки}.
+ru: Борис уехал через три дня, а через месяц прислал нам приглашение на свою свадьбу в Париже. || Boris left three days later, and a month after that sent us an [invitation]{приглашение} to his wedding in Paris.
+q: main | What is the story about? | A trip to Paris | *An old friend's unexpected visit | A quarrel with a wife | A missed train
+q: detail | Why did Boris come? | To borrow money | *He missed his train and hotels were full | For a party | To see the wife
+q: detail | What happened later? | They quarreled | *Boris invited them to his wedding in Paris | Boris moved in | They never heard from him
+sum: Late one evening an old classmate, Boris, unseen for twenty years, turned up wet and hungry after missing his train. Despite the wife's hint, the narrator took him in; they talked till morning about student pranks. A month after leaving, Boris invited them to his wedding in Paris.
+
+=== id: mid-painter
+title: Портрет
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Бедный художник снимал крошечную комнату под самой крышей и жил впроголодь. || A poor [artist]{художник} rented a tiny room right under the roof and [lived half-starved]{жил впроголодь}.
+ru: Однажды к нему зашла незнакомая дама в чёрном и попросила написать портрет её покойного сына по старой фотографии. || One day an unfamiliar lady in black [dropped in]{зашла} and asked him to paint a portrait of her late son from an old photograph.
+ru: Художник работал над портретом целый месяц, стараясь угадать в бледном снимке живое выражение лица. || The artist worked on the portrait a whole month, trying to [guess]{угадать} the living [expression]{выражение} of the face from the [pale]{бледном} snapshot.
+ru: Когда дама увидела картину, она долго молчала, а потом заплакала и обняла его. || When the lady saw the painting, she was silent a long time, then [burst into tears]{заплакала} and [hugged]{обняла} him.
+ru: Она заплатила втрое больше, чем он просил, и рассказала о нём своим знакомым. || She paid three times what he'd asked and told her [acquaintances]{знакомым} about him.
+ru: Так началась слава художника, который до конца жизни не брал денег за портреты погибших. || So began the [fame]{слава} of the artist, who to the end of his life never took money for portraits of the [dead]{погибших}.
+note: впроголодь | half-starved | An adverb: living on too little food.
+q: main | What is the story about? | A museum theft | *A poor artist whose portrait of a dead son brought him fame | An art school | A family dinner
+q: detail | What did the lady pay? | Nothing | *Three times his price | Half his price | Exactly his price
+q: inference | Why didn't he take money for portraits of the dead later? | He was rich | *Out of gratitude and compassion | It was illegal | He disliked them
+sum: A starving artist in an attic was asked by a lady in black to paint her dead son from an old photo. After a month's work to capture his living expression, she wept, hugged him, paid triple and spread the word, launching his fame; he never again charged for portraits of the dead.
+
+=== id: mid-exam
+title: Экзамен
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Всю ночь перед экзаменом Миша не спал и пытался выучить сорок билетов. || All night before the [exam]{экзаменом} Misha didn't sleep and [tried]{пытался} to learn forty exam [tickets]{билетов}.
+ru: Утром он вытащил билет, прочитал вопрос и понял, что это единственная тема, которую он пропустил. || In the morning he drew a ticket, read the question and realized it was the only [topic]{тема} he had [skipped]{пропустил}.
+ru: Профессор строго посмотрел на него поверх очков. || The [professor]{профессор} looked at him [sternly]{строго} over his [glasses]{очков}.
+ru: Миша решил не врать и признался, что не знает ответа, но попросил задать ему любой другой вопрос. || Misha decided not to [lie]{врать} and admitted he didn't know the answer, but asked to be given any other question.
+ru: Профессор улыбнулся, задал три трудных вопроса, и Миша ответил на все. || The professor smiled, [asked]{задал} three hard questions, and Misha answered them all.
+ru: «Честность — тоже знание, — сказал профессор, ставя «отлично». — Только в следующий раз высыпайтесь». || "[Honesty]{честность} is knowledge too," said the professor, giving him an "excellent." "Only next time get enough sleep."
+note: билет | exam ticket | In Russian oral exams students draw a «билет» with questions.
+q: main | What happened at the exam? | Misha cheated | *Misha admitted not knowing and got other questions | Misha failed | The exam was canceled
+q: detail | Why didn't Misha know the answer? | He was ill | *It was the only topic he skipped | The question was wrong | He forgot his notes
+q: detail | What grade did he get? | Fail | Satisfactory | *Excellent | Good
+sum: After an all-nighter, Misha drew the only exam question he hadn't studied. He honestly admitted it and asked for another question; the professor asked three hard ones, Misha answered all, and got an "excellent," with advice to sleep next time.
+
+=== id: mid-fire
+title: Пожар
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Ночью в соседнем доме вспыхнул пожар. || At night a [fire]{пожар} broke out in the next building.
+ru: Я проснулся от запаха дыма и криков на улице. || I woke up from the [smell]{запаха} of [smoke]{дыма} and shouts in the street.
+ru: Пламя быстро охватило второй этаж, из окна кричала женщина с младенцем на руках. || Flames quickly [engulfed]{охватило} the second floor, and a woman with a [baby]{младенцем} in her arms was screaming from a window.
+ru: Пожарные ещё не приехали, и тогда двое мужчин принесли длинную лестницу. || The [firefighters]{пожарные} hadn't arrived yet, so two men brought a long [ladder]{лестницу}.
+ru: Один из них, совсем юный парень, залез наверх и спустил ребёнка вниз, а потом помог выбраться матери. || One of them, a very [young]{юный} guy, climbed up and handed the child down, and then helped the mother [get out]{выбраться}.
+ru: Когда приехали пожарные, парень уже исчез, и никто так и не узнал его имени. || When the firefighters came the guy had already vanished, and no one ever learned his name.
+q: main | What is the story about? | A fire drill | *A fire and an anonymous young rescuer | Firefighters' training | A lost child
+q: detail | How did the men help? | They called the police | *They brought a ladder and rescued the woman and baby | They put out the fire | They broke the door
+q: detail | What do we know about the rescuer? | His name | *Nothing: he disappeared before the firefighters came | He was a firefighter | He was the woman's husband
+sum: A night fire broke out next door, and a woman with a baby screamed from a second-floor window before firefighters arrived. Two men brought a ladder, and a young man climbed up, handed down the baby and helped the mother out, then disappeared without anyone learning his name.
+
+=== id: mid-teacher-letter
+title: Старая учительница
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Анна Павловна проработала в сельской школе сорок лет и вышла на пенсию одинокой и почти забытой. || Anna Pavlovna worked for forty years in a village school and retired [lonely]{одинокой} and almost forgotten.
+ru: В день её семидесятилетия почтальон принёс ей толстую пачку писем. || On her seventieth birthday the [mailman]{почтальон} brought her a thick [stack]{пачку} of letters.
+ru: Писали бывшие ученики: инженеры, врачи, один министр и даже священник. || Her former pupils wrote: engineers, doctors, one [minister]{министр} and even a [priest]{священник}.
+ru: Каждый вспоминал какой-нибудь пустяк: как она дала ему свою книжку, как не наказала за разбитое стекло, как однажды поверила в него, когда не верил никто. || Each recalled some [trifle]{пустяк}: how she lent him her [little book]{книжку}, how she didn't [punish]{наказала} him for a broken [pane]{стекло}, how once she believed in him when no one else did.
+ru: Анна Павловна читала до поздней ночи, то смеясь, то вытирая слёзы платком. || Anna Pavlovna read till late at night, now laughing, now wiping her tears with a [handkerchief]{платком}.
+ru: Оказалось, что одиночество — это лишь вопрос памяти: её помнили все. || It turned out that [loneliness]{одиночество} was only a matter of memory: everyone remembered her.
+q: main | What is the story about? | A school's closure | *A retired teacher receiving letters from former pupils | A minister's career | A village festival
+q: detail | What did the pupils remember? | Her strictness | *Small kindnesses | Her lessons on grammar | Her house
+q: tone | The mood is | bitter | *touching | comic | tense
+sum: Anna Pavlovna, a village teacher for forty years, retired lonely and nearly forgotten. On her seventieth birthday she received a stack of letters from former pupils, now engineers, doctors, a minister and a priest, each recalling a small kindness. She read them all night, laughing and crying, realizing everyone remembered her.
+
+=== id: mid-market
+title: На базаре
+level: 2
+genre: everyday
+source_note: Written for this app.
+---
+ru: В воскресенье на городском базаре всегда шумно и весело. || On Sunday the town [market]{базаре} is always noisy and lively.
+ru: Продавцы громко зовут покупателей: «Подходите, пробуйте! Мёд свежий, сладкий!» || Sellers loudly [call]{зовут} to customers: "Come over, try some! The honey's fresh and [sweet]{сладкий}!"
+ru: Здесь можно купить всё: от картошки и рыбы до старых книг и ковров. || Here you can buy everything, from potatoes and fish to old books and [rugs]{ковров}.
+ru: Торговаться не стыдно, а даже нужно: без этого продавец обидится. || It's not [shameful]{стыдно} to [haggle]{торговаться}; it's even necessary: without it the seller will be [offended]{обидится}.
+ru: Я купил килограмм яблок, банку варенья и пучок укропа. || I bought a kilogram of apples, a [jar]{банку} of jam and a [bunch]{пучок} of [dill]{укропа}.
+ru: Бабушка-продавщица положила мне ещё два яблока бесплатно: «Это тебе за улыбку». || The old saleswoman put in two more apples for free: "That's for your smile."
+q: main | What is the text about? | A supermarket | *A lively Sunday market | A cooking class | A village farm
+q: detail | Why should you haggle? | It's the law | *Otherwise the seller may be offended | It's cheaper online | Prices are fixed
+sum: The Sunday market is noisy and cheerful, with sellers calling out and goods from potatoes to rugs. Haggling is expected. The narrator bought apples, jam and dill, and the old saleswoman added two apples free "for your smile."
+
+=== id: mid-ghost
+title: Призрак в замке
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Говорили, что по ночам в старом замке бродит призрак барона, погибшего на дуэли. || People said that at night the [ghost]{призрак} of a [baron]{барона} killed in a [duel]{дуэли} [wandered]{бродит} the old [castle]{замке}.
+ru: Туристы приезжали толпами, надеясь испытать хоть капельку ужаса. || Tourists came in crowds, hoping to [experience]{испытать} at least a drop of [horror]{ужаса}.
+ru: Однажды ночью сторож услышал в коридоре шаги и увидел белую фигуру со свечой. || One night the [watchman]{сторож} heard steps in the corridor and saw a white [figure]{фигуру} with a [candle]{свечой}.
+ru: Дрожа от страха, он всё-таки бросился за ней и схватил её за рукав. || [Trembling]{дрожа} with fear, he nevertheless [rushed]{бросился} after it and grabbed it by the [sleeve]{рукав}.
+ru: «Призраком» оказался директор музея в простыне: он сам распускал слухи, чтобы привлечь посетителей. || The "ghost" turned out to be the museum director in a sheet: he himself spread [rumors]{слухи} to attract [visitors]{посетителей}.
+ru: Скандал попал в газеты, и посетителей стало вдвое больше. || The scandal got into the [newspapers]{газеты}, and visitors doubled.
+q: main | What is the story about? | A real ghost | *A fake ghost staged by the museum director | A duel | A castle fire
+q: detail | Why did the director pretend to be a ghost? | For fun | *To attract visitors | To scare the watchman away | He was sleepwalking
+q: tone | The ending is | frightening | *ironic | tragic | romantic
+sum: An old castle was said to be haunted by a baron killed in a duel, drawing crowds. One night the watchman chased a white figure with a candle and caught it: it was the museum director in a sheet, spreading rumors to attract visitors. The scandal hit the papers and attendance doubled.
+
+=== id: mid-divorce
+title: Развод
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: После десяти лет брака Ирина и Павел решили развестись. || After ten years of [marriage]{брака} Irina and Pavel decided to [divorce]{развестись}.
+ru: Ссоры начались из-за мелочей: немытой чашки, забытого звонка, опоздания на ужин. || The [quarrels]{ссоры} started over [trifles]{мелочей}: an unwashed [cup]{чашки}, a forgotten call, being late for dinner.
+ru: Постепенно мелочи превратились в обиды, а обиды — в молчание. || Gradually the trifles turned into [grudges]{обиды}, and the grudges into [silence]{молчание}.
+ru: В суде, ожидая своей очереди, они случайно разговорились впервые за много месяцев. || In court, waiting their [turn]{очереди}, they happened to get talking for the first time in many months.
+ru: Павел признался, что ревновал её к работе, а Ирина — что ей не хватало его внимания. || Pavel admitted he was [jealous]{ревновал} of her job, and Irina that she [lacked]{не хватало} his attention.
+ru: Когда их вызвали, они переглянулись и попросили судью дать им ещё немного времени. || When they were called, they [exchanged glances]{переглянулись} and asked the judge to give them a little more time.
+q: main | What is the story about? | A court case over money | *A couple who reconsider divorce after finally talking | A wedding | A job conflict
+q: detail | How did the quarrels start? | Over money | *Over trifles | Over children | Over a betrayal
+q: inference | What does their final request suggest? | They want to finish quickly | *They may save the marriage | They want a better lawyer | They forgot documents
+sum: After ten years, Irina and Pavel decided to divorce: quarrels over trifles had turned to grudges and then silence. Waiting in court, they finally talked; he admitted jealousy of her job, she missed his attention. When called, they asked the judge for more time.
+
+=== id: mid-flight
+title: Полёт
+level: 2+
+genre: everyday
+source_note: Written for this app.
+---
+ru: Я ужасно боюсь летать, но работа заставляет меня летать каждый месяц. || I'm terribly afraid of flying, but my job [makes]{заставляет} me fly every month.
+ru: В этот раз самолёт попал в грозу: его трясло, лампочки мигали, пассажиры молились. || This time the plane flew into a [thunderstorm]{грозу}: it shook, the lights [blinked]{мигали}, and passengers [prayed]{молились}.
+ru: Рядом со мной сидела маленькая девочка, которая спокойно рисовала в тетради. || Next to me sat a little girl who was calmly drawing in a notebook.
+ru: «Тебе не страшно?» — спросил я. «Нет, — ответила она, — мой папа — пилот этого самолёта». || "Aren't you scared?" I asked. "No," she replied, "my dad is the [pilot]{пилот} of this plane."
+ru: Мне стало стыдно своего страха, и я тоже успокоился. || I felt [ashamed]{стыдно} of my fear, and I calmed down too.
+ru: Через полчаса мы благополучно приземлились, и весь салон аплодировал пилоту. || Half an hour later we landed [safely]{благополучно}, and the whole cabin applauded the pilot.
+q: main | What is the story about? | A plane crash | *A frightened passenger calmed by a girl's trust | Pilot training | Buying tickets
+q: detail | Why was the girl calm? | She was asleep | *Her father was the pilot | She liked storms | She didn't notice
+sum: A nervous flyer's plane hit a thunderstorm and passengers prayed, but the little girl beside him drew calmly: her dad was the pilot. Ashamed of his fear, he calmed down; they landed safely and the cabin applauded.
+
+=== id: mid-inventor
+title: Изобретатель
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: Василий с детства что-нибудь мастерил: то самодельный радиоприёмник, то лодку из старых досок. || Since childhood Vasily had always been building something: now a [homemade]{самодельный} radio, now a boat from old [boards]{досок}.
+ru: Соседи смеялись над ним и называли чудаком. || The neighbors laughed at him and called him an [oddball]{чудаком}.
+ru: Однажды он придумал простое устройство, которое предупреждало о протечке газа. || One day he [came up with]{придумал} a simple device that warned of gas [leaks]{протечке}.
+ru: Никто не хотел его покупать, пока в соседнем доме не случился взрыв. || Nobody wanted to buy it until an [explosion]{взрыв} happened in the next building.
+ru: После этого изобретение заметила крупная фабрика, и через год Василий подписал выгодный контракт. || After that a large [factory]{фабрика} noticed the [invention]{изобретение}, and a year later Vasily signed a [profitable]{выгодный} contract.
+ru: Теперь те же соседи с гордостью рассказывают, что знали гения ещё мальчишкой. || Now the same neighbors tell with [pride]{гордостью} how they knew the [genius]{гения} as a boy.
+q: main | What is the story about? | A gas explosion | *A mocked tinkerer whose invention succeeds | A radio station | A factory strike
+q: detail | What did he invent? | A boat | *A gas leak alarm | A radio | A lock
+q: tone | The last sentence is | *ironic | tragic | neutral | angry
+sum: Vasily tinkered from childhood and neighbors called him an oddball. His gas-leak alarm sold to no one until an explosion next door; then a big factory took it up and he signed a lucrative contract. Now the same neighbors proudly say they knew the genius as a boy.
+
+=== id: mid-old-photo
+title: Старая фотография
+level: 3
+genre: everyday
+source_note: Written for this app.
+---
+ru: На чердаке среди пыльных журналов я нашёл фотографию молодого солдата в шинели. || In the [attic]{чердаке} among [dusty]{пыльных} [magazines]{журналов} I found a photo of a young soldier in a [greatcoat]{шинели}.
+ru: На обороте выцветшими чернилами было написано: «Любимой Нине. Жди меня. 1943». || On the back, in [faded]{выцветшими} ink, was written: "To my beloved Nina. Wait for me. 1943."
+ru: Мама объяснила, что это её дядя, который пропал без вести под Сталинградом. || Mom explained that it was her uncle, who [went missing in action]{пропал без вести} near Stalingrad.
+ru: Его невеста Нина ждала его всю жизнь и так и не вышла замуж. || His fiancée Nina waited for him all her life and never [married]{вышла замуж}.
+ru: Мы отправили запрос в военный архив и через полгода получили ответ: он похоронен в братской могиле под Волгоградом. || We sent a [request]{запрос} to the military archive and six months later got an answer: he is buried in a [mass grave]{братской могиле} near Volgograd.
+ru: Весной вся семья поехала туда и положила цветы, а рядом — ту самую фотографию. || In spring the whole family went there and laid flowers, and beside them that very photograph.
+note: пропасть без вести | to go missing in action | Literally "to vanish without news."
+q: main | What is the story about? | A war film | *A family tracing a missing WWII soldier | An old wedding | Moving house
+q: detail | What happened to Nina? | She married another | *She waited all her life and never married | She went to the front | She moved abroad
+q: tone | The mood is | comic | *solemn and moving | angry | indifferent
+sum: In the attic the narrator found a 1943 photo of a young soldier inscribed to "beloved Nina." He was Mom's uncle, missing near Stalingrad; Nina waited for him all her life. An archive request revealed his mass grave near Volgograd, and the family went there with flowers and the photo.

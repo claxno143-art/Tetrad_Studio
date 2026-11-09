@@ -1,0 +1,233 @@
+=== id: med-stroke
+title: Инсульт: время — мозг
+level: 4
+genre: science
+source_note: Written for this app. General information, not medical advice.
+---
+ru: Ишемический инсульт развивается вследствие закупорки артерии тромбом или атеросклеротической бляшкой, и клетки мозга, лишённые кислорода, гибнут со скоростью почти двух миллионов в минуту. || An [ischemic]{ишемический} [stroke]{инсульт} develops [as a result of]{вследствие} the [blockage]{закупорки} of an [artery]{артерии} by a [clot]{тромбом} or an [atherosclerotic]{атеросклеротической} [plaque]{бляшкой}, and brain cells [deprived]{лишённые} of oxygen die at a rate of almost two million a minute.
+ru: Распознать приступ помогает простая проверка: попросите человека улыбнуться, поднять обе руки и произнести несложную фразу. || A simple check helps you recognize an [attack]{приступ}: ask the person to smile, raise both arms and [say]{произнести} a simple phrase.
+ru: Перекошенная улыбка, слабость в одной руке и невнятная речь — повод немедленно вызвать скорую. || A [lopsided]{перекошенная} smile, [weakness]{слабость} in one arm and [slurred]{невнятная} speech are [grounds]{повод} to call an ambulance immediately.
+ru: В первые часы возможен тромболизис — введение препарата, растворяющего сгусток, однако противопоказаний у него немало, и решение принимает только врач после компьютерной томографии. || In the first hours [thrombolysis]{тромболизис} is possible, the [administration]{введение} of a [drug]{препарата} that [dissolves]{растворяющего} the [clot]{сгусток}, but it has many [contraindications]{противопоказаний}, and only a doctor decides after a CT [scan]{томографии}.
+ru: Последствия инсульта — параличи, нарушения речи и памяти — частично обратимы благодаря ранней реабилитации. || The [after-effects]{последствия} of a stroke ([paralysis]{параличи}, speech and memory [disorders]{нарушения}) are partly [reversible]{обратимы} thanks to early [rehabilitation]{реабилитации}.
+note: невнятная | slurred, indistinct | «Невнятная речь» means speech that's hard to make out. «Внятно» means clearly, distinctly.
+note: повод | grounds, reason (to act) | «Повод» is the occasion or trigger for an action: «повод для беспокойства». Compare «причина», a cause.
+q: main | What is the central message? | Strokes only affect the elderly | *Recognize stroke signs quickly and get help, because brain cells die fast | Thrombolysis is always safe | Rehabilitation is useless
+q: detail | Which is NOT part of the quick check? | Smile | Raise both arms | Say a simple phrase | *Touch your toes
+q: detail | Who decides on thrombolysis? | The family | *A doctor, after a CT scan | The ambulance driver | The patient
+sum: An ischemic stroke occurs when a clot or plaque blocks an artery, killing about two million brain cells a minute. Check smile, arms and speech; a crooked smile, one weak arm or slurred speech means call an ambulance. Clot-dissolving drugs are possible early but only after a doctor's CT-based decision, and early rehab can partly reverse paralysis and speech or memory loss.
+
+=== id: metal-steel
+title: Как варят сталь
+level: 4
+genre: technical
+source_note: Written for this app.
+---
+ru: Чугун, выплавленный в доменной печи, содержит слишком много углерода и примесей, поэтому он хрупок и для большинства изделий непригоден. || [Pig iron]{чугун} [smelted]{выплавленный} in a [blast furnace]{доменной печи} contains too much [carbon]{углерода} and [impurities]{примесей}, so it is [brittle]{хрупок} and [unsuitable]{непригоден} for most products.
+ru: В кислородном конвертере через расплав продувают кислород, который выжигает избыточный углерод, кремний и фосфор, превращая их в газы и шлак. || In an [oxygen converter]{кислородном конвертере} oxygen is [blown]{продувают} through the [melt]{расплав}, [burning out]{выжигает} the excess carbon, [silicon]{кремний} and [phosphorus]{фосфор} and turning them into gases and [slag]{шлак}.
+ru: Затем в сталь вводят легирующие элементы: хром повышает коррозионную стойкость, молибден — прочность при высоких температурах, никель — вязкость. || Then [alloying]{легирующие} elements are added to the [steel]{сталь}: [chromium]{хром} increases [corrosion resistance]{коррозионную стойкость}, [molybdenum]{молибден} strength at high temperatures, [nickel]{никель} [toughness]{вязкость}.
+ru: Всё больше металла выплавляют в электродуговых печах из лома, что снижает выбросы и затраты на сырьё. || More and more metal is smelted in [electric arc furnaces]{электродуговых печах} from [scrap]{лома}, which reduces emissions and [raw material]{сырьё} costs.
+ru: Готовую сталь разливают на машинах непрерывного литья, а затем прокатывают в лист, трубу или арматуру. || The finished steel is [cast]{разливают} on [continuous casting]{непрерывного литья} machines and then [rolled]{прокатывают} into [sheet]{лист}, [pipe]{трубу} or [rebar]{арматуру}.
+note: вязкость | toughness; viscosity | In metallurgy «вязкость» is resistance to fracture. In liquids it's viscosity.
+note: лом | scrap metal; crowbar | «Металлолом» is scrap metal; «лом» on its own is also a crowbar.
+q: main | What does the text describe? | Mining iron ore | *How pig iron is turned into steel and processed | The history of blacksmiths | Recycling plastics
+q: detail | What does blowing oxygen through the melt do? | Adds carbon | *Burns out excess carbon, silicon and phosphorus | Cools the metal | Adds chromium
+q: detail | What does chromium improve? | Toughness | *Corrosion resistance | Color | Weight
+sum: Blast-furnace pig iron has too much carbon and impurities and is brittle. In an oxygen converter, oxygen burns them out into gas and slag; alloying elements are then added, such as chromium for corrosion resistance, molybdenum for heat strength and nickel for toughness. Electric arc furnaces increasingly melt scrap, and the steel is continuously cast and rolled into sheet, pipe or rebar.
+
+=== id: oil-drilling
+title: Бурение нефтяной скважины
+level: 4
+genre: technical
+source_note: Written for this app.
+---
+ru: Прежде чем начать бурение, геологи изучают недра методами сейсморазведки и определяют наиболее перспективные пласты. || Before drilling begins, [geologists]{геологи} study the [subsurface]{недра} with [seismic exploration]{сейсморазведки} and [identify]{определяют} the most [promising]{перспективные} [formations]{пласты}.
+ru: Буровая установка вращает колонну труб с долотом на конце, а через трубы под давлением закачивается буровой раствор, который охлаждает долото, выносит на поверхность выбуренную породу и не даёт стенкам скважины обрушиться. || The [drilling rig]{буровая установка} rotates a [string]{колонну} of pipes with a [bit]{долотом} at the end, and [drilling mud]{буровой раствор} is pumped under pressure through the pipes; it cools the bit, carries the [cuttings]{выбуренную породу} to the surface and keeps the walls of the [well]{скважины} from [collapsing]{обрушиться}.
+ru: Пробуренный ствол укрепляют обсадными трубами и цементируют. || The drilled [hole]{ствол} is [reinforced]{укрепляют} with [casing]{обсадными трубами} and [cemented]{цементируют}.
+ru: Наклонно-направленное бурение позволяет с одной кустовой площадки вскрыть несколько участков месторождения. || [Directional drilling]{наклонно-направленное бурение} makes it possible to [open up]{вскрыть} several parts of a [field]{месторождения} from a single [well pad]{кустовой площадки}.
+ru: Самая опасная ситуация — неконтролируемый выброс нефти и газа, поэтому на устье скважины ставят противовыбросовое оборудование. || The most dangerous situation is an uncontrolled [blowout]{выброс} of oil and gas, which is why [blowout preventers]{противовыбросовое оборудование} are fitted at the [wellhead]{устье}.
+note: недра | the subsurface, the earth's interior | Always plural. «Недра» are mineral resources in law: «пользование недрами».
+note: устье скважины | wellhead | «Устье» usually means a river mouth. In drilling it's the top of the well.
+q: main | What does the text explain? | Oil prices | *The basic process and safety of drilling an oil well | Refining gasoline | Pipeline routes
+q: detail | What does drilling mud do? | Lubricates the engine | *Cools the bit, lifts cuttings and supports the walls | Is the oil itself | Seals the wellhead
+q: detail | Why use directional drilling? | It's faster | *To reach several parts of the field from one pad | It's cheaper per meter | It needs no rig
+sum: Geologists use seismic surveys to find promising formations. A rig rotates a pipe string with a bit while pumped drilling mud cools the bit, lifts cuttings and supports the walls; the hole is then cased and cemented. Directional drilling reaches several zones from one pad, and blowout preventers at the wellhead guard against uncontrolled blowouts.
+
+=== id: rail-transsib
+title: Транссибирская магистраль
+level: 3+
+genre: history
+source_note: Written for this app.
+---
+ru: Строительство Транссибирской магистрали началось в 1891 году одновременно с двух концов — из Челябинска и Владивостока. || Construction of the Trans-Siberian [Railway]{магистрали} began in 1891 [simultaneously]{одновременно} from both ends: from Chelyabinsk and from Vladivostok.
+ru: Рабочим приходилось прокладывать путь через тайгу, болота и вечную мерзлоту, а летом их изводила мошкара. || The workers had to [lay]{прокладывать} the [track]{путь} through the [taiga]{тайгу}, [swamps]{болота} and permafrost, and in summer [midges]{мошкара} [tormented]{изводила} them.
+ru: Самым сложным участком стала Кругобайкальская дорога: на ней пробили почти сорок тоннелей. || The hardest [section]{участком} turned out to be the Circum-Baikal line, where almost forty [tunnels]{тоннелей} were [cut]{пробили}.
+ru: Пока её строили, поезда зимой переправляли через озеро по льду, а летом на ледоколе-пароме. || While it was being built, trains were [carried across]{переправляли} the lake on the ice in winter and on an [icebreaker ferry]{ледоколе-пароме} in summer.
+ru: Протяжённость магистрали превышает девять тысяч километров, и путь от Москвы до Владивостока занимает почти неделю. || The [length]{протяжённость} of the line exceeds nine thousand kilometers, and the trip from Moscow to Vladivostok takes almost a week.
+note: изводила мошкара | the midges tormented (them) | «Изводить» means to wear someone out with torment. «Мошкара» is a collective noun for swarms of tiny biting insects.
+q: main | What is the text about? | Lake Baikal's ecology | *The building of the Trans-Siberian Railway | Train ticket prices | Siberian cities
+q: detail | How were trains moved across Baikal before the line was finished? | By bridge | *Over the ice in winter and by icebreaker ferry in summer | By road | They weren't
+q: detail | How long is the journey from Moscow to Vladivostok? | One day | *Almost a week | A month | Three hours
+sum: The Trans-Siberian was begun in 1891 from Chelyabinsk and Vladivostok at once, through taiga, swamp and permafrost. The Circum-Baikal section needed nearly forty tunnels, and until it opened, trains crossed Baikal on the ice or by icebreaker ferry. The line is over 9,000 km long, and Moscow to Vladivostok takes almost a week.
+
+=== id: art-icon
+title: Иконопись
+level: 4
+genre: history
+source_note: Written for this app.
+---
+ru: Икона пишется на деревянной доске, покрытой левкасом — грунтом из мела и клея, на который наносят рисунок и золото. || An [icon]{икона} is [painted]{пишется} on a wooden [board]{доске} covered with [levkas]{левкасом}, a [ground]{грунтом} of [chalk]{мела} and [glue]{клея}, onto which the drawing and the [gold]{золото} are applied.
+ru: Краски традиционно растирали на яичном желтке, поэтому такая живопись называется темперной. || The paints were traditionally ground with [egg yolk]{яичном желтке}, which is why this kind of painting is called [tempera]{темперной}.
+ru: В отличие от западной картины, икона не стремится к иллюзии глубины: обратная перспектива как бы раскрывает изображённое пространство навстречу молящемуся. || [Unlike]{в отличие от} a Western painting, an icon doesn't [strive]{стремится} for the [illusion]{иллюзии} of depth: [reverse perspective]{обратная перспектива} [as it were]{как бы} opens the [depicted]{изображённое} space toward the person [praying]{молящемуся}.
+ru: Канон строго определяет иконографию, но в его рамках мастера достигали удивительной выразительности — достаточно вспомнить «Троицу» Андрея Рублёва. || The [canon]{канон} strictly defines the [iconography]{иконографию}, but within its [bounds]{рамках} masters achieved astonishing [expressiveness]{выразительности}; one need only recall Andrei Rublev's "[Trinity]{троицу}."
+ru: Со временем олифа темнела, и иконы поновляли, записывая старый слой; реставраторы двадцатого века раскрыли немало шедевров из-под поздних записей. || Over time the [drying oil]{олифа} darkened, and icons were [renovated]{поновляли} by painting over the old layer; twentieth-century [restorers]{реставраторы} [uncovered]{раскрыли} many [masterpieces]{шедевров} from beneath later [overpainting]{записей}.
+note: икона пишется | an icon is painted ("written") | Icons are «написаны», written, not «нарисованы». This is a deliberate, traditional usage.
+note: запись | overpainting | In restoration «запись» is a later layer of paint over the original. Usually it means a recording or entry.
+q: main | What does the text describe? | Modern painting | *How icons are made and how they differ from Western painting | The life of Rublev | Church architecture
+q: detail | What is levkas? | A type of wood | *A ground of chalk and glue | Gold leaf | Egg tempera
+q: detail | What is reverse perspective meant to do? | Create the illusion of depth | *Open the depicted space toward the viewer | Make icons cheaper | Show distance
+sum: Icons are painted on wooden boards primed with levkas and gilded, using egg tempera. Unlike Western pictures, they use reverse perspective, opening space toward the worshiper. The canon fixes iconography, yet masters like Rublev achieved great expressiveness; darkened icons were often overpainted, and 20th-century restorers uncovered many masterpieces.
+
+=== id: milhist-borodino
+title: Бородинское сражение
+level: 4
+genre: military
+source_note: Written for this app.
+---
+ru: Генеральное сражение под Бородином двадцать шестого августа 1812 года стало одним из самых кровопролитных однодневных сражений девятнадцатого века. || The [general engagement]{генеральное сражение} at Borodino on August 26, 1812 became one of the [bloodiest]{кровопролитных} one-day battles of the nineteenth century.
+ru: Кутузов занял оборонительную позицию, укрепив её флешами и батареей Раевского. || Kutuzov took up a [defensive]{оборонительную} [position]{позицию}, [fortifying]{укрепив} it with [flèches]{флешами} and the Raevsky [battery]{батареей}.
+ru: Наполеон рассчитывал прорвать левый фланг русских, однако укрепления несколько раз переходили из рук в руки. || Napoleon [counted on]{рассчитывал} [breaking through]{прорвать} the Russian left [flank]{фланг}, but the [fortifications]{укрепления} [changed hands]{переходили из рук в руки} several times.
+ru: К вечеру французам удалось овладеть флешами и батареей, но решительного разгрома русской армии не произошло. || By evening the French managed to [take]{овладеть} the flèches and the battery, but no [decisive]{решительного} [rout]{разгрома} of the Russian army took place.
+ru: Обе стороны объявили о победе, а Кутузов вскоре оставил Москву, сохранив армию — решение, которое современники оценивали по-разному. || Both sides [declared]{объявили} victory, and Kutuzov soon [abandoned]{оставил} Moscow, [preserving]{сохранив} the army, a decision that [contemporaries]{современники} [judged]{оценивали} [differently]{по-разному}.
+note: переходили из рук в руки | changed hands | A fixed phrase for positions captured and recaptured repeatedly.
+note: генеральное сражение | general (decisive) engagement | A battle meant to decide a campaign, as opposed to skirmishes.
+q: main | What does the text describe? | The burning of Moscow | *The Battle of Borodino and its ambiguous outcome | Napoleon's retreat | Kutuzov's childhood
+q: detail | What did Napoleon try to do? | Encircle Moscow | *Break through the Russian left flank | Cross a river | Avoid battle
+q: inference | Why did both sides claim victory? | Both lost everything | *The French took the positions but failed to destroy the Russian army | Neither side fought | The weather stopped the battle
+sum: Borodino, on August 26, 1812, was among the bloodiest one-day battles of its century. Kutuzov defended fortified flèches and the Raevsky battery; Napoleon aimed at the left flank, and positions changed hands repeatedly. The French took the fortifications by evening but didn't destroy the Russian army; both claimed victory, and Kutuzov's later decision to give up Moscow to save the army was debated.
+
+=== id: eco-baikal
+title: Байкал под угрозой
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Байкал — самое глубокое озеро на планете и крупнейший резервуар пресной воды: в нём сосредоточено около двадцати процентов мировых запасов. || Baikal is the deepest lake on the planet and the largest [reservoir]{резервуар} of [fresh water]{пресной воды}: about twenty percent of the world's [reserves]{запасов} are [concentrated]{сосредоточено} in it.
+ru: Большинство его обитателей — эндемики, то есть виды, которые больше нигде не встречаются, например байкальская нерпа и голомянка. || Most of its [inhabitants]{обитателей} are [endemics]{эндемики}, that is, [species]{виды} found nowhere else, such as the Baikal [seal]{нерпа} and the [golomyanka]{голомянка}.
+ru: В последние годы учёные фиксируют разрастание нитчатых водорослей у берегов, что связывают с поступлением неочищенных стоков из посёлков и турбаз. || In recent years scientists have [recorded]{фиксируют} the [spread]{разрастание} of [filamentous]{нитчатых} [algae]{водорослей} near the shores, which they [link]{связывают} to the [inflow]{поступлением} of [untreated]{неочищенных} [sewage]{стоков} from villages and tourist [camps]{турбаз}.
+ru: Озеру угрожают также лесные пожары, браконьерство и неконтролируемый туризм. || The lake is also threatened by [wildfires]{лесные пожары}, [poaching]{браконьерство} and uncontrolled [tourism]{туризм}.
+ru: Экологи настаивают на строительстве современных очистных сооружений и ужесточении контроля за застройкой береговой линии. || [Environmentalists]{экологи} [insist]{настаивают} on building modern [treatment plants]{очистных сооружений} and [tightening]{ужесточении} control over [development]{застройкой} of the [shoreline]{береговой линии}.
+note: эндемики | endemic species | Species living in only one place on Earth.
+note: стоков | sewage, wastewater | «Сточные воды». The verb is «стекать», to drain.
+q: main | What is the text about? | Tourism in Siberia | *Baikal's uniqueness and threats to its ecosystem | Fishing techniques | Siberian geography
+q: detail | What share of the world's fresh water is in Baikal? | 5% | *About 20% | 50% | 80%
+q: detail | What is the spread of algae linked to? | Climate only | *Untreated sewage from villages and camps | Seals | Ice melting
+sum: Baikal is the deepest lake and holds about 20% of the world's fresh water, with mostly endemic species like the nerpa seal. Algae blooms near the shore are linked to untreated sewage from villages and tourist camps, and fires, poaching and unchecked tourism add to the threat; environmentalists call for modern treatment plants and stricter shoreline development control.
+
+=== id: law-bankruptcy
+title: Банкротство гражданина
+level: 4+
+genre: legal
+source_note: Written for this app in the style of a Russian legal explainer.
+---
+ru: Гражданин обязан обратиться в арбитражный суд с заявлением о признании его банкротом, если размер его неисполненных обязательств превышает пятьсот тысяч рублей и он не в состоянии удовлетворить требования кредиторов. || A citizen is [obliged]{обязан} to [apply]{обратиться} to the [arbitration court]{арбитражный суд} to be [declared]{признании} [bankrupt]{банкротом} if his [outstanding]{неисполненных} [obligations]{обязательств} exceed five hundred thousand rubles and he is unable to [satisfy]{удовлетворить} his [creditors']{кредиторов} [claims]{требования}.
+ru: Суд назначает финансового управляющего, который формирует конкурсную массу из имущества должника и реализует его на торгах. || The court [appoints]{назначает} a [financial manager]{финансового управляющего}, who [forms]{формирует} the [bankruptcy estate]{конкурсную массу} from the [debtor's]{должника} property and [sells]{реализует} it at [auction]{торгах}.
+ru: Единственное жильё, если оно не находится в залоге, предметы обычной домашней обстановки и минимальный доход на жизнь взысканию не подлежат. || A debtor's [only]{единственное} home, unless it is [pledged]{залоге}, ordinary household [furnishings]{обстановки} and a minimum [living income]{доход на жизнь} are [not subject]{не подлежат} to [enforcement]{взысканию}.
+ru: По завершении процедуры гражданин освобождается от дальнейшего исполнения требований кредиторов, за исключением обязательств по алиментам и возмещению вреда, причинённого жизни или здоровью. || [Upon completion]{по завершении} of the [procedure]{процедуры}, the citizen is [released]{освобождается} from further [performance]{исполнения} of creditors' claims, [except]{за исключением} obligations for [alimony]{алиментам} and [compensation]{возмещению} for harm [caused]{причинённого} to life or health.
+ru: Освобождение не применяется, если должник действовал недобросовестно: скрывал имущество или предоставлял кредиторам заведомо ложные сведения. || The release does not [apply]{применяется} if the debtor acted [in bad faith]{недобросовестно}: [concealed]{скрывал} property or gave creditors [knowingly]{заведомо} false [information]{сведения}.
+note: конкурсная масса | bankruptcy estate | The pool of the debtor's assets to be distributed among creditors. «Конкурс» here is an old word for bankruptcy proceedings.
+note: не подлежат | are not subject (to) | «Подлежать» means to be subject to: «подлежит возврату», must be returned.
+note: заведомо | knowingly | Means with prior knowledge: «заведомо ложные сведения» are information known to be false.
+q: main | What does the text explain? | How to take a loan | *The basics of personal bankruptcy | Inheritance law | Tax deductions
+q: detail | Which debts survive bankruptcy? | Credit card debt | *Alimony and compensation for harm to life or health | All debts | None
+q: inference | What happens to a debtor who hid property? | He gets extra time | *He is not released from his debts | He pays a small fine only | Nothing
+sum: A citizen must file for bankruptcy if unpaid obligations exceed 500,000 rubles and he can't pay. A court-appointed financial manager sells his assets at auction, except an unpledged only home, basic furnishings and a subsistence income. Afterwards remaining debts are written off, except alimony and personal-injury compensation, and dishonest debtors who hid assets or lied are not released.
+
+=== id: law-constitution-principles
+title: Основы конституционного строя
+level: 4
+genre: legal
+source_note: Written for this app as a summary of constitutional principles, not a quotation of the Constitution.
+---
+ru: Конституция провозглашает Россию демократическим федеративным правовым государством с республиканской формой правления. || The [Constitution]{конституция} [proclaims]{провозглашает} Russia a democratic [federal]{федеративным} [state governed by law]{правовым государством} with a [republican]{республиканской} [form of government]{формой правления}.
+ru: Носителем суверенитета и единственным источником власти признаётся многонациональный народ. || The [multinational]{многонациональный} people is [recognized]{признаётся} as the [bearer]{носителем} of [sovereignty]{суверенитета} and the sole [source]{источником} of power.
+ru: Государственная власть осуществляется на основе разделения на законодательную, исполнительную и судебную, и органы каждой из ветвей самостоятельны. || State power is [exercised]{осуществляется} on the basis of its [separation]{разделения} into [legislative]{законодательную}, [executive]{исполнительную} and [judicial]{судебную} branches, and the bodies of each [branch]{ветвей} are [independent]{самостоятельны}.
+ru: Признаются идеологическое и политическое многообразие, многопартийность; никакая идеология не может устанавливаться в качестве государственной или обязательной. || Ideological and political [diversity]{многообразие} and a [multiparty system]{многопартийность} are recognized; no [ideology]{идеология} may be established as a state or [mandatory]{обязательной} one.
+ru: Конституция имеет высшую юридическую силу и прямое действие, а законы, противоречащие ей, не должны применяться. || The Constitution has the highest [legal force]{юридическую силу} and [direct effect]{прямое действие}, and laws that [contradict]{противоречащие} it must not be applied.
+note: правовое государство | state governed by the rule of law | From German «Rechtsstaat». It doesn't mean simply "legal state."
+note: прямое действие | direct effect | The Constitution can be applied by courts directly, without implementing legislation.
+q: main | What does the text summarize? | The president's powers | *The basic principles of Russia's constitutional order | How elections are held | Foreign policy
+q: detail | Who is the source of power? | The president | *The multinational people | The parliament | The courts
+q: detail | What may not be established as mandatory? | Taxes | *Any ideology | Education | Military service
+sum: The Constitution declares Russia a democratic federal rule-of-law republic whose multinational people hold sovereignty. Power is divided into independent legislative, executive and judicial branches, ideological and political pluralism is recognized with no mandatory ideology, and the Constitution has supreme legal force and direct effect.
+
+=== id: ship-hull
+title: Корабль на стапеле
+level: 4
+genre: technical
+source_note: Written for this app.
+---
+ru: Современные суда собирают из крупных секций, сваренных в цехах верфи заранее, а затем состыкованных на стапеле или в сухом доке. || Modern [vessels]{суда} are assembled from large [sections]{секций} [welded]{сваренных} in advance in the [shipyard]{верфи} [workshops]{цехах} and then [joined]{состыкованных} on the [slipway]{стапеле} or in a [dry dock]{сухом доке}.
+ru: Основу корпуса составляют киль, шпангоуты и стрингеры, на которые крепится обшивка. || The [backbone]{основу} of the [hull]{корпуса} [consists of]{составляют} the [keel]{киль}, [frames]{шпангоуты} and [stringers]{стрингеры}, to which the [plating]{обшивка} is [attached]{крепится}.
+ru: Водонепроницаемые переборки делят корпус на отсеки, чтобы судно оставалось на плаву даже при пробоине. || [Watertight]{водонепроницаемые} [bulkheads]{переборки} divide the hull into [compartments]{отсеки} so the vessel stays [afloat]{на плаву} even with a [hole in the hull]{пробоине}.
+ru: Остойчивость рассчитывают ещё на стадии проектирования: центр тяжести должен располагаться достаточно низко. || [Stability]{остойчивость} is calculated already at the [design]{проектирования} [stage]{стадии}: the [center of gravity]{центр тяжести} must be [positioned]{располагаться} low enough.
+ru: Спуск на воду — торжественное событие, и по традиции о форштевень разбивают бутылку шампанского. || The [launch]{спуск на воду} is a [ceremonial]{торжественное} event, and [by tradition]{по традиции} a bottle of champagne is broken against the [stem]{форштевень}.
+note: остойчивость | (ship's) stability | A naval term: a ship's ability to right itself after heeling. «Устойчивость» is the general word.
+note: на плаву | afloat | Figuratively, «остаться на плаву» means to stay afloat financially.
+q: main | What does the text describe? | Sailing techniques | *How a ship's hull is built and kept safe | Naval battles | Port logistics
+q: detail | What keeps a damaged ship afloat? | The keel | *Watertight bulkheads dividing the hull into compartments | Champagne | The stem
+q: detail | Why must the center of gravity be low? | To go faster | *For stability | To save steel | For the launch ceremony
+sum: Ships are built from large pre-welded sections joined on a slipway or in dry dock. The keel, frames and stringers carry the plating, and watertight bulkheads create compartments so a holed ship stays afloat. Stability is designed in with a low center of gravity, and launches traditionally break champagne on the stem.
+
+=== id: media-ethics
+title: Этика журналиста
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Профессиональные кодексы журналистов требуют проверять информацию как минимум по двум независимым источникам и чётко отделять факты от мнений. || Journalists' [professional codes]{профессиональные кодексы} require [checking]{проверять} information against at least two [independent]{независимым} sources and clearly [separating]{отделять} facts from [opinions]{мнений}.
+ru: Журналист не должен разглашать имя информатора без его согласия, даже по требованию следствия. || A journalist must not [disclose]{разглашать} the name of a [source]{информатора} without his consent, even [at the demand]{по требованию} of investigators.
+ru: Особая осторожность нужна при освещении трагедий: публиковать фотографии жертв и интервью с родственниками в состоянии шока считается недопустимым. || Special [caution]{осторожность} is needed when [covering]{освещении} [tragedies]{трагедий}: publishing photos of victims and interviews with [relatives]{родственниками} in a [state of shock]{состоянии шока} is considered [unacceptable]{недопустимым}.
+ru: В эпоху социальных сетей соблазн опубликовать сенсацию первым велик, однако опровержение редко догоняет ложную новость. || In the [era]{эпоху} of [social networks]{социальных сетей} the [temptation]{соблазн} to publish a [scoop]{сенсацию} first is great, but a [retraction]{опровержение} rarely [catches up with]{догоняет} a false story.
+ru: Доверие аудитории завоёвывается годами, а теряется за один день. || An [audience's]{аудитории} [trust]{доверие} is [won]{завоёвывается} over years and lost in a single day.
+note: освещение | coverage (in media) | Literally lighting. «Освещать события» means to cover events in the news.
+note: опровержение | retraction, denial | An official correction of published information.
+q: main | What is the text about? | How to start a newspaper | *Ethical rules for journalists | Social media marketing | Press freedom laws abroad
+q: detail | How many sources should information be checked against? | One | *At least two independent ones | Five | None if urgent
+q: inference | Why does a retraction "rarely catch up with" a false story? | Retractions are illegal | *False news spreads widely before any correction reaches the same audience | Journalists never retract | Readers prefer corrections
+sum: Journalism codes require checking facts against two independent sources and separating fact from opinion, protecting sources even from investigators, and showing restraint in covering tragedies. Social media tempts reporters to rush scoops, but corrections rarely catch up with false stories, and audience trust takes years to build and a day to lose.
+
+=== id: soc-folk-omens
+title: Приметы и суеверия
+level: 3
+genre: society
+source_note: Written for this app.
+---
+ru: Многие русские, даже не считая себя суеверными, по привычке соблюдают старинные приметы. || Many Russians, even if they don't consider themselves [superstitious]{суеверными}, [observe]{соблюдают} old [omens]{приметы} [out of habit]{по привычке}.
+ru: Перед дальней дорогой принято присесть на минуту «на дорожку», а возвращаться за забытой вещью — плохой знак. || Before a long journey it's customary to sit down for a minute "[for the road]{на дорожку}," and going back for something forgotten is a bad [sign]{знак}.
+ru: Нельзя здороваться и передавать что-либо через порог, а свистеть в доме — к безденежью. || You must not [greet]{здороваться} anyone or hand anything [across a threshold]{через порог}, and [whistling]{свистеть} indoors means you'll have no money.
+ru: Если чешется левая ладонь, ждите денег, а если правая — встречи. || If your left [palm]{ладонь} [itches]{чешется}, expect money; if your right, a meeting.
+ru: Чтобы не сглазить удачу, говорят «тьфу-тьфу-тьфу» и стучат по дереву. || So as not to [jinx]{сглазить} good luck, people say "tfu-tfu-tfu" and [knock on wood]{стучат по дереву}.
+note: на дорожку | for the road | Also «присесть на дорожку». And «выпить на посошок» is to have one for the road.
+note: сглазить | to jinx, put the evil eye on | From «глаз». «Сглаз» is the evil eye.
+q: main | What does the text describe? | Russian holidays | *Common Russian folk superstitions | Fortune-telling methods | Religious rituals
+q: detail | What should you do before a long trip? | Whistle | *Sit down for a minute | Go back for something forgotten | Shake hands across the threshold
+q: detail | What does an itchy left palm promise? | A meeting | *Money | Bad luck | Rain
+sum: Many Russians follow old omens out of habit: sit down before a journey, don't go back for forgotten things, don't greet or pass things across a threshold, don't whistle indoors. An itchy left palm means money, the right a meeting, and to avoid jinxing luck people say "tfu-tfu-tfu" and knock on wood.
+
+=== id: econ-crisis
+title: Кризис 1998 года
+level: 4
+genre: history
+source_note: Written for this app.
+---
+ru: К лету 1998 года государство жило в долг, выпуская краткосрочные облигации под огромные проценты, чтобы расплачиваться по прежним займам. || By the summer of 1998 the state was living [on credit]{в долг}, issuing [short-term]{краткосрочные} [bonds]{облигации} at huge interest rates to [pay off]{расплачиваться} earlier [loans]{займам}.
+ru: Падение мировых цен на нефть и азиатский финансовый кризис подорвали доверие инвесторов, и эта пирамида рухнула. || The fall in world oil prices and the Asian financial crisis [undermined]{подорвали} [investors']{инвесторов} confidence, and this [pyramid]{пирамида} [collapsed]{рухнула}.
+ru: Семнадцатого августа правительство объявило технический дефолт по внутреннему долгу и отказалось поддерживать курс рубля. || On August 17 the government announced a [technical default]{технический дефолт} on its [domestic debt]{внутреннему долгу} and refused to [support]{поддерживать} the ruble's [exchange rate]{курс}.
+ru: За несколько недель рубль подешевел втрое, банки заморозили вклады, а импортные товары исчезли с прилавков. || Within a few weeks the ruble lost two thirds of its value, banks [froze]{заморозили} [deposits]{вклады}, and imported goods vanished from the [shelves]{прилавков}.
+ru: Парадоксально, но девальвация дала толчок отечественному производству, которое вдруг стало конкурентоспособным. || [Paradoxically]{парадоксально}, the [devaluation]{девальвация} gave a push to [domestic]{отечественному} production, which suddenly became [competitive]{конкурентоспособным}.
+note: жило в долг | lived on credit | «В долг» means on loan: «дать в долг», «взять в долг».
+note: подешевел втрое | fell to a third of its value | «Втрое» means threefold: «втрое дороже» is three times more expensive.
+q: main | What does the text describe? | The 2008 crisis | *The causes, events and effects of Russia's 1998 financial crisis | Oil production | How banks work
+q: detail | What happened on August 17? | Oil prices rose | *The government defaulted on domestic debt and let the ruble go | Banks opened new branches | Imports increased
+q: inference | Why did devaluation help domestic producers? | They got subsidies | *Imports became expensive, making local goods competitive | Taxes were cut | Wages rose
+sum: By 1998 the state was borrowing via high-yield short-term bonds to repay old debt. Falling oil prices and the Asian crisis destroyed confidence; on August 17 the government defaulted on domestic debt and abandoned the ruble, which lost two thirds of its value as banks froze deposits and imports vanished. Paradoxically, devaluation made domestic production competitive.

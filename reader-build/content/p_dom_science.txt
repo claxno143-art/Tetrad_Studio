@@ -1,0 +1,163 @@
+=== id: sci-immune
+title: Как работает иммунитет
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Иммунная система защищает организм от болезнетворных микроорганизмов, а также от собственных клеток, переродившихся в опухолевые. || The [immune system]{иммунная система} protects the [body]{организм} from [disease-causing]{болезнетворных} [microorganisms]{микроорганизмов}, and also from its own [cells]{клеток} that have [turned]{переродившихся} [cancerous]{опухолевые}.
+ru: Первой линией обороны служат кожа и слизистые оболочки, а также врождённый иммунитет, который реагирует на любого чужака быстро, но без разбора. || The first line of [defense]{обороны} is the skin and the [mucous membranes]{слизистые оболочки}, along with [innate]{врождённый} immunity, which reacts to any [intruder]{чужака} quickly but [indiscriminately]{без разбора}.
+ru: Приобретённый иммунитет действует медленнее, зато точнее: лимфоциты распознают конкретный антиген и вырабатывают против него специфические антитела. || [Acquired]{приобретённый} immunity acts more slowly but more precisely: [lymphocytes]{лимфоциты} [recognize]{распознают} a [specific]{конкретный} [antigen]{антиген} and [produce]{вырабатывают} [specific]{специфические} [antibodies]{антитела} against it.
+ru: Часть этих клеток превращается в клетки памяти, и при повторной встрече с тем же возбудителем организм отвечает почти мгновенно. || Some of these cells become [memory cells]{клетки памяти}, and on a second encounter with the same [pathogen]{возбудителем} the body responds almost [instantly]{мгновенно}.
+ru: На этом принципе основана вакцинация: в организм вводят ослабленный или убитый возбудитель либо его фрагмент, и иммунитет «тренируется» без риска тяжёлой болезни. || [Vaccination]{вакцинация} is [based]{основана} on this principle: a [weakened]{ослабленный} or killed pathogen, or a [fragment]{фрагмент} of it, is [introduced]{вводят} into the body, and immunity "trains" without the risk of serious illness.
+ru: Иногда система даёт сбой и атакует собственные ткани — так развиваются аутоиммунные заболевания. || Sometimes the system [malfunctions]{даёт сбой} and attacks the body's own [tissues]{ткани}; this is how [autoimmune]{аутоиммунные} diseases develop.
+note: даёт сбой | malfunctions, breaks down | «Сбой» is a glitch or failure. «Дать сбой» is a common phrase for systems, machines or even people.
+note: без разбора | indiscriminately | «Разбор» means sorting or analysis. «Без разбора» means without discrimination: «хватать всё без разбора».
+q: main | What does the text explain? | How to treat a cold | *How innate and acquired immunity work, and why vaccines help | The history of medicine | Which foods boost immunity
+q: detail | What is the advantage of acquired immunity? | It is faster | *It is more precise and leaves memory cells | It needs no cells | It works only on skin
+q: inference | Why does a second infection often pass more mildly? | The pathogen gets weaker | *Memory cells let the body respond almost instantly | Antibodies leave the body | Vaccines stop working
+sum: Immunity defends against microbes and rogue cells. Skin, mucous membranes and fast but indiscriminate innate immunity come first; slower acquired immunity recognizes specific antigens, makes antibodies and leaves memory cells, which is how vaccines work. When the system attacks its own tissues, autoimmune disease results.
+
+=== id: sci-crypto
+title: Шифрование с открытым ключом
+level: 4
+genre: technical
+source_note: Written for this app.
+---
+ru: В симметричных шифрах один и тот же ключ используется и для зашифрования, и для расшифрования, поэтому главной трудностью становится безопасная передача ключа. || In [symmetric]{симметричных} [ciphers]{шифрах} one and the same [key]{ключ} is used both to [encrypt]{зашифрования} and to [decrypt]{расшифрования}, so the main difficulty becomes [secure]{безопасная} [key exchange]{передача ключа}.
+ru: Асимметричная криптография решает эту задачу с помощью пары ключей: открытый ключ можно свободно распространять, а закрытый хранится только у владельца. || [Asymmetric]{асимметричная} [cryptography]{криптография} solves this problem with a [key pair]{пары ключей}: the [public key]{открытый ключ} can be [distributed]{распространять} freely, while the [private key]{закрытый} is [kept]{хранится} only by the [owner]{владельца}.
+ru: То, что зашифровано открытым ключом, может расшифровать лишь обладатель закрытого. || What is encrypted with the public key can be decrypted only by the [holder]{обладатель} of the private one.
+ru: Стойкость таких систем основана на вычислительной сложности определённых математических задач, например разложения больших чисел на простые множители. || The [strength]{стойкость} of such systems rests on the [computational]{вычислительной} [complexity]{сложности} of certain mathematical problems, for example [factoring]{разложения} large numbers into [prime factors]{простые множители}.
+ru: Электронная подпись работает в обратном направлении: документ подписывается закрытым ключом, а проверить подлинность подписи может любой, у кого есть открытый. || A [digital signature]{электронная подпись} works the other way round: a document is signed with the private key, and anyone who has the public key can [verify]{проверить} the signature's [authenticity]{подлинность}.
+ru: Специалисты опасаются, что появление достаточно мощных квантовых компьютеров сделает часть нынешних алгоритмов уязвимыми, и уже разрабатывают постквантовые стандарты. || [Experts]{специалисты} fear that the [arrival]{появление} of sufficiently powerful [quantum]{квантовых} computers will make some of today's [algorithms]{алгоритмов} [vulnerable]{уязвимыми}, and are already developing [post-quantum]{постквантовые} standards.
+note: стойкость | strength (of a cipher) | Literally steadfastness or durability. In cryptography it's resistance to cracking: «криптостойкость».
+note: простые множители | prime factors | «Простое число» is a prime number. «Простой» here means prime, not "simple."
+q: main | What problem does public-key cryptography solve? | Making data smaller | *Exchanging keys securely, since only the private key decrypts | Speeding up the internet | Storing passwords
+q: detail | How does a digital signature work? | It is encrypted with the public key | *The document is signed with the private key and checked with the public one | It uses no keys | It is handwritten
+q: inference | Why are quantum computers a threat? | They use more electricity | *They might solve the hard math problems these ciphers rely on | They can't run old software | They make keys longer
+sum: Symmetric ciphers use one key, so exchanging it safely is hard. Public-key cryptography uses a pair: anyone can encrypt with the public key, only the private key decrypts, and signatures work in reverse. Security rests on hard math such as factoring, which future quantum computers may break, so post-quantum standards are being developed.
+
+=== id: sci-permafrost
+title: Вечная мерзлота тает
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Многолетняя мерзлота занимает почти две трети территории России. || [Permafrost]{многолетняя мерзлота} [covers]{занимает} almost two thirds of Russia's [territory]{территории}.
+ru: Это грунт, который не оттаивает даже летом на протяжении многих лет, а местами — тысячелетий. || It is [ground]{грунт} that doesn't [thaw]{оттаивает} even in summer [for]{на протяжении} many years, and in places for [millennia]{тысячелетий}.
+ru: По мере потепления климата верхний слой мерзлоты протаивает всё глубже, и почва теряет несущую способность. || [As]{по мере} the climate [warms]{потепления}, the upper layer of the permafrost thaws ever deeper, and the [soil]{почва} loses its [load-bearing capacity]{несущую способность}.
+ru: Здания на сваях дают трещины, деформируются трубопроводы и железнодорожные насыпи, а на месте ровной тундры появляются провалы и озёра. || Buildings on [piles]{сваях} [crack]{дают трещины}, [pipelines]{трубопроводы} and [railway embankments]{железнодорожные насыпи} [deform]{деформируются}, and [sinkholes]{провалы} and lakes appear where there was flat [tundra]{тундры}.
+ru: Кроме того, при оттаивании органические остатки начинают разлагаться и выделять метан и углекислый газ, которые ещё сильнее разогревают атмосферу. || [Moreover]{кроме того}, when the ground thaws, [organic remains]{органические остатки} begin to [decompose]{разлагаться} and [release]{выделять} [methane]{метан} and [carbon dioxide]{углекислый газ}, which warm the atmosphere even further.
+ru: Учёные называют такой процесс положительной обратной связью: последствия усиливают собственную причину. || Scientists call this process [positive feedback]{положительной обратной связью}: the [consequences]{последствия} [amplify]{усиливают} their own cause.
+note: несущая способность | load-bearing capacity | An engineering term: how much load the ground or a structure can carry.
+note: положительная обратная связь | positive feedback | In science «положительный» means reinforcing, not "good." Here the effect strengthens its own cause.
+q: main | What is the main topic? | Building in the Arctic | *The thawing of permafrost and its consequences | The history of Siberia | Methane as fuel
+q: detail | How much of Russia is permafrost? | One tenth | *Almost two thirds | Half | All of it
+q: inference | Why is thawing called positive feedback? | It's good for the climate | *The released gases cause more warming, which causes more thawing | It produces new lakes for fishing | It makes buildings stronger
+sum: Permafrost covers nearly two thirds of Russia. As the climate warms, it thaws deeper and loses its bearing capacity, so buildings, pipelines and railways deform and the tundra collapses into sinkholes and lakes. Thawing organic matter releases methane and CO2, which drive more warming: a positive feedback loop.
+
+=== id: sci-thermo
+title: Второе начало термодинамики
+level: 4
+genre: science
+source_note: Written for this app.
+---
+ru: Согласно второму началу термодинамики, теплота не может самопроизвольно переходить от более холодного тела к более горячему. || According to the [second law]{второму началу} of [thermodynamics]{термодинамики}, [heat]{теплота} cannot [spontaneously]{самопроизвольно} pass from a colder [body]{тела} to a hotter one.
+ru: Холодильник не нарушает этого закона, поскольку для переноса тепла затрачивается внешняя работа компрессора. || A refrigerator doesn't [violate]{нарушает} this law, since external [work]{работа} by the compressor is [expended]{затрачивается} to [transfer]{переноса} the heat.
+ru: Из того же закона следует, что невозможно построить вечный двигатель второго рода, то есть машину, которая целиком превращала бы теплоту в работу. || It [follows]{следует} from the same law that it is impossible to build a [perpetual motion machine]{вечный двигатель} [of the second kind]{второго рода}, that is, a machine that would turn heat [entirely]{целиком} into work.
+ru: Любой тепловой двигатель обязан отдавать часть энергии холодильнику, а его предельный коэффициент полезного действия определяется разностью температур нагревателя и охладителя. || Any [heat engine]{тепловой двигатель} must give up part of its energy to a [cold reservoir]{холодильнику}, and its maximum [efficiency]{коэффициент полезного действия} is [determined]{определяется} by the [difference]{разностью} between the temperatures of the [heater]{нагревателя} and the [cooler]{охладителя}.
+ru: В статистической физике тот же закон формулируется через энтропию: в изолированной системе она не убывает. || In [statistical physics]{статистической физике} the same law is [formulated]{формулируется} in terms of [entropy]{энтропию}: in an [isolated]{изолированной} system it does not [decrease]{убывает}.
+note: начало | law (of thermodynamics) | Physics uses «первое, второе начало термодинамики». «Закон» is also possible, but «начало» is the classic term.
+note: коэффициент полезного действия | efficiency | «Коэффициент полезного действия», literally the coefficient of useful action. Usually abbreviated КПД.
+q: main | What does the passage explain? | How refrigerators are built | *The second law of thermodynamics and its consequences | The first law of thermodynamics | Why engines overheat
+q: detail | Why doesn't a refrigerator break the law? | It uses magnets | *External work by the compressor moves the heat | Heat flows naturally to the hot side | It isn't a real machine
+q: inference | What does the law imply about engine efficiency? | It can reach 100% | *It is limited by the temperature difference and can never be complete | It doesn't depend on temperature | It is always 50%
+sum: Heat can't flow on its own from cold to hot; fridges need outside work to do it. So no machine can turn heat completely into work: every heat engine loses some energy to a cold reservoir, and its maximum efficiency depends on the temperature difference. Statistically, entropy in an isolated system never decreases.
+
+=== id: sci-electric
+title: Закон Ома для бытовых нужд
+level: 3
+genre: technical
+source_note: Written for this app.
+---
+ru: Сила тока в проводнике прямо пропорциональна напряжению и обратно пропорциональна сопротивлению. || The [current]{сила тока} in a [conductor]{проводнике} is [directly proportional]{прямо пропорциональна} to the [voltage]{напряжению} and [inversely proportional]{обратно пропорциональна} to the [resistance]{сопротивлению}.
+ru: Если подключить к розетке слишком много мощных приборов, ток превысит допустимый, провода начнут нагреваться, и сработает автоматический выключатель. || If you plug too many powerful [appliances]{приборов} into one [outlet]{розетке}, the current will exceed the safe level, the [wires]{провода} will start to heat up, and the [circuit breaker]{автоматический выключатель} will [trip]{сработает}.
+ru: Именно поэтому для электроплиты прокладывают отдельную линию с проводом большего сечения. || That's exactly why a separate [circuit]{линию} with [heavier-gauge]{большего сечения} wire is [run]{прокладывают} for an electric stove.
+ru: Короткое замыкание возникает, когда ток идёт в обход нагрузки, и его сила резко возрастает. || A [short circuit]{короткое замыкание} occurs when the current [bypasses]{идёт в обход} the [load]{нагрузки} and its strength [jumps]{резко возрастает}.
+ru: Чтобы защитить людей от удара током, устанавливают устройство защитного отключения, которое реагирует на утечку тока на землю. || To protect people from [electric shock]{удара током}, a [residual-current device]{устройство защитного отключения} is installed, which reacts to current [leaking]{утечку} [to ground]{на землю}.
+note: сила тока | current | Literally "strength of current." Physics textbooks say «сила тока», measured in amperes.
+note: сечение | cross-section (wire gauge) | In Russia wire size is given by cross-section in mm²: «провод сечением 2,5 квадрата» is a 2.5 mm² wire.
+q: main | What is the text mainly about? | The history of electricity | *How Ohm's law explains everyday wiring and safety devices | How to repair outlets | Solar panels
+q: detail | What happens if too many appliances are on one outlet? | Nothing | *The current exceeds the limit, wires heat and the breaker trips | The voltage doubles | The lights get brighter
+q: detail | What does an RCD react to? | High voltage | *Current leaking to ground | Low resistance in wires | Too many outlets
+sum: Current equals voltage divided by resistance. Overloading an outlet raises current until wires heat and the breaker trips, so stoves get their own thicker circuit. A short circuit bypasses the load and current surges, and an RCD protects people by cutting power when current leaks to ground.
+
+=== id: sci-quake
+title: Почему трясёт землю
+level: 3
+genre: science
+source_note: Written for this app.
+---
+ru: Земная кора разбита на огромные литосферные плиты, которые медленно движутся относительно друг друга. || The Earth's [crust]{кора} is broken into huge [lithospheric plates]{литосферные плиты}, which move slowly [relative to]{относительно} one another.
+ru: На границах плит накапливается напряжение, и когда оно превышает прочность горных пород, происходит резкий разрыв — землетрясение. || [Stress]{напряжение} [builds up]{накапливается} at the plate [boundaries]{границах}, and when it exceeds the [strength]{прочность} of the [rock]{горных пород}, a sudden [rupture]{разрыв} occurs: an [earthquake]{землетрясение}.
+ru: Место разрыва в глубине называется очагом, а точка на поверхности над ним — эпицентром. || The place of the rupture at depth is called the [focus]{очагом}, and the point on the surface above it is the [epicenter]{эпицентром}.
+ru: Силу толчков оценивают по магнитуде, которая отражает высвободившуюся энергию: каждая следующая единица соответствует примерно тридцатикратному увеличению энергии. || The strength of the [tremors]{толчков} is [measured]{оценивают} by [magnitude]{магнитуде}, which reflects the energy [released]{высвободившуюся}: each [step up]{следующая единица} corresponds to roughly a [thirtyfold]{тридцатикратному} increase in energy.
+ru: Если очаг находится под дном океана, вертикальное смещение воды может породить цунами. || If the focus lies under the [ocean floor]{дном океана}, the [vertical]{вертикальное} [displacement]{смещение} of the water can [generate]{породить} a [tsunami]{цунами}.
+note: очаг | focus (hypocenter) | Everyday «очаг» is a hearth or fireplace. In science it's the source point: «очаг землетрясения», «очаг возгорания», «очаг инфекции».
+q: main | What does the text explain? | How to survive a tsunami | *Why earthquakes happen and how they're described | Where volcanoes are | How mountains form over millions of years
+q: detail | What is the epicenter? | The point deep inside the earth | *The point on the surface above the focus | The edge of a plate | The largest wave
+q: detail | Roughly how much more energy does one more unit of magnitude mean? | Twice | Ten times | *About thirty times | A hundred times
+sum: The crust is made of moving plates; stress builds at their edges until rock ruptures in an earthquake. The rupture point is the focus and the surface point above it the epicenter. Magnitude measures released energy, each unit about thirty times more, and undersea quakes can trigger tsunamis.
+
+=== id: sci-dna
+title: Генетический код
+level: 4
+genre: science
+source_note: Written for this app.
+---
+ru: Наследственная информация живых организмов записана в молекулах ДНК в виде последовательности четырёх нуклеотидов. || The [hereditary]{наследственная} information of living [organisms]{организмов} is written in [DNA]{ДНК} molecules as a [sequence]{последовательности} of four [nucleotides]{нуклеотидов}.
+ru: Каждые три нуклеотида, или кодон, соответствуют определённой аминокислоте либо сигналу остановки синтеза. || Every three nucleotides, a [codon]{кодон}, correspond to a particular [amino acid]{аминокислоте} or to a [stop signal]{сигналу остановки} for [synthesis]{синтеза}.
+ru: Сначала участок ДНК переписывается в матричную РНК, которая затем выходит из ядра к рибосомам, где по её матрице собирается белок. || First, a [segment]{участок} of DNA is [transcribed]{переписывается} into [messenger RNA]{матричную РНК}, which then leaves the [nucleus]{ядра} for the [ribosomes]{рибосомам}, where a [protein]{белок} is [assembled]{собирается} according to its [template]{матрице}.
+ru: Код избыточен: большинству аминокислот соответствует несколько кодонов, благодаря чему часть случайных мутаций не влияет на строение белка. || The code is [redundant]{избыточен}: most amino acids correspond to several codons, [thanks to which]{благодаря чему} some random [mutations]{мутаций} don't affect the [structure]{строение} of the protein.
+ru: Расшифровка генома человека, завершённая в начале века, открыла путь к генной диагностике и терапии наследственных болезней. || The [sequencing]{расшифровка} of the human [genome]{генома}, completed at the start of the century, [opened the way]{открыла путь} to [genetic]{генной} [diagnostics]{диагностике} and [therapy]{терапии} for hereditary diseases.
+note: избыточен | redundant | Short form of «избыточный», excessive or redundant. In information theory, «избыточность» is redundancy.
+note: матрица | template | In biology «матрица» is the template a molecule is copied from. «Матричная РНК» is messenger RNA.
+q: main | What does the passage describe? | How to sequence DNA at home | *How genetic information is encoded and turned into protein | The history of biology | Diseases caused by viruses
+q: detail | What does a codon consist of? | Two nucleotides | *Three nucleotides | One amino acid | A whole gene
+q: inference | Why don't some mutations change the protein? | Mutations never matter | *Several codons code the same amino acid | Proteins repair themselves | Ribosomes ignore mutations
+sum: DNA stores hereditary information as sequences of four nucleotides; each three-letter codon means an amino acid or a stop signal. DNA is copied into messenger RNA, which ribosomes read to build proteins. Because the code is redundant, some mutations are harmless, and sequencing the human genome opened the way to genetic diagnosis and therapy.
+
+=== id: sci-first-aid
+title: Первая помощь при инфаркте
+level: 3
+genre: science
+source_note: Written for this app. General information, not medical advice.
+---
+ru: Инфаркт миокарда возникает, когда закупоривается сосуд, питающий сердечную мышцу, и участок мышцы начинает отмирать. || A [heart attack]{инфаркт миокарда} happens when a [blood vessel]{сосуд} that [feeds]{питающий} the [heart muscle]{сердечную мышцу} becomes [blocked]{закупоривается} and a section of the muscle begins to [die]{отмирать}.
+ru: Типичные признаки — давящая боль за грудиной, отдающая в левую руку, шею или челюсть, одышка, холодный пот и чувство страха. || Typical signs are [pressing]{давящая} pain [behind the breastbone]{за грудиной} that [radiates]{отдающая} into the left arm, neck or [jaw]{челюсть}, [shortness of breath]{одышка}, cold [sweat]{пот} and a feeling of fear.
+ru: Прежде всего нужно немедленно вызвать скорую помощь и усадить человека, обеспечив приток свежего воздуха. || First of all, call an [ambulance]{скорую помощь} [immediately]{немедленно} and sit the person down, making sure there's [fresh air]{приток свежего воздуха}.
+ru: Если пострадавший потерял сознание и не дышит, следует начать непрямой массаж сердца и не прекращать его до прибытия врачей. || If the [casualty]{пострадавший} has [lost consciousness]{потерял сознание} and isn't breathing, start [chest compressions]{непрямой массаж сердца} and don't stop until the doctors [arrive]{прибытия}.
+ru: Каждая минута промедления увеличивает объём поражённой ткани. || Every minute of [delay]{промедления} increases the amount of [damaged]{поражённой} tissue.
+note: отдающая | radiating (of pain) | «Отдавать» about pain means to radiate: «боль отдаёт в спину».
+note: непрямой массаж сердца | chest compressions | Literally "indirect heart massage." This is the CPR term.
+q: main | What does the text explain? | How to prevent heart disease | *What a heart attack is and what to do right away | How doctors perform surgery | The anatomy of the heart
+q: detail | What is the first thing to do? | Give the person water | *Call an ambulance immediately | Drive to the hospital yourself | Lay the person flat and wait
+q: inference | Why does the text stress speed? | Ambulances are slow | *Every minute of delay means more heart muscle is lost | The patient may leave | It is required by law
+sum: A heart attack happens when a vessel feeding the heart is blocked and muscle starts to die. Signs include crushing chest pain spreading to the arm, neck or jaw, breathlessness, cold sweat and fear. Call an ambulance at once, sit the person up with fresh air, and start compressions if they stop breathing, because every minute counts.
+
+=== id: sci-blackhole
+title: Чёрные дыры
+level: 3+
+genre: science
+source_note: Written for this app.
+---
+ru: Чёрная дыра — это область пространства-времени, гравитационное притяжение которой настолько велико, что покинуть её не может даже свет. || A [black hole]{чёрная дыра} is a region of [spacetime]{пространства-времени} whose [gravitational pull]{гравитационное притяжение} is so strong that not even light can [escape]{покинуть} it.
+ru: Границу, из-за которой нет возврата, называют горизонтом событий. || The boundary [past which]{из-за которой} there is no return is called the [event horizon]{горизонтом событий}.
+ru: Звёзды, масса которых в десятки раз превышает солнечную, в конце жизни сжимаются под действием собственного тяготения и превращаются в такие объекты. || Stars whose mass is dozens of times greater than the Sun's [collapse]{сжимаются} at the end of their lives under their own [gravity]{тяготения} and become such objects.
+ru: В центре нашей Галактики находится сверхмассивная чёрная дыра массой около четырёх миллионов солнечных. || At the center of our [Galaxy]{галактики} is a [supermassive]{сверхмассивная} black hole with a mass of about four million Suns.
+ru: Сами по себе чёрные дыры невидимы, но их выдаёт раскалённое вещество, закручивающееся вокруг них, и гравитационные волны, возникающие при их слиянии. || Black holes themselves are [invisible]{невидимы}, but they are [given away]{выдаёт} by the [red-hot]{раскалённое} [matter]{вещество} [swirling]{закручивающееся} around them and by the [gravitational waves]{гравитационные волны} produced when they [merge]{слиянии}.
+note: из-за которой | beyond which | Here «из-за» means "from behind, from beyond," not "because of."
+note: выдаёт | gives away, betrays | «Выдать» also means to betray or reveal: «его выдал голос», his voice gave him away.
+q: main | What is the text about? | The Sun's life cycle | *What black holes are and how we detect them | Space travel | How telescopes work
+q: detail | What is the event horizon? | The center of a galaxy | *The boundary beyond which nothing can return | A type of star | A gravitational wave
+q: inference | How can we detect something invisible? | We can't | *Through its effects: hot swirling matter and gravitational waves | By sending probes inside | By its color
+sum: A black hole's gravity is so strong that light can't escape past its event horizon. Massive stars collapse into them, and a supermassive one of four million solar masses sits at our galaxy's center. They're invisible, but betrayed by superheated matter swirling around them and by gravitational waves when they merge.

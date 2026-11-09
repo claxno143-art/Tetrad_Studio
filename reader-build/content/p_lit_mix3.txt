@@ -1,0 +1,170 @@
+=== id: chekhov-sad-shkaf
+title: Вишнёвый сад: многоуважаемый шкаф
+author: А. П. Чехов
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/VishnevyjSad.txt
+from: Дорогой, многоуважаемый шкаф!
+to: Да вы с ума сошли!
+---
+1| (Gaev:) "Dear, [most esteemed]{многоуважаемый} [bookcase]{шкаф}!
+2| I [salute]{приветствую} your [existence]{существование}, which for more than a hundred years now has been [directed]{направлено} toward the bright [ideals]{идеалам} of goodness and [justice]{справедливости}; your silent [call]{призыв} to [fruitful]{плодотворной} work has not [weakened]{ослабевал} in the course of a hundred years, sustaining (through tears) in the [generations]{поколениях} of our [family]{рода} [good cheer]{бодрость}, faith in a better future, and [nurturing]{воспитывая} in us the ideals of goodness and social [self-awareness]{самосознания}."
+3| [Pause]{пауза}.
+4| Lopakhin.
+5| "Yes..."
+6| Lyubov Andreevna.
+7| "You're [just the same as ever]{все такой же}, Lyonya."
+8| Gaev ([a little embarrassed]{немного сконфуженный}).
+9| "Off the [ball]{шара} to the right into the corner!
+10| [I cut]{режу} into the middle pocket!"
+11| Lopakhin (glancing at his watch).
+12| "Well, [I must be going]{мне пора}."
+13| Yasha (handing Lyubov Andreevna her medicine).
+14| "Perhaps you'll take your [pills]{пилюли} now..."
+15| Pishchik.
+16| "No need to take [medications]{медикаменты}, [dearest lady]{милейшая}... they do neither harm nor good...
+17| Give them here... most esteemed lady.
+18| (He takes the pills, pours them into his palm, blows on them, puts them in his mouth and washes them down with [kvass]{квасом}.)
+19| There!"
+20| Lyubov Andreevna ([frightened]{испуганно}).
+21| "Have you [gone out of your mind]{с ума сошли}!"
+note: многоуважаемый шкаф | most esteemed bookcase | Gaev's speech to a hundred-year-old bookcase is the play's most famous example of his empty, sentimental eloquence.
+note: От шара направо в угол | off the ball, right into the corner | Billiards talk. When Gaev is embarrassed, he retreats into imaginary billiard shots.
+note: мне пора | I must be going | «Пора» means it's time: «пора домой», «мне пора».
+q: main | What is comic about this scene? | *Gaev makes a grand speech to a bookcase, then everyone carries on with trivial business | Lopakhin buys the bookcase | Pishchik falls ill | Yasha refuses to work
+q: detail | What does Gaev do when embarrassed? | Leaves the room | *Mutters billiard shots | Cries | Sings
+q: detail | What does Pishchik do with the pills? | Throws them away | *Swallows them all with kvass | Gives them back | Puts them in his pocket
+q: tone | The scene's tone is | *tragicomic, with awkward pauses and absurdity | heroic | horror | romantic
+sum: Gaev delivers an absurdly solemn tribute to the family's hundred-year-old bookcase. An awkward pause follows; he covers his embarrassment with imaginary billiard shots, Lopakhin checks his watch, and Pishchik swallows all of Lyubov Andreevna's pills with kvass, to her horror.
+
+=== id: turgenev-otcy-1
+title: Отцы и дети: на постоялом дворе
+author: И. С. Тургенев
+level: 4
+genre: literature
+src: RussianNovels/corpus/Turgenev_OttsyIDeti.txt
+from: Что, Петр, не видать еще?
+to: задумчиво поглядывая кругом.
+---
+1| "Well, Pyotr, [no sign of them]{не видать} yet?" asked a [gentleman]{барин} of forty-odd on the 20th of May 1859, coming out bareheaded onto the low [porch]{крылечко} of a coaching inn on the *** highway, in a [dusty]{запыленном} coat and [checked]{клетчатых} trousers. He was asking his [servant]{слуги}, a young, [chubby-cheeked]{щекастого} [lad]{малого} with whitish [fuzz]{пухом} on his [chin]{подбородке} and small, [dull]{тусклыми} [little eyes]{глазенками}.
+2| The servant, in whom everything, the [turquoise]{бирюзовая} [earring]{сережка} in his ear, the [pomaded]{напомаженные} multicolored hair and the [polite]{учтивые} [movements]{телодвижения}, in a word everything, [betrayed]{изобличало} a man of the newest, [improved]{усовершенствованного} generation, looked [condescendingly]{снисходительно} along the road and [replied]{ответствовал}: "No sign, sir, not yet."
+3| "No sign?" repeated the gentleman.
+4| "No sign," the servant replied [a second time]{вторично}.
+5| The gentleman sighed and sat down on a little [bench]{скамеечку}.
+6| Let us introduce him to the reader while he sits with his legs [tucked under]{подогнувши под себя} him, looking around [pensively]{задумчиво}.
+note: Никак нет-с | no, sir | «Никак нет» is a military-style "no." The «-с» suffix (from «сударь») marks a servant's deference.
+note: ответствовал | replied | An archaic, pompous word, used ironically for the affected servant.
+note: усовершенствованного поколения | of the improved generation | Turgenev's irony: the "new generation" theme of the novel starts with a vain servant.
+q: main | What does the opening show? | *A landowner anxiously waiting at an inn, with his affected young servant | A family reunion | A journey by train | A quarrel between father and son
+q: detail | What does the servant's appearance suggest? | Old-fashioned habits | *A self-consciously modern young man | Poverty | Military service
+q: inference | Why does the narrator call the servant part of the "improved generation"? | Out of admiration | *Ironically, mocking his showy modern airs | Because he is educated | Because he is rich
+sum: On May 20, 1859, a forty-odd landowner in dusty clothes keeps asking his servant at a roadside inn whether anyone's coming yet. The servant, a pomaded young dandy with an earring, condescendingly says no. The gentleman sighs and sits down, and the narrator prepares to introduce him.
+
+=== id: tolstoy-austerlitz
+title: Война и мир: небо Аустерлица
+author: Л. Н. Толстой
+level: 3+
+genre: literature
+src: RussianNovels/corpus/Tolstoi_VoynaIMir1.txt
+from: Над ним не было ничего уже, кроме неба
+to: И слава Богу!..."
+join: yes
+---
+1| Above him there was nothing now but the sky: a [lofty]{высокого} sky, not clear, yet still [immeasurably]{неизмеримо} lofty, with grey clouds [creeping]{ползущими} quietly across it.
+2| "How quiet, calm and [solemn]{торжественно}, not at all as I ran," thought Prince Andrei, "not as we ran, shouted and fought; not at all as the Frenchman and the [artilleryman]{артиллерист}, with [embittered]{озлобленными} and frightened faces, were [tugging]{тащили} the [rammer]{банник} from each other; not at all like that do the clouds creep across this lofty, [infinite]{бесконечному} sky.
+3| How is it I never saw this lofty sky before?
+4| And how happy I am that I have come to know it at last.
+5| Yes! Everything is [empty]{пустое}, everything is [deception]{обман}, except this infinite sky.
+6| There is nothing, nothing but it.
+7| But even that isn't there, there's nothing but stillness, [peace]{успокоения}.
+8| And [thank God]{слава богу}!..."
+note: банник | (cannon) rammer | A long-handled brush used to clean and ram a cannon barrel. Two soldiers fighting over it is Andrei's last sight of the battle.
+note: высокого неба | lofty sky | The "sky of Austerlitz" («небо Аустерлица») became a byword for a moment of sudden spiritual clarity.
+note: все пустое | everything is empty, vain | «Пустое» means futile, meaningless: «это всё пустое».
+q: main | What happens in this passage? | Prince Andrei wins the battle | *Wounded, Prince Andrei sees the sky and feels everything else is vain | Prince Andrei writes a letter home | The French capture him
+q: detail | What contrast does Andrei draw? | City and country | *The calm sky versus the frantic violence of battle | Day and night | France and Russia
+q: tone | The mood is | panic | *quiet revelation and peace | anger | humor
+sum: Lying wounded on the battlefield, Prince Andrei sees only the high grey sky. He contrasts its solemn calm with the frantic fighting he just took part in, and realizes that everything except this infinite sky, and the stillness, is emptiness and illusion, and he thanks God.
+
+=== id: dostoevsky-bednye-1
+title: Бедные люди: письмо Девушкина
+author: Ф. М. Достоевский
+level: 4
+genre: literature
+src: RussianNovels/corpus/Dostoyevsky_BednyeLyudi.txt
+from: Бесценная моя Варвара Алексеевна!
+to: что даже совестно перед чужими бывает.
+repl: сердце нот так и запрыгало => сердце вот так и запрыгало
+---
+1| My [priceless]{бесценная} Varvara Alekseevna!
+2| Yesterday I was happy, [excessively]{чрезмерно} happy, [happy beyond measure]{донельзя}!
+3| For once in your life, you [stubborn thing]{упрямица}, you listened to me.
+4| In the evening, at about eight, I wake up (you know, [my dear]{маточка}, that I like to sleep [an hour or two]{часочек-другой} after work), get out a candle, prepare my papers, [mend]{чиню} my [pen]{перо}, when suddenly, [by chance]{невзначай}, I raise my eyes, and [truly]{право}, my heart simply [leapt]{запрыгало}!
+5| So you [did]{вы-таки} understand what I wanted, what my [poor heart]{сердчишку} wanted!
+6| I see that the little corner of the [curtain]{занавески} at your window is [folded back]{загнут} and [hooked]{прицеплен} onto the [pot]{горшку} of [balsam]{бальзамином}, [exactly]{точнехонько} as I [hinted]{намекал} to you that time; and at once it seemed to me that your little face [flashed]{мелькнуло} at the window, that you too were looking at me from your little room, that you too were thinking of me.
+7| And how [vexed]{досадно} I was, my [dear]{голубчик}, that I couldn't make out your [sweet]{миловидного} little face properly!
+8| There was a time when we too saw clearly, my dear.
+9| Old age is no joy, my darling!
+10| Even now everything [swims]{рябит} before my eyes; if I work a little in the evening, write something, by morning my eyes are red and the tears flow so that I'm even [ashamed]{совестно} in front of strangers.
+note: маточка | my dear (little mother) | An old-fashioned, tender address from «матушка»; Devushkin's letters overflow with such diminutives.
+note: донельзя | to the utmost, beyond measure | «До нельзя», to the point where you can't go further: «донельзя счастлив».
+note: Не радость старость | old age is no joy | A folk saying. Devushkin is middle-aged but speaks of himself as old.
+note: вы-таки | you did (after all) | The particle «-таки» stresses that something happened despite doubts: «он-таки пришёл», he did come after all.
+q: main | What is the letter about? | A complaint about work | *Devushkin's joy at the agreed curtain signal from Varvara's window | A request for money | News of an illness
+q: detail | What sign did Varvara give? | A note under the door | *A corner of her curtain hooked onto the balsam pot | A song | A candle in the window
+q: inference | What do the many diminutives reveal about Devushkin? | He is a poet | *His timid, tender, somewhat old-fashioned devotion | He is a child | He is angry
+q: tone | The tone is | formal and businesslike | *effusive, tender and slightly pitiful | sarcastic | cold
+sum: Devushkin writes ecstatically to Varvara: for once she followed his hint and hooked her curtain on the balsam pot, and he thought he glimpsed her face. He regrets his weak eyes, says old age is no joy, and admits his eyes water from evening work.
+
+=== id: pushkin-vystrel-1
+title: Выстрел: Сильвио
+author: А. С. Пушкин
+level: 4
+genre: literature
+src: word2vec-russian-novels/vector-school/PovestiBelkina.txt
+from: Один только человек принадлежал нашему обществу
+to: и никто не осмеливался о том его спрашивать.
+---
+1| Only one man belonged to our [circle]{обществу} without being in the military.
+2| He was about thirty-five, and [for that]{за то} we [regarded]{почитали} him as an old man.
+3| His [experience]{опытность} gave him many [advantages]{преимущества} over us; besides, his usual [gloominess]{угрюмость}, [harsh]{крутой} [temper]{нрав} and sharp tongue had a strong influence on our young minds.
+4| A certain [mystery]{таинственность} surrounded his [fate]{судьбу}; he seemed Russian, yet bore a foreign name.
+5| [Once]{некогда} he had served in the [hussars]{гусарах}, and successfully at that; no one knew the reason that had [prompted]{побудившей} him to [retire]{выдти в отставку} and settle in a poor little town, where he lived both poorly and [extravagantly]{расточительно}: he always went on foot, in a worn black [frock coat]{сертуке}, yet [kept open table]{держал открытый стол} for all the officers of our regiment.
+6| True, his dinners consisted of two or three dishes prepared by a retired soldier, but champagne flowed [like a river]{рекою}.
+7| No one knew either his [fortune]{состояния} or his income, and no one [dared]{осмеливался} ask him about it.
+note: держал открытый стол | kept open table | A gentleman's custom of feeding all comers at his own expense.
+note: выдти в отставку | to retire (from the service) | Pushkin's spelling of «выйти в отставку».
+note: состояния | fortune | Here «состояние» means wealth, not "condition": «сколотить состояние», to make a fortune.
+q: main | Who does the passage introduce? | The regiment's colonel | *A mysterious ex-hussar living among the officers | A young officer | A rich merchant
+q: detail | Why did the young officers consider him old? | He had grey hair | *He was about thirty-five | He walked slowly | He told old stories
+q: inference | What is contradictory about his way of life? | He is rich but stingy | *He lives poorly yet is lavish with champagne for the officers | He is military but hates soldiers | He is Russian but speaks only French
+sum: Among the regiment's officers lives one civilian, a gloomy, sharp-tongued ex-hussar of about thirty-five with a foreign name. No one knows why he retired to this poor town, where he walks in a shabby coat yet keeps open table with champagne flowing, and no one dares ask about his money.
+
+=== id: turgenev-pervaya-1
+title: Первая любовь: лето 1833 года
+author: И. С. Тургенев
+level: 3+
+genre: literature
+src: word2vec-russian-novels/vector-school/PervajaLyubov.txt
+from: Мне было тогда шестнадцать лет.
+to: самоуверенного и самовластного.
+---
+1| I was sixteen then.
+2| It [happened]{происходило} in the summer of 1833.
+3| I was living in Moscow with my parents.
+4| They were renting a [summer house]{дачу} near the Kaluga [Gate]{заставы}, opposite the Neskuchny Garden.
+5| I was [preparing]{готовился} for university, but worked very little and [unhurriedly]{не торопясь}.
+6| No one [restricted]{стеснял} my freedom.
+7| I did as I pleased, especially since I had [parted]{расстался} with my last French [tutor]{гувернером-французом}, who could never get used to the idea that he had fallen "like a bomb" into Russia, and who, with a [bitter]{ожесточенным} expression on his face, [lay about]{валялся} on his bed for days on end.
+8| My father treated me with [indifferent kindness]{равнодушно-ласково}; my mother paid almost no attention to me, although she had no other children: other cares [absorbed]{поглощали} her.
+9| My father, still a young man and very handsome, had married her [for money]{по расчету}; she was ten years older than he.
+10| My mother led a sad life: she was [constantly]{беспрестанно} agitated, [jealous]{ревновала}, angry, but never in my father's presence; she was very afraid of him, and he held himself strictly, coldly, distantly...
+11| I have never seen a man more [exquisitely]{изысканно} calm, [self-assured]{самоуверенного} and [domineering]{самовластного}.
+note: по расчету | for money, for advantage | «Брак по расчёту» is a marriage of convenience. The opposite is «по любви».
+note: заставы | (city) gate, barrier | «Застава» was a checkpoint at the edge of a city; the names survive as district names.
+note: как бомба | like a bomb | The tutor's French phrase, «comme une bombe», meaning he landed in Russia without warning. Turgenev quotes his faulty French.
+q: main | What does the opening establish? | *The sixteen-year-old narrator's idle summer and his cold family | The narrator's university exams | His first job | A trip to France
+q: detail | Why did the father marry the mother? | For love | *For money | Because their parents arranged it | We aren't told
+q: inference | How would you describe the family atmosphere? | Warm and close | *Cold and unhappy, dominated by the father | Cheerful and noisy | Poor but loving
+sum: In the summer of 1833 the sixteen-year-old narrator lives with his parents at a dacha outside Moscow, nominally studying for university but mostly free. His father, young, handsome and coldly domineering, married his older mother for money; she lives anxious and jealous, and both largely ignore him.
+

@@ -1,0 +1,181 @@
+=== id: pol-duma
+title: Как принимается закон
+level: 3+
+genre: politics
+source_note: Written for this app.
+---
+ru: Право законодательной инициативы принадлежит президенту, правительству, членам Совета Федерации, депутатам Государственной думы и ряду других органов. || The [right of legislative initiative]{право законодательной инициативы} [belongs]{принадлежит} to the president, the [government]{правительству}, members of the [Federation Council]{совета федерации}, [deputies]{депутатам} of the [State Duma]{государственной думы} and [a number of]{ряду} other bodies.
+ru: Законопроект вносится в Думу и рассматривается, как правило, в трёх чтениях. || A [bill]{законопроект} is [introduced]{вносится} in the Duma and [considered]{рассматривается}, [as a rule]{как правило}, in three [readings]{чтениях}.
+ru: В первом чтении обсуждается концепция документа, во втором — поправки к отдельным статьям, а в третьем текст принимается в целом, уже без существенных изменений. || In the first reading the [concept]{концепция} of the document is [debated]{обсуждается}, in the second the [amendments]{поправки} to individual articles, and in the third the text is [adopted]{принимается} [as a whole]{в целом}, now without [substantive]{существенных} changes.
+ru: Принятый закон в течение пяти дней передаётся в Совет Федерации, который может его одобрить или отклонить. || A law passed by the Duma is [sent]{передаётся} within five days to the Federation Council, which can [approve]{одобрить} or [reject]{отклонить} it.
+ru: Если сенаторы отклонили закон, палаты могут создать согласительную комиссию для преодоления разногласий. || If the [senators]{сенаторы} reject the law, the [chambers]{палаты} can set up a [conciliation commission]{согласительную комиссию} to [overcome]{преодоления} their [differences]{разногласий}.
+ru: Одобренный закон направляется на подпись президенту, который вправе наложить вето; преодолеть вето можно двумя третями голосов обеих палат. || An approved law is sent to the president for [signature]{подпись}, who has the right to [impose a veto]{наложить вето}; the veto can be [overridden]{преодолеть} by two thirds of the [votes]{голосов} of both chambers.
+ru: Закон вступает в силу после официального опубликования. || A law [enters into force]{вступает в силу} after its [official publication]{официального опубликования}.
+note: в трёх чтениях | in three readings | The standard procedure. «Принять в первом чтении» means to pass at first reading.
+note: вступает в силу | enters into force | A fixed legal expression. Also «вступить в законную силу», of court decisions.
+q: main | What does the text describe? | How deputies are elected | *The procedure by which a federal law is passed | The president's powers in foreign policy | How courts interpret laws
+q: detail | What is discussed in the second reading? | The overall concept | *Amendments to individual articles | The president's signature | Publication
+q: detail | How can a presidential veto be overridden? | By a court decision | *By two thirds of the votes of both chambers | By a referendum only | It can't be
+sum: Bills come from the president, government, senators, deputies and others and usually pass three Duma readings: concept, amendments, final text. The Federation Council then approves or rejects; disagreements go to a conciliation commission. The president signs or vetoes (overridable by two thirds of both chambers), and the law takes effect after official publication.
+
+=== id: pol-communique
+title: Совместное заявление по итогам переговоров
+level: 4
+genre: politics
+source_note: Written for this app in the style of a diplomatic communiqué.
+---
+ru: Стороны провели переговоры в конструктивной и доброжелательной атмосфере, обменявшись мнениями по широкому кругу вопросов двусторонней и международной повестки дня. || The [parties]{стороны} held [talks]{переговоры} in a [constructive]{конструктивной} and [friendly]{доброжелательной} atmosphere, [exchanging views]{обменявшись мнениями} on a [wide range]{широкому кругу} of issues on the [bilateral]{двусторонней} and international [agenda]{повестки дня}.
+ru: Была подчёркнута важность наращивания торгово-экономического сотрудничества, в том числе в сферах энергетики, транспорта и сельского хозяйства. || The importance of [expanding]{наращивания} [trade and economic]{торгово-экономического} [cooperation]{сотрудничества} was [stressed]{подчёркнута}, including in the [spheres]{сферах} of energy, transport and [agriculture]{сельского хозяйства}.
+ru: Стороны выразили обеспокоенность ростом напряжённости в регионе и призвали к урегулированию споров исключительно мирными средствами на основе норм международного права. || The parties [expressed concern]{выразили обеспокоенность} over rising [tensions]{напряжённости} in the region and [called for]{призвали} disputes to be [settled]{урегулированию} [exclusively]{исключительно} by peaceful means [on the basis]{на основе} of the [norms]{норм} of international law.
+ru: Договорённость о продлении соглашения о безвизовом режиме будет оформлена до конца года. || The [agreement]{договорённость} to [extend]{продлении} the [visa-free regime]{безвизовом режиме} will be [formalized]{оформлена} by the end of the year.
+ru: По ряду вопросов позиции сторон не совпали, однако была достигнута договорённость продолжить консультации на уровне экспертов. || On a number of issues the parties' [positions]{позиции} did not [coincide]{совпали}, but agreement was [reached]{достигнута} to continue [consultations]{консультации} at the level of [experts]{экспертов}.
+note: конструктивной | constructive | Diplomatic formula. «Откровенный обмен мнениями», a frank exchange of views, often signals real disagreement.
+note: не совпали | did not coincide | The polite way of saying they disagreed.
+q: main | What is this document? | A news report on a war | *A joint statement summing up diplomatic talks | A trade contract | A speech to parliament
+q: detail | What will be formalized by the end of the year? | A military alliance | *Extending the visa-free regime | A new border | A trade embargo
+q: inference | What does "positions did not coincide on a number of issues" really mean? | Everything was agreed | *There were real disagreements that weren't resolved | The talks failed completely | The experts were absent
+q: tone | The language of the text is | emotional and accusatory | *formal, cautious and diplomatic | humorous | technical
+sum: After talks described as constructive and friendly, both sides stressed growing economic cooperation, voiced concern about regional tensions and called for peaceful settlement under international law. They will extend visa-free travel by year's end; where they disagreed, experts will keep consulting.
+
+=== id: econ-inflation
+title: Ключевая ставка и инфляция
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Ключевая ставка — основной инструмент денежно-кредитной политики Центрального банка. || The [key rate]{ключевая ставка} is the main [instrument]{инструмент} of the Central Bank's [monetary policy]{денежно-кредитной политики}.
+ru: Повышая её, регулятор удорожает кредиты: людям и компаниям становится выгоднее сберегать, чем тратить и занимать, спрос охлаждается, и рост цен замедляется. || By raising it, the [regulator]{регулятор} makes [loans]{кредиты} more expensive: it becomes more [worthwhile]{выгоднее} for people and companies to [save]{сберегать} than to spend and [borrow]{занимать}, [demand]{спрос} cools, and price growth slows.
+ru: Снижение ставки, напротив, стимулирует экономическую активность, но при этом грозит ускорением инфляции. || [Lowering]{снижение} the rate, [on the contrary]{напротив}, [stimulates]{стимулирует} economic activity, but [threatens]{грозит} faster [inflation]{инфляции}.
+ru: Решения влияют на экономику с запаздыванием в несколько кварталов, поэтому банку приходится ориентироваться на прогнозы, а не только на текущие данные. || Decisions affect the economy with a [lag]{запаздыванием} of several [quarters]{кварталов}, so the bank has to [rely]{ориентироваться} on [forecasts]{прогнозы}, not only on [current data]{текущие данные}.
+ru: Немалую роль играют и инфляционные ожидания: если люди уверены, что цены будут расти, они спешат делать покупки, и прогноз сбывается сам собой. || [Inflation expectations]{инфляционные ожидания} also play a [considerable]{немалую} role: if people are sure prices will rise, they rush to buy, and the forecast [fulfills itself]{сбывается сам собой}.
+note: денежно-кредитная политика | monetary policy | Literally "money-and-credit policy." Compare «бюджетная» or «фискальная политика», fiscal policy.
+note: сбывается сам собой | comes true by itself | A self-fulfilling prophecy: «самосбывающееся пророчество».
+q: main | What does the text explain? | How to get a mortgage | *How the central bank's key rate affects inflation | Why the ruble falls | How taxes are collected
+q: detail | What happens when the key rate is raised? | Loans get cheaper | *Loans get more expensive and demand cools | Prices rise faster | Saving becomes pointless
+q: inference | Why must the bank rely on forecasts? | It has no data | *Its decisions take several quarters to affect the economy | Forecasts are always accurate | The law requires it
+sum: The Central Bank's key rate is its main tool. Raising it makes loans costlier, encourages saving, cools demand and slows inflation; cutting it boosts activity but risks faster inflation. Because effects lag by several quarters, the bank relies on forecasts, and people's expectations can make inflation self-fulfilling.
+
+=== id: soc-demography
+title: Демографический вызов
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Во многих развитых странах доля пожилых людей растёт, а рождаемость остаётся ниже уровня простого воспроизводства населения. || In many developed countries the [share]{доля} of [elderly]{пожилых} people is growing, while the [birth rate]{рождаемость} stays below the level of [simple replacement]{простого воспроизводства} of the [population]{населения}.
+ru: Это означает, что на каждого пенсионера приходится всё меньше работающих граждан, чьи взносы формируют пенсионный фонд. || This means that there are fewer and fewer [working citizens]{работающих граждан} [per]{приходится} [pensioner]{пенсионера}, whose [contributions]{взносы} make up the [pension fund]{пенсионный фонд}.
+ru: Правительства прибегают к разным мерам: повышают пенсионный возраст, поощряют рождаемость выплатами семьям с детьми, привлекают трудовых мигрантов. || Governments [resort]{прибегают} to various [measures]{мерам}: they raise the [retirement age]{пенсионный возраст}, [encourage]{поощряют} births with [payments]{выплатами} to families with children, and [attract]{привлекают} [labor migrants]{трудовых мигрантов}.
+ru: Каждая из этих мер вызывает споры: сторонники указывают на неизбежность реформ, противники — на социальную несправедливость и рост нагрузки на рынок труда. || Each of these measures causes [debate]{споры}: [supporters]{сторонники} point to the [inevitability]{неизбежность} of [reform]{реформ}, [opponents]{противники} to social [injustice]{несправедливость} and growing [pressure]{нагрузки} on the [labor market]{рынок труда}.
+ru: Экономисты сходятся лишь в одном: откладывать решение означает делать его более болезненным. || Economists [agree]{сходятся} on only one thing: [putting off]{откладывать} a decision makes it more [painful]{болезненным}.
+note: на каждого пенсионера приходится | per pensioner there are | «Приходиться на» means "to fall to, per": «на одного жителя приходится два квадратных метра».
+note: сходятся | agree | «Сходиться во мнениях» means to agree. The literal sense of «сходиться» is to come together.
+q: main | What is the main issue discussed? | Immigration law | *An aging population straining pension systems, and debated responses | Rising house prices | Unemployment among youth
+q: detail | Which measure is NOT mentioned? | Raising the retirement age | Payments to families with children | Attracting labor migrants | *Cutting taxes on the wealthy
+q: tone | How does the text present the debate? | It supports one side strongly | *It presents both supporters' and opponents' arguments | It mocks the government | It avoids the issue
+sum: In developed countries the elderly share is rising and birth rates are below replacement, so fewer workers support each pensioner. Governments raise the retirement age, pay family benefits and bring in migrants, each of which is contested: supporters call reform inevitable, opponents cite unfairness and labor-market pressure. Delay only makes the choice harder.
+
+=== id: hist-peter
+title: Реформы Петра Первого
+level: 3+
+genre: history
+source_note: Written for this app.
+---
+ru: Пётр Первый стремился превратить отсталое, по его убеждению, Московское царство в европейскую державу. || Peter the Great [sought]{стремился} to turn what he was [convinced]{убеждению} was a [backward]{отсталое} [Tsardom]{царство} of Muscovy into a European [power]{державу}.
+ru: Он создал регулярную армию на основе рекрутских наборов и построил флот, без которого Россия не смогла бы закрепиться на Балтике. || He created a [regular army]{регулярную армию} based on [conscription levies]{рекрутских наборов} and built a [navy]{флот}, without which Russia could not have [gained a foothold]{закрепиться} on the Baltic.
+ru: Боярская дума уступила место Сенату, а старые приказы — коллегиям с чётко распределёнными обязанностями. || The [Boyar Duma]{боярская дума} [gave way]{уступила место} to the Senate, and the old [prikazy]{приказы} to [colleges]{коллегиям} with clearly [divided]{распределёнными} [duties]{обязанностями}.
+ru: Табель о рангах позволил людям незнатного происхождения дослужиться до дворянства. || The [Table of Ranks]{табель о рангах} allowed people of [humble]{незнатного} [origin]{происхождения} to [work their way up]{дослужиться} to the [nobility]{дворянства}.
+ru: Реформы проводились жёсткими методами: строительство Петербурга унесло жизни тысяч крестьян, а налоговое бремя резко возросло. || The reforms were [carried out]{проводились} by [harsh]{жёсткими} methods: building Petersburg [cost the lives]{унесло жизни} of thousands of peasants, and the [tax burden]{налоговое бремя} rose sharply.
+ru: Историки до сих пор спорят, было ли «окно в Европу» прорублено ценой, которую стоило платить. || Historians still argue whether the "[window to Europe]{окно в Европу}" was [cut through]{прорублено} at a price worth paying.
+note: окно в Европу | window to Europe | A phrase from Pushkin's «Медный всадник» («В Европу прорубить окно»), now the stock image of Peter's Petersburg.
+note: дослужиться | to rise through service | The prefix «до-» with «служить»: to serve until you reach a rank.
+q: main | What does the text discuss? | Peter's childhood | *Peter's reforms and their costs | The founding of Moscow | The war with Napoleon
+q: detail | What did the Table of Ranks allow? | Nobles to avoid service | *Commoners to rise into the nobility through service | Peasants to own land | Foreigners to rule
+q: inference | What is the open historical question? | Whether Peter existed | *Whether the benefits of modernization justified its human cost | Where Petersburg is | Who won the Northern War
+sum: Peter the Great modernized Russia: a conscript army and navy secured the Baltic, the Senate and colleges replaced older institutions, and the Table of Ranks let commoners rise by service. But the methods were brutal, with thousands dying building Petersburg and taxes soaring, and historians still debate whether the price was worth it.
+
+=== id: hist-1861
+title: Отмена крепостного права
+level: 3+
+genre: history
+source_note: Written for this app.
+---
+ru: Манифест 19 февраля 1861 года освободил более двадцати миллионов помещичьих крестьян от личной зависимости. || The [Manifesto]{манифест} of February 19, 1861 freed more than twenty million [landlords']{помещичьих} peasants from personal [bondage]{зависимости}.
+ru: Однако земля оставалась собственностью помещиков, и крестьяне должны были выкупать свои наделы, выплачивая долг государству на протяжении десятилетий. || However, the land remained the [property]{собственностью} of the landowners, and the peasants had to [buy back]{выкупать} their [allotments]{наделы}, paying a [debt]{долг} to the state over decades.
+ru: Нередко наделы после реформы оказывались меньше прежних — эти урезанные земли крестьяне называли «отрезками». || After the reform, allotments often turned out smaller than before; peasants called these [cut-off]{урезанные} lands "[otrezki]{отрезками}."
+ru: Тем не менее реформа дала толчок развитию промышленности и открыла дорогу другим преобразованиям — земской, судебной и военной реформам. || [Nevertheless]{тем не менее}, the reform gave a [push]{толчок} to the development of industry and opened the way to other [transformations]{преобразованиям}: the [zemstvo]{земской}, [judicial]{судебной} and military reforms.
+ru: Недовольство условиями освобождения стало одной из причин нарастания революционных настроений в последующие десятилетия. || [Discontent]{недовольство} with the terms of emancipation became one of the causes of [growing]{нарастания} revolutionary [sentiment]{настроений} in the following decades.
+note: личной зависимости | personal bondage | Serfdom («крепостное право») bound peasants personally to a landowner. «Крепостной» comes from an old sense of «крепость»: a deed of ownership, not a fortress.
+note: дать толчок | to give a push, to spur | A common phrase: «дать толчок развитию чего-либо».
+q: main | What is the passage about? | Peter's reforms | *The 1861 emancipation of the serfs and its mixed results | The 1917 revolution | Industrial technology
+q: detail | Who owned the land after emancipation? | The peasants, free of charge | *The landowners; peasants had to buy their plots | The church | The army
+q: inference | Why did the reform feed later discontent? | It was never implemented | *Peasants got smaller plots and decades of payments | It freed too many people | It abolished the army
+sum: The 1861 Manifesto freed over twenty million serfs, but landowners kept the land: peasants had to buy back allotments over decades, often smaller than before. The reform spurred industry and further reforms, yet resentment over its terms fed revolutionary moods for decades.
+
+=== id: hist-gagarin
+title: 12 апреля 1961 года
+level: 2+
+genre: history
+source_note: Written for this app.
+---
+ru: Двенадцатого апреля 1961 года космический корабль «Восток» с Юрием Гагариным на борту стартовал с космодрома Байконур. || On April 12, 1961 the [spacecraft]{космический корабль} Vostok, with Yuri Gagarin [on board]{на борту}, [lifted off]{стартовал} from the Baikonur [cosmodrome]{космодрома}.
+ru: Перед стартом Гагарин сказал своё знаменитое «Поехали!». || Before liftoff Gagarin said his famous "[Let's go]{поехали}!"
+ru: Полёт продолжался сто восемь минут: корабль совершил один виток вокруг Земли и приземлился в Саратовской области. || The [flight]{полёт} lasted one hundred and eight minutes: the ship made one [orbit]{виток} around the Earth and landed in the Saratov region.
+ru: Первыми космонавта встретили местные жители, которые сначала испугались человека в оранжевом скафандре. || The first to meet the [cosmonaut]{космонавта} were [local residents]{местные жители}, who were at first frightened by a man in an orange [spacesuit]{скафандре}.
+ru: Этот день стал национальным праздником — Днём космонавтики. || That day became a national [holiday]{праздником}: [Cosmonautics Day]{днём космонавтики}.
+note: Поехали! | Let's go! | Literally the past tense of «поехать», used as a command: "off we go!" In Russian this is now the iconic start of any venture.
+q: main | What does the text describe? | The first Moon landing | *Gagarin's first human spaceflight | The building of Baikonur | A Soviet holiday parade
+q: detail | How long did the flight last? | One day | *108 minutes | Ten minutes | A week
+q: detail | Who met Gagarin first after landing? | Generals | *Local residents | Journalists | His family
+sum: On April 12, 1961 Yuri Gagarin launched from Baikonur aboard Vostok, saying "Poyekhali!" He orbited Earth once in 108 minutes and landed near Saratov, startling local villagers, and the date became Cosmonautics Day.
+
+=== id: mil-structure
+title: Воинские звания и подразделения
+level: 3
+genre: military
+source_note: Written for this app.
+---
+ru: В сухопутных войсках низшим тактическим подразделением считается отделение, которым командует сержант. || In the [ground forces]{сухопутных войсках} the smallest [tactical]{тактическим} [unit]{подразделением} is the [squad]{отделение}, [commanded]{командует} by a [sergeant]{сержант}.
+ru: Три-четыре отделения составляют взвод, взводы — роту, роты — батальон. || Three or four squads [make up]{составляют} a [platoon]{взвод}, platoons a [company]{роту}, companies a [battalion]{батальон}.
+ru: Батальоны входят в состав полка или бригады, а те, в свою очередь, — в дивизию. || Battalions are part of a [regiment]{полка} or [brigade]{бригады}, and those [in turn]{в свою очередь} make up a [division]{дивизию}.
+ru: Офицерские звания делятся на младшие — от лейтенанта до капитана, старшие — от майора до полковника, и высшие — генеральские. || Officer [ranks]{звания} are divided into [junior]{младшие}, from [lieutenant]{лейтенанта} to [captain]{капитана}; [senior]{старшие}, from [major]{майора} to [colonel]{полковника}; and the [highest]{высшие}, the [general officer]{генеральские} ranks.
+ru: Во флоте звания отличаются: вместо капитана — капитан-лейтенант, вместо полковника — капитан первого ранга. || In the [navy]{флоте} the ranks differ: instead of captain there is [captain-lieutenant]{капитан-лейтенант}, and instead of colonel, [captain first rank]{капитан первого ранга}.
+note: подразделение | unit (subunit) | Military Russian distinguishes «подразделение» (squad up to battalion) from «часть» (regiment, brigade) and «соединение» (division and up).
+q: main | What does the text explain? | Military history | *The hierarchy of army units and officer ranks | How to enlist | Naval battles
+q: detail | What is a sergeant's usual command? | A company | *A squad | A battalion | A division
+q: detail | What naval rank matches an army colonel? | Captain-lieutenant | *Captain first rank | Admiral | Lieutenant
+sum: The smallest army unit is the squad under a sergeant; squads form platoons, then companies, battalions, regiments or brigades, and divisions. Officers are junior (lieutenant to captain), senior (major to colonel) and general officers, and the navy uses its own ranks, such as captain first rank for colonel.
+
+=== id: soc-urban
+title: Пробки и город
+level: 3
+genre: society
+source_note: Written for this app.
+---
+ru: Крупные города страдают от пробок, и расширение дорог помогает лишь на время. || Large cities suffer from [traffic jams]{пробок}, and [widening]{расширение} roads helps only [for a while]{на время}.
+ru: Транспортные инженеры называют это эффектом индуцированного спроса: новые полосы привлекают новых водителей, и через несколько лет загруженность возвращается к прежнему уровню. || Transport engineers call this the effect of [induced demand]{индуцированного спроса}: new [lanes]{полосы} attract new drivers, and within a few years [congestion]{загруженность} returns to its [former]{прежнему} level.
+ru: Поэтому многие мегаполисы делают ставку на общественный транспорт, выделенные полосы для автобусов и платные парковки в центре. || That's why many [megacities]{мегаполисы} [bet on]{делают ставку на} [public transport]{общественный транспорт}, [dedicated]{выделенные} bus lanes and [paid parking]{платные парковки} in the center.
+ru: Автомобилистов такие меры, разумеется, не радуют. || [Motorists]{автомобилистов}, [of course]{разумеется}, are not pleased by such measures.
+ru: Зато сторонники подобной политики указывают, что пешеходные улицы оживляют торговлю, а воздух в центре становится чище. || But [supporters]{сторонники} of such policies point out that [pedestrian]{пешеходные} streets [revive]{оживляют} [trade]{торговлю}, and the air in the center becomes cleaner.
+note: делают ставку на | bet on, rely on | «Ставка» is a bet or stake. «Сделать ставку на что-то» means to base your strategy on it.
+q: main | What is the text about? | How to drive in cities | *Why road widening doesn't cure traffic, and what cities do instead | The history of the subway | Car prices
+q: detail | What is induced demand? | Rising fuel prices | *New lanes attract new drivers until congestion returns | More people walking | Fewer cars in winter
+q: tone | How does the text treat motorists' objections? | It ignores them | *It acknowledges them and gives the other side's argument | It ridicules them | It agrees fully
+sum: Widening roads relieves traffic only briefly, because of induced demand: new lanes draw new drivers. Big cities instead invest in public transport, bus lanes and paid central parking. Drivers dislike this, but supporters say pedestrian streets help shops and clean the air.
+
+=== id: soc-education
+title: Экзамен или портфолио?
+level: 3+
+genre: society
+source_note: Written for this app.
+---
+ru: Единый государственный экзамен задумывался как способ сделать поступление в вузы прозрачным: выпускник из глубинки получает те же шансы, что и столичный школьник. || The [Unified State Exam]{единый государственный экзамен} was [conceived]{задумывался} as a way to make [university admission]{поступление в вузы} [transparent]{прозрачным}: a [graduate]{выпускник} from the [provinces]{глубинки} gets the same chances as a [schoolchild]{школьник} from the capital.
+ru: Критики возражают, что экзамен поощряет натаскивание на тесты в ущерб глубокому пониманию предмета. || [Critics]{критики} [object]{возражают} that the exam encourages [drilling]{натаскивание} for tests [at the expense of]{в ущерб} deep understanding of the [subject]{предмета}.
+ru: Сторонники отвечают, что прежняя система вступительных экзаменов порождала коррупцию и зависела от личных связей. || [Supporters]{сторонники} reply that the old system of [entrance exams]{вступительных экзаменов} [bred]{порождала} [corruption]{коррупцию} and depended on [personal connections]{личных связей}.
+ru: Некоторые эксперты предлагают учитывать наряду с баллами портфолио: олимпиады, проекты, волонтёрскую деятельность. || Some experts [propose]{предлагают} taking a [portfolio]{портфолио} into account [alongside]{наряду с} [scores]{баллами}: [olympiads]{олимпиады}, projects, [volunteer work]{волонтёрскую деятельность}.
+ru: Однако оценить портфолио объективно куда сложнее, чем проверить тест. || However, [evaluating]{оценить} a portfolio [objectively]{объективно} is [far]{куда} harder than [grading]{проверить} a test.
+note: натаскивание | drilling, cramming | From «натаскивать», originally to train a hunting dog. Mildly disapproving.
+note: глубинка | the provinces, the backwoods | Colloquial: small towns and villages far from big cities.
+note: куда сложнее | far harder | «Куда» plus a comparative intensifies, like «гораздо»: «куда лучше», much better.
+q: main | What is being debated? | The cost of university | *Whether a single national exam is the fairest way to admit students | Teachers' salaries | Online learning
+q: detail | What problem did the exam aim to solve? | Too many universities | *Unequal access and opaque admissions | Lack of teachers | Expensive textbooks
+q: inference | Why might a portfolio be problematic? | Students don't have one | *It's harder to assess fairly than a test | It is too short | Universities don't read them
+sum: The Unified State Exam aimed to give provincial and big-city students equal, transparent access to universities. Critics say it encourages cramming; supporters say the old entrance exams bred corruption. Adding portfolios of olympiads, projects and volunteering is proposed, but they're much harder to assess objectively.

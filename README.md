@@ -4,7 +4,7 @@ Free, offline Russian study tools for Linux, Windows and Mac. One launcher opens
 
 - **Russian Reader.** 184 leveled passages from ILR 0+ to 4+ (about A1 to C2), covering everyday life, science, mechanics, law, politics and classic literature from Pushkin, Gogol, Turgenev, Tolstoy, Dostoevsky and Chekhov. Together they use over 5,000 different Russian words. Tap any word for its meaning and it goes on your learn list. Each passage ends with a few comprehension questions, and afterwards you can read it side by side with an English translation. You can start with a short vocabulary check or pick your level, and levels can be shown in ILR, CEFR or both.
 - **List Trainer.** Flashcards, quizzes and root drills, plus your own word sets. You can import sets from text, CSV, Word or Excel files. Words you tap in the Reader show up here in a "From reading" set.
-- **OPI Memory Tool.** Write and memorize your own answers for the 12 OPI prompt types, practice with templates and phrase decks, and run mock interviews. A worked example, with complete answers from a made-up learner, shows what finished scripts look like.
+- **Oral Speech Memory Tool.** Write and memorize your own answers for 12  prompt types, practice with templates and phrase decks, and run mock interviews. A worked example, with complete answers from a made-up learner, shows what finished scripts could look like.
 
 Everything runs on your own computer, with no account and no internet connection needed.
 
